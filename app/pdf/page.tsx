@@ -21,6 +21,7 @@ import {
   ExternalLink,
   FolderOpen,
 } from "lucide-react";
+import { useLanguage } from "../context/LanguageContext";
 
 // ============================================
 // ALL DATA FROM hskData.ts
@@ -331,11 +332,15 @@ export default function PDF() {
   const filteredLevels = selectedLevel
     ? hskLevels.filter((level) => level.id === selectedLevel)
     : hskLevels;
+    const { language } = useLanguage();
+
+const t = (bn: string, en: string) =>
+  language === "bn" ? bn : en;
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-slate-50 to-white">
+    <div className="min-h-screen bg-linear-to-br from-slate-50 to-white">
       {/* Hero Section */}
-      <section className="relative overflow-hidden bg-gradient-to-r from-blue-600 to-indigo-700 text-white py-16 sm:py-20 md:py-24">
+      <section className="relative overflow-hidden bg-linear-to-r from-blue-600 to-indigo-700 text-white py-16 sm:py-20 md:py-24">
         <div className="absolute inset-0 opacity-10">
           <div className="absolute top-0 -left-4 w-72 h-72 bg-white rounded-full mix-blend-multiply filter blur-xl animate-pulse"></div>
           <div className="absolute bottom-0 -right-4 w-72 h-72 bg-purple-300 rounded-full mix-blend-multiply filter blur-xl animate-pulse delay-1000"></div>
@@ -344,13 +349,18 @@ export default function PDF() {
         <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <div className="inline-flex items-center gap-2 bg-white/20 backdrop-blur-sm px-4 py-2 rounded-full mb-6">
             <Sparkles className="w-4 h-4" />
-            <span className="text-sm font-medium">HSK Resource Hub</span>
+            <span className="text-sm font-medium">
+              HSK
+              {t(" রিসোর্স হাব", " Resource Hub")}
+              </span>
           </div>
           <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-extrabold tracking-tight">
-            📚 HSK Books & All Materials
+            📚 
+            {t("HSK বই ও সকল স্টাডি ম্যাটেরিয়াল", "HSK Books & All Materials")}
           </h1>
           <p className="mt-4 text-lg sm:text-xl text-blue-100 max-w-3xl mx-auto">
-            Find, Download & Learn Chinese Easily
+            
+            {t("সহজেই চাইনিজ শেখার সব রিসোর্স খুঁজুন ও ডাউনলোড করুন", "Find, Download & Learn Chinese Easily")}
           </p>
 
           {/* Level Selector Pills */}
@@ -363,7 +373,8 @@ export default function PDF() {
                   : "bg-white/20 text-white hover:bg-white/30"
               }`}
             >
-              All Levels
+              
+              {t("সব লেভেল", "All Levels")}
             </button>
             {hskLevels.map((level) => (
               <button
@@ -384,38 +395,45 @@ export default function PDF() {
 
       {/* Welcome Section */}
       <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 sm:py-16">
-        <div className="bg-gradient-to-r from-blue-50 to-indigo-50 rounded-2xl p-6 sm:p-8 md:p-10 border border-blue-100">
+        <div className="bg-linear-to-r from-blue-50 to-indigo-50 rounded-2xl p-6 sm:p-8 md:p-10 border border-blue-100">
           <div className="flex items-center justify-center gap-3 mb-3">
             <Award className="w-8 h-8 text-indigo-600" />
             <h2 className="text-xl sm:text-2xl md:text-3xl font-bold text-slate-800">
-              🎯 Welcome to HSK Resource Hub!
+              🎯
+              {t("HSK রিসোর্স হাবে আপনাকে স্বাগতম!", " Welcome to HSK Resource Hub!")}
             </h2>
           </div>
           <p className="text-slate-600 text-center max-w-3xl mx-auto">
-            Here you will find all HSK level books and complete learning materials.
+            
+            {t("এখানে আপনি সকল HSK লেভেলের বই এবং সম্পূর্ণ শেখার রিসোর্স পাবেন। আপনার পছন্দের লেভেল নির্বাচন করে PDF, Audio, Mock Test, Vocabulary এবং অন্যান্য ফাইল Google Drive থেকে ডাউনলোড করুন।", `Here you will find all HSK level books and complete learning materials.
             Choose your preferred level and download PDF, audio, mock test, vocabulary
-            and more from Google Drive.
+            and more from Google Drive.`)}
           </p>
           <div className="flex flex-wrap justify-center gap-3 mt-4">
             <span className="inline-flex items-center gap-1.5 text-xs bg-white px-3 py-1.5 rounded-full border border-slate-200">
               <CheckCircle className="w-3.5 h-3.5 text-green-500" />
-              6 HSK Levels
+              
+              {t("৬টি HSK লেভেল", "6 HSK Levels")}
             </span>
             <span className="inline-flex items-center gap-1.5 text-xs bg-white px-3 py-1.5 rounded-full border border-slate-200">
               <CheckCircle className="w-3.5 h-3.5 text-green-500" />
-              PDF Books
+              PDF
+              {t(" বই", " Books")}
             </span>
             <span className="inline-flex items-center gap-1.5 text-xs bg-white px-3 py-1.5 rounded-full border border-slate-200">
               <CheckCircle className="w-3.5 h-3.5 text-green-500" />
-              Audio Files
+              
+              {t("অডিও ফাইল", "Audio Files")}
             </span>
             <span className="inline-flex items-center gap-1.5 text-xs bg-white px-3 py-1.5 rounded-full border border-slate-200">
               <CheckCircle className="w-3.5 h-3.5 text-green-500" />
-              Mock Tests
+              
+              {t("মক টেস্ট", "Mock Tests")}
             </span>
             <span className="inline-flex items-center gap-1.5 text-xs bg-white px-3 py-1.5 rounded-full border border-slate-200">
               <CheckCircle className="w-3.5 h-3.5 text-green-500" />
-              Vocabulary
+              
+              {t("ভোকাবুলারি", "Vocabulary")}
             </span>
           </div>
         </div>
@@ -429,11 +447,16 @@ export default function PDF() {
           </div>
           <div>
             <h2 className="text-2xl sm:text-3xl font-bold text-slate-800">
-              📖 HSK Books & Materials
+              📖 HSK
+              {t(" বই ও স্টাডি ম্যাটেরিয়াল", " Books & Materials")}
             </h2>
             <p className="text-sm text-slate-500 mt-0.5">
-              {filteredLevels.length} level{filteredLevels.length > 1 ? 's' : ''} available
-            </p>
+              {filteredLevels.length}
+               
+               {t(" টি লেভেল ", " level ")}
+              {filteredLevels.length > 1 ? '' : ''} 
+              {t(" পাওয়া যাচ্ছে ", " available")}
+            </p> 
           </div>
         </div>
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6">
@@ -452,10 +475,12 @@ export default function PDF() {
             </div>
             <div>
               <h2 className="text-2xl sm:text-3xl font-bold text-slate-800">
-                📦 All-in-One Learning Materials
+                📦 
+                {t("সকল স্টাডি ম্যাটেরিয়াল একসাথে", "All-in-One Learning Materials")}
               </h2>
               <p className="text-sm text-slate-500 mt-0.5">
-                Complete collection of HSK resources in one place
+                
+                {t("এক জায়গায় সকল HSK রিসোর্স", "Complete collection of HSK resources in one place")}
               </p>
             </div>
           </div>
@@ -472,42 +497,37 @@ export default function PDF() {
         <div className="grid grid-cols-2 sm:grid-cols-4 gap-4 sm:gap-6">
           <div className="bg-white rounded-2xl border border-slate-200 p-4 sm:p-6 text-center">
             <div className="text-3xl sm:text-4xl font-bold text-indigo-600">6</div>
-            <div className="text-sm text-slate-500 mt-1">HSK Levels</div>
+            <div className="text-sm text-slate-500 mt-1">
+              
+              {t("HSK লেভেল", "HSK Levels")}
+            </div>
           </div>
           <div className="bg-white rounded-2xl border border-slate-200 p-4 sm:p-6 text-center">
             <div className="text-3xl sm:text-4xl font-bold text-emerald-600">24</div>
-            <div className="text-sm text-slate-500 mt-1">Resources</div>
+            <div className="text-sm text-slate-500 mt-1">
+              
+              {t("রিসোর্স", "Resources")}
+              </div>
           </div>
           <div className="bg-white rounded-2xl border border-slate-200 p-4 sm:p-6 text-center">
             <div className="text-3xl sm:text-4xl font-bold text-purple-600">5000+</div>
-            <div className="text-sm text-slate-500 mt-1">Vocabulary</div>
+            <div className="text-sm text-slate-500 mt-1">
+              
+              {t("ভোকাবুলারি", "Vocabulary")}
+              </div>
           </div>
           <div className="bg-white rounded-2xl border border-slate-200 p-4 sm:p-6 text-center">
             <div className="text-3xl sm:text-4xl font-bold text-orange-600">100%</div>
-            <div className="text-sm text-slate-500 mt-1">Free Access</div>
+            <div className="text-sm text-slate-500 mt-1">
+              
+              {t("ফ্রি অ্যাক্সেস", "Free Access")}
+              </div>
+
           </div>
         </div>
       </section>
 
-      {/* Footer */}
-      <footer className="bg-slate-900 text-white py-8 sm:py-10">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <p className="text-sm sm:text-base text-slate-400">
-            © 2026 Learn Chinese with Kazi Robin. All Rights Reserved.
-          </p>
-          <div className="mt-4 flex justify-center gap-6">
-            <Link href="#" className="text-slate-400 hover:text-white transition">
-              Telegram
-            </Link>
-            <Link href="#" className="text-slate-400 hover:text-white transition">
-              YouTube
-            </Link>
-            <Link href="#" className="text-slate-400 hover:text-white transition">
-              WhatsApp
-            </Link>
-          </div>
-        </div>
-      </footer>
+     
     </div>
   );
 }

@@ -1,8 +1,14 @@
 // app/pinyin-start/page.tsx
+"use client"
 import Image from "next/image";
 import React from "react";
+import { useLanguage } from "../context/LanguageContext";
 
 const Pinyin = () => {
+      const { language } = useLanguage();
+  
+  const t = (bn: string, en: string) =>
+    language === "bn" ? bn : en;
   return (
     <div className="min-h-screen bg-linear-to-br from-slate-50 via-white to-purple-50/40">
       <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-8 sm:py-12">
@@ -10,13 +16,16 @@ const Pinyin = () => {
         {/* ===== HEADER ===== */}
         <div className="text-center mb-8">
           <div className="inline-flex items-center gap-2 bg-purple-100 border border-purple-200 text-purple-700 text-sm font-semibold px-4 py-1.5 rounded-full mb-4">
-            🎯 STEP 1: PINYIN PRONUNCIATION
+            {t("🎯 ধাপ ১: পিনইন উচ্চারণ", "🎯 STEP 1: PINYIN PRONUNCIATION")}
           </div>
           <h1 className="text-3xl sm:text-4xl font-extrabold text-gray-900">
-            Learn & Pronounce Pinyin Correctly
+            {t("সঠিকভাবে পিনইন শিখুন ও উচ্চারণ করুন", "Learn & Pronounce Pinyin Correctly")}
           </h1>
           <p className="text-gray-600 mt-2 max-w-2xl mx-auto">
-            Watch the videos, practice the sounds, then record your voice and send it to our WhatsApp group
+            {t(
+  "ভিডিওগুলো দেখুন, উচ্চারণ অনুশীলন করুন, তারপর আপনার কণ্ঠ রেকর্ড করে আমাদের WhatsApp গ্রুপে পাঠান।",
+  "Watch the videos, practice the sounds, then record your voice and send it to our WhatsApp group."
+)}
           </p>
         </div>
 
@@ -25,7 +34,7 @@ const Pinyin = () => {
           <div className="relative w-full aspect-video">
             <Image
               src="/assets/pinyin.png"
-              alt="Pinyin Pronunciation Chart"
+              alt={t("পিনইন উচ্চারণ চার্ট", "Pinyin Pronunciation Chart")}
               fill
               className="object-contain"
               sizes="(max-width: 768px) 100vw, 1200px"
@@ -34,7 +43,10 @@ const Pinyin = () => {
           </div>
           <div className="bg-linear-to-r from-purple-50 to-blue-50 px-6 py-3 text-center border-t border-gray-100">
             <p className="text-sm text-gray-600">
-              🎯 Study this Pinyin chart carefully before recording your voice
+              {t(
+  "🎯 কণ্ঠ রেকর্ড করার আগে এই পিনইন চার্টটি ভালোভাবে অধ্যয়ন করুন",
+  "🎯 Study this Pinyin chart carefully before recording your voice"
+)}
             </p>
           </div>
         </div>
@@ -42,7 +54,7 @@ const Pinyin = () => {
         {/* ===== 3 SIMPLE STEPS ===== */}
         <div className="bg-white rounded-3xl shadow-lg border border-gray-100 p-6 sm:p-8 mb-10">
           <h2 className="text-2xl font-bold text-gray-800 text-center mb-6">
-            Follow These 3 Simple Steps
+            {t("এই ৩টি সহজ ধাপ অনুসরণ করুন", "Follow These 3 Simple Steps")}
           </h2>
           
           <div className="space-y-4">
@@ -52,8 +64,11 @@ const Pinyin = () => {
                 1
               </div>
               <div>
-                <h3 className="font-semibold text-gray-800">📺 Watch Pronunciation Videos</h3>
-                <p className="text-sm text-gray-600">Download and watch all Pinyin videos from Google Drive</p>
+                <h3 className="font-semibold text-gray-800">{t("📺 উচ্চারণের ভিডিও দেখুন", "📺 Watch Pronunciation Videos")}</h3>
+                <p className="text-sm text-gray-600">{t(
+  "Google Drive থেকে সব পিনইন ভিডিও ডাউনলোড করে দেখুন",
+  "Download and watch all Pinyin videos from Google Drive"
+)}</p>
               </div>
             </div>
 
@@ -63,8 +78,11 @@ const Pinyin = () => {
                 2
               </div>
               <div>
-                <h3 className="font-semibold text-gray-800">🎤 Practice & Record</h3>
-                <p className="text-sm text-gray-600">Practice all Pinyin sounds clearly, then record your voice</p>
+                <h3 className="font-semibold text-gray-800">{t("🎤 অনুশীলন করুন ও রেকর্ড করুন", "🎤 Practice & Record")}</h3>
+                <p className="text-sm text-gray-600">{t(
+  "সব পিনইন সঠিকভাবে অনুশীলন করুন, তারপর আপনার কণ্ঠ রেকর্ড করুন",
+  "Practice all Pinyin sounds clearly, then record your voice"
+)}</p>
               </div>
             </div>
 
@@ -74,8 +92,11 @@ const Pinyin = () => {
                 3
               </div>
               <div>
-                <h3 className="font-semibold text-gray-800">💬 Send Voice Message</h3>
-                <p className="text-sm text-gray-600">Send your recorded voice message to our WhatsApp group</p>
+                <h3 className="font-semibold text-gray-800">{t("💬 ভয়েস মেসেজ পাঠান", "💬 Send Voice Message")}</h3>
+                <p className="text-sm text-gray-600">{t(
+  "আপনার রেকর্ড করা ভয়েস মেসেজ আমাদের WhatsApp গ্রুপে পাঠান",
+  "Send your recorded voice message to our WhatsApp group"
+)}</p>
               </div>
             </div>
           </div>
@@ -91,10 +112,13 @@ const Pinyin = () => {
             className="group bg-linear-to-r from-blue-600 to-indigo-600 hover:from-blue-700 hover:to-indigo-700 text-white rounded-2xl p-6 text-center transition shadow-lg shadow-blue-200"
           >
             <div className="text-4xl mb-2">📁</div>
-            <h3 className="font-bold text-lg">Download Videos</h3>
-            <p className="text-blue-100 text-sm mt-1">Watch all Pinyin pronunciation videos</p>
+            <h3 className="font-bold text-lg">{t("ভিডিও ডাউনলোড করুন", "Download Videos")}</h3>
+            <p className="text-blue-100 text-sm mt-1">{t(
+  "সব পিনইন উচ্চারণের ভিডিও দেখুন",
+  "Watch all Pinyin pronunciation videos"
+)}</p>
             <div className="mt-3 text-sm font-medium text-blue-200 group-hover:text-white transition">
-              Open Google Drive →
+              {t("Google Drive খুলুন →", "Open Google Drive →")}
             </div>
           </a>
 
@@ -106,10 +130,13 @@ const Pinyin = () => {
             className="group bg-linear-to-r from-emerald-500 to-green-600 hover:from-emerald-600 hover:to-green-700 text-white rounded-2xl p-6 text-center transition shadow-lg shadow-emerald-200"
           >
             <div className="text-4xl mb-2">💬</div>
-            <h3 className="font-bold text-lg">Join WhatsApp Group</h3>
-            <p className="text-emerald-100 text-sm mt-1">Send your voice message here</p>
+            <h3 className="font-bold text-lg">{t("WhatsApp গ্রুপে যোগ দিন", "Join WhatsApp Group")}</h3>
+            <p className="text-emerald-100 text-sm mt-1">{t(
+  "এখানে আপনার ভয়েস মেসেজ পাঠান",
+  "Send your voice message here"
+)}</p>
             <div className="mt-3 text-sm font-medium text-emerald-200 group-hover:text-white transition">
-              Join Group →
+              {t("গ্রুপে যোগ দিন →", "Join Group →")}
             </div>
           </a>
         </div>
@@ -118,10 +145,12 @@ const Pinyin = () => {
         <div className="mt-8 bg-amber-50 border border-amber-200 rounded-2xl p-5 flex items-start gap-3">
           <span className="text-2xl shrink-0">⚠️</span>
           <div>
-            <p className="font-semibold text-amber-800">Important:</p>
+            <p className="font-semibold text-amber-800">{t("গুরুত্বপূর্ণ:", "Important:")}</p>
             <p className="text-sm text-amber-700">
-              After watching the videos and practicing, record your voice clearly 
-              and send it to the WhatsApp group. Our team will verify your pronunciation.
+              {t(
+  "ভিডিওগুলো দেখার ও অনুশীলনের পর পরিষ্কারভাবে আপনার কণ্ঠ রেকর্ড করুন এবং WhatsApp গ্রুপে পাঠান। আমাদের টিম আপনার উচ্চারণ যাচাই করবে।",
+  "After watching the videos and practicing, record your voice clearly and send it to the WhatsApp group. Our team will verify your pronunciation."
+)}
             </p>
           </div>
         </div>
@@ -129,7 +158,10 @@ const Pinyin = () => {
         {/* ===== FOOTER ===== */}
         <div className="mt-12 text-center">
           <p className="text-sm text-gray-500">
-            ❤️ Learn Chinese with Kazi Robin — Master Pinyin, Speak Confidently
+            {t(
+  "❤️ কাজী রবিনের সাথে চাইনিজ শিখুন — পিনইন আয়ত্ত করুন, আত্মবিশ্বাসের সাথে কথা বলুন",
+  "❤️ Learn Chinese with Kazi Robin — Master Pinyin, Speak Confidently"
+)}
           </p>
         </div>
       </div>
