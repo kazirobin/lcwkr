@@ -42,8 +42,8 @@ export default function Nav() {
     <nav className="sticky top-0 z-50 border-b border-gray-200 bg-white">
       <div className="mx-auto flex h-16 max-w-6xl items-center justify-between px-4 sm:px-6 lg:px-8">
         {/* Logo */}
-        <Link href="/" aria-label="lcwkr" className="flex-shrink-0">
-          <div className="relative h-[40px] w-[120px] sm:h-[45px] sm:w-[140px] md:h-[50px] md:w-[160px]">
+        <Link href="/" aria-label="lcwkr" className="shrink-0">
+          <div className="relative h-10 w-30 sm:h-11.25 sm:w-35 md:h-12.5 md:w-40">
             <Image
               src="/assets/logo.png"
               alt="lcwkr"
@@ -61,7 +61,7 @@ export default function Nav() {
             <Link
               key={link.key}
               href={link.href}
-              className={`text-sm font-medium transition-colors ${
+              className={`text-sm font-extrabold transition-colors ${
                 pathname === link.href
                   ? "text-blue-600"
                   : "text-gray-600 hover:text-blue-600"
@@ -129,7 +129,7 @@ export default function Nav() {
                 key={link.key}
                 href={link.href}
                 onClick={() => setIsOpen(false)}
-                className={`block rounded-md px-3 py-2 text-base font-medium ${
+                className={`block rounded-md px-3 py-2 text-base font-extrabold text-center ${
                   pathname === link.href
                     ? "bg-blue-50 text-blue-600"
                     : "text-gray-600 hover:bg-gray-50"

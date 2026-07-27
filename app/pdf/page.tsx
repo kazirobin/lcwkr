@@ -37,12 +37,14 @@ export interface HSKLevel {
   borderColor: string;
   icon: string;
   resources: {
+    all: boolean;
     books: boolean;
     audio: boolean;
     mockTest: boolean;
     vocabulary: boolean;
   };
   driveLinks?: {
+    all?: string;
     books?: string;
     audio?: string;
     mockTest?: string;
@@ -69,12 +71,14 @@ export const hskLevels: HSKLevel[] = [
     borderColor: "border-green-200",
     icon: "🌱",
     resources: {
+      all: true,
       books: true,
       audio: true,
       mockTest: true,
       vocabulary: true,
     },
     driveLinks: {
+      all: "https://drive.google.com/drive/folders/1cuhnbILUvxFKlMCmkgRaDP0SiLpiCbgM?usp=drive_link",
       books: "https://drive.google.com/drive/folders/1GFvFiWDtFa5blOe26a-kKOwCACGY_eCK?usp=drive_link",
       audio: "https://drive.google.com/drive/folders/1X8bv142wtkENNHZWd30c5t1Dvrl6NeQU?usp=drive_link",
       mockTest: "https://drive.google.com/drive/folders/1s7SXAqakvPpEKHnZP3-TC9F4NTjR10vu?usp=drive_link",
@@ -91,12 +95,14 @@ export const hskLevels: HSKLevel[] = [
     borderColor: "border-blue-200",
     icon: "📘",
     resources: {
+      all: true,
       books: true,
       audio: true,
       mockTest: true,
       vocabulary: true,
     },
     driveLinks: {
+      all: "https://drive.google.com/drive/folders/1kvKuD1100jX2Wgbljuwr443v3LrXOvs_?usp=drive_link",
       books: "https://drive.google.com/drive/folders/1uyTpWA-cpmc0oMv7mmdDd-Xy1yjoHBOa?usp=drive_link",
       audio: "https://drive.google.com/drive/folders/1F-hJc2XVYcp6diXP7tuQnf4uFfPBNMH9?usp=drive_link",
       mockTest: "https://drive.google.com/drive/folders/1W78AO00XWiwslWvOZHHK-fu_dtqMGA26?usp=drive_link",
@@ -113,12 +119,14 @@ export const hskLevels: HSKLevel[] = [
     borderColor: "border-purple-200",
     icon: "📗",
     resources: {
+      all: true,
       books: true,
       audio: true,
       mockTest: true,
       vocabulary: true,
     },
     driveLinks: {
+      all: "https://drive.google.com/drive/folders/1WoJPqChhwMwVJ1C3KAyp3CyVzGKVmbws?usp=drive_link",
       books: "https://drive.google.com/drive/folders/1_OXK_Iuee5iuryPMDR76Ea8hiOHVux25?usp=drive_link",
       audio: "https://drive.google.com/drive/folders/1Sp9QQtlfdEc37uSgVTQYyhS8cQ7dBoGu?usp=drive_link",
       mockTest: "https://drive.google.com/drive/folders/1sUz0twM8nkmP3z6ENb0K8Pt_l2-85KlJ?usp=drive_link",
@@ -135,12 +143,14 @@ export const hskLevels: HSKLevel[] = [
     borderColor: "border-orange-200",
     icon: "📕",
     resources: {
+      all: true,
       books: true,
       audio: true,
       mockTest: true,
       vocabulary: true,
     },
     driveLinks: {
+      all: "https://drive.google.com/drive/folders/1R80teEvyvy3upZ9hJtHMro5S1BfOVQsG?usp=drive_link",
       books: "https://drive.google.com/drive/folders/1J3Dr7JFql5IKQxcBMeSu2YmizQ8HVihg?usp=drive_link",
       audio: "https://drive.google.com/drive/folders/17thaoXjYhT-SCuuaLN-WUqLWVgrO2jjV?usp=drive_link",
       mockTest: "https://drive.google.com/drive/folders/1uqPrzOaGjo0jeJghSD1BOH0ZGNENB9mv?usp=drive_link",
@@ -157,12 +167,14 @@ export const hskLevels: HSKLevel[] = [
     borderColor: "border-red-200",
     icon: "📙",
     resources: {
+      all: true,
       books: true,
       audio: true,
       mockTest: true,
       vocabulary: true,
     },
     driveLinks: {
+      all: "https://drive.google.com/drive/folders/1_kgn35rulKQkLoTqshyK4f1fa2t0ydM4?usp=drive_link",
       books: "https://drive.google.com/drive/folders/16FImlIM8fd_Cx76xxQGVqyCMhEGpUAEk?usp=drive_link",
       audio: "https://drive.google.com/drive/folders/1qKG7mGdM-CKdSMxKGwWpS3GEiAFvhb_p?usp=drive_link",
       mockTest: "https://drive.google.com/drive/folders/1uoLtBYNROdAcmJzSIfho-0B2a7EV7Nm1?usp=drive_link",
@@ -179,12 +191,14 @@ export const hskLevels: HSKLevel[] = [
     borderColor: "border-indigo-200",
     icon: "📚",
     resources: {
+      all: true,
       books: true,
       audio: true,
       mockTest: true,
       vocabulary: true,
     },
     driveLinks: {
+      all: "https://drive.google.com/drive/folders/13pW9pOFAFkSe-NXbvP611RjW8F16tbYo?usp=drive_link",
       books: "https://drive.google.com/drive/folders/18sx8UmwzK93fZea7l28wI_PJFRFaNaEr?usp=drive_link",
       audio: "https://drive.google.com/drive/folders/1zUQ45S_XeUHWUVglTrzR5B9rxksAeiaQ?usp=drive_link",
       mockTest: "https://drive.google.com/drive/folders/1hWlp_SAcMyNPr2zDT5KVbg9YFxay_fHE?usp=drive_link",
@@ -289,7 +303,7 @@ const HSKLevelCard = ({ level }: { level: HSKLevel }) => {
         
         {/* Download All Button - uses the first available drive link or a generic folder */}
         <a
-          href={level.driveLinks?.books || level.driveLinks?.audio || "#"}
+          href={level.driveLinks?.all}
           target="_blank"
           rel="noopener noreferrer"
           className="w-full inline-flex items-center justify-center gap-2 bg-slate-900 hover:bg-slate-800 text-white text-sm font-medium px-4 py-2.5 rounded-xl transition-all"
