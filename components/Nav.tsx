@@ -5,91 +5,148 @@ import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { useState } from "react";
 
-const navLinks = [
-  { name: "Home", href: "/" },
-  { name: "Pdf", href: "/pdf" },
-  { name: "Pinyin", href: "/pinyin" },
-  { name: "Community", href: "/community" },
+import { useLanguage } from "@/app/context/LanguageContext";
+
+type NavKey = "home" | "pdf" | "pinyin" | "community";
+
+const navLinks: {
+  key: NavKey;
+  href: string;
+}[] = [
+  {
+    key: "home",
+    href: "/",
+  },
+  {
+    key: "pdf",
+    href: "/pdf",
+  },
+  {
+    key: "pinyin",
+    href: "/pinyin",
+  },
+  {
+    key: "community",
+    href: "/community",
+  },
 ];
 
 export default function Nav() {
   const [isOpen, setIsOpen] = useState(false);
   const pathname = usePathname();
 
+  // ✅ Hook must be inside component
+  const { t, language, setLanguage } = useLanguage();
+
   return (
-    <nav className="bg-white border-b border-gray-200 sticky top-0 z-50">
-      <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex justify-between h-16 items-center">
-          {/* Logo - Responsive sizing */}
-          <Link className="brand flex-shrink-0" href="/" aria-label="lcwkr">
-            <div className="relative w-[120px] sm:w-[140px] md:w-[160px] h-[40px] sm:h-[45px] md:h-[50px]">
-              <Image
-                alt="lcwkr"
-                fill
-                priority
-                src="/assets/logo.png"
-                className="object-contain"
-                sizes="(max-width: 640px) 120px, (max-width: 768px) 140px, 160px"
-              />
-            </div>
-          </Link>
-
-          {/* Desktop Menu */}
-          <div className="hidden md:flex space-x-8">
-            {navLinks.map((link) => (
-              <Link
-                key={link.name}
-                href={link.href}
-                className={`text-sm font-medium transition-colors ${
-                  pathname === link.href
-                    ? "text-blue-600"
-                    : "text-gray-600 hover:text-blue-600"
-                }`}
-              >
-                {link.name}
-              </Link>
-            ))}
+    <nav className="sticky top-0 z-50 border-b border-gray-200 bg-white">
+      <div className="mx-auto flex h-16 max-w-6xl items-center justify-between px-4 sm:px-6 lg:px-8">
+        {/* Logo */}
+        <Link href="/" aria-label="lcwkr" className="flex-shrink-0">
+          <div className="relative h-[40px] w-[120px] sm:h-[45px] sm:w-[140px] md:h-[50px] md:w-[160px]">
+            <Image
+              src="/assets/logo.png"
+              alt="lcwkr"
+              fill
+              priority
+              className="object-contain"
+              sizes="(max-width:640px) 120px, (max-width:768px) 140px, 160px"
+            />
           </div>
+        </Link>
 
-          {/* Hamburger Button */}
+        {/* Desktop Menu */}
+        <div className="hidden items-center gap-8 md:flex">
+          {navLinks.map((link) => (
+            <Link
+              key={link.key}
+              href={link.href}
+              className={`text-sm font-medium transition-colors ${
+                pathname === link.href
+                  ? "text-blue-600"
+                  : "text-gray-600 hover:text-blue-600"
+              }`}
+            >
+              {t.nav[link.key]}
+            </Link>
+          ))}
+
+          {/* Language Toggle */}
           <button
-            onClick={() => setIsOpen(!isOpen)}
-            className="md:hidden p-2 rounded-md text-gray-600 hover:bg-gray-100"
-            aria-label="Toggle menu"
+            onClick={() =>
+              setLanguage(language === "en" ? "bn" : "en")
+            }
+            className="rounded-lg border border-gray-300 px-3 py-2 text-sm font-medium transition hover:bg-gray-100"
           >
-            {isOpen ? (
-              // Close (X) icon
-              <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
-              </svg>
-            ) : (
-              // Hamburger icon
-              <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 6h16M4 12h16M4 18h16" />
-              </svg>
-            )}
+            🌐 {language === "en" ? "বাংলা" : "English"}
           </button>
         </div>
+
+        {/* Mobile Menu Button */}
+        <button
+          onClick={() => setIsOpen(!isOpen)}
+          className="rounded-md p-2 text-gray-600 hover:bg-gray-100 md:hidden"
+          aria-label="Toggle menu"
+        >
+          {isOpen ? (
+            <svg
+              className="h-6 w-6"
+              fill="none"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
+            >
+              <path
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                strokeWidth={2}
+                d="M6 18L18 6M6 6l12 12"
+              />
+            </svg>
+          ) : (
+            <svg
+              className="h-6 w-6"
+              fill="none"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
+            >
+              <path
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                strokeWidth={2}
+                d="M4 6h16M4 12h16M4 18h16"
+              />
+            </svg>
+          )}
+        </button>
       </div>
 
       {/* Mobile Menu */}
       {isOpen && (
-        <div className="md:hidden border-t border-gray-200 bg-white">
-          <div className="px-4 py-3 space-y-2">
+        <div className="border-t border-gray-200 bg-white md:hidden">
+          <div className="space-y-2 px-4 py-3">
             {navLinks.map((link) => (
               <Link
-                key={link.name}
+                key={link.key}
                 href={link.href}
                 onClick={() => setIsOpen(false)}
-                className={`block px-3 py-2 rounded-md text-base font-medium ${
+                className={`block rounded-md px-3 py-2 text-base font-medium ${
                   pathname === link.href
                     ? "bg-blue-50 text-blue-600"
                     : "text-gray-600 hover:bg-gray-50"
                 }`}
               >
-                {link.name}
+                {t.nav[link.key]}
               </Link>
             ))}
+
+            <button
+              onClick={() =>
+                setLanguage(language === "en" ? "bn" : "en")
+              }
+              className="mt-3 w-full rounded-lg border border-gray-300 px-3 py-2 text-sm font-medium transition hover:bg-gray-100"
+            >
+              🌐 {language === "en" ? "বাংলা" : "English"}
+            </button>
           </div>
         </div>
       )}
