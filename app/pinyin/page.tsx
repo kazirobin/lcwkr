@@ -1,172 +1,295 @@
-// app/pinyin-start/page.tsx
-"use client"
-import Image from "next/image";
-import React from "react";
+"use client";
+
 import { useLanguage } from "../context/LanguageContext";
 
-const Pinyin = () => {
-      const { language } = useLanguage();
-  
+
+export default function ClassRoutineSection() {
+  const { language } = useLanguage();
+
   const t = (bn: string, en: string) =>
     language === "bn" ? bn : en;
+
+
+  const routine = [
+    {
+      day: t("রবিবার", "Sunday"),
+      type: t("লাইভ ক্লাস", "Live Class"),
+      color: "bg-emerald-500",
+    },
+    {
+      day: t("সোমবার", "Monday"),
+      type: t("লাইভ ক্লাস", "Live Class"),
+      color: "bg-emerald-500",
+    },
+    {
+      day: t("মঙ্গলবার", "Tuesday"),
+      type: t("লাইভ ক্লাস", "Live Class"),
+      color: "bg-emerald-500",
+    },
+    {
+      day: t("বুধবার", "Wednesday"),
+      type: t("লাইভ ক্লাস", "Live Class"),
+      color: "bg-emerald-500",
+    },
+  ];
+
+
+  const steps = [
+    t("Pinyin (উচ্চারণ)", "Pinyin (Pronunciation)"),
+    t("Level 1", "Level 1"),
+    t("Level 2", "Level 2"),
+    t("Level 3", "Level 3"),
+    "...",
+    t("Level 12", "Level 12"),
+  ];
+
+
   return (
-    <div className="min-h-screen bg-linear-to-br from-slate-50 via-white to-purple-50/40">
-      <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-8 sm:py-12">
-        
-        {/* ===== HEADER ===== */}
-        <div className="text-center mb-8">
-          <div className="inline-flex items-center gap-2 bg-purple-100 border border-purple-200 text-purple-700 text-sm font-semibold px-4 py-1.5 rounded-full mb-4">
-            {t("🎯 ধাপ ১: পিনইন উচ্চারণ", "🎯 STEP 1: PINYIN PRONUNCIATION")}
-          </div>
-          <h1 className="text-3xl sm:text-4xl font-extrabold text-gray-900">
-            {t("সঠিকভাবে পিনইন শিখুন ও উচ্চারণ করুন", "Learn & Pronounce Pinyin Correctly")}
-          </h1>
-          <p className="text-gray-600 mt-2 max-w-2xl mx-auto">
-            {t(
-  "ভিডিওগুলো দেখুন, উচ্চারণ অনুশীলন করুন, তারপর আপনার কণ্ঠ রেকর্ড করে আমাদের WhatsApp গ্রুপে পাঠান।",
-  "Watch the videos, practice the sounds, then record your voice and send it to our WhatsApp group."
-)}
-          </p>
-        </div>
+    <section className="w-full bg-gradient-to-b from-slate-50 to-white py-16 md:py-20">
+      <div className="mx-auto max-w-6xl px-5 sm:px-8">
 
-        {/* ===== PINYIN IMAGE ===== */}
-        <div className="bg-white rounded-3xl shadow-xl border border-gray-100 overflow-hidden mb-10">
-          <div className="relative w-full aspect-video">
-            <Image
-              src="/assets/pinyin.png"
-              alt={t("পিনইন উচ্চারণ চার্ট", "Pinyin Pronunciation Chart")}
-              fill
-              className="object-contain"
-              sizes="(max-width: 768px) 100vw, 1200px"
-              priority
-            />
-          </div>
-          <div className="bg-linear-to-r from-purple-50 to-blue-50 px-6 py-3 text-center border-t border-gray-100">
-            <p className="text-sm text-gray-600">
+        <div className="grid grid-cols-1 gap-8 lg:grid-cols-2 lg:gap-10">
+
+
+          {/* Class Routine */}
+
+          <div className="rounded-3xl border border-slate-100 bg-white p-7 shadow-sm sm:p-8">
+
+            <h2 className="text-2xl font-bold text-slate-800 sm:text-[1.7rem]">
+              {t("আমাদের ক্লাস রুটিন", "Our Class Routine")}
+            </h2>
+
+
+            <p className="mt-1.5 text-sm text-slate-500">
               {t(
-  "🎯 কণ্ঠ রেকর্ড করার আগে এই পিনইন চার্টটি ভালোভাবে অধ্যয়ন করুন",
-  "🎯 Study this Pinyin chart carefully before recording your voice"
-)}
+                "আমাদের ক্লাস সপ্তাহে ৫ দিন অনুষ্ঠিত হয়।",
+                "Our classes are conducted 5 days a week."
+              )}
             </p>
+
+
+
+            <div className="mt-7 space-y-3.5">
+
+              {routine.map((item) => (
+
+                <div
+                  key={item.day}
+                  className="flex items-center justify-between rounded-xl bg-slate-50/80 px-4 py-3"
+                >
+
+                  <div className="flex items-center gap-3">
+
+                    <span
+                      className={`flex h-6 w-6 items-center justify-center rounded-full ${item.color} text-[11px] font-bold text-white`}
+                    >
+                      C
+                    </span>
+
+                    <span className="font-medium text-slate-700">
+                      {item.day}
+                    </span>
+
+                  </div>
+
+
+                  <span className="text-sm font-medium text-emerald-600">
+                    {item.type}
+                  </span>
+
+
+                </div>
+
+              ))}
+
+
+
+              {/* Exam */}
+
+              <div className="flex items-center justify-between rounded-xl bg-orange-50/70 px-4 py-3">
+
+                <div className="flex items-center gap-3">
+
+                  <span className="flex h-6 w-6 items-center justify-center rounded-full bg-orange-400 text-[11px] font-bold text-white">
+                    E
+                  </span>
+
+                  <span className="font-medium text-slate-700">
+                    {t("বৃহস্পতিবার", "Thursday")}
+                  </span>
+
+                </div>
+
+
+                <span className="text-sm font-medium text-orange-600">
+                  {t("সাপ্তাহিক পরীক্ষা", "Weekly Exam")}
+                </span>
+
+              </div>
+
+
+
+
+              {/* Holiday */}
+
+              <div className="flex items-center justify-between rounded-xl bg-rose-50/70 px-4 py-3">
+
+                <div className="flex items-center gap-3">
+
+                  <span className="flex h-6 w-6 items-center justify-center rounded-full bg-rose-500 text-[11px] font-bold text-white">
+                    ×
+                  </span>
+
+
+                  <span className="font-medium text-slate-700">
+                    {t("শুক্রবার", "Friday")}
+                  </span>
+
+                </div>
+
+
+                <span className="text-sm font-medium text-rose-600">
+                  {t("সাপ্তাহিক ছুটি", "Weekly Holiday")}
+                </span>
+
+
+              </div>
+
+
+            </div>
+
+
+
+            <div className="mt-6 rounded-xl bg-slate-50 px-4 py-3">
+
+              <p className="text-sm text-slate-500">
+                {t(
+                  "প্রতিটি ক্লাসের হাজিরা নেওয়া হয়।",
+                  "Attendance is taken in every class."
+                )}
+              </p>
+
+            </div>
+
+
           </div>
-        </div>
 
-        {/* ===== 3 SIMPLE STEPS ===== */}
-        <div className="bg-white rounded-3xl shadow-lg border border-gray-100 p-6 sm:p-8 mb-10">
-          <h2 className="text-2xl font-bold text-gray-800 text-center mb-6">
-            {t("এই ৩টি সহজ ধাপ অনুসরণ করুন", "Follow These 3 Simple Steps")}
-          </h2>
-          
-          <div className="space-y-4">
-            {/* Step 1 */}
-            <div className="flex items-start gap-4 bg-blue-50 rounded-2xl p-4 border border-blue-100">
-              <div className="w-10 h-10 bg-blue-500 text-white rounded-full flex items-center justify-center font-bold text-sm flex-shrink-0 mt-0.5">
-                1
+
+
+
+
+          {/* Learning Steps */}
+
+
+          <div className="rounded-3xl border border-slate-100 bg-white p-7 shadow-sm sm:p-8">
+
+
+            <h2 className="text-2xl font-bold text-slate-800 sm:text-[1.7rem]">
+              {t("শেখার ধাপ", "Learning Steps")}
+            </h2>
+
+
+
+            <div className="mt-8 flex gap-6">
+
+
+              <div className="relative flex flex-col items-center">
+
+                <div className="absolute top-3 bottom-10 w-0.5 bg-gradient-to-b from-emerald-400 via-emerald-300 to-amber-300" />
+
+
+                {steps.map((step, i) => (
+
+                  <div
+                    key={i}
+                    className="relative z-10 mb-5 flex items-center gap-4 last:mb-0"
+                  >
+
+                    <div
+                      className={`h-3.5 w-3.5 rounded-full border-2 ${
+                        step === "..."
+                          ? "border-slate-300 bg-white"
+                          : "border-emerald-500 bg-emerald-500"
+                      }`}
+                    />
+
+
+                    <span
+                      className={`rounded-lg px-3.5 py-1.5 text-sm font-medium ${
+                        step === "..."
+                          ? "text-slate-400"
+                          : "bg-emerald-50 text-emerald-700"
+                      }`}
+                    >
+                      {step}
+                    </span>
+
+
+                  </div>
+
+                ))}
+
+
+
+                <div className="relative z-10 mt-1 flex items-center gap-4">
+
+                  <div className="h-3.5 w-3.5 rounded-full border-2 border-amber-400 bg-amber-400" />
+
+
+                  <span className="rounded-lg bg-amber-100 px-3.5 py-1.5 text-sm font-semibold text-amber-700">
+                    {t("HSK প্রস্তুতি", "HSK Preparation")}
+                  </span>
+
+
+                </div>
+
+
               </div>
-              <div>
-                <h3 className="font-semibold text-gray-800">{t("📺 উচ্চারণের ভিডিও দেখুন", "📺 Watch Pronunciation Videos")}</h3>
-                <p className="text-sm text-gray-600">{t(
-  "Google Drive থেকে সব পিনইন ভিডিও ডাউনলোড করে দেখুন",
-  "Download and watch all Pinyin videos from Google Drive"
-)}</p>
+
+
+
+
+              <div className="flex flex-1 flex-col items-center justify-center text-center">
+
+
+                <div className="relative mb-4">
+
+                  <div className="relative h-28 w-28">
+
+                    <div className="absolute bottom-0 left-2 h-16 w-20 rotate-[-6deg] rounded-md bg-blue-500 shadow-md" />
+
+                    <div className="absolute bottom-2 left-4 h-16 w-20 rotate-[3deg] rounded-md bg-red-500 shadow-md" />
+
+                    <div className="absolute bottom-4 left-6 h-16 w-20 rotate-[-2deg] rounded-md bg-amber-400 shadow-md" />
+
+                  </div>
+
+                </div>
+
+
+
+                <p className="max-w-[200px] text-sm leading-relaxed text-slate-500">
+
+                  {t(
+                    "প্রতিটি লেভেল সফলভাবে শেষ করার পর পরবর্তী লেভেলে উন্নীত করা হয়।",
+                    "After completing each level successfully, students move to the next level."
+                  )}
+
+                </p>
+
+
               </div>
+
+
             </div>
 
-            {/* Step 2 */}
-            <div className="flex items-start gap-4 bg-purple-50 rounded-2xl p-4 border border-purple-100">
-              <div className="w-10 h-10 bg-purple-500 text-white rounded-full flex items-center justify-center font-bold text-sm shrink-0 mt-0.5">
-                2
-              </div>
-              <div>
-                <h3 className="font-semibold text-gray-800">{t("🎤 অনুশীলন করুন ও রেকর্ড করুন", "🎤 Practice & Record")}</h3>
-                <p className="text-sm text-gray-600">{t(
-  "সব পিনইন সঠিকভাবে অনুশীলন করুন, তারপর আপনার কণ্ঠ রেকর্ড করুন",
-  "Practice all Pinyin sounds clearly, then record your voice"
-)}</p>
-              </div>
-            </div>
 
-            {/* Step 3 */}
-            <div className="flex items-start gap-4 bg-emerald-50 rounded-2xl p-4 border border-emerald-100">
-              <div className="w-10 h-10 bg-emerald-500 text-white rounded-full flex items-center justify-center font-bold text-sm shrink-0 mt-0.5">
-                3
-              </div>
-              <div>
-                <h3 className="font-semibold text-gray-800">{t("💬 ভয়েস মেসেজ পাঠান", "💬 Send Voice Message")}</h3>
-                <p className="text-sm text-gray-600">{t(
-  "আপনার রেকর্ড করা ভয়েস মেসেজ আমাদের WhatsApp গ্রুপে পাঠান",
-  "Send your recorded voice message to our WhatsApp group"
-)}</p>
-              </div>
-            </div>
           </div>
+
+
         </div>
 
-        {/* ===== ACTION BUTTONS ===== */}
-        <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
-          {/* Google Drive Button */}
-          <a
-            href="https://drive.google.com/drive/folders/12fEKjDBRU5NgnpgE4WluoRMer94LIkaQ"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="group bg-linear-to-r from-blue-600 to-indigo-600 hover:from-blue-700 hover:to-indigo-700 text-white rounded-2xl p-6 text-center transition shadow-lg shadow-blue-200"
-          >
-            <div className="text-4xl mb-2">📁</div>
-            <h3 className="font-bold text-lg">{t("ভিডিও ডাউনলোড করুন", "Download Videos")}</h3>
-            <p className="text-blue-100 text-sm mt-1">{t(
-  "সব পিনইন উচ্চারণের ভিডিও দেখুন",
-  "Watch all Pinyin pronunciation videos"
-)}</p>
-            <div className="mt-3 text-sm font-medium text-blue-200 group-hover:text-white transition">
-              {t("Google Drive খুলুন →", "Open Google Drive →")}
-            </div>
-          </a>
-
-          {/* WhatsApp Button */}
-          <a
-            href="https://chat.whatsapp.com/EBP79wEaAfAEvMtMee6HTY"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="group bg-linear-to-r from-emerald-500 to-green-600 hover:from-emerald-600 hover:to-green-700 text-white rounded-2xl p-6 text-center transition shadow-lg shadow-emerald-200"
-          >
-            <div className="text-4xl mb-2">💬</div>
-            <h3 className="font-bold text-lg">{t("WhatsApp গ্রুপে যোগ দিন", "Join WhatsApp Group")}</h3>
-            <p className="text-emerald-100 text-sm mt-1">{t(
-  "এখানে আপনার ভয়েস মেসেজ পাঠান",
-  "Send your voice message here"
-)}</p>
-            <div className="mt-3 text-sm font-medium text-emerald-200 group-hover:text-white transition">
-              {t("গ্রুপে যোগ দিন →", "Join Group →")}
-            </div>
-          </a>
-        </div>
-
-        {/* ===== IMPORTANT NOTE ===== */}
-        <div className="mt-8 bg-amber-50 border border-amber-200 rounded-2xl p-5 flex items-start gap-3">
-          <span className="text-2xl shrink-0">⚠️</span>
-          <div>
-            <p className="font-semibold text-amber-800">{t("গুরুত্বপূর্ণ:", "Important:")}</p>
-            <p className="text-sm text-amber-700">
-              {t(
-  "ভিডিওগুলো দেখার ও অনুশীলনের পর পরিষ্কারভাবে আপনার কণ্ঠ রেকর্ড করুন এবং WhatsApp গ্রুপে পাঠান। আমাদের টিম আপনার উচ্চারণ যাচাই করবে।",
-  "After watching the videos and practicing, record your voice clearly and send it to the WhatsApp group. Our team will verify your pronunciation."
-)}
-            </p>
-          </div>
-        </div>
-
-        {/* ===== FOOTER ===== */}
-        <div className="mt-12 text-center">
-          <p className="text-sm text-gray-500">
-            {t(
-  "❤️ কাজী রবিনের সাথে চাইনিজ শিখুন — পিনইন আয়ত্ত করুন, আত্মবিশ্বাসের সাথে কথা বলুন",
-  "❤️ Learn Chinese with Kazi Robin — Master Pinyin, Speak Confidently"
-)}
-          </p>
-        </div>
       </div>
-    </div>
+    </section>
   );
-};
-
-export default Pinyin;
+}
