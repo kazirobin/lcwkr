@@ -17,7 +17,7 @@ export default function ClassRoutineSection() {
 
             <div className="mt-7 space-y-3.5">
               {/* Sunday – Wednesday */}
-              {[
+              {[    { day: "শনিবার", type: "লাইভ ক্লাস", color: "bg-emerald-500" },
                 { day: "রবিবার", type: "লাইভ ক্লাস", color: "bg-emerald-500" },
                 { day: "সোমবার", type: "লাইভ ক্লাস", color: "bg-emerald-500" },
                 { day: "মঙ্গলবার", type: "লাইভ ক্লাস", color: "bg-emerald-500" },
