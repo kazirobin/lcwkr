@@ -107,7 +107,7 @@ export default function ClassRoutineSection() {
                   { label: "Level 2", active: true },
                   { label: "Level 3", active: true },
                   { label: "...", active: false },
-                  { label: "Level 12", active: true },
+                  { label: "Level 6", active: true },
                 ].map((step, i) => (
                   <div key={i} className="relative z-10 mb-5 flex items-center gap-4 last:mb-0">
                     <div
