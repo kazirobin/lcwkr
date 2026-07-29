@@ -6,6 +6,7 @@ export const hero = {
     hsk: "",
     line4: "",
     free: "",
+    badge: "",
   },
 
   description: "",

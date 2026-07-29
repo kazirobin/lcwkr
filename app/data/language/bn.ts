@@ -27,6 +27,7 @@ const bn = {
       hsk: "HSK 6",
       line4: "সম্পূর্ণ",
       free: "ফ্রি",
+      badge: "লাইভ ক্লাস হয়",
     },
 
     description:

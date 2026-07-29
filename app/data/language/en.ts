@@ -27,6 +27,7 @@ const en = {
       hsk: "HSK 6",
       line4: "Completely",
       free: "Free",
+      badge: "Live Class Available",
     },
 
     description:
