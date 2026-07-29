@@ -145,7 +145,7 @@ const Hero = () => {
               </Link>
 
               <Link
-                href="/hsk-materials"
+                href="/pdf"
                 className="group inline-flex items-center justify-center gap-2 px-8 py-4 rounded-2xl border-2 border-slate-200 bg-white/80 backdrop-blur-sm text-sm font-semibold text-slate-700 hover:border-rose-300 hover:bg-rose-50/50 hover:text-rose-700 transition-all duration-300 hover:-translate-y-1 active:translate-y-0 shadow-sm hover:shadow-md w-full sm:w-auto"
               >
                 {hero.buttons.resources}
