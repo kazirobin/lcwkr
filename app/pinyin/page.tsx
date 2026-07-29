@@ -50,7 +50,7 @@ export default function ClassRoutineSection() {
 
 
   return (
-    <section className="w-full bg-gradient-to-b from-slate-50 to-white py-16 md:py-20">
+    <section className="w-full bg-linear-to-b from-slate-50 to-white py-16 md:py-20">
       <div className="mx-auto max-w-6xl px-5 sm:px-8">
 
         <div className="grid grid-cols-1 gap-8 lg:grid-cols-2 lg:gap-10">
@@ -200,7 +200,7 @@ export default function ClassRoutineSection() {
 
               <div className="relative flex flex-col items-center">
 
-                <div className="absolute top-3 bottom-10 w-0.5 bg-gradient-to-b from-emerald-400 via-emerald-300 to-amber-300" />
+                <div className="absolute top-3 bottom-10 w-0.5 bg-linear-to-b from-emerald-400 via-emerald-300 to-amber-300" />
 
 
                 {steps.map((step, i) => (
@@ -261,11 +261,11 @@ export default function ClassRoutineSection() {
 
                   <div className="relative h-28 w-28">
 
-                    <div className="absolute bottom-0 left-2 h-16 w-20 rotate-[-6deg] rounded-md bg-blue-500 shadow-md" />
+                    <div className="absolute bottom-0 left-2 h-16 w-20 -rotate-6 rounded-md bg-blue-500 shadow-md" />
 
-                    <div className="absolute bottom-2 left-4 h-16 w-20 rotate-[3deg] rounded-md bg-red-500 shadow-md" />
+                    <div className="absolute bottom-2 left-4 h-16 w-20 -rotate-3 rounded-md bg-red-500 shadow-md" />
 
-                    <div className="absolute bottom-4 left-6 h-16 w-20 rotate-[-2deg] rounded-md bg-amber-400 shadow-md" />
+                    <div className="absolute bottom-4 left-6 h-16 w-20 -rotate-2 rounded-md bg-amber-400 shadow-md" />
 
                   </div>
 
@@ -273,7 +273,7 @@ export default function ClassRoutineSection() {
 
 
 
-                <p className="max-w-[200px] text-sm leading-relaxed text-slate-500">
+                <p className="max-w-50 text-sm leading-relaxed text-slate-500">
 
                   {t(
                     "প্রতিটি লেভেল সফলভাবে শেষ করার পর পরবর্তী লেভেলে উন্নীত করা হয়।",
