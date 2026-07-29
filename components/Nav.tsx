@@ -7,7 +7,7 @@ import { useState } from "react";
 
 import { useLanguage } from "@/app/context/LanguageContext";
 
-type NavKey = "home" | "pdf" | "pinyin" | "community";
+type NavKey = "home" | "pdf"  | "community";
 
 const navLinks: {
   key: NavKey;
@@ -21,10 +21,7 @@ const navLinks: {
     key: "pdf",
     href: "/pdf",
   },
-  {
-    key: "pinyin",
-    href: "/pinyin",
-  },
+
   {
     key: "community",
     href: "/community",
