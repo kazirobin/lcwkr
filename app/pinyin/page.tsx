@@ -12,6 +12,11 @@ export default function ClassRoutineSection() {
 
   const routine = [
     {
+      day: t("শনিবার", "Saturday"),
+      type: t("লাইভ ক্লাস", "Live Class"),
+      color: "bg-emerald-500",
+    },
+    {
       day: t("রবিবার", "Sunday"),
       type: t("লাইভ ক্লাস", "Live Class"),
       color: "bg-emerald-500",
