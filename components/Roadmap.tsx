@@ -8,7 +8,7 @@ export function Roadmap() {
   const roadmap = t.roadmap;
 
   return (
-    <section className="relative overflow-hidden bg-gradient-to-br from-green-50 via-white to-red-50 py-20">
+    <section className="relative overflow-hidden bg-linear-to-br from-green-50 via-white to-red-50 py-20">
       <div className="mx-auto max-w-6xl px-6">
         {/* Header */}
         <div className="mx-auto mb-16 max-w-3xl text-center">

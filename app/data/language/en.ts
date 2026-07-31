@@ -5,6 +5,7 @@ const en = {
     home: "Home",
     pdf: "PDF",
     pinyin: "Pinyin",
+    intro: "Intro",
     community: "Community",
   },
 
@@ -34,7 +35,7 @@ const en = {
       "Join our active WhatsApp learning community where students learn Chinese every day.",
 
     buttons: {
-      whatsapp: "Join WhatsApp Community",
+      whatsapp: "Chinese Language Overview",
       resources: "Explore Resources",
     },
 
