@@ -89,9 +89,11 @@ const Hero = () => {
                 <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-rose-400 opacity-75"></span>
                 <span className="relative inline-flex rounded-full h-2.5 w-2.5 bg-rose-500"></span>
               </span>
+              <Link href="/msg">
               <span className="text-xs font-medium text-rose-700 tracking-wide">
                 {hero.title.badge}
               </span>
+              </Link>
             </div>
 
             <h1 className={`text-4xl sm:text-5xl md:text-6xl lg:text-[3.5rem] xl:text-5xl 2xl:text-6xl font-extrabold leading-[1.1] tracking-tight text-slate-900 transition-all duration-700 delay-100 ${isLoaded ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-4'}`}>
