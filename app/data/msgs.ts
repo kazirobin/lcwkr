@@ -57,6 +57,13 @@ export const snippets: Snippet[] = [
     language: "tsx",
     code: `https://forms.gle/D47rbPPGH1A2v4bD6`,
   },
+{
+    id: 2,
+    title: "August 2026 New Members",
+    description: "Registration Form Link",
+    language: "tsx",
+    code: `https://www.cognitoforms.com/KaziRobin1/NewMembersAugust2026`,
+  },
   {
     id: 2,
     title: "August 2026 New Members",
