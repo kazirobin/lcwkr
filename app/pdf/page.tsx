@@ -222,37 +222,63 @@ export const allResources: ResourceItem[] = [
 // ============================================
 
 // Resource link item component
-const ResourceLink = ({ 
-  label, 
-  icon: Icon, 
-  link, 
-  available 
-}: { 
-  label: string; 
-  icon: any; 
-  link?: string; 
+const ResourceLink = ({
+  label,
+  icon: Icon,
+  link,
+  available,
+}: {
+  label: string;
+  icon: any;
+  link?: string;
   available: boolean;
 }) => {
   if (!available || !link) return null;
-  
+
   return (
     <a
       href={link}
       target="_blank"
       rel="noopener noreferrer"
-      className="flex items-center justify-between p-2.5 bg-slate-50 hover:bg-slate-100 rounded-lg transition-all group/link"
+      className="
+        group
+        block
+        rounded-xl
+        border border-slate-200
+        bg-white
+        p-4
+        transition-all duration-200
+        hover:border-red-500
+        hover:shadow-md
+      "
     >
-      <div className="flex items-center gap-2.5">
-        <Icon className="w-4 h-4 text-slate-600" />
-        <span className="text-sm text-slate-700">{label}</span>
+      {/* Title */}
+      <div className="flex items-center gap-3 text-3xl">
+        <div className="flex h-10 w-10 items-center justify-center rounded-lg bg-red-50 text-red-600">
+          <Icon className="h-5 w-5" />
+        </div>
+
+        <h4 className=" font-semibold text-slate-800">
+          {label}
+        </h4>
       </div>
-      <ExternalLink className="w-4 h-4 text-slate-400 group-hover/link:text-slate-600" />
+
+      {/* Divider */}
+      <div className=" border-t border-slate-100" />
+
+      {/* CTA */}
+      <div className="flex items-center justify-between font-bold text-red-600">
+        <span>Click For Google Drive Link</span>
+
+        <ExternalLink className="h-4 w-4 transition-transform duration-200 group-hover:translate-x-1" />
+      </div>
     </a>
   );
 };
-
 // HSK Level Card
 const HSKLevelCard = ({ level }: { level: HSKLevel }) => {
+  
+  
   // Extract color without 'text-' prefix for bg and border
   const colorClass = level.color.replace('text-', '');
   

@@ -37,7 +37,7 @@ const bn = {
 
     buttons: {
       whatsapp: "চীনা ভাষার পরিচিতি",
-      resources: "রিসোর্স দেখুন",
+      resources: "📚 বইগুলো দেখুন",
     },
 
     links: {

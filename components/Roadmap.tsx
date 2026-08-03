@@ -29,10 +29,10 @@ export function Roadmap() {
         </div>
 
         {/* Cards */}
-        <div className="grid gap-12 lg:grid-cols-[1fr_auto_1fr]">
+        <div className="grid gap-16 lg:grid-cols-[1fr_auto_1fr]">
           {/* Step 1 */}
           <div className="relative rounded-3xl border-2 border-red-200 bg-white p-8 shadow-xl">
-            <span className="absolute -top-5 left-8 rounded-xl bg-red-600 px-5 py-2 text-sm font-bold text-white">
+            <span className="absolute -top-12 left-1/3 rounded-xl bg-red-600 px-5 py-2 text-5xl font-extrabold text-white">
               {roadmap.step1.badge}
             </span>
 
@@ -76,7 +76,7 @@ export function Roadmap() {
 
           {/* Step 2 */}
           <div className="relative rounded-3xl border border-green-200 bg-white p-8 shadow-xl">
-            <span className="absolute -top-5 left-8 rounded-xl bg-green-600 px-5 py-2 text-sm font-bold text-white">
+            <span className="absolute -top-13 left-1/3 rounded-xl bg-green-600 px-5 py-2 text-5xl font-bold text-white">
               {roadmap.step2.badge}
             </span>
 
