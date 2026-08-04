@@ -82,7 +82,7 @@ const Hero = () => {
         <div className="flex flex-col-reverse lg:flex-row items-center gap-12 md:gap-14 lg:gap-20">
           
           {/* ========== LEFT - TEXT CONTENT ========== */}
-          <div className="w-full lg:w-[55%] max-w-2xl mx-auto lg:mx-0">
+          <div className="w-full lg:w-[55%] max-w-2xl mx-auto lg:mx-0 ">
             {/* Badge */}
             <div className={`inline-flex items-center gap-2 px-4 py-2 rounded-full bg-rose-50/90 backdrop-blur-sm border border-rose-200/50 shadow-sm mb-6 transition-all duration-700 ${isLoaded ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-4'}`}>
               <span className="relative flex h-2.5 w-2.5">

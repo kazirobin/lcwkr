@@ -10,25 +10,11 @@ export const snippets: Snippet[] = [
   {
     id: 1,
     title: "(5.00pm class)Chinese special for beginner",
-    description: "Attendence Form Link",
+    description: "Attendances Form Link",
     language: "tsx",
     code: `https://forms.gle/8K7SB1wW9xAc6gJX6`,
   },
-  {
-    id: 1,
-    title: "(Class 9.00pm daily) HSK 1-2 Primary",
-    description: "Attendence Form Link",
-    language: "tsx",
-    code: `https://forms.gle/eF9ANkfetc37xmne6`,
-  },
-  {
-    id: 1,
-    title: "(Class 10.10pm daily)Hsk 3 Intermediate",
-    description: "Attendence Form Link",
-    language: "tsx",
-    code: `https://forms.gle/Mimne7cTpheXVd1r8`,
-  },
-  {
+    {
     id: 1,
     title: "(5.00pm class)Chinese special for beginner",
     description: "Registration Form Link",
@@ -38,10 +24,25 @@ export const snippets: Snippet[] = [
   {
     id: 1,
     title: "(Class 9.00pm daily) HSK 1-2 Primary",
+    description: "Attendances Form Link",
+    language: "tsx",
+    code: `https://forms.gle/eF9ANkfetc37xmne6`,
+  },
+  {
+    id: 1,
+    title: "(Class 9.00pm daily) HSK 1-2 Primary",
     description: "Registration Form Link",
     language: "tsx",
     code: `https://forms.gle/S12miqZDiTDoFF4L6`,
   },
+  {
+    id: 1,
+    title: "(Class 10.10pm daily)Hsk 3 Intermediate",
+    description: "Attendances Form Link",
+    language: "tsx",
+    code: `https://forms.gle/Mimne7cTpheXVd1r8`,
+  },
+
   {
     id: 1,
     title: "(Class 10.10pm daily)Hsk 3 Intermediate",
