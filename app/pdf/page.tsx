@@ -286,12 +286,12 @@ const HSKLevelCard = ({ level }: { level: HSKLevel }) => {
     <div className={`group bg-white rounded-2xl border ${level.borderColor} overflow-hidden hover:shadow-xl transition-all duration-300 hover:-translate-y-1`}>
       <div className={`h-1.5 ${level.color.replace('text', 'bg')}`}></div>
       <div className="p-5 sm:p-6">
-        <div className="flex items-center gap-3 mb-3">
-          <div className={`p-2.5 ${level.bgColor} rounded-xl text-2xl`}>
+        <div className="flex items-center gap-3 m-10 text-3xl border-b-10 border-b-sky-300 pb-5">
+          <div className={`p-2.5 ${level.bgColor} rounded-xl`}>
             {level.icon}
           </div>
           <div>
-            <span className={`text-xs font-bold ${level.color} ${level.bgColor} px-2.5 py-1 rounded-full`}>
+            <span className={`font-bold ${level.color} ${level.bgColor} px-2.5 py-1 rounded-full`}>
               {level.level}
             </span>
           </div>
