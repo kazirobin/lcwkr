@@ -29,14 +29,14 @@ export default function RoadmapBooks() {
   ];
 
   return (
-    <section className="bg-background py-20">
+    <section className="bg-background py-6">
       <div className="mx-auto max-w-7xl px-6">
 
         {/* Header */}
 
         <div className="mx-auto mb-16 max-w-3xl text-center">
 
-          <span className="inline-flex rounded-full bg-secondary px-4 py-2 text-sm font-semibold text-primary">
+          <span className="inline-flex rounded-full border-primary border-2 px-4 py-2 text-lg font-semibold text-primary">
 
             {roadmap.badge}
 
@@ -48,7 +48,7 @@ export default function RoadmapBooks() {
 
           </h2>
 
-          <p className="mt-5 text-lg leading-8 text-text/80">
+          <p className="mt-2 text-lg leading-8 text-text/80">
 
             {roadmap.description}
 
@@ -56,13 +56,13 @@ export default function RoadmapBooks() {
 
         </div>
 
-        <div className="grid gap-12 lg:grid-cols-2">
+        <div className="grid gap-2 lg:grid-cols-2">
 
           {/* LEFT */}
 
           <div>
 
-            <div className="overflow-hidden rounded-3xl border border-secondary bg-secondary p-5">
+            <div className="overflow-hidden p-5">
 
               <Image
                 src="/assets/pinyin2.jpeg"
@@ -74,19 +74,13 @@ export default function RoadmapBooks() {
 
               <div className="mt-5 rounded-2xl bg-background p-5">
 
-                <h3 className="text-xl font-bold text-text">
+                <h3 className="text-xl border-3 rounded-2xl p-4  border-primary font-extrabold text-primary">
 
                   {roadmap.imageNote}
 
                 </h3>
 
-                <p className="mt-3 text-text/70">
-
-                  Learn Pinyin first. After completing the lessons,
-                  submit your pronunciation and join the community.
-
-                </p>
-
+                
               </div>
 
             </div>

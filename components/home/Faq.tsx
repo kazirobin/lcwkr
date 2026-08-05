@@ -13,10 +13,12 @@ type FAQItem = {
 export const faq = {
   en: {
     badge: "FAQs",
+
     title: {
       first: "Frequently Asked",
       highlight: "Questions",
     },
+
     subtitle:
       "Here are some common questions about our Chinese learning community. If you need more help, feel free to contact our support team.",
 
@@ -25,26 +27,26 @@ export const faq = {
         question: "How can I join the Chinese Learning Community?",
         answer: (
           <>
-            Click the <strong>"Join Community"</strong> button on the website.
-            You will be redirected to our WhatsApp group where you can become a
-            member.
+            Click the <strong>Join Community</strong> button on the website.
+            You'll be redirected to our WhatsApp community where you can join
+            as a member.
           </>
         ),
       },
       {
         question: "Do I need any previous Chinese language knowledge?",
         answer:
-          "No. Our course is beginner-friendly. You can start learning Chinese from zero.",
+          "No. This course is designed for complete beginners. You can start learning Chinese from zero.",
       },
       {
         question: "Where can I watch the Pinyin lessons?",
         answer: (
           <>
-            All Pinyin video lessons are available through our{" "}
+            All Pinyin lessons are available in our{" "}
             <Link
               href="https://drive.google.com/drive/folders/12fEKjDBRU5NgnpgE4WluoRMer94LIkaQ"
               target="_blank"
-              className="font-medium text-blue-600 hover:underline"
+              className="font-semibold text-primary hover:underline"
             >
               Google Drive
             </Link>
@@ -54,34 +56,34 @@ export const faq = {
       },
       {
         question: "How do I submit my Pinyin pronunciation practice?",
-       answer: (
-  <>
-    Record your pronunciation and submit it as a voice message in the{" "}
-    <a
-      href="https://chat.whatsapp.com/EBP79wEaAfAEvMtMee6HTY"
-      target="_blank"
-      rel="noopener noreferrer"
-      className="font-semibold text-green-600 hover:underline"
-    >
-      designated WhatsApp group
-    </a>
-    .
-  </>
-),
+        answer: (
+          <>
+            Record your pronunciation and send it as a voice message in our{" "}
+            <a
+              href="https://chat.whatsapp.com/EBP79wEaAfAEvMtMee6HTY"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="font-semibold text-primary hover:underline"
+            >
+              WhatsApp Practice Group
+            </a>
+            .
+          </>
+        ),
       },
       {
-        question: "Will I receive support if I have questions?",
+        question: "Will I receive help if I face any problems?",
         answer:
-          "Yes. Our instructors and community members are always available to help you.",
+          "Yes. Our teachers and community members are always ready to help you.",
       },
       {
-        question: "Is the learning community free to join?",
-        answer: "Yes. Joining our learning community is completely free.",
+        question: "Is the learning community free?",
+        answer: "Yes. Joining our Chinese learning community is completely free.",
       },
       {
-        question: "How can I stay active in the community?",
+        question: "How can I improve faster?",
         answer:
-          "Practice regularly, complete assignments, participate in discussions, and communicate with other learners.",
+          "Practice every day, complete your assignments, submit your voice recordings, and actively participate in community discussions.",
       },
     ] as FAQItem[],
 
@@ -89,7 +91,7 @@ export const faq = {
       title: "Still have questions?",
       highlight: "We're here to help!",
       description:
-        "If you can't find the answer you're looking for, feel free to contact our support team.",
+        "If you couldn't find the answer you're looking for, feel free to contact our support team.",
       button: "Contact Support",
       available: "Available: 10:00 AM - 10:00 PM",
     },
@@ -97,10 +99,12 @@ export const faq = {
 
   bn: {
     badge: "প্রশ্নোত্তর",
+
     title: {
       first: "সচরাচর",
       highlight: "জিজ্ঞাসিত প্রশ্ন",
     },
+
     subtitle:
       "আমাদের চীনা ভাষা শেখার কমিউনিটি সম্পর্কে সাধারণ কিছু প্রশ্নের উত্তর এখানে দেওয়া হয়েছে। আরও সাহায্যের প্রয়োজন হলে আমাদের সাপোর্ট টিমের সাথে যোগাযোগ করুন।",
 
@@ -110,7 +114,8 @@ export const faq = {
         answer: (
           <>
             ওয়েবসাইটের <strong>Join Community</strong> বাটনে ক্লিক করুন।
-            এরপর আপনাকে আমাদের WhatsApp গ্রুপে নিয়ে যাওয়া হবে।
+            এরপর আপনাকে আমাদের WhatsApp কমিউনিটিতে নিয়ে যাওয়া হবে, যেখানে
+            আপনি সদস্য হতে পারবেন।
           </>
         ),
       },
@@ -127,7 +132,7 @@ export const faq = {
             <Link
               href="https://drive.google.com/drive/folders/12fEKjDBRU5NgnpgE4WluoRMer94LIkaQ"
               target="_blank"
-              className="font-medium text-blue-600 hover:underline"
+              className="font-semibold text-primary hover:underline"
             >
               Google Drive
             </Link>{" "}
@@ -137,29 +142,25 @@ export const faq = {
       },
       {
         question: "Pinyin উচ্চারণের ভয়েস কীভাবে জমা দেব?",
-
-
         answer: (
-  <>
-    আপনার উচ্চারণ রেকর্ড করে{" "}
-    <a
-      href="https://chat.whatsapp.com/EBP79wEaAfAEvMtMee6HTY"
-      target="_blank"
-      rel="noopener noreferrer"
-      className="font-semibold text-green-600 hover:underline"
-    >
-      WhatsApp গ্রুপে
-    </a>{" "}
-    ভয়েস মেসেজ হিসেবে পাঠিয়ে দিন।
-  </>
-),
+          <>
+            আপনার উচ্চারণ রেকর্ড করে আমাদের{" "}
+            <a
+              href="https://chat.whatsapp.com/EBP79wEaAfAEvMtMee6HTY"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="font-semibold text-primary hover:underline"
+            >
+              WhatsApp Practice Group
+            </a>{" "}
+            -এ ভয়েস মেসেজ হিসেবে পাঠিয়ে দিন।
+          </>
+        ),
       },
-
-      
       {
         question: "পড়ার সময় কোনো সমস্যা হলে কি সাহায্য পাব?",
         answer:
-          "অবশ্যই। আমাদের শিক্ষক ও কমিউনিটির সদস্যরা সবসময় সাহায্য করতে প্রস্তুত।",
+          "অবশ্যই। আমাদের শিক্ষক ও কমিউনিটির সদস্যরা সবসময় সাহায্য করতে প্রস্তুত।",
       },
       {
         question: "কমিউনিটিতে যোগ দিতে কি কোনো ফি দিতে হবে?",
@@ -167,9 +168,9 @@ export const faq = {
           "না। আমাদের শেখার কমিউনিটিতে যোগদান সম্পূর্ণ বিনামূল্যে।",
       },
       {
-        question: "কমিউনিটিতে সক্রিয় সদস্য হওয়ার উপায় কী?",
+        question: "কমিউনিটিতে কীভাবে দ্রুত উন্নতি করব?",
         answer:
-          "নিয়মিত অনুশীলন করুন, অ্যাসাইনমেন্ট সম্পন্ন করুন, আলোচনায় অংশ নিন এবং অন্যান্য শিক্ষার্থীদের সঙ্গে যোগাযোগ রাখুন।",
+          "প্রতিদিন অনুশীলন করুন, অ্যাসাইনমেন্ট সম্পন্ন করুন, নিয়মিত ভয়েস জমা দিন এবং আলোচনায় সক্রিয়ভাবে অংশ নিন।",
       },
     ] as FAQItem[],
 
@@ -186,54 +187,59 @@ export const faq = {
 
 export default function FAQ() {
   const { language } = useLanguage();
-
   const [open, setOpen] = useState<number | null>(0);
 
   const data = language === "bn" ? faq.bn : faq.en;
 
   return (
-    <section className="bg-white py-16">
+    <section className="bg-background py-16 md:py-20">
       <div className="mx-auto max-w-4xl px-4">
 
-        <div className="mb-10 text-center">
-          <span className="rounded-full bg-blue-100 px-4 py-1 text-sm font-semibold text-blue-600">
+        {/* Header */}
+        <div className="mb-12 text-center">
+          <span className="inline-flex rounded-full border border-primary/20 bg-primary/10 px-4 py-1 text-sm font-semibold text-primary">
             {data.badge}
           </span>
 
-          <h2 className="mt-4 text-4xl font-bold">
+          <h2 className="mt-5 text-3xl font-bold text-text md:text-4xl">
             {data.title.first}{" "}
-            <span className="text-blue-600">{data.title.highlight}</span>
+            <span className="text-primary">{data.title.highlight}</span>
           </h2>
 
-          <p className="mx-auto mt-4 max-w-2xl text-gray-600">
+          <p className="mx-auto mt-4 max-w-2xl text-muted-foreground">
             {data.subtitle}
           </p>
         </div>
 
-        <div className="space-y-4">
+        {/* FAQ */}
+        <div className="space-y-3">
           {data.items.map((item, index) => {
             const isOpen = open === index;
 
             return (
               <div
                 key={index}
-                className="overflow-hidden rounded-xl border border-gray-200"
+                className="overflow-hidden rounded-2xl border border-border bg-card shadow-sm transition-all duration-200"
               >
                 <button
                   onClick={() => setOpen(isOpen ? null : index)}
-                  className="flex w-full items-center justify-between px-5 py-4 text-left font-semibold hover:bg-gray-50"
+                  className="flex w-full items-center justify-between gap-4 px-5 py-5 text-left transition-colors hover:bg-primary/5"
                 >
-                  <span>{item.question}</span>
+                  <h3 className="font-semibold text-text">
+                    {item.question}
+                  </h3>
 
-                  {isOpen ? (
-                    <ChevronUp size={20} />
-                  ) : (
-                    <ChevronDown size={20} />
-                  )}
+                  <div className="flex h-9 w-9 shrink-0 items-center justify-center rounded-full bg-primary/10 text-primary">
+                    {isOpen ? (
+                      <ChevronUp size={18} />
+                    ) : (
+                      <ChevronDown size={18} />
+                    )}
+                  </div>
                 </button>
 
                 {isOpen && (
-                  <div className="border-t border-gray-200 px-5 py-4 leading-7 text-gray-600">
+                  <div className="border-t border-border px-5 pb-5 pt-4 leading-7 text-muted-foreground">
                     {item.answer}
                   </div>
                 )}
@@ -242,24 +248,29 @@ export default function FAQ() {
           })}
         </div>
 
-        <div className="mt-12 rounded-2xl bg-blue-50 p-8 text-center">
-          <h3 className="text-2xl font-bold">
+        {/* Support */}
+        <div className="mt-14 rounded-3xl border border-border bg-card p-8 text-center shadow-sm">
+          <h3 className="text-2xl font-bold text-text">
             {data.support.title}{" "}
-            <span className="text-blue-600">{data.support.highlight}</span>
+            <span className="text-primary">
+              {data.support.highlight}
+            </span>
           </h3>
 
-          <p className="mt-3 text-gray-600">
+          <p className="mx-auto mt-3 max-w-xl text-muted-foreground">
             {data.support.description}
           </p>
 
-          <button className="mt-6 rounded-lg bg-blue-600 px-6 py-3 font-medium text-white transition hover:bg-blue-700">
-<a href="https://wa.me/8801787881334">
+          <a
+            href="https://wa.me/8801787881334"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="mt-7 inline-flex items-center justify-center rounded-xl bg-primary px-6 py-3 font-semibold text-primary-foreground transition-all hover:opacity-90"
+          >
             {data.support.button}
-</a>
+          </a>
 
-          </button>
-
-          <p className="mt-3 text-sm text-gray-500">
+          <p className="mt-4 text-sm text-muted-foreground">
             {data.support.available}
           </p>
         </div>

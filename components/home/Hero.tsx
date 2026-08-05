@@ -11,7 +11,7 @@ export default function Hero() {
 
   return (
     <section className="bg-background text-text">
-      <div className="mx-auto max-w-7xl px-6 py-16 lg:py-24">
+      <div className="mx-auto max-w-7xl px-6 py-6">
         <div className="grid items-center gap-12 lg:grid-cols-2">
 
           <div className="relative lg:order-2">

@@ -72,7 +72,7 @@ const en = {
       {
         title: "Practice the Pinyin Chart",
         description:
-          "Carefully read every Pinyin syllable shown in the chart. Practice until you can pronounce them confidently.",
+          "Carefully read every Pinyin shown in the chart. Practice until you can pronounce them confidently.",
       },
       {
         title: "Record Your Voice",

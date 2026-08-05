@@ -1,9 +1,9 @@
-import ClassRoutineSection from "@/components/ClassRoutineSection";
-import Faq from "@/components/Faq";
-import Hero from "@/components/Hero";
-import RoadmapBooks from "@/components/RoadmapBooks";
-import Voice from "@/components/Voice";
-import Image from "next/image";
+
+import ClassRoutineSection from "@/components/home/ClassRoutineSection";
+import FAQ from "@/components/home/Faq";
+import Hero from "@/components/home/Hero";
+import RoadmapBooks from "@/components/home/RoadmapBooks";
+import Voice from "@/components/home/Voice";
 
 export default function Home() {
   return (
@@ -12,7 +12,7 @@ export default function Home() {
   <Voice/>
   <RoadmapBooks/>
   <ClassRoutineSection/>
-  <Faq/>
+  <FAQ/>
   </>
   );
 }
