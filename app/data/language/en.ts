@@ -30,6 +30,7 @@ const en = {
       line4: "Completely",
       free: "Free",
       badge: "Live Class Available",
+      edu:"Education Must Be Free",
     },
 
     description:

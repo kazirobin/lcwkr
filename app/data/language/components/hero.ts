@@ -7,6 +7,7 @@ export const hero = {
     line4: "",
     free: "",
     badge: "",
+    edu:"",
   },
 
   description: "",

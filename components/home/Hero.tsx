@@ -28,8 +28,8 @@ export default function Hero() {
         className="h-auto w-full rounded-2xl object-cover"
       />
 
-      <h1 className="mt-4 text-center text-3xl font-bold text-primary">
-        Education Must Be Free
+      <h1 className="mt-4 text-center text-3xl font-extrabold text-primary">
+         {hero.title.edu}
       </h1>
     </div>
   </div>
@@ -40,7 +40,7 @@ export default function Hero() {
             {/* Badge */}
 
             <Link
-              href="/community"
+              href="/msg"
               className="inline-flex items-center gap-2 rounded-full border border-secondary px-4 py-2 text-sm font-semibold text-primary transition hover:opacity-90"
             >
               <Globe size={18} />
@@ -64,7 +64,7 @@ export default function Hero() {
 
             {/* Description */}
 
-            <p className="mt-8 max-w-xl text-lg leading-8 text-text/80">
+            <p className="mt-8 max-w-xl text-2xl text-text/80 leading-relaxed font-semibold">
               {hero.description}
             </p>
 
