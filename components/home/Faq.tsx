@@ -192,11 +192,11 @@ export default function FAQ() {
   const data = language === "bn" ? faq.bn : faq.en;
 
   return (
-    <section className="bg-background py-16 md:py-20">
+    <section className="bg-background">
       <div className="mx-auto max-w-4xl px-4">
 
         {/* Header */}
-        <div className="mb-12 text-center">
+        <div className="mb-4 text-center">
           <span className="inline-flex rounded-full border border-primary/20 bg-primary/10 px-4 py-1 text-sm font-semibold text-primary">
             {data.badge}
           </span>
@@ -249,7 +249,7 @@ export default function FAQ() {
         </div>
 
         {/* Support */}
-        <div className="mt-14 rounded-3xl border border-border bg-card p-8 text-center shadow-sm">
+        <div className="mt-4 rounded-3xl border border-border bg-card p-8 text-center shadow-sm">
           <h3 className="text-2xl font-bold text-text">
             {data.support.title}{" "}
             <span className="text-primary">

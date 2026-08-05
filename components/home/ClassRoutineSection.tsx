@@ -58,7 +58,7 @@ export default function ClassRoutineSection() {
   ];
 
   return (
-    <section className="bg-background py-16 md:py-20">
+    <section className="bg-background py-6 ">
       <div className="mx-auto max-w-6xl px-5">
         <div className="grid gap-8 lg:grid-cols-2">
           {/* Routine */}
