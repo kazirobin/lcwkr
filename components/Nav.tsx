@@ -6,6 +6,7 @@ import { usePathname } from "next/navigation";
 import { useState } from "react";
 
 import { useLanguage } from "@/app/context/LanguageContext";
+import ThemeButton from "./ThemeButton";
 
 type NavKey = "home" | "pdf"|"apps" |"intro" | "community";
 
@@ -44,7 +45,7 @@ export default function Nav() {
   const { t, language, setLanguage } = useLanguage();
 
   return (
-    <nav className="sticky top-0 z-50 border-b border-gray-200 bg-white">
+    <nav className="sticky top-0 z-50 border-b border-gray-200 bg-background">
       <div className="mx-auto flex h-16 max-w-6xl items-center justify-between px-4 sm:px-6 lg:px-8">
         {/* Logo */}
         <Link href="/" aria-label="lcwkr" className="shrink-0">
@@ -68,8 +69,8 @@ export default function Nav() {
               href={link.href}
               className={`text-sm font-extrabold transition-colors ${
                 pathname === link.href
-                  ? "text-blue-600"
-                  : "text-gray-600 hover:text-blue-600"
+                  ? "text-primary"
+                  : "text-text hover:text-primary"
               }`}
             >
               {t.nav[link.key]}
@@ -85,6 +86,7 @@ export default function Nav() {
           >
             🌐 {language === "en" ? "বাংলা" : "English"}
           </button>
+          <ThemeButton/>
         </div>
 
         {/* Mobile Menu Button */}
@@ -127,7 +129,7 @@ export default function Nav() {
 
       {/* Mobile Menu */}
       {isOpen && (
-        <div className="border-t border-gray-200 bg-white md:hidden">
+        <div className="border-t border-gray-200 bg-background md:hidden">
           <div className="space-y-2 px-4 py-3">
             {navLinks.map((link) => (
               <Link
@@ -152,6 +154,7 @@ export default function Nav() {
             >
               🌐 {language === "en" ? "বাংলা" : "English"}
             </button>
+            <ThemeButton/>
           </div>
         </div>
       )}

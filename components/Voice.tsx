@@ -4,7 +4,7 @@ import { Volume2 } from "lucide-react";
 
 export default function Voice() {
   return (
-    <section className="py-12">
+    <section className="">
       <div className="mx-auto max-w-2xl px-6">
         <div className="rounded-2xl border border-slate-200 bg-white p-6 shadow-sm">
           <div className="mb-5 flex items-center gap-3">
