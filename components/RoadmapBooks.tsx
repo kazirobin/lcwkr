@@ -156,11 +156,7 @@ export default function RoadmapBooks() {
                 className="group flex gap-5 rounded-3xl border border-secondary bg-background p-6 transition hover:-translate-y-1 hover:shadow-lg"
               >
 
-                <div className="flex h-14 w-14 shrink-0 items-center justify-center rounded-2xl text-background">
-
-                  {icons[index]}
-
-                </div>
+               
 
                 <div className="flex-1">
 
