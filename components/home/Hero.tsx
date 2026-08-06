@@ -82,7 +82,7 @@ export default function Hero() {
                 <ArrowRight size={18} />
               </Link>
               <Link
-                href="/community"
+                href="/intro"
                 className="inline-flex items-center justify-center gap-2 rounded-2xl border border-secondary bg-background px-8 py-4 font-semibold transition hover:bg-secondary"
               >
                 <Users size={20} />
