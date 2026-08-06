@@ -21,22 +21,29 @@ export const snippets: Snippet[] = [
     language: "tsx",
     code: `https://forms.gle/3WreFQcs2opZC1317`,
   },
-  {
+{
     id: 3,
+    title: "(5.00pm class)Chinese special for beginner",
+    description: "Activity Form Link",
+    language: "tsx",
+    code: `https://forms.gle/AVheo7e3taQf362C9`,
+  },
+  {
+    id: 4,
     title: "(Class 9.00pm daily) HSK 1-2 Primary",
     description: "Attendances Form Link",
     language: "tsx",
     code: `https://forms.gle/eF9ANkfetc37xmne6`,
   },
   {
-    id: 4,
+    id: 5,
     title: "(Class 9.00pm daily) HSK 1-2 Primary",
     description: "Registration Form Link",
     language: "tsx",
     code: `https://forms.gle/S12miqZDiTDoFF4L6`,
   },
   {
-    id: 5,
+    id: 6,
     title: "(Class 10.10pm daily)Hsk 3 Intermediate",
     description: "Attendances Form Link",
     language: "tsx",
@@ -44,7 +51,7 @@ export const snippets: Snippet[] = [
   },
 
   {
-    id: 6,
+    id: 7,
     title: "(Class 10.10pm daily)Hsk 3 Intermediate",
     description: "Registration Form Link",
     language: "tsx",
@@ -52,14 +59,14 @@ export const snippets: Snippet[] = [
   },
 
   {
-    id: 7,
+    id: 8,
     title: "Quiz LCWKR",
     description: "Max width container",
     language: "tsx",
     code: `https://forms.gle/D47rbPPGH1A2v4bD6`,
   },
 {
-    id: 8,
+    id: 9,
     title: "Word List Prompt",
     description: "for get words list",
     language: "tsx",
@@ -73,14 +80,14 @@ export const snippets: Snippet[] = [
 tiānqì, zhèlǐ, tiān, xiàyǔ, le, yǔ, yǒudiǎnr, juéde, lěng`,
   },
 {
-    id: 9,
+    id: 10,
     title: "August 2026 New Members",
     description: "Registration Form Link",
     language: "tsx",
     code: `https://www.cognitoforms.com/KaziRobin1/NewMembersAugust2026`,
   },
   {
-    id: 10,
+    id: 11,
     title: "August 2026 New Members",
     description: "Max width container",
     language: "tsx",
