@@ -23,14 +23,21 @@ export const communityData = {
       name: "Jahid Hasan",
       image: "/assets/community/jahid.png",
       whatsapp: "8801521751608",
-      role:"group 1"
+      role:"group 10pm"
     },
     {
       name: "Subrata Sarkar",
       image: "/assets/community/ss.png",
       whatsapp: "8801681879654",
-      role:"group 1"
+      role:"group 5pm"
     },
+    {
+      name: "Shahoriar Alam",
+      image: "/assets/community/user1.png",
+      whatsapp: "8801681879654",
+      role:"group 9pm"
+    },
+   
   ],
 
   teachers: [
@@ -40,12 +47,6 @@ export const communityData = {
       whatsapp: "8801613765886",
       icon: Monitor,
       color: "blue",
-    },
-  ],
-
-  events: [
-    {
-      date: "Aug 15",
     },
   ],
 };

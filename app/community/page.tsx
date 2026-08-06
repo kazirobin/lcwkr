@@ -37,7 +37,7 @@ export const community = {
     coAdmins: [
       {
         role: "Co-Admin",
-        manages: "Web Development & Programming Groups",
+        manages: "Chinese Learning Groups",
       },
     ],
     management: {
@@ -55,9 +55,9 @@ export const community = {
       subtitle: "Experienced mentors who guide your learning journey.",
       items: [
         {
-          subject: "Web Development",
-          group: "Web Development Group",
-          schedule: "Mon, Wed • 8:00 PM",
+          subject: "Chinese Language",
+          group: "5pm Class Group",
+          schedule: "Mon, Wed • 7:00 PM",
         },
       ],
     },
@@ -93,8 +93,8 @@ export const community = {
       subtitle: "অভিজ্ঞ শিক্ষকরা আপনাকে শেখাবেন।",
       items: [
         {
-          subject: "ওয়েব ডেভেলপমেন্ট",
-          group: "ওয়েব ডেভেলপমেন্ট গ্রুপ",
+          subject: "চীনা ভাষা",
+          group: "৫টার ক্লাস গ্রুপ",
           schedule: "সোম, বুধ • রাত ৮টা",
         },
       ],
