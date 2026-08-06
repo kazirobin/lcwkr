@@ -7,7 +7,7 @@ import {
   useState,
 } from "react";
 
-import { translations } from './../data/index';
+import { translations } from "./../data/index";
 import type { Language } from "../types/language";
 
 type ContextType = {
@@ -23,12 +23,21 @@ export function LanguageProvider({
 }: {
   children: React.ReactNode;
 }) {
-  const [language, setLanguage] = useState<Language>("bn");
-
-
+  const [language, setLanguage] = useState<Language>(() => {
+    if (typeof window !== "undefined") {
+      const saved = localStorage.getItem("language") as Language;
+      if (saved === "bn" || saved === "en") return saved;
+    }
+    return "bn";
+  });
 
   useEffect(() => {
     localStorage.setItem("language", language);
+
+    document.documentElement.classList.remove("font-en", "font-bn");
+    document.documentElement.classList.add(
+      language === "bn" ? "font-bn" : "font-en"
+    );
   }, [language]);
 
   return (

@@ -1,5 +1,13 @@
 @import "tailwindcss";
 
+.font-en {
+  font-family: var(--font-geist-sans), sans-serif;
+}
+
+.font-bn {
+  font-family: var(--font-hind-siliguri), sans-serif; /* <- hind ব্যবহার করুন */
+}
+
 @layer base {
   :root {
     --text: 16.22% 0.026 0.02;

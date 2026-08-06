@@ -34,7 +34,7 @@ export default function RoadmapBooks() {
 
         {/* Header */}
 
-        <div className="mx-auto mb-16 max-w-3xl text-center">
+        <div className="mx-auto mb-4 max-w-3xl text-center">
 
           <span className="inline-flex rounded-full border-primary border-2 px-4 py-2 text-lg font-semibold text-primary">
 
@@ -42,7 +42,7 @@ export default function RoadmapBooks() {
 
           </span>
 
-          <h2 className="mt-6 text-4xl font-black text-text md:text-5xl">
+          <h2 className="text-4xl font-black text-text md:text-5xl">
 
             {roadmap.title}
 
@@ -62,7 +62,7 @@ export default function RoadmapBooks() {
 
           <div>
 
-            <div className="overflow-hidden p-5">
+            <div className="overflow-hidden">
 
               <Image
                 src="/assets/pinyin2.jpeg"
@@ -72,71 +72,41 @@ export default function RoadmapBooks() {
                 className="w-full rounded-2xl"
               />
 
-              <div className="mt-5 rounded-2xl bg-background p-5">
+              <div className="mt-2 rounded-2xl bg-background">
 
-                <h3 className="text-xl border-3 rounded-2xl p-4  border-primary font-extrabold text-primary">
+                <h3 className="text-xl border-3 rounded-2xl p-2  border-primary font-extrabold text-primary">
 
                   {roadmap.imageNote}
 
                 </h3>
-
-                
               </div>
-
             </div>
-
-            <div className="mt-8 grid grid-cols-3 gap-4">
-
+            <div className="mt-2 grid grid-cols-3 gap-4">
               <div className="rounded-2xl border border-secondary bg-background p-5 text-center">
-
-                <h4 className="text-3xl font-black text-primary">
-
+                <h4 className="text-xl lg:text-3xl font-black text-primary">
                   4
-
                 </h4>
-
                 <p className="mt-1 text-sm text-text">
-
                   Steps
-
                 </p>
-
               </div>
-
               <div className="rounded-2xl border border-secondary bg-background p-5 text-center">
-
-                <h4 className="text-3xl font-black text-primary">
-
+                <h4 className="text-xl lg:text-3xl font-black text-primary">
                   Free
-
                 </h4>
-
                 <p className="mt-1 text-sm text-text">
-
                   Learning
-
                 </p>
-
               </div>
-
               <div className="rounded-2xl border border-secondary bg-background p-5 text-center">
-
-                <h4 className="text-3xl font-black text-primary">
-
+                <h4 className="text-xl lg:text-3xl font-black text-primary">
                   100%
-
                 </h4>
-
                 <p className="mt-1 text-sm text-text">
-
                   Online
-
                 </p>
-
               </div>
-
             </div>
-
           </div>
 
           {/* RIGHT */}
@@ -147,7 +117,7 @@ export default function RoadmapBooks() {
 
               <div
                 key={index}
-                className="group flex gap-5 rounded-3xl border border-secondary bg-background p-6 transition hover:-translate-y-1 hover:shadow-lg"
+                className="group flex gap-5 rounded-3xl border border-secondary bg-background p-2 transition hover:-translate-y-1 hover:shadow-lg"
               >
 
                
