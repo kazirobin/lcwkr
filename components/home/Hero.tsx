@@ -72,17 +72,8 @@ export default function Hero() {
 
             <div className="mt-10 flex flex-col gap-4 sm:flex-row">
               <Link
-                href="/community"
-                className="inline-flex items-center justify-center gap-2 rounded-2xl bg-primary px-8 py-4 font-semibold text-background transition hover:scale-[1.02]"
-              >
-                <Users size={20} />
-
-                {hero.buttons.whatsapp}
-              </Link>
-
-              <Link
                 href="/pdf"
-                className="inline-flex items-center justify-center gap-2 rounded-2xl border border-secondary bg-background px-8 py-4 font-semibold transition hover:bg-secondary"
+                className="inline-flex items-center justify-center gap-2 rounded-2xl bg-primary px-8 py-4 font-semibold text-background transition hover:scale-[1.02]"
               >
                 <BookOpen size={20} />
 
@@ -90,6 +81,15 @@ export default function Hero() {
 
                 <ArrowRight size={18} />
               </Link>
+              <Link
+                href="/community"
+                className="inline-flex items-center justify-center gap-2 rounded-2xl border border-secondary bg-background px-8 py-4 font-semibold transition hover:bg-secondary"
+              >
+                <Users size={20} />
+
+                {hero.buttons.whatsapp}
+              </Link>
+
             </div>
           </div>
         </div>

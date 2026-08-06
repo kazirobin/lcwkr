@@ -38,7 +38,7 @@ const en = {
 
     buttons: {
       whatsapp: "Chinese Language Overview",
-      resources: "📚Explore Books",
+      resources: "Download The PDF",
     },
 
     links: {
