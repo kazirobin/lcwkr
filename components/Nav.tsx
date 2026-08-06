@@ -67,9 +67,9 @@ export default function Nav() {
             <Link
               key={link.key}
               href={link.href}
-              className={`text-sm font-extrabold transition-colors ${
+              className={`relative text-sm font-extrabold transition-colors after:absolute after:bottom-0 after:left-0 after:h-0.5 after:w-full after:origin-left after:scale-x-0 after:bg-primary after:transition-transform after:duration-300 hover:after:scale-x-100 ${
                 pathname === link.href
-                  ? "text-primary"
+                  ? "text-primary after:scale-x-100"
                   : "text-text hover:text-primary"
               }`}
             >
@@ -131,30 +131,45 @@ export default function Nav() {
       {isOpen && (
         <div className="border-t border-gray-200 bg-background md:hidden">
           <div className="space-y-2 px-4 py-3">
-            {navLinks.map((link) => (
-              <Link
-                key={link.key}
-                href={link.href}
-                onClick={() => setIsOpen(false)}
-                className={`block rounded-md px-3 py-2 text-base font-extrabold text-center ${
-                  pathname === link.href
-                    ? "bg-blue-50 text-blue-600"
-                    : "text-gray-600 hover:bg-gray-50"
-                }`}
-              >
-                {t.nav[link.key]}
-              </Link>
-            ))}
+           {navLinks.map((link) => {
+                  const isActive = pathname === link.href;
+                  return (
+                    <Link
+                      key={link.key}
+                      href={link.href}
+                      onClick={() => setIsOpen(false)}
+                      className={`group relative flex items-center rounded-xl px-6 py-4 text-lg font-semibold transition-all duration-200 ${
+                        isActive
+                          ? "bg-primary/10 text-primary"
+                          : "text-gray-700 hover:bg-gray-50"
+                      }`}
+                    >
+                      {isActive && (
+                        <span className="absolute left-0 h-10 w-1.5 rounded-r-full bg-primary" />
+                      )}
+                      <span className="ml-4">{t.nav[link.key]}</span>
+                      {isActive && (
+                        <span className="ml-auto text-sm font-medium text-primary">
+                          Active
+                        </span>
+                      )}
+                    </Link>
+                  );
+                })}
 
-            <button
-              onClick={() =>
-                setLanguage(language === "en" ? "bn" : "en")
-              }
-              className="mt-3 w-full rounded-lg border border-gray-300 px-3 py-2 text-sm font-medium transition hover:bg-gray-100"
-            >
-              🌐 {language === "en" ? "বাংলা" : "English"}
-            </button>
-            <ThemeButton/>
+             <div className="flex items-center gap-3">
+                  <button
+                    onClick={() => {
+                      setLanguage(language === "en" ? "bn" : "en");
+                    }}
+                    className="flex-1 rounded-xl border border-gray-300 bg-white px-4 py-3 text-sm font-medium transition hover:bg-gray-50"
+                  >
+                    {language === "en" ? "বাংলা" : "English"}
+                  </button>
+                  <div className="shrink-0">
+                    <ThemeButton />
+                  </div>
+                </div>
           </div>
         </div>
       )}
