@@ -82,7 +82,7 @@ export default function Nav() {
             onClick={() =>
               setLanguage(language === "en" ? "bn" : "en")
             }
-            className="rounded-lg border border-gray-300 px-3 py-2 text-sm font-medium transition hover:bg-gray-100"
+            className="rounded-lg border border-gray-300 px-3 py-2 text-sm font-medium transition cursor-pointer"
           >
             🌐 {language === "en" ? "বাংলা" : "English"}
           </button>

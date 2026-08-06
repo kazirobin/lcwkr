@@ -1,6 +1,7 @@
-"use client"
+// src/components/community/CommunityPage.tsx
+"use client";
+
 import {
-  MessageCircleMore,
   Users,
   Award,
   Shield,
@@ -11,17 +12,97 @@ import {
   Briefcase,
   Clock,
   BadgeCheck,
+  Sparkles,
+  Layers,
+  ExternalLink,
 } from "lucide-react";
 import { communityData } from "../data/communityData";
-import { community } from "../data/language/components/community";
 import { useLanguage } from "../context/LanguageContext";
 
 // ============================================
-// ALL DATA AT THE TOP - EDIT HERE ONLY
+// COMMUNITY DATA
 // ============================================
 
+export const community = {
+  en: {
+    header: {
+      badge: "Community Leaders",
+      title: "Community Admins",
+      subtitle: "Leading our community with passion and dedication.",
+    },
+    founder: {
+      role: "Founder & Lead Admin",
+      manages: "All Community Groups",
+    },
+    coAdmins: [
+      {
+        role: "Co-Admin",
+        manages: "Web Development & Programming Groups",
+      },
+    ],
+    management: {
+      title: "Management Team",
+      subtitle: "Working behind the scenes to keep everything organized.",
+      manager: "Manager",
+      items: [
+        {
+          manages: "General Support & Queries",
+        },
+      ],
+    },
+    teachers: {
+      title: "Our Teachers",
+      subtitle: "Experienced mentors who guide your learning journey.",
+      items: [
+        {
+          subject: "Web Development",
+          group: "Web Development Group",
+          schedule: "Mon, Wed • 8:00 PM",
+        },
+      ],
+    },
+  },
+  bn: {
+    header: {
+      badge: "কমিউনিটি নেতৃত্ব",
+      title: "কমিউনিটি অ্যাডমিন",
+      subtitle: "ভালোবাসা ও আন্তরিকতার সাথে কমিউনিটি পরিচালনা করছি।",
+    },
+    founder: {
+      role: "প্রতিষ্ঠাতা ও প্রধান অ্যাডমিন",
+      manages: "সকল কমিউনিটি গ্রুপ",
+    },
+    coAdmins: [
+      {
+        role: "সহকারী অ্যাডমিন",
+        manages: "ওয়েব ডেভেলপমেন্ট ও প্রোগ্রামিং গ্রুপ",
+      },
+    ],
+    management: {
+      title: "ম্যানেজমেন্ট টিম",
+      subtitle: "কমিউনিটির সার্বিক কার্যক্রম পরিচালনা করেন।",
+      manager: "ম্যানেজার",
+      items: [
+        {
+          manages: "সাধারণ সহায়তা ও প্রশ্ন",
+        },
+      ],
+    },
+    teachers: {
+      title: "আমাদের শিক্ষকবৃন্দ",
+      subtitle: "অভিজ্ঞ শিক্ষকরা আপনাকে শেখাবেন।",
+      items: [
+        {
+          subject: "ওয়েব ডেভেলপমেন্ট",
+          group: "ওয়েব ডেভেলপমেন্ট গ্রুপ",
+          schedule: "সোম, বুধ • রাত ৮টা",
+        },
+      ],
+    },
+  },
+};
 
-// Helper function to format WhatsApp number for display
+// Helper function to format WhatsApp number
 const formatWhatsApp = (number: string) => {
   if (number.startsWith("880")) {
     return `+${number.slice(0, 4)} ${number.slice(4, 8)}-${number.slice(8)}`;
@@ -29,313 +110,322 @@ const formatWhatsApp = (number: string) => {
   return number;
 };
 
+// ============================================
+// HOOKS
+// ============================================
 
-
-export function CommunityPage() {
+const useTranslation = () => {
   const { language } = useLanguage();
+  return (bn: string, en: string) => language === "bn" ? bn : en;
+};
 
-const t = community[language as "en" | "bn"];
+// ============================================
+// COMPONENTS
+// ============================================
+
+interface MemberCardProps {
+  name: string;
+  role: string;
+  image: string;
+  whatsapp: string;
+  manages?: string;
+  subject?: string;
+  group?: string;
+  schedule?: string;
+  icon: any;
+}
+
+const MemberCard: React.FC<MemberCardProps> = ({
+  name,
+  role,
+  image,
+  whatsapp,
+  manages,
+  subject,
+  group,
+  schedule,
+  icon: Icon,
+}) => {
+  const t = useTranslation();
+
+  // All colors now use primary (red) theme
+  const colors = {
+    bg: "bg-primary/10 dark:bg-primary/20",
+    border: "border-primary/20 dark:border-primary/30",
+    text: "text-primary dark:text-primary",
+    badge: "bg-primary/10 text-primary dark:bg-primary/20 dark:text-primary",
+  };
+
   return (
-    <>
-      {/* Main Community Section - No Background */}
-      <div className="py-8 sm:py-12 lg:py-16 bg-white">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          {/* Header Section */}
-          <div className="text-center mb-12 sm:mb-16 lg:mb-20">
-            <div className="inline-flex items-center gap-3 border border-gray-200 px-4 sm:px-6 py-2 rounded-full mb-6">
-              <Crown className="w-4 h-4 sm:w-5 sm:h-5 text-yellow-500" />
-              <span className="text-xs sm:text-sm font-medium text-gray-600">
-                {t.header.badge}
-              </span>
-            </div>
-            <h1 className="text-4xl sm:text-5xl lg:text-7xl font-bold text-gray-900">
-              {t.header.title}
-            </h1>
-            <p className="mt-4 text-base sm:text-lg lg:text-xl text-gray-600 max-w-2xl mx-auto">
-              {t.header.subtitle}
-            </p>
-          </div>
-
-          {/* Founder & Co-Admins */}
-          <div className="mb-16 sm:mb-20 lg:mb-24">
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-6 sm:gap-8">
-              {/* Founder */}
-              <div className="md:col-span-1 border border-gray-200 rounded-2xl p-6 sm:p-8 hover:shadow-lg transition-all duration-300">
-                <div className="flex items-center gap-4 mb-4">
-                  <div className="p-3 bg-yellow-50 rounded-xl">
-                    <Crown className="w-6 h-6 text-yellow-500" />
-                  </div>
-                  <div>
-                    <h3 className="text-xl font-bold text-yellow-600">
-                      {t.founder.role}
-                    </h3>
-                  </div>
-                </div>
-                <div className="flex flex-col items-center gap-4 mb-4">
-                  <img
-                    src={communityData.founder.image}
-                    alt={communityData.founder.name}
-                    className="w-24 h-24 rounded-full object-cover border-2 border-yellow-300"
-                  />
-                  <div className="text-center">
-                    <p className="text-xl font-semibold text-gray-900">
-                      {communityData.founder.name}
-                    </p>
-                    <span className="text-sm text-yellow-600">✦ Lead Admin</span>
-                  </div>
-                </div>
-                {/* WhatsApp Card */}
-                <div className="mt-4 border border-green-200 rounded-xl p-4 hover:border-green-300 transition-all duration-300">
-                  <a
-                    href={`https://wa.me/${communityData.founder.whatsapp}`}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="block"
-                  >
-                    <div className="flex items-center justify-between">
-                      <div className="flex items-center gap-3">
-                        <div className="p-2 bg-green-50 rounded-lg">
-                          <MessageCircle className="w-4 h-4 text-green-600" />
-                        </div>
-                        <div>
-                          <p className="text-sm font-medium text-gray-700">WhatsApp</p>
-                          <p className="text-xs text-gray-500">
-                            {formatWhatsApp(communityData.founder.whatsapp)}
-                          </p>
-                        </div>
-                      </div>
-                      <span className="text-xs bg-green-100 text-green-700 px-2 py-1 rounded-full">
-                        Active
-                      </span>
-                    </div>
-                    <div className="mt-2 flex items-center gap-2 text-xs text-gray-500">
-                      <UsersRound className="w-3 h-3" />
-                      <span>Manages: {t.founder.manages}</span>
-                    </div>
-                  </a>
-                </div>
-              </div>
-
-              {/* Co-Admins */}
-              <div className="md:col-span-2 grid grid-cols-1 sm:grid-cols-2 gap-6">
-                {communityData.coAdmins.map((admin, idx) => (
-                  <div
-                    key={idx}
-                    className="border border-gray-200 rounded-2xl p-6 hover:shadow-lg transition-all duration-300"
-                  >
-                     <img
-                    src={admin.image}
-                    alt={communityData.founder.name}
-                    className="w-24 h-24 rounded-full object-cover border-2 border-yellow-300 mx-auto"
-                  />
-                    <div className="flex items-center gap-4 mb-4">
-                      <div className="p-3 bg-blue-50 rounded-xl">
-                        <Shield className="w-6 h-6 text-blue-500" />
-                      </div>
-                      <div>
-                        <p className="text-lg font-semibold text-gray-900">{admin.name}</p>
-                        <span className="text-sm text-gray-500"> {t.coAdmins[idx].role}</span>
-                      </div>
-                    </div>
-                    {/* WhatsApp Card */}
-                    <div className="border border-blue-200 rounded-xl p-4 hover:border-blue-300 transition-all duration-300">
-                      <a
-                        href={`https://wa.me/${admin.whatsapp}`}
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="block"
-                      >
-                        <div className="flex items-center justify-between">
-                          <div className="flex items-center gap-3">
-                            <div className="p-2 bg-blue-50 rounded-lg">
-                              <MessageCircle className="w-4 h-4 text-blue-500" />
-                            </div>
-                            <div>
-                              <p className="text-sm font-medium text-gray-700">WhatsApp</p>
-                              <p className="text-xs text-gray-500">
-                                {formatWhatsApp(admin.whatsapp)}
-                              </p>
-                            </div>
-                          </div>
-                          <span className="text-xs bg-blue-100 text-blue-700 px-2 py-1 rounded-full">
-                            Active
-                          </span>
-                        </div>
-                        <div className="mt-2 flex items-center gap-2 text-xs text-gray-500">
-                          <UsersRound className="w-3 h-3" />
-                          <span>Manages:  {t.coAdmins[idx].manages}</span>
-                        </div>
-                      </a>
-                    </div>
-                  </div>
-                ))}
-              </div>
-            </div>
-          </div>
-
-          {/* Management Team */}
-          <div className="mb-16 sm:mb-20 lg:mb-24">
-            <div className="flex items-center gap-3 mb-8">
-              <div className="p-2 bg-emerald-50 rounded-lg">
-                <Users className="w-5 h-5 text-emerald-600" />
-              </div>
-              <div>
-                <h2 className="text-2xl sm:text-3xl font-bold text-gray-900">
-                  {t.management.title}
-                </h2>
-                <p className="text-sm text-gray-500 mt-1">
-                 {t.management.subtitle}
-                </p>
-              </div>
-            </div>
-
-            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6">
-              {communityData.managers.map((manager, idx) => (
-                <div
-                  key={idx}
-                  className="border border-gray-200 rounded-xl p-5 hover:shadow-lg transition-all duration-300 hover:-translate-y-1"
-                >
-                  <div className="flex flex-col items-center gap-3 mb-3">
-                    <img
-                      src={manager.image}
-                      alt={manager.name}
-                      className="w-16 h-16 rounded-full object-cover"
-                    />
-                    <div className="text-center">
-                      <p className="text-sm font-semibold text-gray-900">{manager.name}</p>
-                      <span className="text-xs text-emerald-600">Manager</span>
-                    </div>
-                  </div>
-                  <div className="flex items-center justify-center gap-2 text-xs text-gray-500 mb-3">
-                    <Briefcase className="w-3 h-3 text-emerald-600" />
-                    <span>{manager.role}</span>
-                  </div>
-                  {/* WhatsApp Card */}
-                  <div className="border border-emerald-200 rounded-lg p-3 hover:border-emerald-300 transition-all duration-300">
-                    <a
-                      href={`https://wa.me/${manager.whatsapp}`}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="block"
-                    >
-                      <div className="flex-col items-center justify-between">
-                        <div className="flex items-center gap-2">
-                          <Phone className="w-3 h-3 text-emerald-600" />
-                          <span className="text-xs text-gray-600">
-                            {formatWhatsApp(manager.whatsapp)}
-                          </span>
-                        </div>
-                        <span className="text-xs bg-emerald-100 text-emerald-700 px-2 py-0.5 rounded-full">
-                          Active
-                        </span>
-                      </div>
-                    </a>
-                  </div>
-                </div>
-              ))}
-            </div>
-          </div>
-
-          {/* Teachers Section */}
-          <div>
-            <div className="flex items-center gap-3 mb-8">
-              <div className="p-2 bg-pink-50 rounded-lg">
-                <Award className="w-5 h-5 text-pink-600" />
-              </div>
-              <div>
-                <h2 className="text-2xl sm:text-3xl font-bold text-gray-900">{t.teachers.title}</h2>
-                <p className="text-sm text-gray-500 mt-1">
-                  {t.teachers.subtitle}
-                </p>
-              </div>
-            </div>
-
-            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5 gap-4 sm:gap-6">
-              {communityData.teachers.map((teacher, idx) => {
-                const colorMap: Record<string, string> = {
-                  blue: "blue",
-                  pink: "pink",
-                  purple: "purple",
-                  orange: "orange",
-                  green: "green",
-                };
-                const color = colorMap[teacher.color] || "gray";
-                return (
-                  <div
-                    key={idx}
-                    className="border border-gray-200 rounded-xl p-5 hover:shadow-lg transition-all duration-300 hover:-translate-y-1"
-                  >
-                    <div className="flex items-center gap-3 mb-3">
-                      <div className={`p-2 bg-${color}-50 rounded-lg`}>
-                        <teacher.icon className={`w-5 h-5 text-${color}-500`} />
-                      </div>
-                      <div>
-                        <span className="text-xs font-medium text-gray-500">
-                           {t.teachers.items[idx].subject}
-                        </span>
-                        <div className="flex items-center gap-1">
-                          <BadgeCheck className="w-3 h-3 text-blue-500" />
-                          <span className="text-xs text-blue-600">Verified Mentor</span>
-                        </div>
-                      </div>
-                    </div>
-                    <div className="flex flex-col items-center gap-3 mb-3">
-                      <img
-                        src={teacher.image}
-                        alt={teacher.name}
-                        className={`w-16 h-16 rounded-full object-cover border-2 border-${color}-200`}
-                      />
-                      <div className="text-center">
-                        <p className="text-sm font-semibold text-gray-900">{teacher.name}</p>
-                        <span className="text-xs text-gray-500">Teacher</span>
-                      </div>
-                    </div>
-                    {/* WhatsApp & Group Details */}
-                    <div className="space-y-2">
-                      <div
-                        className={`border border-${color}-200 rounded-lg p-3 hover:border-${color}-300 transition-all duration-300`}
-                      >
-                        <a
-                          href={`https://wa.me/${teacher.whatsapp}`}
-                          target="_blank"
-                          rel="noopener noreferrer"
-                          className="block"
-                        >
-                          <div className="flex-col items-center justify-between">
-                            <div className="flex items-center gap-2">
-                              <MessageCircle className={`w-3 h-3 text-${color}-500`} />
-                              <span className="text-xs text-gray-600">
-                                {formatWhatsApp(teacher.whatsapp)}
-                              </span>
-                            </div>
-                            <span
-                              className={`text-xs bg-${color}-100 text-${color}-700 px-2 py-0.5 rounded-full`}
-                            >
-                              Active
-                            </span>
-                          </div>
-                        </a>
-                      </div>
-                      <div className="flex items-center gap-2 text-xs text-gray-500">
-                        <UsersRound className="w-3 h-3 text-gray-400" />
-                        <span className="text-gray-600">{t.teachers.items[idx].group}</span>
-                      </div>
-                      <div className="flex items-center gap-2 text-xs text-gray-500">
-                        <Clock className="w-3 h-3 text-gray-400" />
-                        <span>{t.teachers.items[idx].schedule}</span>
-                      </div>
-                    </div>
-                  </div>
-                );
-              })}
-            </div>
-          </div>
+    <div className="group rounded-xl border border-secondary bg-background p-5 transition-all hover:border-primary hover:shadow-lg hover:-translate-y-1">
+      {/* Header with Icon & Role */}
+      <div className="flex items-center gap-3 mb-4">
+        <div className={`rounded-lg p-2.5 ${colors.bg}`}>
+          <Icon className={`h-5 w-5 ${colors.text}`} />
+        </div>
+        <div>
+          <h4 className="font-semibold text-text">{name}</h4>
+          <span className={`text-xs font-medium ${colors.text}`}>{role}</span>
         </div>
       </div>
 
-    
-    </>
+      {/* Profile Image */}
+      <div className="flex justify-center mb-4">
+        <img
+          src={image}
+          alt={name}
+          className="h-20 w-20 rounded-full border-2 border-secondary object-cover transition-all group-hover:border-primary"
+        />
+      </div>
+
+      {/* Info Section - SAME for everyone */}
+      <div className="text-center mb-3 min-h-[40px]">
+        {subject && (
+          <>
+            <p className="text-sm font-medium text-text">{subject}</p>
+            {group && <p className="text-xs text-text/50">{group}</p>}
+          </>
+        )}
+        {manages && (
+          <p className="text-sm text-text/70">{t("ম্যানেজ করে", "Manages")}: {manages}</p>
+        )}
+        {!subject && !manages && (
+          <p className="text-sm text-text/50">{role}</p>
+        )}
+      </div>
+
+      {/* Schedule - SAME position for everyone */}
+      {schedule && (
+        <div className="flex items-center justify-center gap-2 text-xs text-text/50 mb-3">
+          <Clock className="h-3 w-3" />
+          <span>{schedule}</span>
+        </div>
+      )}
+
+      {/* WhatsApp Card - SAME for everyone */}
+      <a
+        href={`https://wa.me/${whatsapp}`}
+        target="_blank"
+        rel="noopener noreferrer"
+        className={`block rounded-lg border p-3 transition-all hover:shadow-md ${colors.border} hover:border-primary`}
+      >
+        <div className="flex items-center justify-between">
+          <div className="flex items-center gap-2">
+            <div className={`rounded-lg p-1.5 ${colors.bg}`}>
+              <MessageCircle className={`h-3.5 w-3.5 ${colors.text}`} />
+            </div>
+            <div>
+              <p className="text-xs font-medium text-text">WhatsApp</p>
+              <p className="text-[10px] text-text/50">{formatWhatsApp(whatsapp)}</p>
+            </div>
+          </div>
+          <span className={`rounded-full px-2 py-0.5 text-[10px] font-medium ${colors.badge}`}>
+            {t("অ্যাকটিভ", "Active")}
+          </span>
+        </div>
+      </a>
+    </div>
   );
+};
+
+// ============================================
+// SECTION HEADER COMPONENT
+// ============================================
+
+interface SectionHeaderProps {
+  icon: any;
+  title: string;
+  subtitle: string;
 }
 
-export default CommunityPage;
+const SectionHeader: React.FC<SectionHeaderProps> = ({ icon: Icon, title, subtitle }) => {
+  return (
+    <div className="mb-6 flex items-center gap-3">
+      <div className={`rounded-lg p-2 bg-primary/10 text-primary dark:bg-primary/20`}>
+        <Icon className="h-5 w-5" />
+      </div>
+      <div>
+        <h2 className="text-2xl font-bold text-text">{title}</h2>
+        <p className="text-sm text-text/50">{subtitle}</p>
+      </div>
+    </div>
+  );
+};
+
+// ============================================
+// MEMBER SECTION COMPONENT
+// ============================================
+
+interface MemberSectionProps {
+  members: any[];
+  title: string;
+  subtitle: string;
+  icon: any;
+  type: "management" | "teachers";
+  lang: any;
+}
+
+const MemberSection: React.FC<MemberSectionProps> = ({
+  members,
+  title,
+  subtitle,
+  icon,
+  type,
+  lang,
+}) => {
+  const t = useTranslation();
+
+  return (
+    <section className="border-t border-secondary bg-secondary/5 py-8 sm:py-12">
+      <div className="mx-auto max-w-7xl px-4">
+        <SectionHeader
+          icon={icon}
+          title={title}
+          subtitle={subtitle}
+        />
+
+        <div className="grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-3">
+          {members.map((member, idx) => {
+            const Icon = member.icon;
+
+            if (type === "teachers") {
+              return (
+                <MemberCard
+                  key={idx}
+                  name={member.name}
+                  role={t("শিক্ষক", "Teacher")}
+                  image={member.image}
+                  whatsapp={member.whatsapp}
+                  icon={Icon}
+                  subject={lang.teachers.items[idx]?.subject}
+                  group={lang.teachers.items[idx]?.group}
+                  schedule={lang.teachers.items[idx]?.schedule}
+                />
+              );
+            } else {
+              // Management
+              return (
+                <MemberCard
+                  key={idx}
+                  name={member.name}
+                  role={lang.management.manager}
+                  image={member.image}
+                  whatsapp={member.whatsapp}
+                  manages={lang.management.items[0]?.manages}
+                  icon={Briefcase}
+                />
+              );
+            }
+          })}
+        </div>
+      </div>
+    </section>
+  );
+};
+
+// ============================================
+// MAIN COMPONENT
+// ============================================
+
+export default function CommunityPage() {
+  const { language } = useLanguage();
+  const t = useTranslation();
+  const lang = community[language as "en" | "bn"];
+
+  return (
+    <div className="min-h-screen bg-background text-text">
+      {/* Hero Banner */}
+      <section className="relative overflow-hidden bg-primary py-16 sm:py-20">
+        <div className="absolute inset-0 opacity-10">
+          <div className="absolute top-0 -left-4 h-72 w-72 rounded-full bg-background mix-blend-multiply blur-xl animate-pulse" />
+          <div className="absolute bottom-0 -right-4 h-72 w-72 rounded-full bg-background/50 mix-blend-multiply blur-xl animate-pulse delay-1000" />
+        </div>
+
+        <div className="relative mx-auto max-w-4xl px-4 text-center">
+          <div className="mb-4 inline-flex items-center gap-2 rounded-full bg-background/20 px-4 py-1.5 backdrop-blur-sm">
+            <Sparkles className="h-4 w-4" />
+            <span className="text-sm font-medium text-background">
+              {lang.header.badge}
+            </span>
+          </div>
+
+          <h1 className="text-3xl font-extrabold tracking-tight text-background sm:text-4xl md:text-5xl">
+            👥 {lang.header.title}
+          </h1>
+
+          <p className="mx-auto mt-3 max-w-2xl text-base text-background/80 sm:text-lg">
+            {lang.header.subtitle}
+          </p>
+        </div>
+      </section>
+
+      {/* Stats */}
+      <div className="relative z-10 mx-auto max-w-7xl -mt-6 px-4">
+        <div className="grid grid-cols-2 gap-3 sm:grid-cols-4">
+          {[
+            { value: "1", label: t("প্রতিষ্ঠাতা", "Founder") },
+            { value: "2", label: t("সহ-অ্যাডমিন", "Co-Admins") },
+            { value: "3", label: t("ম্যানেজার", "Managers") },
+            { value: "5", label: t("শিক্ষক", "Teachers") },
+          ].map((stat) => (
+            <div
+              key={stat.label}
+              className="rounded-xl border border-secondary bg-background p-4 text-center shadow-sm"
+            >
+              <div className="text-2xl font-bold text-primary">{stat.value}</div>
+              <div className="text-xs text-text/50">{stat.label}</div>
+            </div>
+          ))}
+        </div>
+      </div>
+
+      {/* Founder & Co-Admins Section */}
+      <section className="mx-auto max-w-7xl px-4 py-8 sm:py-12">
+        <div className="grid grid-cols-1 gap-6 md:grid-cols-3">
+          {/* Founder */}
+          <MemberCard
+            name={communityData.founder.name}
+            role={lang.founder.role}
+            image={communityData.founder.image}
+            whatsapp={communityData.founder.whatsapp}
+            manages={lang.founder.manages}
+            icon={Crown}
+          />
+
+          {/* Co-Admins */}
+          {communityData.coAdmins.map((admin, idx) => (
+            <MemberCard
+              key={idx}
+              name={admin.name}
+              role={lang.coAdmins[idx].role}
+              image={admin.image}
+              whatsapp={admin.whatsapp}
+              manages={lang.coAdmins[idx].manages}
+              icon={Shield}
+            />
+          ))}
+        </div>
+      </section>
+
+      {/* Management Team */}
+      <MemberSection
+        members={communityData.managers}
+        title={lang.management.title}
+        subtitle={lang.management.subtitle}
+        icon={Users}
+        type="management"
+        lang={lang}
+      />
+
+      {/* Teachers Section */}
+      <MemberSection
+        members={communityData.teachers}
+        title={lang.teachers.title}
+        subtitle={lang.teachers.subtitle}
+        icon={Award}
+        type="teachers"
+        lang={lang}
+      />
+    </div>
+  );
+}
