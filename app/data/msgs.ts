@@ -60,13 +60,27 @@ export const snippets: Snippet[] = [
   },
 {
     id: 8,
+    title: "Word List Prompt",
+    description: "for get words list",
+    language: "tsx",
+    code: `আমাকে নিচের প্রতিটি শব্দের জন্য এই ফরম্যাটে তথ্য দাও:
+
+1. **শব্দ** pinyin Meaning — character breakdown = meaning  
+   Example: উদাহরণ বাক্য। Pinyin. English meaning.  
+   Similar: সমার্থক শব্দ pinyin Meaning
+
+শব্দগুলি হলো (পিনয়িনে):
+tiānqì, zhèlǐ, tiān, xiàyǔ, le, yǔ, yǒudiǎnr, juéde, lěng`,
+  },
+{
+    id: 9,
     title: "August 2026 New Members",
     description: "Registration Form Link",
     language: "tsx",
     code: `https://www.cognitoforms.com/KaziRobin1/NewMembersAugust2026`,
   },
   {
-    id: 9,
+    id: 10,
     title: "August 2026 New Members",
     description: "Max width container",
     language: "tsx",
