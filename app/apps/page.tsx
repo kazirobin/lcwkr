@@ -43,6 +43,9 @@ const apps = [
   {
     name: "Chinese Pinyin Learning Machine",
     category: "Pinyin",
+    url: "https://play.google.com/store/apps/details?id=uni.UNI40BB307",{
+    name: "Chinese Pinyin Keyboard",
+    category: "Pinyin",
     url: "https://play.google.com/store/apps/details?id=uni.UNI40BB307",
   },
   {
