@@ -1,4 +1,6 @@
 // Lesson 3 - Text 2
+import type { VocabularyData } from "@/app/types/vocabulary";
+
 export const lesson3Text2Data: VocabularyData = {
   lesson: 3,
   text: 2,
