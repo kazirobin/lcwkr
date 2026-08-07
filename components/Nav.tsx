@@ -8,7 +8,7 @@ import { useState } from "react";
 import { useLanguage } from "@/app/context/LanguageContext";
 import ThemeButton from "./ThemeButton";
 
-type NavKey = "home" | "pdf"|"apps" |"intro" | "community";
+type NavKey = "home" | "pdf"|"vocabulary"|"apps" |"intro" | "community";
 
 const navLinks: {
   key: NavKey;
@@ -21,6 +21,10 @@ const navLinks: {
   {
     key: "pdf",
     href: "/pdf",
+  },
+  {
+    key: "vocabulary",
+    href: "/vocabulary",
   },
   {
     key: "apps",

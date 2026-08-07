@@ -4,6 +4,7 @@ const en = {
   nav: {
     home: "Home",
     pdf: "PDF",
+    vocabulary: "Vocabulary",
     apps: "Apps",
     pinyin: "Pinyin",
     intro: "Intro",

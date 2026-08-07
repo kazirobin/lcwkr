@@ -4,6 +4,7 @@ const bn = {
   nav: {
     home: "হোম",
     pdf: "পিডিএফ",
+    vocabulary: "Vocabulary",
     apps: "এপ্যস",
     pinyin: "পিনইন",
     intro: "সূচনা ",
