@@ -1,2110 +1,53 @@
 import type { VocabularyData } from "../types/vocabulary";
+import { lesson1Text2Data } from "./vocabulary/hsk1/lesson (1)/text2";
+import { lesson1Text3Data } from "./vocabulary/hsk1/lesson (1)/text3";
+import { lesson12Text1Data } from "./vocabulary/hsk1/lesson (12)/text1";
+import { lesson12Text2Data } from "./vocabulary/hsk1/lesson (12)/text2";
+import { lesson12Text3Data } from "./vocabulary/hsk1/lesson (12)/text3";
+import { lesson13Text1Data } from "./vocabulary/hsk1/lesson (13)/text1";
+import { lesson13Text2Data } from "./vocabulary/hsk1/lesson (13)/text2";
+import { lesson13Text3Data } from "./vocabulary/hsk1/lesson (13)/text3";
+import { lesson14Text1Data } from "./vocabulary/hsk1/lesson (14)/text1";
+import { lesson14Text2Data } from "./vocabulary/hsk1/lesson (14)/text2";
+import { lesson14Text3Data } from "./vocabulary/hsk1/lesson (14)/text3";
+import { lesson15Text1Data } from "./vocabulary/hsk1/lesson (15)/text1";
+import { lesson15Text2Data } from "./vocabulary/hsk1/lesson (15)/text2";
+import { lesson15Text3Data } from "./vocabulary/hsk1/lesson (15)/text3";
+import { lesson2Text1Data } from "./vocabulary/hsk1/lesson (2)/text1";
+import { lesson2Text2Data } from "./vocabulary/hsk1/lesson (2)/text2";
+import { lesson2Text3Data } from "./vocabulary/hsk1/lesson (2)/text3";
+import { lesson3Text1Data } from "./vocabulary/hsk1/lesson (3)/text1";
+import { lesson3Text2Data } from "./vocabulary/hsk1/lesson (3)/text2";
+import { lesson3Text3Data } from "./vocabulary/hsk1/lesson (3)/text3";
+import { lesson4Text1Data } from "./vocabulary/hsk1/lesson (4)/text1";
+import { lesson4Text2Data } from "./vocabulary/hsk1/lesson (4)/text2";
+import { lesson4Text3Data } from "./vocabulary/hsk1/lesson (4)/text3";
 
 
-// Lesson 1 - Text 2
-
-export const lesson1Text2Data: VocabularyData = {
-  lesson: 1,
-  text: 2,
-  vocabulary: [
-    {
-      hanzi: "大家",
-      pinyin: "dàjiā",
-      english: "Everyone",
-      bangla: "সবাই",
-      characters: [
-        {
-          hanzi: "大",
-          pinyin: "dà",
-          meaning: "Big"
-        },
-        {
-          hanzi: "家",
-          pinyin: "jiā",
-          meaning: "Family/Home"
-        }
-      ],
-      example: {
-        hanzi: "大家好！",
-        pinyin: "Dàjiā hǎo!",
-        english: "Hello everyone!",
-        bangla: "সবাইকে হ্যালো!"
-      },
-      similar: [
-        {
-          hanzi: "每人",
-          pinyin: "měi rén",
-          english: "Everyone/Each person"
-        }
-      ]
-    },
-    {
-      hanzi: "好",
-      pinyin: "hǎo",
-      english: "Good",
-      bangla: "ভালো",
-      characters: [
-        {
-          hanzi: "女",
-          pinyin: "nǚ",
-          meaning: "Woman"
-        },
-        {
-          hanzi: "子",
-          pinyin: "zǐ",
-          meaning: "Child"
-        }
-      ],
-      example: {
-        hanzi: "很好。",
-        pinyin: "Hěn hǎo.",
-        english: "Very good.",
-        bangla: "খুব ভালো।"
-      },
-      similar: [
-        {
-          hanzi: "棒",
-          pinyin: "bàng",
-          english: "Great/Awesome"
-        }
-      ]
-    },
-    {
-      hanzi: "学生",
-      pinyin: "xuéshēng",
-      english: "Student",
-      bangla: "ছাত্র",
-      characters: [
-        {
-          hanzi: "学",
-          pinyin: "xué",
-          meaning: "Study/Learn"
-        },
-        {
-          hanzi: "生",
-          pinyin: "shēng",
-          meaning: "Person/Born"
-        }
-      ],
-      example: {
-        hanzi: "我是学生。",
-        pinyin: "Wǒ shì xuéshēng.",
-        english: "I am a student.",
-        bangla: "আমি একজন ছাত্র।"
-      },
-      similar: [
-        {
-          hanzi: "同学",
-          pinyin: "tóngxué",
-          english: "Classmate"
-        }
-      ]
-    },
-    {
-      hanzi: "们",
-      pinyin: "men",
-      english: "(plural suffix)",
-      bangla: "বহুবচন প্রত্যয়",
-      characters: [
-        {
-          hanzi: "们",
-          pinyin: "men",
-          meaning: "Plural suffix"
-        }
-      ],
-      example: {
-        hanzi: "我们。",
-        pinyin: "Wǒmen.",
-        english: "We/Us.",
-        bangla: "আমরা।"
-      },
-      similar: [
-        {
-          hanzi: "大家",
-          pinyin: "dàjiā",
-          english: "Everyone"
-        }
-      ]
-    },
-    {
-      hanzi: "老师",
-      pinyin: "lǎoshī",
-      english: "Teacher",
-      bangla: "শিক্ষক",
-      characters: [
-        {
-          hanzi: "老",
-          pinyin: "lǎo",
-          meaning: "Old/Experienced"
-        },
-        {
-          hanzi: "师",
-          pinyin: "shī",
-          meaning: "Master/Expert"
-        }
-      ],
-      example: {
-        hanzi: "老师好。",
-        pinyin: "Lǎoshī hǎo.",
-        english: "Hello teacher.",
-        bangla: "শিক্ষককে হ্যালো।"
-      },
-      similar: [
-        {
-          hanzi: "教师",
-          pinyin: "jiàoshī",
-          english: "Teacher (formal)"
-        }
-      ]
-    },
-    {
-      hanzi: "您",
-      pinyin: "nín",
-      english: "You (polite)",
-      bangla: "আপনি (সম্মানসূচক)",
-      characters: [
-        {
-          hanzi: "你",
-          pinyin: "nǐ",
-          meaning: "You"
-        },
-        {
-          hanzi: "心",
-          pinyin: "xīn",
-          meaning: "Heart (added respect)"
-        }
-      ],
-      example: {
-        hanzi: "您好！",
-        pinyin: "Nín hǎo!",
-        english: "Hello (polite)!",
-        bangla: "আপনাকে হ্যালো!"
-      },
-      similar: [
-        {
-          hanzi: "你",
-          pinyin: "nǐ",
-          english: "You (informal)"
-        }
-      ]
-    },
-    {
-      hanzi: "你们",
-      pinyin: "nǐmen",
-      english: "You (plural)",
-      bangla: "তোমরা",
-      characters: [
-        {
-          hanzi: "你",
-          pinyin: "nǐ",
-          meaning: "You"
-        },
-        {
-          hanzi: "们",
-          pinyin: "men",
-          meaning: "Plural"
-        }
-      ],
-      example: {
-        hanzi: "你们好！",
-        pinyin: "Nǐmen hǎo!",
-        english: "Hello everyone!",
-        bangla: "সবাইকে হ্যালো!"
-      },
-      similar: [
-        {
-          hanzi: "大家",
-          pinyin: "dàjiā",
-          english: "Everyone"
-        }
-      ]
-    }
-  ]
-};
-
-// Lesson 1 - Text 3
-
-export const lesson1Text3Data: VocabularyData = {
-  lesson: 1,
-  text: 3,
-  vocabulary: [
-    {
-      hanzi: "谢谢",
-      pinyin: "xièxie",
-      english: "Thank you",
-      bangla: "ধন্যবাদ",
-      characters: [
-        {
-          hanzi: "谢",
-          pinyin: "xiè",
-          meaning: "Thank"
-        }
-      ],
-      example: {
-        hanzi: "谢谢你！",
-        pinyin: "Xièxie nǐ!",
-        english: "Thank you!",
-        bangla: "ধন্যবাদ!"
-      },
-      similar: [
-        {
-          hanzi: "多谢",
-          pinyin: "duōxiè",
-          english: "Many thanks"
-        }
-      ]
-    },
-    {
-      hanzi: "不客气",
-      pinyin: "bú kèqi",
-      english: "You're welcome",
-      bangla: "স্বাগতম",
-      characters: [
-        {
-          hanzi: "不",
-          pinyin: "bù",
-          meaning: "Not"
-        },
-        {
-          hanzi: "客气",
-          pinyin: "kèqi",
-          meaning: "Polite"
-        }
-      ],
-      example: {
-        hanzi: "不客气！",
-        pinyin: "Bú kèqi!",
-        english: "You're welcome!",
-        bangla: "স্বাগতম!"
-      },
-      similar: [
-        {
-          hanzi: "没关系",
-          pinyin: "méi guānxi",
-          english: "It doesn't matter"
-        }
-      ]
-    },
-    {
-      hanzi: "同学",
-      pinyin: "tóngxué",
-      english: "Classmate",
-      bangla: "সহপাঠী",
-      characters: [
-        {
-          hanzi: "同",
-          pinyin: "tóng",
-          meaning: "Same"
-        },
-        {
-          hanzi: "学",
-          pinyin: "xué",
-          meaning: "Study"
-        }
-      ],
-      example: {
-        hanzi: "他是我的同学。",
-        pinyin: "Tā shì wǒ de tóngxué.",
-        english: "He is my classmate.",
-        bangla: "সে আমার সহপাঠী।"
-      },
-      similar: [
-        {
-          hanzi: "朋友",
-          pinyin: "péngyou",
-          english: "Friend"
-        }
-      ]
-    },
-    {
-      hanzi: "再见",
-      pinyin: "zàijiàn",
-      english: "Goodbye",
-      bangla: "বিদায়",
-      characters: [
-        {
-          hanzi: "再",
-          pinyin: "zài",
-          meaning: "Again"
-        },
-        {
-          hanzi: "见",
-          pinyin: "jiàn",
-          meaning: "See"
-        }
-      ],
-      example: {
-        hanzi: "再见！",
-        pinyin: "Zàijiàn!",
-        english: "Goodbye!",
-        bangla: "বিদায়!"
-      },
-      similar: [
-        {
-          hanzi: "拜拜",
-          pinyin: "bàibài",
-          english: "Bye-bye"
-        }
-      ]
-    }
-  ]
-};
-
-// Lesson 2 - Text 1
-
-export const lesson2Text1Data: VocabularyData = {
-  lesson: 2,
-  text: 1,
-  vocabulary: [
-    {
-      hanzi: "请问",
-      pinyin: "qǐngwèn",
-      english: "Excuse me; May I ask",
-      bangla: "দয়া করে জিজ্ঞাসা",
-      characters: [
-        {
-          hanzi: "请",
-          pinyin: "qǐng",
-          meaning: "Please"
-        },
-        {
-          hanzi: "问",
-          pinyin: "wèn",
-          meaning: "Ask"
-        }
-      ],
-      example: {
-        hanzi: "请问，你叫什么名字？",
-        pinyin: "Qǐngwèn, nǐ jiào shénme míngzi?",
-        english: "Excuse me, what's your name?",
-        bangla: "দয়া করে, আপনার নাম কি?"
-      },
-      similar: [
-        {
-          hanzi: "劳驾",
-          pinyin: "láojià",
-          english: "Excuse me (polite)"
-        }
-      ]
-    },
-    {
-      hanzi: "你",
-      pinyin: "nǐ",
-      english: "You",
-      bangla: "তুমি",
-      characters: [
-        {
-          hanzi: "你",
-          pinyin: "nǐ",
-          meaning: "You"
-        }
-      ],
-      example: {
-        hanzi: "你好吗？",
-        pinyin: "Nǐ hǎo ma?",
-        english: "How are you?",
-        bangla: "তুমি কেমন আছ?"
-      },
-      similar: [
-        {
-          hanzi: "您",
-          pinyin: "nín",
-          english: "You (formal)"
-        }
-      ]
-    },
-    {
-      hanzi: "叫",
-      pinyin: "jiào",
-      english: "To be called; to call",
-      bangla: "ডাক দেওয়া",
-      characters: [
-        {
-          hanzi: "叫",
-          pinyin: "jiào",
-          meaning: "Call/Name"
-        }
-      ],
-      example: {
-        hanzi: "我叫李明。",
-        pinyin: "Wǒ jiào Lǐ Míng.",
-        english: "My name is Li Ming.",
-        bangla: "আমার নাম লি মিং।"
-      },
-      similar: [
-        {
-          hanzi: "名叫",
-          pinyin: "míngjiào",
-          english: "To be named"
-        }
-      ]
-    },
-    {
-      hanzi: "什么",
-      pinyin: "shénme",
-      english: "What",
-      bangla: "কি",
-      characters: [
-        {
-          hanzi: "什",
-          pinyin: "shén",
-          meaning: "What"
-        },
-        {
-          hanzi: "么",
-          pinyin: "me",
-          meaning: "Suffix"
-        }
-      ],
-      example: {
-        hanzi: "这是什么？",
-        pinyin: "Zhè shì shénme?",
-        english: "What is this?",
-        bangla: "এটা কি?"
-      },
-      similar: [
-        {
-          hanzi: "哪个",
-          pinyin: "nǎge",
-          english: "Which"
-        }
-      ]
-    },
-    {
-      hanzi: "名字",
-      pinyin: "míngzi",
-      english: "Name",
-      bangla: "নাম",
-      characters: [
-        {
-          hanzi: "名",
-          pinyin: "míng",
-          meaning: "Name"
-        },
-        {
-          hanzi: "字",
-          pinyin: "zì",
-          meaning: "Character/Word"
-        }
-      ],
-      example: {
-        hanzi: "你的名字是什么？",
-        pinyin: "Nǐ de míngzi shì shénme?",
-        english: "What is your name?",
-        bangla: "তোমার নাম কি?"
-      },
-      similar: [
-        {
-          hanzi: "姓名",
-          pinyin: "xìngmíng",
-          english: "Full name"
-        }
-      ]
-    },
-    {
-      hanzi: "我",
-      pinyin: "wǒ",
-      english: "I; Me",
-      bangla: "আমি",
-      characters: [
-        {
-          hanzi: "我",
-          pinyin: "wǒ",
-          meaning: "I/Me"
-        }
-      ],
-      example: {
-        hanzi: "我是学生。",
-        pinyin: "Wǒ shì xuéshēng.",
-        english: "I am a student.",
-        bangla: "আমি একজন ছাত্র।"
-      },
-      similar: [
-        {
-          hanzi: "本人",
-          pinyin: "běnrén",
-          english: "Oneself (formal)"
-        }
-      ]
-    }
-  ]
-};
 
 
-// Lesson 2 - Text 2
-
-export const lesson2Text2Data: VocabularyData = {
-  lesson: 2,
-  text: 2,
-  vocabulary: [
-    {
-      hanzi: "不",
-      pinyin: "bù",
-      english: "No; not",
-      bangla: "না",
-      characters: [
-        {
-          hanzi: "不",
-          pinyin: "bù",
-          meaning: "Not/No"
-        }
-      ],
-      example: {
-        hanzi: "我不是老师。",
-        pinyin: "Wǒ bú shì lǎoshī.",
-        english: "I am not a teacher.",
-        bangla: "আমি শিক্ষক নই।"
-      },
-      similar: [
-        {
-          hanzi: "没",
-          pinyin: "méi",
-          english: "Not (past actions/don't have)"
-        }
-      ]
-    },
-    {
-      hanzi: "是",
-      pinyin: "shì",
-      english: "To be; yes",
-      bangla: "হওয়া",
-      characters: [
-        {
-          hanzi: "是",
-          pinyin: "shì",
-          meaning: "To be/Is/Are/Am"
-        }
-      ],
-      example: {
-        hanzi: "我是学生。",
-        pinyin: "Wǒ shì xuéshēng.",
-        english: "I am a student.",
-        bangla: "আমি একজন ছাত্র।"
-      },
-      similar: [
-        {
-          hanzi: "对",
-          pinyin: "duì",
-          english: "Correct; right"
-        }
-      ]
-    },
-    {
-      hanzi: "对不起",
-      pinyin: "duìbuqǐ",
-      english: "Sorry",
-      bangla: "দুঃখিত",
-      characters: [
-        {
-          hanzi: "对",
-          pinyin: "duì",
-          meaning: "Toward/Correct"
-        },
-        {
-          hanzi: "不",
-          pinyin: "bù",
-          meaning: "Not"
-        },
-        {
-          hanzi: "起",
-          pinyin: "qǐ",
-          meaning: "Rise"
-        }
-      ],
-      example: {
-        hanzi: "对不起，我迟到了。",
-        pinyin: "Duìbuqǐ, wǒ chídào le.",
-        english: "Sorry, I am late.",
-        bangla: "দুঃখিত, আমি দেরি করে ফেলেছি।"
-      },
-      similar: [
-        {
-          hanzi: "抱歉",
-          pinyin: "bàoqiàn",
-          english: "Sorry; apologize"
-        }
-      ]
-    },
-    {
-      hanzi: "没关系",
-      pinyin: "méi guānxi",
-      english: "It's okay; no problem",
-      bangla: "কোনো সমস্যা নেই",
-      characters: [
-        {
-          hanzi: "没",
-          pinyin: "méi",
-          meaning: "Not"
-        },
-        {
-          hanzi: "关系",
-          pinyin: "guānxi",
-          meaning: "Relation/Matter"
-        }
-      ],
-      example: {
-        hanzi: "A: 对不起。B: 没关系。",
-        pinyin: "A: Duìbuqǐ. B: Méi guānxi.",
-        english: "A: Sorry. B: It's okay.",
-        bangla: "A: দুঃখিত। B: কোনো সমস্যা নেই।"
-      },
-      similar: [
-        {
-          hanzi: "不要紧",
-          pinyin: "bú yàojǐn",
-          english: "No problem; it's all right"
-        }
-      ]
-    },
-    {
-      hanzi: "没事",
-      pinyin: "méi shì",
-      english: "It's okay; nothing's wrong",
-      bangla: "কিছু হয়নি",
-      characters: [
-        {
-          hanzi: "没",
-          pinyin: "méi",
-          meaning: "Not"
-        },
-        {
-          hanzi: "事",
-          pinyin: "shì",
-          meaning: "Matter/Problem"
-        }
-      ],
-      example: {
-        hanzi: "没事，别担心。",
-        pinyin: "Méi shì, bié dānxīn.",
-        english: "It's okay, don't worry.",
-        bangla: "কিছু হয়নি, চিন্তা করো না।"
-      },
-      similar: [
-        {
-          hanzi: "没关系",
-          pinyin: "méi guānxi",
-          english: "It's okay; no problem"
-        }
-      ]
-    }
-  ]
-};
-
-// Lesson 2 - Text 3
-
-export const lesson2Text3Data: VocabularyData = 
-{
-  lesson: 2,
-  text: 3,
-  vocabulary: [
-    {
-      hanzi: "很",
-      pinyin: "hěn",
-      english: "Very; quite",
-      bangla: "খুব",
-      characters: [
-        {
-          hanzi: "很",
-          pinyin: "hěn",
-          meaning: "Very"
-        }
-      ],
-      example: {
-        hanzi: "我很高兴。",
-        pinyin: "Wǒ hěn gāoxìng.",
-        english: "I am very happy.",
-        bangla: "আমি খুব খুশি।"
-      },
-      similar: [
-        {
-          hanzi: "非常",
-          pinyin: "fēicháng",
-          english: "Very; extremely"
-        }
-      ]
-    },
-    {
-      hanzi: "高兴",
-      pinyin: "gāoxìng",
-      english: "Happy; glad",
-      bangla: "খুশি",
-      characters: [
-        {
-          hanzi: "高",
-          pinyin: "gāo",
-          meaning: "High"
-        },
-        {
-          hanzi: "兴",
-          pinyin: "xìng",
-          meaning: "Interest/Mood"
-        }
-      ],
-      example: {
-        hanzi: "很高兴认识你。",
-        pinyin: "Hěn gāoxìng rènshi nǐ.",
-        english: "Nice to meet you.",
-        bangla: "আপনার সাথে পরিচিত হয়ে খুব খুশি হলাম।"
-      },
-      similar: [
-        {
-          hanzi: "开心",
-          pinyin: "kāixīn",
-          english: "Happy; joyful"
-        }
-      ]
-    },
-    {
-      hanzi: "认识",
-      pinyin: "rènshi",
-      english: "To know; to meet; to get acquainted",
-      bangla: "চেনা/পরিচিত হওয়া",
-      characters: [
-        {
-          hanzi: "认",
-          pinyin: "rèn",
-          meaning: "Recognize"
-        },
-        {
-          hanzi: "识",
-          pinyin: "shi",
-          meaning: "Know/Knowledge"
-        }
-      ],
-      example: {
-        hanzi: "我认识他。",
-        pinyin: "Wǒ rènshi tā.",
-        english: "I know him.",
-        bangla: "আমি তাকে চিনি।"
-      },
-      similar: [
-        {
-          hanzi: "知道",
-          pinyin: "zhīdào",
-          english: "To know (a fact)"
-        }
-      ]
-    },
-    {
-      hanzi: "也",
-      pinyin: "yě",
-      english: "Also; too",
-      bangla: "ও",
-      characters: [
-        {
-          hanzi: "也",
-          pinyin: "yě",
-          meaning: "Also/Too"
-        }
-      ],
-      example: {
-        hanzi: "我也是学生。",
-        pinyin: "Wǒ yě shì xuéshēng.",
-        english: "I am also a student.",
-        bangla: "আমিও একজন ছাত্র।"
-      },
-      similar: [
-        {
-          hanzi: "还",
-          pinyin: "hái",
-          english: "Also; still (depending on context)"
-        }
-      ]
-    }
-  ]
-};
 
 
-// Lesson 3 - Text 1
-export const lesson3Text1Data: VocabularyData = {
-  lesson: 3,
-  text: 1,
-  vocabulary: [
-    {
-      hanzi: "人",
-      pinyin: "rén",
-      english: "Person; people",
-      bangla: "ব্যক্তি/লোক",
-      characters: [
-        {
-          hanzi: "人",
-          pinyin: "rén",
-          meaning: "Person"
-        }
-      ],
-      example: {
-        hanzi: "我是一个人。",
-        pinyin: "Wǒ shì yī gè rén.",
-        english: "I am a person.",
-        bangla: "আমি একজন ব্যক্তি।"
-      },
-      similar: [
-        {
-          hanzi: "人民",
-          pinyin: "rénmín",
-          english: "People"
-        }
-      ]
-    },
-    {
-      hanzi: "的",
-      pinyin: "de",
-      english: "Possessive particle / modifier marker",
-      bangla: "এর/র (সম্বন্ধ পদ)",
-      characters: [
-        {
-          hanzi: "的",
-          pinyin: "de",
-          meaning: "'s / of (modifier)"
-        }
-      ],
-      example: {
-        hanzi: "这是我的书。",
-        pinyin: "Zhè shì wǒ de shū.",
-        english: "This is my book.",
-        bangla: "এটা আমার বই।"
-      },
-      similar: [
-        {
-          hanzi: "之",
-          pinyin: "zhī",
-          english: "Of (classical)"
-        }
-      ]
-    },
-    {
-      hanzi: "中文",
-      pinyin: "Zhōngwén",
-      english: "Chinese language (written)",
-      bangla: "চীনা ভাষা (লিখিত)",
-      characters: [
-        {
-          hanzi: "中",
-          pinyin: "Zhōng",
-          meaning: "China"
-        },
-        {
-          hanzi: "文",
-          pinyin: "wén",
-          meaning: "Language/Writing"
-        }
-      ],
-      example: {
-        hanzi: "你会说中文吗？",
-        pinyin: "Nǐ huì shuō Zhōngwén ma?",
-        english: "Can you speak Chinese?",
-        bangla: "তুমি কি চীনা বলতে পারো?"
-      },
-      similar: [
-        {
-          hanzi: "汉语",
-          pinyin: "Hànyǔ",
-          english: "Chinese language (spoken)"
-        }
-      ]
-    },
-    {
-      hanzi: "法国",
-      pinyin: "Fǎguó",
-      english: "France",
-      bangla: "ফ্রান্স",
-      characters: [
-        {
-          hanzi: "法",
-          pinyin: "Fǎ",
-          meaning: "France (phonetic)"
-        },
-        {
-          hanzi: "国",
-          pinyin: "guó",
-          meaning: "Country"
-        }
-      ],
-      example: {
-        hanzi: "她来自法国。",
-        pinyin: "Tā láizì Fǎguó.",
-        english: "She comes from France.",
-        bangla: "সে ফ্রান্স থেকে আসে।"
-      },
-      similar: [
-        {
-          hanzi: "法兰西",
-          pinyin: "Fǎlánxī",
-          english: "France (formal)"
-        }
-      ]
-    },
-    {
-      hanzi: "中国",
-      pinyin: "Zhōngguó",
-      english: "China",
-      bangla: "চীন",
-      characters: [
-        {
-          hanzi: "中",
-          pinyin: "Zhōng",
-          meaning: "Middle/Central"
-        },
-        {
-          hanzi: "国",
-          pinyin: "guó",
-          meaning: "Country"
-        }
-      ],
-      example: {
-        hanzi: "我在中国学习。",
-        pinyin: "Wǒ zài Zhōngguó xuéxí.",
-        english: "I study in China.",
-        bangla: "আমি চীনে পড়াশোনা করি।"
-      },
-      similar: [
-        {
-          hanzi: "中华人民共和国",
-          pinyin: "Zhōnghuá Rénmín Gònghéguó",
-          english: "People's Republic of China (formal)"
-        }
-      ]
-    }
-  ]
-};
 
-// Lesson 3 - Text 2
-export const lesson3Text2Data: VocabularyData = {
-  lesson: 3,
-  text: 2,
-  vocabulary: [
-    {
-      hanzi: "这",
-      pinyin: "zhè",
-      english: "This",
-      bangla: "এই",
-      characters: [
-        {
-          hanzi: "这",
-          pinyin: "zhè",
-          meaning: "This"
-        }
-      ],
-      example: {
-        hanzi: "这是什么？",
-        pinyin: "Zhè shì shénme?",
-        english: "What is this?",
-        bangla: "এটা কি?"
-      },
-      similar: [
-        {
-          hanzi: "这个",
-          pinyin: "zhè ge",
-          english: "This one"
-        }
-      ]
-    },
-    {
-      hanzi: "谁",
-      pinyin: "shéi",
-      english: "Who",
-      bangla: "কে",
-      characters: [
-        {
-          hanzi: "谁",
-          pinyin: "shéi",
-          meaning: "Who"
-        }
-      ],
-      example: {
-        hanzi: "他是谁？",
-        pinyin: "Tā shì shéi?",
-        english: "Who is he?",
-        bangla: "সে কে?"
-      },
-      similar: [
-        {
-          hanzi: "何人",
-          pinyin: "hé rén",
-          english: "Who (formal)"
-        }
-      ]
-    },
-    {
-      hanzi: "女朋友",
-      pinyin: "nǚpéngyou",
-      english: "Girlfriend",
-      bangla: "বান্ধবী",
-      characters: [
-        {
-          hanzi: "女",
-          pinyin: "nǚ",
-          meaning: "Female"
-        },
-        {
-          hanzi: "朋友",
-          pinyin: "péngyou",
-          meaning: "Friend"
-        }
-      ],
-      example: {
-        hanzi: "我有女朋友。",
-        pinyin: "Wǒ yǒu nǚpéngyou.",
-        english: "I have a girlfriend.",
-        bangla: "আমার বান্ধবী আছে।"
-      },
-      similar: [
-        {
-          hanzi: "对象",
-          pinyin: "duìxiàng",
-          english: "Partner/Significant other"
-        }
-      ]
-    },
-    {
-      hanzi: "哪",
-      pinyin: "nǎ",
-      english: "Which",
-      bangla: "কোন",
-      characters: [
-        {
-          hanzi: "哪",
-          pinyin: "nǎ",
-          meaning: "Which"
-        }
-      ],
-      example: {
-        hanzi: "你是哪国人？",
-        pinyin: "Nǐ shì nǎ guó rén?",
-        english: "Which country are you from?",
-        bangla: "তুমি কোন দেশের?"
-      },
-      similar: [
-        {
-          hanzi: "哪个",
-          pinyin: "nǎ ge",
-          english: "Which one"
-        }
-      ]
-    },
-    {
-      hanzi: "国",
-      pinyin: "guó",
-      english: "Country",
-      bangla: "দেশ",
-      characters: [
-        {
-          hanzi: "国",
-          pinyin: "guó",
-          meaning: "Country"
-        }
-      ],
-      example: {
-        hanzi: "我爱我的国。",
-        pinyin: "Wǒ ài wǒ de guó.",
-        english: "I love my country.",
-        bangla: "আমি আমার দেশকে ভালোবাসি।"
-      },
-      similar: [
-        {
-          hanzi: "国家",
-          pinyin: "guójiā",
-          english: "Nation/Country"
-        }
-      ]
-    },
-    {
-      hanzi: "他",
-      pinyin: "tā",
-      english: "He/She/It",
-      bangla: "সে",
-      characters: [
-        {
-          hanzi: "他",
-          pinyin: "tā",
-          meaning: "He (male)"
-        }
-      ],
-      example: {
-        hanzi: "他是老师。",
-        pinyin: "Tā shì lǎoshī.",
-        english: "He is a teacher.",
-        bangla: "সে একজন শিক্ষক।"
-      },
-      similar: [
-        {
-          hanzi: "其",
-          pinyin: "qí",
-          english: "It/That (formal)"
-        }
-      ]
-    },
-    {
-      hanzi: "泰国",
-      pinyin: "Tàiguó",
-      english: "Thailand",
-      bangla: "থাইল্যান্ড",
-      characters: [
-        {
-          hanzi: "泰",
-          pinyin: "Tài",
-          meaning: "Thai (phonetic)"
-        },
-        {
-          hanzi: "国",
-          pinyin: "guó",
-          meaning: "Country"
-        }
-      ],
-      example: {
-        hanzi: "我去过泰国。",
-        pinyin: "Wǒ qùguo Tàiguó.",
-        english: "I have been to Thailand.",
-        bangla: "আমি থাইল্যান্ড গিয়েছি।"
-      },
-      similar: [
-        {
-          hanzi: "暹罗",
-          pinyin: "Xiānluó",
-          english: "Siam (historical)"
-        }
-      ]
-    }
-  ]
-};
 
-// Lesson 3 - Text 3
-export const lesson3Text3Data: VocabularyData = {
-  lesson: 3,
-  text: 3,
-  vocabulary: [
-    {
-      hanzi: "喂",
-      pinyin: "wèi",
-      english: "Hello (on phone) / Hey",
-      bangla: "হ্যালো (ফোনে)",
-      characters: [
-        {
-          hanzi: "喂",
-          pinyin: "wèi",
-          meaning: "Hello (phone call interjection)"
-        }
-      ],
-      example: {
-        hanzi: "喂，你是谁？",
-        pinyin: "Wèi, nǐ shì shéi?",
-        english: "Hello, who is this?",
-        bangla: "হ্যালো, আপনি কে?"
-      },
-      similar: [
-        {
-          hanzi: "你好",
-          pinyin: "nǐ hǎo",
-          english: "Hello (general)"
-        }
-      ]
-    },
-    {
-      hanzi: "姐姐",
-      pinyin: "jiějie",
-      english: "Older sister",
-      bangla: "বড় বোন",
-      characters: [
-        {
-          hanzi: "姐",
-          pinyin: "jiě",
-          meaning: "Elder sister"
-        },
-        {
-          hanzi: "姐",
-          pinyin: "jiě",
-          meaning: "Elder sister (reduplicated)"
-        }
-      ],
-      example: {
-        hanzi: "我姐姐是医生。",
-        pinyin: "Wǒ jiějie shì yīshēng.",
-        english: "My older sister is a doctor.",
-        bangla: "আমার বড় বোন একজন ডাক্তার।"
-      },
-      similar: [
-        {
-          hanzi: "大姐",
-          pinyin: "dàjiě",
-          english: "Eldest sister / Big sis"
-        }
-      ]
-    },
-    {
-      hanzi: "工作",
-      pinyin: "gōngzuò",
-      english: "Work / Job",
-      bangla: "কাজ/চাকরি",
-      characters: [
-        {
-          hanzi: "工",
-          pinyin: "gōng",
-          meaning: "Work/Labor"
-        },
-        {
-          hanzi: "作",
-          pinyin: "zuò",
-          meaning: "Do/Make"
-        }
-      ],
-      example: {
-        hanzi: "你在哪里工作？",
-        pinyin: "Nǐ zài nǎli gōngzuò?",
-        english: "Where do you work?",
-        bangla: "আপনি কোথায় কাজ করেন?"
-      },
-      similar: [
-        {
-          hanzi: "职业",
-          pinyin: "zhíyè",
-          english: "Profession/Career"
-        }
-      ]
-    },
-    {
-      hanzi: "还",
-      pinyin: "hái",
-      english: "Still / Yet / Also",
-      bangla: "এখনও/আরও",
-      characters: [
-        {
-          hanzi: "还",
-          pinyin: "hái",
-          meaning: "Still, yet, in addition"
-        }
-      ],
-      example: {
-        hanzi: "我还没吃饭。",
-        pinyin: "Wǒ hái méi chīfàn.",
-        english: "I haven't eaten yet.",
-        bangla: "আমি এখনও খাইনি।"
-      },
-      similar: [
-        {
-          hanzi: "仍然",
-          pinyin: "réngrán",
-          english: "Still (formal)"
-        }
-      ]
-    },
-    {
-      hanzi: "忙",
-      pinyin: "máng",
-      english: "Busy",
-      bangla: "ব্যস্ত",
-      characters: [
-        {
-          hanzi: "忙",
-          pinyin: "máng",
-          meaning: "Busy"
-        }
-      ],
-      example: {
-        hanzi: "我今天很忙。",
-        pinyin: "Wǒ jīntiān hěn máng.",
-        english: "I am very busy today.",
-        bangla: "আমি আজ খুব ব্যস্ত।"
-      },
-      similar: [
-        {
-          hanzi: "忙碌",
-          pinyin: "mánglù",
-          english: "Busy (stressed)"
-        }
-      ]
-    },
-    {
-      hanzi: "吗",
-      pinyin: "ma",
-      english: "Question particle",
-      bangla: "প্রশ্নবোধক চিহ্ন",
-      characters: [
-        {
-          hanzi: "吗",
-          pinyin: "ma",
-          meaning: "Question marker (yes/no questions)"
-        }
-      ],
-      example: {
-        hanzi: "你好吗？",
-        pinyin: "Nǐ hǎo ma?",
-        english: "How are you?",
-        bangla: "আপনি কেমন আছেন?"
-      },
-      similar: [
-        {
-          hanzi: "呢",
-          pinyin: "ne",
-          english: "Question particle (non-yes/no questions)"
-        }
-      ]
-    },
-    {
-      hanzi: "对",
-      pinyin: "duì",
-      english: "Correct / Right / Towards",
-      bangla: "সঠিক/ঠিক",
-      characters: [
-        {
-          hanzi: "对",
-          pinyin: "duì",
-          meaning: "Correct, right, toward"
-        }
-      ],
-      example: {
-        hanzi: "你说得对。",
-        pinyin: "Nǐ shuō de duì.",
-        english: "You are right.",
-        bangla: "তুমি ঠিক বলেছ।"
-      },
-      similar: [
-        {
-          hanzi: "正确",
-          pinyin: "zhèngquè",
-          english: "Correct (formal)"
-        }
-      ]
-    },
-    {
-      hanzi: "太",
-      pinyin: "tài",
-      english: "Too / Very (excessive)",
-      bangla: "খুব/অত্যধিক",
-      characters: [
-        {
-          hanzi: "太",
-          pinyin: "tài",
-          meaning: "Too, extremely"
-        }
-      ],
-      example: {
-        hanzi: "太好了！",
-        pinyin: "Tài hǎo le!",
-        english: "Great! / Too good!",
-        bangla: "খুব ভালো!"
-      },
-      similar: [
-        {
-          hanzi: "非常",
-          pinyin: "fēicháng",
-          english: "Very (neutral)"
-        }
-      ]
-    },
-    {
-      hanzi: "我们",
-      pinyin: "wǒmen",
-      english: "We / Us",
-      bangla: "আমরা",
-      characters: [
-        {
-          hanzi: "我",
-          pinyin: "wǒ",
-          meaning: "I/Me"
-        },
-        {
-          hanzi: "们",
-          pinyin: "men",
-          meaning: "Plural marker"
-        }
-      ],
-      example: {
-        hanzi: "我们是学生。",
-        pinyin: "Wǒmen shì xuéshēng.",
-        english: "We are students.",
-        bangla: "আমরা ছাত্র।"
-      },
-      similar: [
-        {
-          hanzi: "咱们",
-          pinyin: "zánmen",
-          english: "We (inclusive, colloquial)"
-        }
-      ]
-    },
-    {
-      hanzi: "想",
-      pinyin: "xiǎng",
-      english: "To think / To want / To miss",
-      bangla: "ভাবা/চাওয়া/মিস করা",
-      characters: [
-        {
-          hanzi: "想",
-          pinyin: "xiǎng",
-          meaning: "Think, want, miss"
-        }
-      ],
-      example: {
-        hanzi: "我想去中国。",
-        pinyin: "Wǒ xiǎng qù Zhōngguó.",
-        english: "I want to go to China.",
-        bangla: "আমি চীনে যেতে চাই।"
-      },
-      similar: [
-        {
-          hanzi: "要",
-          pinyin: "yào",
-          english: "Want (stronger/will)"
-        },
-        {
-          hanzi: "思考",
-          pinyin: "sīkǎo",
-          english: "To think deeply"
-        }
-      ]
-    }
-  ]
-};
 
-// Lesson 4 - Text 1
-export const lesson4Text1Data: VocabularyData = {
-  lesson: 4,
-  text: 1,
-  vocabulary: [
-    {
-      hanzi: "有",
-      pinyin: "yǒu",
-      english: "To have / There is / There are",
-      bangla: "থাকা/আছে",
-      characters: [
-        {
-          hanzi: "有",
-          pinyin: "yǒu",
-          meaning: "Have, exist, possess"
-        }
-      ],
-      example: {
-        hanzi: "我有一本书。",
-        pinyin: "Wǒ yǒu yī běn shū.",
-        english: "I have a book.",
-        bangla: "আমার একটি বই আছে।"
-      },
-      similar: [
-        {
-          hanzi: "拥有",
-          pinyin: "yōngyǒu",
-          english: "To possess (formal)"
-        },
-        {
-          hanzi: "存在",
-          pinyin: "cúnzài",
-          english: "To exist"
-        }
-      ]
-    },
-    {
-      hanzi: "多少",
-      pinyin: "duōshǎo",
-      english: "How many / How much (with measure words)",
-      bangla: "কত",
-      characters: [
-        {
-          hanzi: "多",
-          pinyin: "duō",
-          meaning: "Many/Much"
-        },
-        {
-          hanzi: "少",
-          pinyin: "shǎo",
-          meaning: "Few/Little"
-        }
-      ],
-      example: {
-        hanzi: "你有多少本书？",
-        pinyin: "Nǐ yǒu duōshǎo běn shū?",
-        english: "How many books do you have?",
-        bangla: "তোমার কতগুলো বই আছে?"
-      },
-      similar: [
-        {
-          hanzi: "几",
-          pinyin: "jǐ",
-          english: "How many (small numbers, under 10)"
-        }
-      ]
-    },
-    {
-      hanzi: "个",
-      pinyin: "gè",
-      english: "Generic measure word",
-      bangla: "টি/জন (গণনাবাচক শব্দ)",
-      characters: [
-        {
-          hanzi: "个",
-          pinyin: "gè",
-          meaning: "Generic measure word"
-        }
-      ],
-      example: {
-        hanzi: "一个人",
-        pinyin: "yī gè rén",
-        english: "One person",
-        bangla: "একজন ব্যক্তি"
-      },
-      similar: [
-        {
-          hanzi: "位",
-          pinyin: "wèi",
-          english: "Polite measure word for people"
-        },
-        {
-          hanzi: "只",
-          pinyin: "zhī",
-          english: "Measure word for animals, one of a pair"
-        }
-      ]
-    }
-  ]
-};
 
-// Lesson 4 - Text 2
-export const lesson4Text2Data: VocabularyData = {
-  lesson: 4,
-  text: 2,
-  vocabulary: [
-    {
-      hanzi: "哥哥",
-      pinyin: "gēge",
-      english: "Older brother",
-      bangla: "বড় ভাই",
-      characters: [
-        {
-          hanzi: "哥",
-          pinyin: "gē",
-          meaning: "Elder brother"
-        },
-        {
-          hanzi: "哥",
-          pinyin: "gē",
-          meaning: "Elder brother (reduplicated)"
-        }
-      ],
-      example: {
-        hanzi: "我哥哥很高。",
-        pinyin: "Wǒ gēge hěn gāo.",
-        english: "My older brother is very tall.",
-        bangla: "আমার বড় ভাই খুব লম্বা।"
-      },
-      similar: [
-        {
-          hanzi: "大哥",
-          pinyin: "dàgē",
-          english: "Eldest brother / Big bro (respectful)"
-        }
-      ]
-    },
-    {
-      hanzi: "呢",
-      pinyin: "ne",
-      english: "Question particle (non-yes/no questions / topic continuing)",
-      bangla: "প্রশ্নবোধক শব্দ",
-      characters: [
-        {
-          hanzi: "呢",
-          pinyin: "ne",
-          meaning: "Question particle (softens questions)"
-        }
-      ],
-      example: {
-        hanzi: "我在家，你呢？",
-        pinyin: "Wǒ zài jiā, nǐ ne?",
-        english: "I'm at home, and you?",
-        bangla: "আমি বাড়িতে আছি, তুমি?"
-      },
-      similar: [
-        {
-          hanzi: "吗",
-          pinyin: "ma",
-          english: "Yes/no question particle"
-        }
-      ]
-    },
-    {
-      hanzi: "没有",
-      pinyin: "méiyǒu",
-      english: "To not have / There is no / Haven't (done)",
-      bangla: "নেই/না",
-      characters: [
-        {
-          hanzi: "没",
-          pinyin: "méi",
-          meaning: "Not"
-        },
-        {
-          hanzi: "有",
-          pinyin: "yǒu",
-          meaning: "Have"
-        }
-      ],
-      example: {
-        hanzi: "我没有钱。",
-        pinyin: "Wǒ méiyǒu qián.",
-        english: "I don't have money.",
-        bangla: "আমার টাকা নেই।"
-      },
-      similar: [
-        {
-          hanzi: "无",
-          pinyin: "wú",
-          english: "Without (formal/literary)"
-        }
-      ]
-    },
-    {
-      hanzi: "家",
-      pinyin: "jiā",
-      english: "Home / Family / House",
-      bangla: "বাড়ি/পরিবার",
-      characters: [
-        {
-          hanzi: "家",
-          pinyin: "jiā",
-          meaning: "Home, family"
-        }
-      ],
-      example: {
-        hanzi: "我家在北京。",
-        pinyin: "Wǒ jiā zài Běijīng.",
-        english: "My home/family is in Beijing.",
-        bangla: "আমার বাড়ি বেইজিং-এ।"
-      },
-      similar: [
-        {
-          hanzi: "家庭",
-          pinyin: "jiātíng",
-          english: "Family (formal)"
-        }
-      ]
-    },
-    {
-      hanzi: "几",
-      pinyin: "jǐ",
-      english: "How many (small numbers, usually under 10)",
-      bangla: "কত (ছোট সংখ্যার জন্য)",
-      characters: [
-        {
-          hanzi: "几",
-          pinyin: "jǐ",
-          meaning: "How many (expecting small number answer)"
-        }
-      ],
-      example: {
-        hanzi: "你有几个姐姐？",
-        pinyin: "Nǐ yǒu jǐ ge jiějie?",
-        english: "How many older sisters do you have?",
-        bangla: "তোমার কয়জন বড় বোন আছে?"
-      },
-      similar: [
-        {
-          hanzi: "多少",
-          pinyin: "duōshǎo",
-          english: "How many (any number range)"
-        }
-      ]
-    },
-    {
-      hanzi: "口",
-      pinyin: "kǒu",
-      english: "Measure word for family members / Mouth",
-      bangla: "জন (পরিবারের সদস্যের জন্য)/মুখ",
-      characters: [
-        {
-          hanzi: "口",
-          pinyin: "kǒu",
-          meaning: "Mouth; measure word for family members"
-        }
-      ],
-      example: {
-        hanzi: "我家有五口人。",
-        pinyin: "Wǒ jiā yǒu wǔ kǒu rén.",
-        english: "My family has five people.",
-        bangla: "আমার পরিবারে পাঁচ জন।"
-      },
-      similar: [
-        {
-          hanzi: "个",
-          pinyin: "gè",
-          english: "Generic measure word"
-        },
-        {
-          hanzi: "位",
-          pinyin: "wèi",
-          english: "Polite measure word for people"
-        }
-      ]
-    },
-    {
-      hanzi: "爸爸",
-      pinyin: "bàba",
-      english: "Dad / Father",
-      bangla: "বাবা",
-      characters: [
-        {
-          hanzi: "爸",
-          pinyin: "bà",
-          meaning: "Dad"
-        },
-        {
-          hanzi: "爸",
-          pinyin: "bà",
-          meaning: "Dad (reduplicated)"
-        }
-      ],
-      example: {
-        hanzi: "我爸爸是老师。",
-        pinyin: "Wǒ bàba shì lǎoshī.",
-        english: "My dad is a teacher.",
-        bangla: "আমার বাবা একজন শিক্ষক।"
-      },
-      similar: [
-        {
-          hanzi: "父亲",
-          pinyin: "fùqīn",
-          english: "Father (formal)"
-        }
-      ]
-    },
-    {
-      hanzi: "妈妈",
-      pinyin: "māma",
-      english: "Mom / Mother",
-      bangla: "মা",
-      characters: [
-        {
-          hanzi: "妈",
-          pinyin: "mā",
-          meaning: "Mom"
-        },
-        {
-          hanzi: "妈",
-          pinyin: "mā",
-          meaning: "Mom (reduplicated)"
-        }
-      ],
-      example: {
-        hanzi: "我妈妈很漂亮。",
-        pinyin: "Wǒ māma hěn piàoliang.",
-        english: "My mom is very beautiful.",
-        bangla: "আমার মা খুব সুন্দর।"
-      },
-      similar: [
-        {
-          hanzi: "母亲",
-          pinyin: "mǔqīn",
-          english: "Mother (formal)"
-        }
-      ]
-    },
-    {
-      hanzi: "妹妹",
-      pinyin: "mèimei",
-      english: "Younger sister",
-      bangla: "ছোট বোন",
-      characters: [
-        {
-          hanzi: "妹",
-          pinyin: "mèi",
-          meaning: "Younger sister"
-        },
-        {
-          hanzi: "妹",
-          pinyin: "mèi",
-          meaning: "Younger sister (reduplicated)"
-        }
-      ],
-      example: {
-        hanzi: "我妹妹在上大学。",
-        pinyin: "Wǒ mèimei zài shàng dàxué.",
-        english: "My younger sister is in college.",
-        bangla: "আমার ছোট বোন বিশ্ববিদ্যালয়ে পড়ে।"
-      },
-      similar: [
-        {
-          hanzi: "小妹",
-          pinyin: "xiǎomèi",
-          english: "Little sister (affectionate)"
-        }
-      ]
-    },
-    {
-      hanzi: "和",
-      pinyin: "hé",
-      english: "And / With",
-      bangla: "এবং/সাথে",
-      characters: [
-        {
-          hanzi: "和",
-          pinyin: "hé",
-          meaning: "And, with (connects nouns)"
-        }
-      ],
-      example: {
-        hanzi: "我和你去。",
-        pinyin: "Wǒ hé nǐ qù.",
-        english: "I'll go with you.",
-        bangla: "আমি তোমার সাথে যাব।"
-      },
-      similar: [
-        {
-          hanzi: "跟",
-          pinyin: "gēn",
-          english: "With (following)"
-        },
-        {
-          hanzi: "与",
-          pinyin: "yǔ",
-          english: "And (formal/written)"
-        },
-        {
-          hanzi: "及",
-          pinyin: "jí",
-          english: "And (formal)"
-        }
-      ]
-    }
-  ]
-};
 
-// Lesson 4 - Text 3
-export const lesson4Text3Data: VocabularyData = {
-  lesson: 4,
-  text: 3,
-  vocabulary: [
-    {
-      hanzi: "儿子",
-      pinyin: "érzi",
-      english: "Son",
-      bangla: "ছেলে",
-      characters: [
-        {
-          hanzi: "儿",
-          pinyin: "ér",
-          meaning: "Child/Son"
-        },
-        {
-          hanzi: "子",
-          pinyin: "zi",
-          meaning: "Suffix"
-        }
-      ],
-      example: {
-        hanzi: "我有一个儿子。",
-        pinyin: "Wǒ yǒu yíge érzi.",
-        english: "I have a son.",
-        bangla: "আমার একটি ছেলে আছে।"
-      },
-      similar: [
-        {
-          hanzi: "男孩",
-          pinyin: "nánhái",
-          english: "Boy"
-        }
-      ]
-    },
-    {
-      hanzi: "孩子",
-      pinyin: "háizi",
-      english: "Children",
-      bangla: "শিশু/সন্তান",
-      characters: [
-        {
-          hanzi: "孩",
-          pinyin: "hái",
-          meaning: "Child"
-        },
-        {
-          hanzi: "子",
-          pinyin: "zi",
-          meaning: "Suffix"
-        }
-      ],
-      example: {
-        hanzi: "他们都是孩子。",
-        pinyin: "Tāmen dōu shì háizi.",
-        english: "They are all children.",
-        bangla: "তারা সবাই শিশু।"
-      },
-      similar: [
-        {
-          hanzi: "儿童",
-          pinyin: "értóng",
-          english: "Children"
-        }
-      ]
-    },
-    {
-      hanzi: "女儿",
-      pinyin: "nǚ'ér",
-      english: "Daughter",
-      bangla: "মেয়ে",
-      characters: [
-        {
-          hanzi: "女",
-          pinyin: "nǚ",
-          meaning: "Female"
-        },
-        {
-          hanzi: "儿",
-          pinyin: "ér",
-          meaning: "Child"
-        }
-      ],
-      example: {
-        hanzi: "他的女儿很漂亮。",
-        pinyin: "Tā de nǚ'ér hěn piàoliang.",
-        english: "His daughter is very beautiful.",
-        bangla: "তার মেয়ে খুব সুন্দর।"
-      },
-      similar: [
-        {
-          hanzi: "女孩",
-          pinyin: "nǚhái",
-          english: "Girl"
-        }
-      ]
-    },
-    {
-      hanzi: "岁",
-      pinyin: "suì",
-      english: "Year (of age)",
-      bangla: "বছর (বয়স)",
-      characters: [
-        {
-          hanzi: "岁",
-          pinyin: "suì",
-          meaning: "Year of age"
-        }
-      ],
-      example: {
-        hanzi: "我二十岁。",
-        pinyin: "Wǒ èrshí suì.",
-        english: "I am 20 years old.",
-        bangla: "আমার বয়স ২০ বছর।"
-      },
-      similar: [
-        {
-          hanzi: "年",
-          pinyin: "nián",
-          english: "Year"
-        }
-      ]
-    },
-    {
-      hanzi: "他",
-      pinyin: "tā",
-      english: "He; him",
-      bangla: "সে",
-      characters: [
-        {
-          hanzi: "亻",
-          pinyin: "",
-          meaning: "Person radical"
-        },
-        {
-          hanzi: "也",
-          pinyin: "yě",
-          meaning: "Also"
-        }
-      ],
-      example: {
-        hanzi: "他是我的老师。",
-        pinyin: "Tā shì wǒ de lǎoshī.",
-        english: "He is my teacher.",
-        bangla: "সে আমার শিক্ষক।"
-      },
-      similar: [
-        {
-          hanzi: "她",
-          pinyin: "tā",
-          english: "She"
-        }
-      ]
-    },
-    {
-      hanzi: "今年",
-      pinyin: "jīnnián",
-      english: "This year",
-      bangla: "এই বছর",
-      characters: [
-        {
-          hanzi: "今",
-          pinyin: "jīn",
-          meaning: "Current"
-        },
-        {
-          hanzi: "年",
-          pinyin: "nián",
-          meaning: "Year"
-        }
-      ],
-      example: {
-        hanzi: "今年我去中国。",
-        pinyin: "Jīnnián wǒ qù Zhōngguó.",
-        english: "This year I will go to China.",
-        bangla: "এই বছর আমি চীন যাব।"
-      },
-      similar: [
-        {
-          hanzi: "本年",
-          pinyin: "běnnián",
-          english: "This year"
-        }
-      ]
-    },
-    {
-      hanzi: "多",
-      pinyin: "duō",
-      english: "How; to what extent",
-      bangla: "কত",
-      characters: [
-        {
-          hanzi: "多",
-          pinyin: "duō",
-          meaning: "Many; how"
-        }
-      ],
-      example: {
-        hanzi: "你多大？",
-        pinyin: "Nǐ duō dà?",
-        english: "How old are you?",
-        bangla: "তোমার বয়স কত?"
-      },
-      similar: [
-        {
-          hanzi: "几",
-          pinyin: "jǐ",
-          english: "How many"
-        }
-      ]
-    },
-    {
-      hanzi: "大",
-      pinyin: "dà",
-      english: "(Of age) old",
-      bangla: "বড় (বয়স)",
-      characters: [
-        {
-          hanzi: "大",
-          pinyin: "dà",
-          meaning: "Big/Old"
-        }
-      ],
-      example: {
-        hanzi: "他比我大。",
-        pinyin: "Tā bǐ wǒ dà.",
-        english: "He is older than me.",
-        bangla: "সে আমার চেয়ে বড়।"
-      },
-      similar: [
-        {
-          hanzi: "老",
-          pinyin: "lǎo",
-          english: "Old"
-        }
-      ]
-    }
-  ]
-};
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 // Lesson 5 - Text 1
 export const lesson5Text1Data: VocabularyData = {
@@ -3539,6 +1482,3716 @@ export const lesson6Text3Data: VocabularyData = {
   ]
 };
 
+// Lesson 7 - Text 1
+export const lesson7Text1Data: VocabularyData = {
+  lesson: 7,
+  text: 1,
+  vocabulary: [
+    {
+      hanzi: "现在",
+      pinyin: "xiànzài",
+      english: "Now",
+      bangla: "এখন",
+      characters: [
+        {
+          hanzi: "现",
+          pinyin: "xiàn",
+          meaning: "Current"
+        },
+        {
+          hanzi: "在",
+          pinyin: "zài",
+          meaning: "Be at"
+        }
+      ],
+      example: {
+        hanzi: "现在几点了？",
+        pinyin: "Xiànzài jǐ diǎn le?",
+        english: "What time is it now?",
+        bangla: "এখন ক'taয় বাজে?"
+      },
+      similar: [
+        {
+          hanzi: "目前",
+          pinyin: "mùqián",
+          english: "Currently"
+        }
+      ]
+    },
+    {
+      hanzi: "点",
+      pinyin: "diǎn",
+      english: "O'clock",
+      bangla: "টা",
+      characters: [
+        {
+          hanzi: "点",
+          pinyin: "diǎn",
+          meaning: "Point/Hour"
+        }
+      ],
+      example: {
+        hanzi: "现在八点。",
+        pinyin: "Xiànzài bā diǎn.",
+        english: "It's eight o'clock now.",
+        bangla: "এখন আটটা বাজে।"
+      },
+      similar: [
+        {
+          hanzi: "小时",
+          pinyin: "xiǎoshí",
+          english: "Hour"
+        }
+      ]
+    },
+    {
+      hanzi: "早上",
+      pinyin: "zǎoshang",
+      english: "Early morning",
+      bangla: "সকাল",
+      characters: [
+        {
+          hanzi: "早",
+          pinyin: "zǎo",
+          meaning: "Early"
+        },
+        {
+          hanzi: "上",
+          pinyin: "shang",
+          meaning: "Up"
+        }
+      ],
+      example: {
+        hanzi: "我早上六点起床。",
+        pinyin: "Wǒ zǎoshang liù diǎn qǐchuáng.",
+        english: "I get up at 6 in the morning.",
+        bangla: "আমি সকাল ৬টায় উঠি।"
+      },
+      similar: [
+        {
+          hanzi: "早晨",
+          pinyin: "zǎochén",
+          english: "Morning"
+        }
+      ]
+    },
+    {
+      hanzi: "上午",
+      pinyin: "shàngwǔ",
+      english: "Morning (before noon)",
+      bangla: "সকাল/পূর্বাহ্ন",
+      characters: [
+        {
+          hanzi: "上",
+          pinyin: "shàng",
+          meaning: "Before"
+        },
+        {
+          hanzi: "午",
+          pinyin: "wǔ",
+          meaning: "Noon"
+        }
+      ],
+      example: {
+        hanzi: "我们上午有课。",
+        pinyin: "Wǒmen shàngwǔ yǒu kè.",
+        english: "We have class in the morning.",
+        bangla: "আমাদের সকালে ক্লাস আছে।"
+      },
+      similar: [
+        {
+          hanzi: "早上",
+          pinyin: "zǎoshang",
+          english: "Morning"
+        }
+      ]
+    },
+    {
+      hanzi: "分",
+      pinyin: "fēn",
+      english: "Minute",
+      bangla: "মিনিট",
+      characters: [
+        {
+          hanzi: "分",
+          pinyin: "fēn",
+          meaning: "Divide"
+        }
+      ],
+      example: {
+        hanzi: "现在八点十分。",
+        pinyin: "Xiànzài bā diǎn shí fēn.",
+        english: "It is 8:10 now.",
+        bangla: "এখন আটটা দশ মিনিট।"
+      },
+      similar: [
+        {
+          hanzi: "分钟",
+          pinyin: "fēnzhōng",
+          english: "Minute"
+        }
+      ]
+    },
+    {
+      hanzi: "课",
+      pinyin: "kè",
+      english: "Class",
+      bangla: "ক্লাস",
+      characters: [
+        {
+          hanzi: "课",
+          pinyin: "kè",
+          meaning: "Lesson/Class"
+        }
+      ],
+      example: {
+        hanzi: "今天我没有课。",
+        pinyin: "Jīntiān wǒ méiyǒu kè.",
+        english: "I don't have class today.",
+        bangla: "আজ আমার ক্লাস নেই।"
+      },
+      similar: [
+        {
+          hanzi: "课程",
+          pinyin: "kèchéng",
+          english: "Course"
+        }
+      ]
+    },
+    {
+      hanzi: "下午",
+      pinyin: "xiàwǔ",
+      english: "Afternoon",
+      bangla: "বিকেল/অপরাহ্ন",
+      characters: [
+        {
+          hanzi: "下",
+          pinyin: "xià",
+          meaning: "After"
+        },
+        {
+          hanzi: "午",
+          pinyin: "wǔ",
+          meaning: "Noon"
+        }
+      ],
+      example: {
+        hanzi: "下午我们去见朋友。",
+        pinyin: "Xiàwǔ wǒmen qù jiàn péngyou.",
+        english: "We will meet a friend this afternoon.",
+        bangla: "বিকেলে আমরা বন্ধুর সাথে দেখা করব।"
+      },
+      similar: [
+        {
+          hanzi: "傍晚",
+          pinyin: "bàngwǎn",
+          english: "Evening"
+        }
+      ]
+    },
+    {
+      hanzi: "见",
+      pinyin: "jiàn",
+      english: "Meet",
+      bangla: "দেখা করা",
+      characters: [
+        {
+          hanzi: "见",
+          pinyin: "jiàn",
+          meaning: "See"
+        }
+      ],
+      example: {
+        hanzi: "明天见！",
+        pinyin: "Míngtiān jiàn!",
+        english: "See you tomorrow!",
+        bangla: "আগামীকাল দেখা হবে!"
+      },
+      similar: [
+        {
+          hanzi: "见面",
+          pinyin: "jiànmiàn",
+          english: "Meet up"
+        }
+      ]
+    },
+    {
+      hanzi: "吧",
+      pinyin: "ba",
+      english: "Suggestion particle",
+      bangla: "প্রস্তাববাচক অব্যয়",
+      characters: [
+        {
+          hanzi: "吧",
+          pinyin: "ba",
+          meaning: "Suggestion particle"
+        }
+      ],
+      example: {
+        hanzi: "我们走吧。",
+        pinyin: "Wǒmen zǒu ba.",
+        english: "Let's go.",
+        bangla: "চলো যাই।"
+      },
+      similar: [
+        {
+          hanzi: "啊",
+          pinyin: "a",
+          english: "Emphatic particle"
+        }
+      ]
+    }
+  ]
+};
+
+// Lesson 7 - Text 2
+export const lesson7Text2Data: VocabularyData = {
+  lesson: 7,
+  text: 2,
+  vocabulary: [
+    {
+      hanzi: "电影院",
+      pinyin: "diànyǐngyuàn",
+      english: "Cinema",
+      bangla: "সিনেমা হল",
+      characters: [
+        {
+          hanzi: "电",
+          pinyin: "diàn",
+          meaning: "Electricity"
+        },
+        {
+          hanzi: "影",
+          pinyin: "yǐng",
+          meaning: "Shadow"
+        },
+        {
+          hanzi: "院",
+          pinyin: "yuàn",
+          meaning: "Building/Hall"
+        }
+      ],
+      example: {
+        hanzi: "我们去电影院吧。",
+        pinyin: "Wǒmen qù diànyǐngyuàn ba.",
+        english: "Let's go to the cinema.",
+        bangla: "আমরা সিনেমা হলে যাই।"
+      },
+      similar: [
+        {
+          hanzi: "影院",
+          pinyin: "yǐngyuàn",
+          english: "Cinema"
+        }
+      ]
+    },
+    {
+      hanzi: "看",
+      pinyin: "kàn",
+      english: "To watch / To look",
+      bangla: "দেখা",
+      characters: [
+        {
+          hanzi: "手",
+          pinyin: "shǒu",
+          meaning: "Hand"
+        },
+        {
+          hanzi: "目",
+          pinyin: "mù",
+          meaning: "Eye"
+        }
+      ],
+      example: {
+        hanzi: "我喜欢看电影。",
+        pinyin: "Wǒ xǐhuān kàn diànyǐng.",
+        english: "I like watching movies.",
+        bangla: "আমি সিনেমা দেখতে পছন্দ করি।"
+      },
+      similar: [
+        {
+          hanzi: "瞧",
+          pinyin: "qiáo",
+          english: "Look"
+        }
+      ]
+    },
+    {
+      hanzi: "电影",
+      pinyin: "diànyǐng",
+      english: "Movie",
+      bangla: "চলচ্চিত্র",
+      characters: [
+        {
+          hanzi: "电",
+          pinyin: "diàn",
+          meaning: "Electricity"
+        },
+        {
+          hanzi: "影",
+          pinyin: "yǐng",
+          meaning: "Shadow"
+        }
+      ],
+      example: {
+        hanzi: "这部电影很好看。",
+        pinyin: "Zhè bù diànyǐng hěn hǎokàn.",
+        english: "This movie is very good.",
+        bangla: "এই সিনেমাটি খুব ভালো।"
+      },
+      similar: [
+        {
+          hanzi: "影片",
+          pinyin: "yǐngpiàn",
+          english: "Film"
+        }
+      ]
+    },
+    {
+      hanzi: "事",
+      pinyin: "shì",
+      english: "Matter / Thing",
+      bangla: "কাজ/বিষয়",
+      characters: [
+        {
+          hanzi: "事",
+          pinyin: "shì",
+          meaning: "Matter/Affair"
+        }
+      ],
+      example: {
+        hanzi: "你有什么事？",
+        pinyin: "Nǐ yǒu shénme shì?",
+        english: "What's the matter?",
+        bangla: "তোমার কি হয়েছে?"
+      },
+      similar: [
+        {
+          hanzi: "事情",
+          pinyin: "shìqing",
+          english: "Affair/Matter"
+        }
+      ]
+    },
+    {
+      hanzi: "上课",
+      pinyin: "shàngkè",
+      english: "To attend class",
+      bangla: "ক্লাসে যোগ দেওয়া",
+      characters: [
+        {
+          hanzi: "上",
+          pinyin: "shàng",
+          meaning: "Up/Start"
+        },
+        {
+          hanzi: "课",
+          pinyin: "kè",
+          meaning: "Class"
+        }
+      ],
+      example: {
+        hanzi: "我们九点上课。",
+        pinyin: "Wǒmen jiǔ diǎn shàngkè.",
+        english: "We start class at 9 o'clock.",
+        bangla: "আমরা ৯টায় ক্লাস শুরু করি।"
+      },
+      similar: [
+        {
+          hanzi: "听课",
+          pinyin: "tīngkè",
+          english: "Attend a lecture"
+        }
+      ]
+    },
+    {
+      hanzi: "呢",
+      pinyin: "ne",
+      english: "Particle (question / ongoing state)",
+      bangla: "প্রশ্নবোধক অব্যয়",
+      characters: [
+        {
+          hanzi: "口",
+          pinyin: "kǒu",
+          meaning: "Mouth"
+        },
+        {
+          hanzi: "尼",
+          pinyin: "ní",
+          meaning: "Phonetic"
+        }
+      ],
+      example: {
+        hanzi: "你呢？",
+        pinyin: "Nǐ ne?",
+        english: "And you?",
+        bangla: "তুমি?"
+      },
+      similar: [
+        {
+          hanzi: "吧",
+          pinyin: "ba",
+          english: "Particle (suggestion)"
+        }
+      ]
+    },
+    {
+      hanzi: "半",
+      pinyin: "bàn",
+      english: "Half",
+      bangla: "অর্ধেক",
+      characters: [
+        {
+          hanzi: "半",
+          pinyin: "bàn",
+          meaning: "Half"
+        }
+      ],
+      example: {
+        hanzi: "现在八点半。",
+        pinyin: "Xiànzài bā diǎn bàn.",
+        english: "It's half past eight now.",
+        bangla: "এখন সাড়ে আটটা বাজে।"
+      },
+      similar: [
+        {
+          hanzi: "一半",
+          pinyin: "yíbàn",
+          english: "One half"
+        }
+      ]
+    },
+    {
+      hanzi: "下课",
+      pinyin: "xiàkè",
+      english: "To finish class",
+      bangla: "ক্লাস শেষ হওয়া",
+      characters: [
+        {
+          hanzi: "下",
+          pinyin: "xià",
+          meaning: "Down/End"
+        },
+        {
+          hanzi: "课",
+          pinyin: "kè",
+          meaning: "Class"
+        }
+      ],
+      example: {
+        hanzi: "我们十点下课。",
+        pinyin: "Wǒmen shí diǎn xiàkè.",
+        english: "We finish class at 10 o'clock.",
+        bangla: "আমরা ১০টায় ক্লাস শেষ করি।"
+      },
+      similar: [
+        {
+          hanzi: "放学",
+          pinyin: "fàngxué",
+          english: "School over"
+        }
+      ]
+    }
+  ]
+};
+
+// Lesson 7 - Text 3
+export const lesson7Text3Data: VocabularyData = {
+  lesson: 7,
+  text: 3,
+  vocabulary: [
+    {
+      hanzi: "在",
+      pinyin: "zài",
+      english: "Be in / At a place",
+      bangla: "থাকা/অবস্থান করা",
+      characters: [
+        {
+          hanzi: "在",
+          pinyin: "zài",
+          meaning: "Be at"
+        }
+      ],
+      example: {
+        hanzi: "我在家。",
+        pinyin: "Wǒ zài jiā.",
+        english: "I am at home.",
+        bangla: "আমি বাড়িতে আছি।"
+      },
+      similar: [
+        {
+          hanzi: "处于",
+          pinyin: "chǔyú",
+          english: "Be in"
+        }
+      ]
+    },
+    {
+      hanzi: "家",
+      pinyin: "jiā",
+      english: "Home / Family",
+      bangla: "বাড়ি/পরিবার",
+      characters: [
+        {
+          hanzi: "家",
+          pinyin: "jiā",
+          meaning: "Home/Family"
+        }
+      ],
+      example: {
+        hanzi: "这是我的家。",
+        pinyin: "Zhè shì wǒ de jiā.",
+        english: "This is my home.",
+        bangla: "এটা আমার বাড়ি।"
+      },
+      similar: [
+        {
+          hanzi: "房子",
+          pinyin: "fángzi",
+          english: "House"
+        }
+      ]
+    },
+    {
+      hanzi: "里",
+      pinyin: "lǐ",
+      english: "Inside",
+      bangla: "ভেতর",
+      characters: [
+        {
+          hanzi: "里",
+          pinyin: "lǐ",
+          meaning: "Inside"
+        }
+      ],
+      example: {
+        hanzi: "房间里有人。",
+        pinyin: "Fángjiān lǐ yǒu rén.",
+        english: "There is someone inside the room.",
+        bangla: "ঘরের ভেতরে কেউ আছে।"
+      },
+      similar: [
+        {
+          hanzi: "内",
+          pinyin: "nèi",
+          english: "Inside"
+        }
+      ]
+    },
+    {
+      hanzi: "晚上",
+      pinyin: "wǎnshang",
+      english: "Evening",
+      bangla: "সন্ধ্যা",
+      characters: [
+        {
+          hanzi: "晚",
+          pinyin: "wǎn",
+          meaning: "Late/Evening"
+        },
+        {
+          hanzi: "上",
+          pinyin: "shang",
+          meaning: "Up/Start"
+        }
+      ],
+      example: {
+        hanzi: "今天晚上我很忙。",
+        pinyin: "Jīntiān wǎnshang wǒ hěn máng.",
+        english: "I am very busy this evening.",
+        bangla: "আজ সন্ধ্যায় আমি খুব ব্যস্ত।"
+      },
+      similar: [
+        {
+          hanzi: "夜里",
+          pinyin: "yèlǐ",
+          english: "At night"
+        }
+      ]
+    },
+    {
+      hanzi: "医院",
+      pinyin: "yīyuàn",
+      english: "Hospital",
+      bangla: "হাসপাতাল",
+      characters: [
+        {
+          hanzi: "医",
+          pinyin: "yī",
+          meaning: "Medicine"
+        },
+        {
+          hanzi: "院",
+          pinyin: "yuàn",
+          meaning: "Institute"
+        }
+      ],
+      example: {
+        hanzi: "他在医院工作。",
+        pinyin: "Tā zài yīyuàn gōngzuò.",
+        english: "He works in the hospital.",
+        bangla: "সে হাসপাতালে কাজ করে।"
+      },
+      similar: [
+        {
+          hanzi: "诊所",
+          pinyin: "zhěnsuǒ",
+          english: "Clinic"
+        }
+      ]
+    },
+    {
+      hanzi: "上班",
+      pinyin: "shàngbān",
+      english: "Go to work",
+      bangla: "কাজে যাওয়া",
+      characters: [
+        {
+          hanzi: "上",
+          pinyin: "shàng",
+          meaning: "Start"
+        },
+        {
+          hanzi: "班",
+          pinyin: "bān",
+          meaning: "Shift/Work"
+        }
+      ],
+      example: {
+        hanzi: "我八点上班。",
+        pinyin: "Wǒ bā diǎn shàngbān.",
+        english: "I go to work at eight o'clock.",
+        bangla: "আমি ৮টায় কাজে যাই।"
+      },
+      similar: [
+        {
+          hanzi: "工作",
+          pinyin: "gōngzuò",
+          english: "Work"
+        }
+      ]
+    },
+    {
+      hanzi: "店",
+      pinyin: "diàn",
+      english: "Shop",
+      bangla: "দোকান",
+      characters: [
+        {
+          hanzi: "店",
+          pinyin: "diàn",
+          meaning: "Shop"
+        }
+      ],
+      example: {
+        hanzi: "这家店很大。",
+        pinyin: "Zhè jiā diàn hěn dà.",
+        english: "This shop is very big.",
+        bangla: "এই দোকানটি খুব বড়।"
+      },
+      similar: [
+        {
+          hanzi: "商店",
+          pinyin: "shāngdiàn",
+          english: "Store"
+        }
+      ]
+    },
+    {
+      hanzi: "菜",
+      pinyin: "cài",
+      english: "Vegetables / Food",
+      bangla: "সবজি/খাবার",
+      characters: [
+        {
+          hanzi: "菜",
+          pinyin: "cài",
+          meaning: "Vegetable/Dish"
+        }
+      ],
+      example: {
+        hanzi: "我喜欢吃菜。",
+        pinyin: "Wǒ xǐhuān chī cài.",
+        english: "I like to eat vegetables.",
+        bangla: "আমি সবজি খেতে পছন্দ করি।"
+      },
+      similar: [
+        {
+          hanzi: "蔬菜",
+          pinyin: "shūcài",
+          english: "Greens"
+        }
+      ]
+    },
+    {
+      hanzi: "分钟",
+      pinyin: "fēnzhōng",
+      english: "Minute",
+      bangla: "মিনিট",
+      characters: [
+        {
+          hanzi: "分",
+          pinyin: "fēn",
+          meaning: "Divide/Minute"
+        },
+        {
+          hanzi: "钟",
+          pinyin: "zhōng",
+          meaning: "Clock/Hour"
+        }
+      ],
+      example: {
+        hanzi: "请等我十分钟。",
+        pinyin: "Qǐng děng wǒ shí fēnzhōng.",
+        english: "Please wait for me for ten minutes.",
+        bangla: "দয়া করে আমার জন্য দশ মিনিট অপেক্ষা করুন।"
+      },
+      similar: [
+        {
+          hanzi: "时刻",
+          pinyin: "shíkè",
+          english: "Moment"
+        }
+      ]
+    },
+    {
+      hanzi: "后",
+      pinyin: "hòu",
+      english: "After / Later",
+      bangla: "পরে",
+      characters: [
+        {
+          hanzi: "后",
+          pinyin: "hòu",
+          meaning: "After/Behind"
+        }
+      ],
+      example: {
+        hanzi: "十分钟后见。",
+        pinyin: "Shí fēnzhōng hòu jiàn.",
+        english: "See you after ten minutes.",
+        bangla: "দশ মিনিট পরে দেখা হবে।"
+      },
+      similar: [
+        {
+          hanzi: "以后",
+          pinyin: "yǐhòu",
+          english: "Afterwards"
+        }
+      ]
+    }
+  ]
+};
+
+// Lesson 8 - Text 1
+export const lesson8Text1Data: VocabularyData = {
+  lesson: 8,
+  text: 1,
+  vocabulary: [
+    {
+      hanzi: "房间",
+      pinyin: "fángjiān",
+      english: "Room",
+      bangla: "ঘর",
+      characters: [
+        {
+          hanzi: "房",
+          pinyin: "fáng",
+          meaning: "House"
+        },
+        {
+          hanzi: "间",
+          pinyin: "jiān",
+          meaning: "Room"
+        }
+      ],
+      example: {
+        hanzi: "我的房间很大。",
+        pinyin: "Wǒ de fángjiān hěn dà.",
+        english: "My room is very big.",
+        bangla: "আমার ঘরটি খুব বড়।"
+      },
+      similar: [
+        {
+          hanzi: "屋子",
+          pinyin: "wūzi",
+          english: "Room"
+        }
+      ]
+    },
+    {
+      hanzi: "外",
+      pinyin: "wài",
+      english: "Outside",
+      bangla: "বাহির",
+      characters: [
+        {
+          hanzi: "外",
+          pinyin: "wài",
+          meaning: "Outside"
+        }
+      ],
+      example: {
+        hanzi: "房间外有一只猫。",
+        pinyin: "Fángjiān wài yǒu yī zhī māo.",
+        english: "There is a cat outside the room.",
+        bangla: "ঘরের বাইরে একটি বিড়াল আছে।"
+      },
+      similar: [
+        {
+          hanzi: "外面",
+          pinyin: "wàimiàn",
+          english: "Outside"
+        }
+      ]
+    },
+    {
+      hanzi: "只",
+      pinyin: "zhī",
+      english: "Measure word for certain animals",
+      bangla: "টি (পশুপাখি গণনার পরিমাপক)",
+      characters: [
+        {
+          hanzi: "只",
+          pinyin: "zhī",
+          meaning: "Measure word for animals"
+        }
+      ],
+      example: {
+        hanzi: "我有一只猫。",
+        pinyin: "Wǒ yǒu yī zhī māo.",
+        english: "I have a cat.",
+        bangla: "আমার একটি বিড়াল আছে।"
+      },
+      similar: [
+        {
+          hanzi: "个",
+          pinyin: "gè",
+          english: "Piece/Item"
+        }
+      ]
+    },
+    {
+      hanzi: "小",
+      pinyin: "xiǎo",
+      english: "Small; little",
+      bangla: "ছোট",
+      characters: [
+        {
+          hanzi: "小",
+          pinyin: "xiǎo",
+          meaning: "Small"
+        }
+      ],
+      example: {
+        hanzi: "这只猫很小。",
+        pinyin: "Zhè zhī māo hěn xiǎo.",
+        english: "This cat is very small.",
+        bangla: "এই বিড়ালটি খুব ছোট।"
+      },
+      similar: [
+        {
+          hanzi: "细",
+          pinyin: "xì",
+          english: "Fine/Thin"
+        }
+      ]
+    },
+    {
+      hanzi: "猫",
+      pinyin: "māo",
+      english: "Cat",
+      bangla: "বিড়াল",
+      characters: [
+        {
+          hanzi: "犭",
+          pinyin: "quǎn",
+          meaning: "Animal radical"
+        },
+        {
+          hanzi: "苗",
+          pinyin: "miáo",
+          meaning: "Sprout"
+        }
+      ],
+      example: {
+        hanzi: "猫在桌子下面。",
+        pinyin: "Māo zài zhuōzi xiàmiàn.",
+        english: "The cat is under the table.",
+        bangla: "বিড়ালটি টেবিলের নিচে।"
+      },
+      similar: [
+        {
+          hanzi: "小猫",
+          pinyin: "xiǎomāo",
+          english: "Kitten"
+        }
+      ]
+    },
+    {
+      hanzi: "没",
+      pinyin: "méi",
+      english: "No; not; not yet",
+      bangla: "নাই/না",
+      characters: [
+        {
+          hanzi: "没",
+          pinyin: "méi",
+          meaning: "Not"
+        }
+      ],
+      example: {
+        hanzi: "我没看见你的猫。",
+        pinyin: "Wǒ méi kànjiàn nǐ de māo.",
+        english: "I didn't see your cat.",
+        bangla: "আমি তোমার বিড়াল দেখিনি।"
+      },
+      similar: [
+        {
+          hanzi: "不",
+          pinyin: "bù",
+          english: "Not"
+        }
+      ]
+    },
+    {
+      hanzi: "看见",
+      pinyin: "kànjiàn",
+      english: "See; catch sight of",
+      bangla: "দেখতে পাওয়া",
+      characters: [
+        {
+          hanzi: "看",
+          pinyin: "kàn",
+          meaning: "Look"
+        },
+        {
+          hanzi: "见",
+          pinyin: "jiàn",
+          meaning: "See"
+        }
+      ],
+      example: {
+        hanzi: "你看见我的书了吗？",
+        pinyin: "Nǐ kànjiàn wǒ de shū le ma?",
+        english: "Did you see my book?",
+        bangla: "তুমি আমার বই দেখেছ?"
+      },
+      similar: [
+        {
+          hanzi: "看到",
+          pinyin: "kàndào",
+          english: "See"
+        }
+      ]
+    },
+    {
+      hanzi: "桌子",
+      pinyin: "zhuōzi",
+      english: "Table; desk",
+      bangla: "টেবিল",
+      characters: [
+        {
+          hanzi: "桌",
+          pinyin: "zhuō",
+          meaning: "Table"
+        },
+        {
+          hanzi: "子",
+          pinyin: "zi",
+          meaning: "Noun suffix"
+        }
+      ],
+      example: {
+        hanzi: "桌子上有一本书。",
+        pinyin: "Zhuōzi shàng yǒu yī běn shū.",
+        english: "There is a book on the table.",
+        bangla: "টেবিলের উপর একটি বই আছে।"
+      },
+      similar: [
+        {
+          hanzi: "书桌",
+          pinyin: "shūzhuō",
+          english: "Desk"
+        }
+      ]
+    },
+    {
+      hanzi: "下",
+      pinyin: "xià",
+      english: "Low position or rank",
+      bangla: "নিচে",
+      characters: [
+        {
+          hanzi: "下",
+          pinyin: "xià",
+          meaning: "Below"
+        }
+      ],
+      example: {
+        hanzi: "猫在桌子下。",
+        pinyin: "Māo zài zhuōzi xià.",
+        english: "The cat is under the table.",
+        bangla: "বিড়ালটি টেবিলের নিচে।"
+      },
+      similar: [
+        {
+          hanzi: "下面",
+          pinyin: "xiàmiàn",
+          english: "Below"
+        }
+      ]
+    },
+    {
+      hanzi: "漂亮",
+      pinyin: "piàoliang",
+      english: "Pretty; beautiful",
+      bangla: "সুন্দর",
+      characters: [
+        {
+          hanzi: "漂",
+          pinyin: "piào",
+          meaning: "Pretty"
+        },
+        {
+          hanzi: "亮",
+          pinyin: "liàng",
+          meaning: "Bright"
+        }
+      ],
+      example: {
+        hanzi: "你的房间很漂亮。",
+        pinyin: "Nǐ de fángjiān hěn piàoliang.",
+        english: "Your room is very beautiful.",
+        bangla: "তোমার ঘরটি খুব সুন্দর।"
+      },
+      similar: [
+        {
+          hanzi: "美丽",
+          pinyin: "měilì",
+          english: "Beautiful"
+        }
+      ]
+    }
+  ]
+};
+
+// Lesson 8 - Text 2
+export const lesson8Text2Data: VocabularyData = {
+  lesson: 8,
+  text: 2,
+  vocabulary: [
+    {
+      hanzi: "在",
+      pinyin: "zài",
+      english: "At / In",
+      bangla: "এতে/এখানে",
+      characters: [
+        {
+          hanzi: "在",
+          pinyin: "zài",
+          meaning: "Be at / Be in"
+        }
+      ],
+      example: {
+        hanzi: "我在学校。",
+        pinyin: "Wǒ zài xuéxiào.",
+        english: "I am at school.",
+        bangla: "আমি স্কুলে আছি।"
+      },
+      similar: []
+    },
+    {
+      hanzi: "学校",
+      pinyin: "xuéxiào",
+      english: "School",
+      bangla: "বিদ্যালয়",
+      characters: [
+        {
+          hanzi: "学",
+          pinyin: "xué",
+          meaning: "Study/Learn"
+        },
+        {
+          hanzi: "校",
+          pinyin: "xiào",
+          meaning: "School"
+        }
+      ],
+      example: {
+        hanzi: "我们的学校很大。",
+        pinyin: "Wǒmen de xuéxiào hěn dà.",
+        english: "Our school is big.",
+        bangla: "আমাদের স্কুলটি খুব বড়।"
+      },
+      similar: []
+    },
+    {
+      hanzi: "书店",
+      pinyin: "shūdiàn",
+      english: "Bookstore",
+      bangla: "বইয়ের দোকান",
+      characters: [
+        {
+          hanzi: "书",
+          pinyin: "shū",
+          meaning: "Book"
+        },
+        {
+          hanzi: "店",
+          pinyin: "diàn",
+          meaning: "Shop"
+        }
+      ],
+      example: {
+        hanzi: "我去书店买书。",
+        pinyin: "Wǒ qù shūdiàn mǎi shū.",
+        english: "I go to the bookstore to buy books.",
+        bangla: "আমি বই কিনতে বইয়ের দোকানে যাই।"
+      },
+      similar: []
+    },
+    {
+      hanzi: "前",
+      pinyin: "qián",
+      english: "Front / Before",
+      bangla: "সামনে/আগে",
+      characters: [
+        {
+          hanzi: "前",
+          pinyin: "qián",
+          meaning: "Front/Before"
+        }
+      ],
+      example: {
+        hanzi: "车在门前。",
+        pinyin: "Chē zài mén qián.",
+        english: "The car is in front of the door.",
+        bangla: "গাড়িটি দরজার সামনে।"
+      },
+      similar: [
+        {
+          hanzi: "前面",
+          pinyin: "qiánmiàn",
+          english: "Front"
+        }
+      ]
+    },
+    {
+      hanzi: "能",
+      pinyin: "néng",
+      english: "Can; be able to",
+      bangla: "পারা/সামর্থ্য থাকা",
+      characters: [
+        {
+          hanzi: "能",
+          pinyin: "néng",
+          meaning: "Can/Ability"
+        }
+      ],
+      example: {
+        hanzi: "我能来。",
+        pinyin: "Wǒ néng lái.",
+        english: "I can come.",
+        bangla: "আমি আসতে পারি।"
+      },
+      similar: [
+        {
+          hanzi: "可以",
+          pinyin: "kěyǐ",
+          english: "Can/May"
+        }
+      ]
+    },
+    {
+      hanzi: "到",
+      pinyin: "dào",
+      english: "Arrive; reach",
+      bangla: "পৌঁছানো",
+      characters: [
+        {
+          hanzi: "到",
+          pinyin: "dào",
+          meaning: "Reach/Arrive"
+        }
+      ],
+      example: {
+        hanzi: "他下午两点到。",
+        pinyin: "Tā xiàwǔ liǎng diǎn dào.",
+        english: "He arrives at 2:00 in the afternoon.",
+        bangla: "সে বিকাল ২টায় পৌঁছায়।"
+      },
+      similar: [
+        {
+          hanzi: "抵达",
+          pinyin: "dǐdá",
+          english: "Arrive"
+        }
+      ]
+    },
+    {
+      hanzi: "午饭",
+      pinyin: "wǔfàn",
+      english: "Lunch",
+      bangla: "দুপুরের খাবার",
+      characters: [
+        {
+          hanzi: "午",
+          pinyin: "wǔ",
+          meaning: "Noon"
+        },
+        {
+          hanzi: "饭",
+          pinyin: "fàn",
+          meaning: "Rice/Meal"
+        }
+      ],
+      example: {
+        hanzi: "我在学校吃午饭。",
+        pinyin: "Wǒ zài xuéxiào chī wǔfàn.",
+        english: "I have lunch at school.",
+        bangla: "আমি স্কুলে দুপুরের খাবার খাই।"
+      },
+      similar: [
+        {
+          hanzi: "中饭",
+          pinyin: "zhōngfàn",
+          english: "Lunch"
+        }
+      ]
+    }
+  ]
+};
+
+// Lesson 8 - Text 3
+export const lesson8Text3Data: VocabularyData = {
+  lesson: 8,
+  text: 3,
+  vocabulary: [
+    {
+      hanzi: "饭",
+      pinyin: "fàn",
+      english: "Meal",
+      bangla: "ভাত/খাবার",
+      characters: [
+        {
+          hanzi: "饭",
+          pinyin: "fàn",
+          meaning: "Rice/Meal"
+        }
+      ],
+      example: {
+        hanzi: "我想吃饭。",
+        pinyin: "Wǒ xiǎng chīfàn.",
+        english: "I want to eat a meal.",
+        bangla: "আমি খাবার খেতে চাই।"
+      },
+      similar: [
+        {
+          hanzi: "餐",
+          pinyin: "cān",
+          english: "Meal"
+        }
+      ]
+    },
+    {
+      hanzi: "大",
+      pinyin: "dà",
+      english: "Big; large",
+      bangla: "বড়",
+      characters: [
+        {
+          hanzi: "大",
+          pinyin: "dà",
+          meaning: "Big"
+        }
+      ],
+      example: {
+        hanzi: "这个医院很大。",
+        pinyin: "Zhège yīyuàn hěn dà.",
+        english: "This hospital is very big.",
+        bangla: "এই হাসপাতালটি খুব বড়।"
+      },
+      similar: [
+        {
+          hanzi: "巨",
+          pinyin: "jù",
+          english: "Huge"
+        }
+      ]
+    },
+    {
+      hanzi: "病人",
+      pinyin: "bìngrén",
+      english: "Patient",
+      bangla: "রোগী",
+      characters: [
+        {
+          hanzi: "病",
+          pinyin: "bìng",
+          meaning: "Sickness"
+        },
+        {
+          hanzi: "人",
+          pinyin: "rén",
+          meaning: "Person"
+        }
+      ],
+      example: {
+        hanzi: "医院里有很多病人。",
+        pinyin: "Yīyuàn lǐ yǒu hěn duō bìngrén.",
+        english: "There are many patients in the hospital.",
+        bangla: "হাসপাতালে অনেক রোগী আছে।"
+      },
+      similar: [
+        {
+          hanzi: "患者",
+          pinyin: "huànzhě",
+          english: "Patient"
+        }
+      ]
+    },
+    {
+      hanzi: "多",
+      pinyin: "duō",
+      english: "Many; much",
+      bangla: "অনেক",
+      characters: [
+        {
+          hanzi: "夕",
+          pinyin: "xī",
+          meaning: "Evening"
+        },
+        {
+          hanzi: "夕",
+          pinyin: "xī",
+          meaning: "Evening (multiple)"
+        }
+      ],
+      example: {
+        hanzi: "这里的医生很多。",
+        pinyin: "Zhèli de yīshēng hěn duō.",
+        english: "There are many doctors here.",
+        bangla: "এখানে অনেক ডাক্তার আছে।"
+      },
+      similar: [
+        {
+          hanzi: "众",
+          pinyin: "zhòng",
+          english: "Crowd/Many"
+        }
+      ]
+    },
+    {
+      hanzi: "医生",
+      pinyin: "yīshēng",
+      english: "Doctor",
+      bangla: "ডাক্তার",
+      characters: [
+        {
+          hanzi: "医",
+          pinyin: "yī",
+          meaning: "Medicine"
+        },
+        {
+          hanzi: "生",
+          pinyin: "shēng",
+          meaning: "Professional"
+        }
+      ],
+      example: {
+        hanzi: "我的爸爸是医生。",
+        pinyin: "Wǒ de bàba shì yīshēng.",
+        english: "My father is a doctor.",
+        bangla: "আমার বাবা একজন ডাক্তার।"
+      },
+      similar: [
+        {
+          hanzi: "大夫",
+          pinyin: "dàifu",
+          english: "Doctor"
+        }
+      ]
+    },
+    {
+      hanzi: "工作",
+      pinyin: "gōngzuò",
+      english: "Work",
+      bangla: "কাজ",
+      characters: [
+        {
+          hanzi: "工",
+          pinyin: "gōng",
+          meaning: "Labor"
+        },
+        {
+          hanzi: "作",
+          pinyin: "zuò",
+          meaning: "Make/Do"
+        }
+      ],
+      example: {
+        hanzi: "你在哪里工作？",
+        pinyin: "Nǐ zài nǎlǐ gōngzuò?",
+        english: "Where do you work?",
+        bangla: "তুমি কোথায় কাজ কর?"
+      },
+      similar: [
+        {
+          hanzi: "劳动",
+          pinyin: "láodòng",
+          english: "Labor/Work"
+        }
+      ]
+    },
+    {
+      hanzi: "胡医生",
+      pinyin: "Hú yīshēng",
+      english: "Dr. Hu",
+      bangla: "ডা. হু",
+      characters: [
+        {
+          hanzi: "胡",
+          pinyin: "Hú",
+          meaning: "Hu (surname)"
+        },
+        {
+          hanzi: "医生",
+          pinyin: "yīshēng",
+          meaning: "Doctor"
+        }
+      ],
+      example: {
+        hanzi: "胡医生还没吃饭。",
+        pinyin: "Hú yīshēng hái méi chīfàn.",
+        english: "Dr. Hu hasn't eaten yet.",
+        bangla: "ডা. হু এখনও খাননি।"
+      },
+      similar: []
+    }
+  ]
+};
+
+// Lesson 9 - Text 1
+export const lesson9Text1Data: VocabularyData = {
+  lesson: 9,
+  text: 1,
+  vocabulary: [
+    {
+      hanzi: "前边",
+      pinyin: "qiánbian",
+      english: "Front",
+      bangla: "সামনে",
+      characters: [
+        {
+          hanzi: "前",
+          pinyin: "qián",
+          meaning: "Front"
+        },
+        {
+          hanzi: "边",
+          pinyin: "bian",
+          meaning: "Side"
+        }
+      ],
+      example: {
+        hanzi: "医院在前边。",
+        pinyin: "Yīyuàn zài qiánbian.",
+        english: "The hospital is in front.",
+        bangla: "হাসপাতাল সামনে।"
+      },
+      similar: [
+        {
+          hanzi: "前面",
+          pinyin: "qiánmiàn",
+          english: "Front"
+        }
+      ]
+    },
+    {
+      hanzi: "边",
+      pinyin: "biān",
+      english: "Side or Edge",
+      bangla: "পাশ/সীমানা",
+      characters: [
+        {
+          hanzi: "边",
+          pinyin: "biān",
+          meaning: "Side/Edge"
+        }
+      ],
+      example: {
+        hanzi: "路边有树。",
+        pinyin: "Lùbiān yǒu shù.",
+        english: "There are trees by the roadside.",
+        bangla: "রাস্তার পাশে গাছ আছে।"
+      },
+      similar: [
+        {
+          hanzi: "旁",
+          pinyin: "páng",
+          english: "Side"
+        }
+      ]
+    },
+    {
+      hanzi: "家",
+      pinyin: "jiā",
+      english: "Measure word for enterprises",
+      bangla: "টি (প্রতিষ্ঠানের জন্য পরিমাপক)",
+      characters: [
+        {
+          hanzi: "家",
+          pinyin: "jiā",
+          meaning: "Home/Family/Establishment"
+        }
+      ],
+      example: {
+        hanzi: "我去这家商店。",
+        pinyin: "Wǒ qù zhè jiā shāngdiàn.",
+        english: "I am going to this shop.",
+        bangla: "আমি এই দোকানে যাচ্ছি।"
+      },
+      similar: [
+        {
+          hanzi: "个",
+          pinyin: "gè",
+          english: "General measure word"
+        }
+      ]
+    },
+    {
+      hanzi: "那个",
+      pinyin: "nàge",
+      english: "That",
+      bangla: "ওই",
+      characters: [
+        {
+          hanzi: "那",
+          pinyin: "nà",
+          meaning: "That"
+        },
+        {
+          hanzi: "个",
+          pinyin: "ge",
+          meaning: "Measure word"
+        }
+      ],
+      example: {
+        hanzi: "我要那个苹果。",
+        pinyin: "Wǒ yào nàge píngguǒ.",
+        english: "I want that apple.",
+        bangla: "আমি ওই আপেলটি চাই।"
+      },
+      similar: [
+        {
+          hanzi: "那儿",
+          pinyin: "nàr",
+          english: "There"
+        }
+      ]
+    },
+    {
+      hanzi: "外边",
+      pinyin: "wàibian",
+      english: "Outside",
+      bangla: "বাইরে",
+      characters: [
+        {
+          hanzi: "外",
+          pinyin: "wài",
+          meaning: "Outside"
+        },
+        {
+          hanzi: "边",
+          pinyin: "bian",
+          meaning: "Side"
+        }
+      ],
+      example: {
+        hanzi: "外边下雨了。",
+        pinyin: "Wàibian xià yǔ le.",
+        english: "It is raining outside.",
+        bangla: "বাইরে বৃষ্টি হচ্ছে।"
+      },
+      similar: [
+        {
+          hanzi: "外面",
+          pinyin: "wàimiàn",
+          english: "Outside"
+        }
+      ]
+    }
+  ]
+};
+
+// Lesson 9 - Text 2
+export const lesson9Text2Data: VocabularyData = {
+  lesson: 9,
+  text: 2,
+  vocabulary: [
+    {
+      hanzi: "椅子",
+      pinyin: "yǐzi",
+      english: "Chair",
+      bangla: "চেয়ার",
+      characters: [
+        {
+          hanzi: "椅",
+          pinyin: "yǐ",
+          meaning: "Chair"
+        },
+        {
+          hanzi: "子",
+          pinyin: "zi",
+          meaning: "Noun suffix"
+        }
+      ],
+      example: {
+        hanzi: "这把椅子很舒服。",
+        pinyin: "Zhè bǎ yǐzi hěn shūfú.",
+        english: "This chair is very comfortable.",
+        bangla: "এই চেয়ারটি খুব আরামদায়ক।"
+      },
+      similar: [
+        {
+          hanzi: "凳子",
+          pinyin: "dèngzi",
+          english: "Stool"
+        }
+      ]
+    },
+    {
+      hanzi: "上",
+      pinyin: "shàng",
+      english: "On / Above",
+      bangla: "উপরে",
+      characters: [
+        {
+          hanzi: "上",
+          pinyin: "shàng",
+          meaning: "On/Above"
+        }
+      ],
+      example: {
+        hanzi: "桌子上有一本书。",
+        pinyin: "Zhuōzi shàng yǒu yī běn shū.",
+        english: "There is a book on the table.",
+        bangla: "টেবিলের উপর একটি বই আছে।"
+      },
+      similar: [
+        {
+          hanzi: "顶",
+          pinyin: "dǐng",
+          english: "Top"
+        }
+      ]
+    },
+    {
+      hanzi: "本",
+      pinyin: "běn",
+      english: "Measure word for books",
+      bangla: "টি (বইয়ের পরিমাপক)",
+      characters: [
+        {
+          hanzi: "本",
+          pinyin: "běn",
+          meaning: "Measure word for books"
+        }
+      ],
+      example: {
+        hanzi: "我买了一本书。",
+        pinyin: "Wǒ mǎile yī běn shū.",
+        english: "I bought a book.",
+        bangla: "আমি একটি বই কিনলাম।"
+      },
+      similar: [
+        {
+          hanzi: "册",
+          pinyin: "cè",
+          english: "Volume / Book"
+        }
+      ]
+    },
+    {
+      hanzi: "书",
+      pinyin: "shū",
+      english: "Book",
+      bangla: "বই",
+      characters: [
+        {
+          hanzi: "书",
+          pinyin: "shū",
+          meaning: "Book"
+        }
+      ],
+      example: {
+        hanzi: "我喜欢看书。",
+        pinyin: "Wǒ xǐhuān kànshū.",
+        english: "I like reading books.",
+        bangla: "আমি বই পড়তে পছন্দ করি।"
+      },
+      similar: [
+        {
+          hanzi: "书籍",
+          pinyin: "shūjí",
+          english: "Books"
+        }
+      ]
+    },
+    {
+      hanzi: "那",
+      pinyin: "nà",
+      english: "That",
+      bangla: "ওই/উহা",
+      characters: [
+        {
+          hanzi: "那",
+          pinyin: "nà",
+          meaning: "That"
+        }
+      ],
+      example: {
+        hanzi: "那是谁的笔？",
+        pinyin: "Nà shì shéi de bǐ?",
+        english: "Whose pen is that?",
+        bangla: "ওই কলমটি কার?"
+      },
+      similar: [
+        {
+          hanzi: "那个",
+          pinyin: "nàge",
+          english: "That one"
+        }
+      ]
+    },
+    {
+      hanzi: "第",
+      pinyin: "dì",
+      english: "Prefix for ordinal numbers",
+      bangla: "পূরণবাচক সংখ্যার উপসর্গ",
+      characters: [
+        {
+          hanzi: "第",
+          pinyin: "dì",
+          meaning: "Ordinal prefix"
+        }
+      ],
+      example: {
+        hanzi: "这是我第一次来这里。",
+        pinyin: "Zhè shì wǒ dì-yī cì lái zhèlǐ.",
+        english: "This is my first time coming here.",
+        bangla: "এটি আমার এখানে প্রথমবার আসা।"
+      },
+      similar: []
+    },
+    {
+      hanzi: "学习",
+      pinyin: "xuéxí",
+      english: "Study / Learn",
+      bangla: "পড়াশোনা করা",
+      characters: [
+        {
+          hanzi: "学",
+          pinyin: "xué",
+          meaning: "Study"
+        },
+        {
+          hanzi: "习",
+          pinyin: "xí",
+          meaning: "Practice"
+        }
+      ],
+      example: {
+        hanzi: "他在学习汉语。",
+        pinyin: "Tā zài xuéxí Hànyǔ.",
+        english: "He is studying Chinese.",
+        bangla: "সে চীনা ভাষা শিখছে।"
+      },
+      similar: [
+        {
+          hanzi: "学",
+          pinyin: "xué",
+          english: "Study / Learn"
+        }
+      ]
+    }
+  ]
+};
+
+// Lesson 9 - Text 3
+export const lesson9Text3Data: VocabularyData = {
+  lesson: 9,
+  text: 3,
+  vocabulary: [
+    {
+      hanzi: "做",
+      pinyin: "zuò",
+      english: "Do; engage in",
+      bangla: "করা",
+      characters: [
+        {
+          hanzi: "亻",
+          pinyin: "rén",
+          meaning: "Person radical"
+        },
+        {
+          hanzi: "古",
+          pinyin: "gǔ",
+          meaning: "Old"
+        },
+        {
+          hanzi: "攵",
+          pinyin: "pū",
+          meaning: "Action radical"
+        }
+      ],
+      example: {
+        hanzi: "你在做什么？",
+        pinyin: "Nǐ zài zuò shénme?",
+        english: "What are you doing?",
+        bangla: "তুমি কি করছ?"
+      },
+      similar: [
+        {
+          hanzi: "干",
+          pinyin: "gàn",
+          english: "Do"
+        },
+        {
+          hanzi: "制作",
+          pinyin: "zhìzuò",
+          english: "Make"
+        }
+      ]
+    },
+    {
+      hanzi: "白天",
+      pinyin: "báitiān",
+      english: "Day; daytime",
+      bangla: "দিনের বেলা",
+      characters: [
+        {
+          hanzi: "白",
+          pinyin: "bái",
+          meaning: "White/Bright"
+        },
+        {
+          hanzi: "天",
+          pinyin: "tiān",
+          meaning: "Day/Sky"
+        }
+      ],
+      example: {
+        hanzi: "我白天学习汉语。",
+        pinyin: "Wǒ báitiān xuéxí Hànyǔ.",
+        english: "I study Chinese during the day.",
+        bangla: "আমি দিনের বেলা চীনা ভাষা শিখি।"
+      },
+      similar: [
+        {
+          hanzi: "白日",
+          pinyin: "báirì",
+          english: "Daytime"
+        },
+        {
+          hanzi: "日间",
+          pinyin: "rìjiān",
+          english: "Daytime"
+        }
+      ]
+    },
+    {
+      hanzi: "读书",
+      pinyin: "dúshū",
+      english: "Read a book",
+      bangla: "বই পড়া",
+      characters: [
+        {
+          hanzi: "读",
+          pinyin: "dú",
+          meaning: "Read"
+        },
+        {
+          hanzi: "书",
+          pinyin: "shū",
+          meaning: "Book"
+        }
+      ],
+      example: {
+        hanzi: "他喜欢在图书馆读书。",
+        pinyin: "Tā xǐhuan zài túshūguǎn dúshū.",
+        english: "He likes to read books in the library.",
+        bangla: "সে লাইব্রেরিতে বই পড়তে পছন্দ করে।"
+      },
+      similar: [
+        {
+          hanzi: "看书",
+          pinyin: "kànshū",
+          english: "Read books"
+        },
+        {
+          hanzi: "学习",
+          pinyin: "xuéxí",
+          english: "Study"
+        }
+      ]
+    },
+    {
+      hanzi: "和",
+      pinyin: "hé",
+      english: "With; and",
+      bangla: "সাথে/এবং",
+      characters: [
+        {
+          hanzi: "禾",
+          pinyin: "hé",
+          meaning: "Grain"
+        },
+        {
+          hanzi: "口",
+          pinyin: "kǒu",
+          meaning: "Mouth"
+        }
+      ],
+      example: {
+        hanzi: "我和朋友一起去商店。",
+        pinyin: "Wǒ hé péngyou yīqǐ qù shāngdiàn.",
+        english: "I go to the store with my friend.",
+        bangla: "আমি বন্ধুর সাথে দোকানে যাই।"
+      },
+      similar: [
+        {
+          hanzi: "同",
+          pinyin: "tóng",
+          english: "With"
+        },
+        {
+          hanzi: "与",
+          pinyin: "yǔ",
+          english: "And; with"
+        }
+      ]
+    },
+    {
+      hanzi: "朋友",
+      pinyin: "péngyou",
+      english: "Friend",
+      bangla: "বন্ধু",
+      characters: [
+        {
+          hanzi: "朋",
+          pinyin: "péng",
+          meaning: "Friend"
+        },
+        {
+          hanzi: "友",
+          pinyin: "yǒu",
+          meaning: "Friend"
+        }
+      ],
+      example: {
+        hanzi: "他是我的好朋友。",
+        pinyin: "Tā shì wǒ de hǎo péngyou.",
+        english: "He is my good friend.",
+        bangla: "সে আমার ভালো বন্ধু।"
+      },
+      similar: [
+        {
+          hanzi: "好友",
+          pinyin: "hǎoyǒu",
+          english: "Close friend"
+        },
+        {
+          hanzi: "伙伴",
+          pinyin: "huǒbàn",
+          english: "Partner"
+        }
+      ]
+    },
+    {
+      hanzi: "唱",
+      pinyin: "chàng",
+      english: "Sing",
+      bangla: "গান গাওয়া",
+      characters: [
+        {
+          hanzi: "口",
+          pinyin: "kǒu",
+          meaning: "Mouth"
+        },
+        {
+          hanzi: "昌",
+          pinyin: "chāng",
+          meaning: "Bright/Prosperous"
+        }
+      ],
+      example: {
+        hanzi: "她喜欢唱中国歌。",
+        pinyin: "Tā xǐhuan chàng Zhōngguó gē.",
+        english: "She likes to sing Chinese songs.",
+        bangla: "সে চীনা গান গাইতে পছন্দ করে।"
+      },
+      similar: [
+        {
+          hanzi: "哼",
+          pinyin: "hēng",
+          english: "Hum"
+        },
+        {
+          hanzi: "歌唱",
+          pinyin: "gēchàng",
+          english: "Sing"
+        }
+      ]
+    },
+    {
+      hanzi: "歌",
+      pinyin: "gē",
+      english: "Song",
+      bangla: "গান",
+      characters: [
+        {
+          hanzi: "哥",
+          pinyin: "gē",
+          meaning: "Phonetic"
+        },
+        {
+          hanzi: "欠",
+          pinyin: "qiàn",
+          meaning: "Open mouth"
+        }
+      ],
+      example: {
+        hanzi: "这首歌很好听。",
+        pinyin: "Zhè shǒu gē hěn hǎotīng.",
+        english: "This song is very pleasant to hear.",
+        bangla: "এই গানটি শুনতে খুব ভালো।"
+      },
+      similar: [
+        {
+          hanzi: "歌曲",
+          pinyin: "gēqǔ",
+          english: "Song"
+        },
+        {
+          hanzi: "乐曲",
+          pinyin: "yuèqǔ",
+          english: "Tune"
+        }
+      ]
+    },
+    {
+      hanzi: "好听",
+      pinyin: "hǎotīng",
+      english: "Pleasant to hear",
+      bangla: "শুনতে মধুর",
+      characters: [
+        {
+          hanzi: "好",
+          pinyin: "hǎo",
+          meaning: "Good"
+        },
+        {
+          hanzi: "听",
+          pinyin: "tīng",
+          meaning: "Hear"
+        }
+      ],
+      example: {
+        hanzi: "你的声音很好听。",
+        pinyin: "Nǐ de shēngyīn hěn hǎotīng.",
+        english: "Your voice is very pleasant to hear.",
+        bangla: "তোমার কণ্ঠ শুনতে খুব ভালো।"
+      },
+      similar: [
+        {
+          hanzi: "动听",
+          pinyin: "dòngtīng",
+          english: "Moving to hear"
+        },
+        {
+          hanzi: "悦耳",
+          pinyin: "yuè'ěr",
+          english: "Pleasing to the ear"
+        }
+      ]
+    },
+    {
+      hanzi: "电视",
+      pinyin: "diànshì",
+      english: "Television",
+      bangla: "টেলিভিশন",
+      characters: [
+        {
+          hanzi: "电",
+          pinyin: "diàn",
+          meaning: "Electricity"
+        },
+        {
+          hanzi: "视",
+          pinyin: "shì",
+          meaning: "See"
+        }
+      ],
+      example: {
+        hanzi: "我们一起看电视吧。",
+        pinyin: "Wǒmen yīqǐ kàn diànshì ba.",
+        english: "Let's watch television together.",
+        bangla: "আমরা একসাথে টিভি দেখি।"
+      },
+      similar: [
+        {
+          hanzi: "电视机",
+          pinyin: "diànshìjī",
+          english: "TV set"
+        }
+      ]
+    },
+    {
+      hanzi: "狗",
+      pinyin: "gǒu",
+      english: "Dog",
+      bangla: "কুকুর",
+      characters: [
+        {
+          hanzi: "犭",
+          pinyin: "quǎn",
+          meaning: "Animal radical"
+        },
+        {
+          hanzi: "句",
+          pinyin: "jù",
+          meaning: "Sentence (phonetic)"
+        }
+      ],
+      example: {
+        hanzi: "我家有一只小狗。",
+        pinyin: "Wǒ jiā yǒu yī zhī xiǎo gǒu.",
+        english: "My home has a little dog.",
+        bangla: "আমার বাড়িতে একটি ছোট কুকুর আছে।"
+      },
+      similar: [
+        {
+          hanzi: "犬",
+          pinyin: "quǎn",
+          english: "Canine/Dog"
+        }
+      ]
+    },
+    {
+      hanzi: "玩",
+      pinyin: "wán",
+      english: "Play; have fun",
+      bangla: "খেলা করা",
+      characters: [
+        {
+          hanzi: "王",
+          pinyin: "wáng",
+          meaning: "Jade"
+        },
+        {
+          hanzi: "元",
+          pinyin: "yuán",
+          meaning: "Beginning"
+        }
+      ],
+      example: {
+        hanzi: "孩子们在外面玩。",
+        pinyin: "Háizimen zài wàimiàn wán.",
+        english: "The children are playing outside.",
+        bangla: "বাচ্চারা বাইরে খেলছে।"
+      },
+      similar: [
+        {
+          hanzi: "玩耍",
+          pinyin: "wánshuǎ",
+          english: "Play"
+        },
+        {
+          hanzi: "游玩",
+          pinyin: "yóuwán",
+          english: "Have fun"
+        }
+      ]
+    }
+  ]
+};
+
+// Lesson 10 - Text 1
+export const lesson10Text1Data: VocabularyData = {
+  lesson: 10,
+  text: 1,
+  vocabulary: [
+    {
+      hanzi: "杯子",
+      pinyin: "bēizi",
+      english: "Cup",
+      bangla: "কাপ",
+      characters: [
+        {
+          hanzi: "杯",
+          pinyin: "bēi",
+          meaning: "Cup"
+        },
+        {
+          hanzi: "子",
+          pinyin: "zi",
+          meaning: "Noun suffix"
+        }
+      ],
+      example: {
+        hanzi: "请给我一个杯子。",
+        pinyin: "Qǐng gěi wǒ yī gè bēizi.",
+        english: "Please give me a cup.",
+        bangla: "দয়া করে আমাকে একটি কাপ দিন।"
+      },
+      similar: [
+        {
+          hanzi: "茶杯",
+          pinyin: "chábēi",
+          english: "Teacup"
+        }
+      ]
+    },
+    {
+      hanzi: "售货员",
+      pinyin: "shòuhuòyuán",
+      english: "Salesperson",
+      bangla: "বিক্রয়কর্মী",
+      characters: [
+        {
+          hanzi: "售",
+          pinyin: "shòu",
+          meaning: "Sell"
+        },
+        {
+          hanzi: "货",
+          pinyin: "huò",
+          meaning: "Goods"
+        },
+        {
+          hanzi: "员",
+          pinyin: "yuán",
+          meaning: "Person"
+        }
+      ],
+      example: {
+        hanzi: "这个售货员很友好。",
+        pinyin: "Zhège shòuhuòyuán hěn yǒuhǎo.",
+        english: "This salesperson is very friendly.",
+        bangla: "এই বিক্রয়কর্মী খুব বন্ধুত্বপূর্ণ।"
+      },
+      similar: [
+        {
+          hanzi: "营业员",
+          pinyin: "yíngyèyuán",
+          english: "Shop assistant"
+        }
+      ]
+    },
+    {
+      hanzi: "这边",
+      pinyin: "zhèbiān",
+      english: "Here / This side",
+      bangla: "এই দিকে",
+      characters: [
+        {
+          hanzi: "这",
+          pinyin: "zhè",
+          meaning: "This"
+        },
+        {
+          hanzi: "边",
+          pinyin: "biān",
+          meaning: "Side"
+        }
+      ],
+      example: {
+        hanzi: "请来这边。",
+        pinyin: "Qǐng lái zhèbiān.",
+        english: "Please come over here.",
+        bangla: "দয়া করে এই দিকে আসুন।"
+      },
+      similar: [
+        {
+          hanzi: "这里",
+          pinyin: "zhèlǐ",
+          english: "Here"
+        }
+      ]
+    },
+    {
+      hanzi: "钱",
+      pinyin: "qián",
+      english: "Money",
+      bangla: "টাকা",
+      characters: [
+        {
+          hanzi: "钱",
+          pinyin: "qián",
+          meaning: "Money"
+        }
+      ],
+      example: {
+        hanzi: "我没有钱。",
+        pinyin: "Wǒ méiyǒu qián.",
+        english: "I don't have money.",
+        bangla: "আমার টাকা নেই।"
+      },
+      similar: [
+        {
+          hanzi: "金钱",
+          pinyin: "jīnqián",
+          english: "Money (formal)"
+        }
+      ]
+    },
+    {
+      hanzi: "这些",
+      pinyin: "zhèxiē",
+      english: "These",
+      bangla: "এইগুলি",
+      characters: [
+        {
+          hanzi: "这",
+          pinyin: "zhè",
+          meaning: "This"
+        },
+        {
+          hanzi: "些",
+          pinyin: "xiē",
+          meaning: "Some/Plural measure"
+        }
+      ],
+      example: {
+        hanzi: "这些书很有趣。",
+        pinyin: "Zhèxiē shū hěn yǒuqù.",
+        english: "These books are very interesting.",
+        bangla: "এই বইগুলি খুব মজার।"
+      },
+      similar: [
+        {
+          hanzi: "这些个",
+          pinyin: "zhèxiē ge",
+          english: "These (colloquial)"
+        }
+      ]
+    },
+    {
+      hanzi: "快",
+      pinyin: "kuài",
+      english: "Fast / Piece (money unit)",
+      bangla: "দ্রুত/টাকা",
+      characters: [
+        {
+          hanzi: "快",
+          pinyin: "kuài",
+          meaning: "Fast"
+        }
+      ],
+      example: {
+        hanzi: "他跑得很快。",
+        pinyin: "Tā pǎo de hěn kuài.",
+        english: "He runs very fast.",
+        bangla: "সে খুব দ্রুত দৌড়ায়।"
+      },
+      similar: [
+        {
+          hanzi: "迅速",
+          pinyin: "xùnsù",
+          english: "Rapid"
+        },
+        {
+          hanzi: "元",
+          pinyin: "yuán",
+          english: "Yuan (formal)"
+        }
+      ]
+    },
+    {
+      hanzi: "那些",
+      pinyin: "nàxiē",
+      english: "Those",
+      bangla: "ওইগুলি",
+      characters: [
+        {
+          hanzi: "那",
+          pinyin: "nà",
+          meaning: "That"
+        },
+        {
+          hanzi: "些",
+          pinyin: "xiē",
+          meaning: "Some/Plural measure"
+        }
+      ],
+      example: {
+        hanzi: "那些苹果很甜。",
+        pinyin: "Nàxiē píngguǒ hěn tián.",
+        english: "Those apples are very sweet.",
+        bangla: "ওই আপেলগুলি খুব মিষ্টি।"
+      },
+      similar: [
+        {
+          hanzi: "那些个",
+          pinyin: "nàxiē ge",
+          english: "Those (colloquial)"
+        }
+      ]
+    }
+  ]
+};
+
+// Lesson 10 - Text 2
+export const lesson10Text2Data: VocabularyData = {
+  lesson: 10,
+  text: 2,
+  vocabulary: [
+    {
+      hanzi: "这儿",
+      pinyin: "zhèr",
+      english: "Here",
+      bangla: "এখানে",
+      characters: [
+        {
+          hanzi: "这",
+          pinyin: "zhè",
+          meaning: "This"
+        },
+        {
+          hanzi: "儿",
+          pinyin: "r",
+          meaning: "Er-suffix (colloquial)"
+        }
+      ],
+      example: {
+        hanzi: "我在这儿等你。",
+        pinyin: "Wǒ zài zhèr děng nǐ.",
+        english: "I'll wait for you here.",
+        bangla: "আমি এখানে তোমার জন্য অপেক্ষা করব।"
+      },
+      similar: [
+        {
+          hanzi: "这里",
+          pinyin: "zhèlǐ",
+          english: "Here"
+        }
+      ]
+    },
+    {
+      hanzi: "水果",
+      pinyin: "shuǐguǒ",
+      english: "Fruit",
+      bangla: "ফল",
+      characters: [
+        {
+          hanzi: "水",
+          pinyin: "shuǐ",
+          meaning: "Water"
+        },
+        {
+          hanzi: "果",
+          pinyin: "guǒ",
+          meaning: "Fruit"
+        }
+      ],
+      example: {
+        hanzi: "我喜欢吃水果。",
+        pinyin: "Wǒ xǐhuān chī shuǐguǒ.",
+        english: "I like to eat fruit.",
+        bangla: "আমি ফল খেতে পছন্দ করি।"
+      },
+      similar: [
+        {
+          hanzi: "果实",
+          pinyin: "guǒshí",
+          english: "Fruit (botanical)"
+        }
+      ]
+    },
+    {
+      hanzi: "少",
+      pinyin: "shǎo",
+      english: "Few/Little",
+      bangla: "কম",
+      characters: [
+        {
+          hanzi: "少",
+          pinyin: "shǎo",
+          meaning: "Few/Less"
+        }
+      ],
+      example: {
+        hanzi: "这里人很少。",
+        pinyin: "Zhèlǐ rén hěn shǎo.",
+        english: "There are very few people here.",
+        bangla: "এখানে মানুষ খুব কম।"
+      },
+      similar: [
+        {
+          hanzi: "不多",
+          pinyin: "bù duō",
+          english: "Not many"
+        }
+      ]
+    },
+    {
+      hanzi: "斤",
+      pinyin: "jīn",
+      english: "Catty (Chinese weight unit = 500g)",
+      bangla: "ক্যাটি (৫০০ গ্রাম)",
+      characters: [
+        {
+          hanzi: "斤",
+          pinyin: "jīn",
+          meaning: "Weight unit"
+        }
+      ],
+      example: {
+        hanzi: "我买了两斤苹果。",
+        pinyin: "Wǒ mǎi le liǎng jīn píngguǒ.",
+        english: "I bought two catties of apples.",
+        bangla: "আমি দুই ক্যাটি আপেল কিনলাম।"
+      },
+      similar: [
+        {
+          hanzi: "公斤",
+          pinyin: "gōngjīn",
+          english: "Kilogram (1 kg = 2 jin)"
+        }
+      ]
+    },
+    {
+      hanzi: "苹果",
+      pinyin: "píngguǒ",
+      english: "Apple",
+      bangla: "আপেল",
+      characters: [
+        {
+          hanzi: "苹",
+          pinyin: "píng",
+          meaning: "Apple"
+        },
+        {
+          hanzi: "果",
+          pinyin: "guǒ",
+          meaning: "Fruit"
+        }
+      ],
+      example: {
+        hanzi: "这个苹果很甜。",
+        pinyin: "Zhège píngguǒ hěn tián.",
+        english: "This apple is very sweet.",
+        bangla: "এই আপেলটি খুব মিষ্টি।"
+      },
+      similar: [
+        {
+          hanzi: "苹果树",
+          pinyin: "píngguǒshù",
+          english: "Apple tree"
+        }
+      ]
+    },
+    {
+      hanzi: "便宜",
+      pinyin: "piányi",
+      english: "Cheap",
+      bangla: "সস্তা",
+      characters: [
+        {
+          hanzi: "便",
+          pinyin: "pián",
+          meaning: "Cheap"
+        },
+        {
+          hanzi: "宜",
+          pinyin: "yi",
+          meaning: "Suitable"
+        }
+      ],
+      example: {
+        hanzi: "这件衣服很便宜。",
+        pinyin: "Zhè jiàn yīfu hěn piányi.",
+        english: "This piece of clothing is very cheap.",
+        bangla: "এই পোশাকটি খুব সস্তা।"
+      },
+      similar: [
+        {
+          hanzi: "廉价",
+          pinyin: "liánjià",
+          english: "Low-priced / Cheap"
+        }
+      ]
+    }
+  ]
+};
+
+// Lesson 10 - Text 3
+export const lesson10Text3Data: VocabularyData = {
+  lesson: 10,
+  text: 3,
+  vocabulary: [
+    {
+      hanzi: "商店",
+      pinyin: "shāngdiàn",
+      english: "Shop / Store",
+      bangla: "দোকান",
+      characters: [
+        {
+          hanzi: "商",
+          pinyin: "shāng",
+          meaning: "Trade/Commerce"
+        },
+        {
+          hanzi: "店",
+          pinyin: "diàn",
+          meaning: "Shop"
+        }
+      ],
+      example: {
+        hanzi: "这家商店很大。",
+        pinyin: "Zhè jiā shāngdiàn hěn dà.",
+        english: "This store is very big.",
+        bangla: "এই দোকানটি খুব বড়।"
+      },
+      similar: [
+        {
+          hanzi: "店铺",
+          pinyin: "diànpù",
+          english: "Shop (smaller)"
+        }
+      ]
+    },
+    {
+      hanzi: "衣服",
+      pinyin: "yīfu",
+      english: "Clothes",
+      bangla: "পোশাক",
+      characters: [
+        {
+          hanzi: "衣",
+          pinyin: "yī",
+          meaning: "Clothing"
+        },
+        {
+          hanzi: "服",
+          pinyin: "fu",
+          meaning: "Garment"
+        }
+      ],
+      example: {
+        hanzi: "我买了新衣服。",
+        pinyin: "Wǒ mǎi le xīn yīfu.",
+        english: "I bought new clothes.",
+        bangla: "আমি নতুন পোশাক কিনলাম।"
+      },
+      similar: [
+        {
+          hanzi: "服装",
+          pinyin: "fúzhuāng",
+          english: "Clothing/Apparel (formal)"
+        }
+      ]
+    },
+    {
+      hanzi: "件",
+      pinyin: "jiàn",
+      english: "Measure word for clothes/items",
+      bangla: "টি (পোশাক/জিনিসের পরিমাপক)",
+      characters: [
+        {
+          hanzi: "件",
+          pinyin: "jiàn",
+          meaning: "Item/Piece"
+        }
+      ],
+      example: {
+        hanzi: "我有一件衬衫。",
+        pinyin: "Wǒ yǒu yī jiàn chènshān.",
+        english: "I have one shirt.",
+        bangla: "আমার একটি শার্ট আছে।"
+      },
+      similar: [
+        {
+          hanzi: "个",
+          pinyin: "gè",
+          english: "General measure word"
+        }
+      ]
+    },
+    {
+      hanzi: "元",
+      pinyin: "yuán",
+      english: "Yuan (Chinese currency unit)",
+      bangla: "ইউয়ান (চীনা মুদ্রা)",
+      characters: [
+        {
+          hanzi: "元",
+          pinyin: "yuán",
+          meaning: "Primary/Unit"
+        }
+      ],
+      example: {
+        hanzi: "这本书二十元。",
+        pinyin: "Zhè běn shū èrshí yuán.",
+        english: "This book is 20 yuan.",
+        bangla: "এই বইটির দাম ২০ ইউয়ান।"
+      },
+      similar: [
+        {
+          hanzi: "块",
+          pinyin: "kuài",
+          english: "Yuan (colloquial)"
+        }
+      ]
+    },
+    {
+      hanzi: "怎么样",
+      pinyin: "zěnmeyàng",
+      english: "How about? / How is it?",
+      bangla: "কেমন?",
+      characters: [
+        {
+          hanzi: "怎",
+          pinyin: "zěn",
+          meaning: "How"
+        },
+        {
+          hanzi: "么",
+          pinyin: "me",
+          meaning: "Suffix"
+        },
+        {
+          hanzi: "样",
+          pinyin: "yàng",
+          meaning: "Appearance"
+        }
+      ],
+      example: {
+        hanzi: "你觉得怎么样？",
+        pinyin: "Nǐ juéde zěnmeyàng?",
+        english: "How do you feel about it?",
+        bangla: "তুমি কেমন মনে করছ?"
+      },
+      similar: [
+        {
+          hanzi: "如何",
+          pinyin: "rúhé",
+          english: "How (formal)"
+        }
+      ]
+    },
+    {
+      hanzi: "贵",
+      pinyin: "guì",
+      english: "Expensive",
+      bangla: "দামি",
+      characters: [
+        {
+          hanzi: "贵",
+          pinyin: "guì",
+          meaning: "Expensive/Noble"
+        }
+      ],
+      example: {
+        hanzi: "这件衣服太贵了。",
+        pinyin: "Zhè jiàn yīfu tài guì le.",
+        english: "This piece of clothing is too expensive.",
+        bangla: "এই পোশাকটি খুব দামি।"
+      },
+      similar: [
+        {
+          hanzi: "昂贵",
+          pinyin: "ángguì",
+          english: "Costly (formal)"
+        }
+      ]
+    },
+    {
+      hanzi: "穿",
+      pinyin: "chuān",
+      english: "To wear",
+      bangla: "পরা",
+      characters: [
+        {
+          hanzi: "穿",
+          pinyin: "chuān",
+          meaning: "To put on/Wear"
+        }
+      ],
+      example: {
+        hanzi: "我今天穿红色。",
+        pinyin: "Wǒ jīntiān chuān hóngsè.",
+        english: "I'm wearing red today.",
+        bangla: "আমি আজ লাল রঙের পোশাক পরেছি।"
+      },
+      similar: [
+        {
+          hanzi: "戴",
+          pinyin: "dài",
+          english: "To wear (accessories, glasses, hat)"
+        }
+      ]
+    },
+    {
+      hanzi: "女",
+      pinyin: "nǚ",
+      english: "Female / Woman",
+      bangla: "মহিলা",
+      characters: [
+        {
+          hanzi: "女",
+          pinyin: "nǚ",
+          meaning: "Woman"
+        }
+      ],
+      example: {
+        hanzi: "她是我的女朋友。",
+        pinyin: "Tā shì wǒ de nǚ péngyou.",
+        english: "She is my girlfriend.",
+        bangla: "সে আমার বান্ধবী।"
+      },
+      similar: [
+        {
+          hanzi: "女性",
+          pinyin: "nǚxìng",
+          english: "Female (formal)"
+        }
+      ]
+    },
+    {
+      hanzi: "男",
+      pinyin: "nán",
+      english: "Male / Man",
+      bangla: "পুরুষ",
+      characters: [
+        {
+          hanzi: "男",
+          pinyin: "nán",
+          meaning: "Man"
+        }
+      ],
+      example: {
+        hanzi: "他是我的男朋友。",
+        pinyin: "Tā shì wǒ de nán péngyou.",
+        english: "He is my boyfriend.",
+        bangla: "সে আমার বয়ফ্রেন্ড।"
+      },
+      similar: [
+        {
+          hanzi: "男性",
+          pinyin: "nánxìng",
+          english: "Male (formal)"
+        }
+      ]
+    },
+    {
+      hanzi: "那儿",
+      pinyin: "nàr",
+      english: "There",
+      bangla: "ওখানে",
+      characters: [
+        {
+          hanzi: "那",
+          pinyin: "nà",
+          meaning: "That"
+        },
+        {
+          hanzi: "儿",
+          pinyin: "r",
+          meaning: "Er-suffix (colloquial)"
+        }
+      ],
+      example: {
+        hanzi: "我的书在那儿。",
+        pinyin: "Wǒ de shū zài nàr.",
+        english: "My book is over there.",
+        bangla: "আমার বই ওখানে।"
+      },
+      similar: [
+        {
+          hanzi: "那里",
+          pinyin: "nàlǐ",
+          english: "There"
+        }
+      ]
+    }
+  ]
+};
+
+// Lesson 11 - Text 1
+export const lesson11Text1Data: VocabularyData = {
+  lesson: 11,
+  text: 1,
+  vocabulary: [
+    {
+      hanzi: "时候",
+      pinyin: "shíhou",
+      english: "Time / Period",
+      bangla: "সময়",
+      characters: [
+        {
+          hanzi: "时",
+          pinyin: "shí",
+          meaning: "Time"
+        },
+        {
+          hanzi: "候",
+          pinyin: "hou",
+          meaning: "Wait"
+        }
+      ],
+      example: {
+        hanzi: "现在什么时候？",
+        pinyin: "Xiànzài shénme shíhou?",
+        english: "What time is it now?",
+        bangla: "এখন ক'taয় বাজে?"
+      },
+      similar: [
+        {
+          hanzi: "时间",
+          pinyin: "shíjiān",
+          english: "Time"
+        }
+      ]
+    },
+    {
+      hanzi: "饭店",
+      pinyin: "fàndiàn",
+      english: "Restaurant",
+      bangla: "রেস্তোরাঁ",
+      characters: [
+        {
+          hanzi: "饭",
+          pinyin: "fàn",
+          meaning: "Meal"
+        },
+        {
+          hanzi: "店",
+          pinyin: "diàn",
+          meaning: "Shop"
+        }
+      ],
+      example: {
+        hanzi: "我们去饭店吃饭。",
+        pinyin: "Wǒmen qù fàndiàn chīfàn.",
+        english: "We go to the restaurant to eat.",
+        bangla: "আমরা রেস্তোরাঁয় খেতে যাই।"
+      },
+      similar: [
+        {
+          hanzi: "餐厅",
+          pinyin: "cāntīng",
+          english: "Restaurant"
+        }
+      ]
+    },
+    {
+      hanzi: "知道",
+      pinyin: "zhīdào",
+      english: "Know",
+      bangla: "জানা",
+      characters: [
+        {
+          hanzi: "知",
+          pinyin: "zhī",
+          meaning: "Know"
+        },
+        {
+          hanzi: "道",
+          pinyin: "dào",
+          meaning: "Way"
+        }
+      ],
+      example: {
+        hanzi: "我知道这个字。",
+        pinyin: "Wǒ zhīdào zhège zì.",
+        english: "I know this character.",
+        bangla: "আমি এই অক্ষরটি জানি।"
+      },
+      similar: [
+        {
+          hanzi: "认识",
+          pinyin: "rènshi",
+          english: "Recognize"
+        }
+      ]
+    },
+    {
+      hanzi: "正在",
+      pinyin: "zhèngzài",
+      english: "In the process of",
+      bangla: "বর্তমানে (কিছু করছি)",
+      characters: [
+        {
+          hanzi: "正",
+          pinyin: "zhèng",
+          meaning: "Just"
+        },
+        {
+          hanzi: "在",
+          pinyin: "zài",
+          meaning: "At"
+        }
+      ],
+      example: {
+        hanzi: "我正在吃饭。",
+        pinyin: "Wǒ zhèngzài chīfàn.",
+        english: "I am eating right now.",
+        bangla: "আমি এখন খাচ্ছি।"
+      },
+      similar: [
+        {
+          hanzi: "在",
+          pinyin: "zài",
+          english: "Auxiliary for ongoing action"
+        }
+      ]
+    },
+    {
+      hanzi: "找",
+      pinyin: "zhǎo",
+      english: "Look for",
+      bangla: "খোঁজা",
+      characters: [
+        {
+          hanzi: "扌",
+          pinyin: "shǒu",
+          meaning: "Hand radical"
+        },
+        {
+          hanzi: "戈",
+          pinyin: "gē",
+          meaning: "Spear"
+        }
+      ],
+      example: {
+        hanzi: "我在找我的书。",
+        pinyin: "Wǒ zài zhǎo wǒ de shū.",
+        english: "I'm looking for my book.",
+        bangla: "আমি আমার বই খুঁজছি।"
+      },
+      similar: [
+        {
+          hanzi: "寻找",
+          pinyin: "xúnzhǎo",
+          english: "Search for"
+        }
+      ]
+    },
+    {
+      hanzi: "开车",
+      pinyin: "kāichē",
+      english: "Drive",
+      bangla: "গাড়ি চালানো",
+      characters: [
+        {
+          hanzi: "开",
+          pinyin: "kāi",
+          meaning: "Open/Operate"
+        },
+        {
+          hanzi: "车",
+          pinyin: "chē",
+          meaning: "Vehicle"
+        }
+      ],
+      example: {
+        hanzi: "他会开车。",
+        pinyin: "Tā huì kāichē.",
+        english: "He can drive.",
+        bangla: "সে গাড়ি চালাতে পারে।"
+      },
+      similar: [
+        {
+          hanzi: "驾驶",
+          pinyin: "jiàshǐ",
+          english: "Drive"
+        }
+      ]
+    },
+    {
+      hanzi: "车",
+      pinyin: "chē",
+      english: "Vehicle",
+      bangla: "গাড়ি",
+      characters: [
+        {
+          hanzi: "车",
+          pinyin: "chē",
+          meaning: "Cart/Vehicle"
+        }
+      ],
+      example: {
+        hanzi: "这是我的车。",
+        pinyin: "Zhè shì wǒ de chē.",
+        english: "This is my car.",
+        bangla: "এটি আমার গাড়ি।"
+      },
+      similar: [
+        {
+          hanzi: "车辆",
+          pinyin: "chēliàng",
+          english: "Vehicle"
+        }
+      ]
+    }
+  ]
+};
+
+// Lesson 11 - Text 2
+export const lesson11Text2Data: VocabularyData = {
+  lesson: 11,
+  text: 2,
+  vocabulary: [
+    {
+      hanzi: "在",
+      pinyin: "zài",
+      english: "At / In / On",
+      bangla: "এতে/এখানে",
+      characters: [
+        {
+          hanzi: "在",
+          pinyin: "zài",
+          meaning: "Be at/In/On"
+        }
+      ],
+      example: {
+        hanzi: "我在大学。",
+        pinyin: "Wǒ zài dàxué.",
+        english: "I am at the university.",
+        bangla: "আমি বিশ্ববিদ্যালয়ে আছি।"
+      },
+      similar: [
+        {
+          hanzi: "处于",
+          pinyin: "chǔyú",
+          english: "To be in"
+        }
+      ]
+    },
+    {
+      hanzi: "读",
+      pinyin: "dú",
+      english: "To read / Study",
+      bangla: "পড়া",
+      characters: [
+        {
+          hanzi: "讠",
+          pinyin: "yán",
+          meaning: "Speech radical"
+        },
+        {
+          hanzi: "卖",
+          pinyin: "mài",
+          meaning: "Sell"
+        }
+      ],
+      example: {
+        hanzi: "我读医。",
+        pinyin: "Wǒ dú yī.",
+        english: "I study medicine.",
+        bangla: "আমি চিকিৎসাবিদ্যা পড়ি।"
+      },
+      similar: [
+        {
+          hanzi: "学习",
+          pinyin: "xuéxí",
+          english: "To study"
+        }
+      ]
+    },
+    {
+      hanzi: "大学",
+      pinyin: "dàxué",
+      english: "University",
+      bangla: "বিশ্ববিদ্যালয়",
+      characters: [
+        {
+          hanzi: "大",
+          pinyin: "dà",
+          meaning: "Big"
+        },
+        {
+          hanzi: "学",
+          pinyin: "xué",
+          meaning: "Study"
+        }
+      ],
+      example: {
+        hanzi: "这是我的大学。",
+        pinyin: "Zhè shì wǒ de dàxué.",
+        english: "This is my university.",
+        bangla: "এটি আমার বিশ্ববিদ্যালয়।"
+      },
+      similar: [
+        {
+          hanzi: "学院",
+          pinyin: "xuéyuàn",
+          english: "College"
+        }
+      ]
+    },
+    {
+      hanzi: "大学生",
+      pinyin: "dàxuéshēng",
+      english: "University student",
+      bangla: "বিশ্ববিদ্যালয়ের ছাত্র",
+      characters: [
+        {
+          hanzi: "大学",
+          pinyin: "dàxué",
+          meaning: "University"
+        },
+        {
+          hanzi: "生",
+          pinyin: "shēng",
+          meaning: "Student/Person"
+        }
+      ],
+      example: {
+        hanzi: "他是大学生。",
+        pinyin: "Tā shì dàxuéshēng.",
+        english: "He is a university student.",
+        bangla: "সে একজন বিশ্ববিদ্যালয়ের ছাত্র।"
+      },
+      similar: [
+        {
+          hanzi: "学生",
+          pinyin: "xuéshēng",
+          english: "Student"
+        }
+      ]
+    },
+    {
+      hanzi: "学",
+      pinyin: "xué",
+      english: "To learn / Study",
+      bangla: "শেখা",
+      characters: [
+        {
+          hanzi: "学",
+          pinyin: "xué",
+          meaning: "Learn/Study"
+        }
+      ],
+      example: {
+        hanzi: "我学汉语。",
+        pinyin: "Wǒ xué Hànyǔ.",
+        english: "I learn Chinese.",
+        bangla: "আমি চীনা ভাষা শিখি।"
+      },
+      similar: [
+        {
+          hanzi: "学习",
+          pinyin: "xuéxí",
+          english: "To learn"
+        }
+      ]
+    },
+    {
+      hanzi: "医",
+      pinyin: "yī",
+      english: "Medical / Medicine",
+      bangla: "চিকিৎসা/ঔষধ",
+      characters: [
+        {
+          hanzi: "匚",
+          pinyin: "fāng",
+          meaning: "Box radical"
+        },
+        {
+          hanzi: "矢",
+          pinyin: "shǐ",
+          meaning: "Arrow"
+        }
+      ],
+      example: {
+        hanzi: "我妈妈是医生。",
+        pinyin: "Wǒ māma shì yīshēng.",
+        english: "My mother is a doctor.",
+        bangla: "আমার মা একজন ডাক্তার।"
+      },
+      similar: [
+        {
+          hanzi: "医学",
+          pinyin: "yīxué",
+          english: "Medical science"
+        }
+      ]
+    }
+  ]
+};
+
+// Lesson 11 - Text 3
+export const lesson11Text3Data: VocabularyData = {
+  lesson: 11,
+  text: 3,
+  vocabulary: [
+    {
+      hanzi: "弟弟",
+      pinyin: "dìdi",
+      english: "Younger brother",
+      bangla: "ছোট ভাই",
+      characters: [
+        {
+          hanzi: "弟",
+          pinyin: "dì",
+          meaning: "Younger brother"
+        },
+        {
+          hanzi: "弟",
+          pinyin: "di",
+          meaning: "Younger brother"
+        }
+      ],
+      example: {
+        hanzi: "我有一个弟弟。",
+        pinyin: "Wǒ yǒu yíge dìdi.",
+        english: "I have a younger brother.",
+        bangla: "আমার একটি ছোট ভাই আছে।"
+      },
+      similar: [
+        {
+          hanzi: "兄弟",
+          pinyin: "xiōngdì",
+          english: "Brothers"
+        }
+      ]
+    },
+    {
+      hanzi: "起床",
+      pinyin: "qǐchuáng",
+      english: "Get up; get out of bed",
+      bangla: "ঘুম থেকে ওঠা",
+      characters: [
+        {
+          hanzi: "起",
+          pinyin: "qǐ",
+          meaning: "Rise"
+        },
+        {
+          hanzi: "床",
+          pinyin: "chuáng",
+          meaning: "Bed"
+        }
+      ],
+      example: {
+        hanzi: "我七点起床。",
+        pinyin: "Wǒ qī diǎn qǐchuáng.",
+        english: "I get up at seven o'clock.",
+        bangla: "আমি সাতটায় ঘুম থেকে উঠি।"
+      },
+      similar: [
+        {
+          hanzi: "起来",
+          pinyin: "qǐlái",
+          english: "Get up"
+        }
+      ]
+    },
+    {
+      hanzi: "睡觉",
+      pinyin: "shuìjiào",
+      english: "Sleep",
+      bangla: "ঘুমানো",
+      characters: [
+        {
+          hanzi: "睡",
+          pinyin: "shuì",
+          meaning: "Sleep"
+        },
+        {
+          hanzi: "觉",
+          pinyin: "jiào",
+          meaning: "Sleep/Nap"
+        }
+      ],
+      example: {
+        hanzi: "我十点睡觉。",
+        pinyin: "Wǒ shí diǎn shuìjiào.",
+        english: "I go to sleep at ten o'clock.",
+        bangla: "আমি দশটায় ঘুমাতে যাই।"
+      },
+      similar: [
+        {
+          hanzi: "睡",
+          pinyin: "shuì",
+          english: "Sleep"
+        }
+      ]
+    },
+    {
+      hanzi: "睡",
+      pinyin: "shuì",
+      english: "Sleep",
+      bangla: "ঘুমানো",
+      characters: [
+        {
+          hanzi: "睡",
+          pinyin: "shuì",
+          meaning: "Sleep"
+        }
+      ],
+      example: {
+        hanzi: "他现在在睡。",
+        pinyin: "Tā xiànzài zài shuì.",
+        english: "He is sleeping now.",
+        bangla: "সে এখন ঘুমাচ্ছে।"
+      },
+      similar: [
+        {
+          hanzi: "睡觉",
+          pinyin: "shuìjiào",
+          english: "Sleep"
+        }
+      ]
+    },
+    {
+      hanzi: "那里",
+      pinyin: "nàlǐ",
+      english: "There; that place",
+      bangla: "ওখানে",
+      characters: [
+        {
+          hanzi: "那",
+          pinyin: "nà",
+          meaning: "That"
+        },
+        {
+          hanzi: "里",
+          pinyin: "lǐ",
+          meaning: "Place/Inside"
+        }
+      ],
+      example: {
+        hanzi: "我的朋友在那里。",
+        pinyin: "Wǒ de péngyǒu zài nàlǐ.",
+        english: "My friend is there.",
+        bangla: "আমার বন্ধু ওখানে আছে।"
+      },
+      similar: [
+        {
+          hanzi: "那儿",
+          pinyin: "nàr",
+          english: "There"
+        }
+      ]
+    },
+    {
+      hanzi: "哪里",
+      pinyin: "nǎlǐ",
+      english: "Where",
+      bangla: "কোথায়",
+      characters: [
+        {
+          hanzi: "哪",
+          pinyin: "nǎ",
+          meaning: "Which"
+        },
+        {
+          hanzi: "里",
+          pinyin: "lǐ",
+          meaning: "Place/Inside"
+        }
+      ],
+      example: {
+        hanzi: "你去哪里？",
+        pinyin: "Nǐ qù nǎlǐ?",
+        english: "Where are you going?",
+        bangla: "তুমি কোথায় যাচ্ছ?"
+      },
+      similar: [
+        {
+          hanzi: "哪儿",
+          pinyin: "nǎr",
+          english: "Where"
+        }
+      ]
+    },
+    {
+      hanzi: "昨天",
+      pinyin: "zuótiān",
+      english: "Yesterday",
+      bangla: "গতকাল",
+      characters: [
+        {
+          hanzi: "昨",
+          pinyin: "zuó",
+          meaning: "Past/Yesterday"
+        },
+        {
+          hanzi: "天",
+          pinyin: "tiān",
+          meaning: "Day"
+        }
+      ],
+      example: {
+        hanzi: "昨天下雨了。",
+        pinyin: "Zuótiān xià yǔ le.",
+        english: "It rained yesterday.",
+        bangla: "গতকাল বৃষ্টি হয়েছিল।"
+      },
+      similar: [
+        {
+          hanzi: "昨日",
+          pinyin: "zuórì",
+          english: "Yesterday"
+        }
+      ]
+    },
+    {
+      hanzi: "问",
+      pinyin: "wèn",
+      english: "Ask",
+      bangla: "জিজ্ঞাসা করা",
+      characters: [
+        {
+          hanzi: "门",
+          pinyin: "mén",
+          meaning: "Gate"
+        },
+        {
+          hanzi: "口",
+          pinyin: "kǒu",
+          meaning: "Mouth"
+        }
+      ],
+      example: {
+        hanzi: "我想问老师。",
+        pinyin: "Wǒ xiǎng wèn lǎoshī.",
+        english: "I want to ask the teacher.",
+        bangla: "আমি শিক্ষককে জিজ্ঞাসা করতে চাই।"
+      },
+      similar: [
+        {
+          hanzi: "询问",
+          pinyin: "xúnwèn",
+          english: "Inquire"
+        }
+      ]
+    },
+    {
+      hanzi: "对",
+      pinyin: "duì",
+      english: "To; towards",
+      bangla: "প্রতি/দিকে",
+      characters: [
+        {
+          hanzi: "对",
+          pinyin: "duì",
+          meaning: "To face/Towards"
+        }
+      ],
+      example: {
+        hanzi: "他对我笑了。",
+        pinyin: "Tā duì wǒ xiào le.",
+        english: "He smiled at me.",
+        bangla: "সে আমার দিকে হাসল।"
+      },
+      similar: [
+        {
+          hanzi: "向",
+          pinyin: "xiàng",
+          english: "Towards"
+        }
+      ]
+    },
+    {
+      hanzi: "说",
+      pinyin: "shuō",
+      english: "Speak; talk; say",
+      bangla: "বলা",
+      characters: [
+        {
+          hanzi: "讠",
+          pinyin: "yán",
+          meaning: "Speech radical"
+        },
+        {
+          hanzi: "兑",
+          pinyin: "duì",
+          meaning: "Exchange"
+        }
+      ],
+      example: {
+        hanzi: "你在说什么？",
+        pinyin: "Nǐ zài shuō shénme?",
+        english: "What are you saying?",
+        bangla: "তুমি কী বলছ?"
+      },
+      similar: [
+        {
+          hanzi: "讲",
+          pinyin: "jiǎng",
+          english: "Speak"
+        }
+      ]
+    },
+    {
+      hanzi: "要",
+      pinyin: "yào",
+      english: "Want; wish",
+      bangla: "চাওয়া",
+      characters: [
+        {
+          hanzi: "要",
+          pinyin: "yào",
+          meaning: "Want/Demand"
+        }
+      ],
+      example: {
+        hanzi: "我要喝茶。",
+        pinyin: "Wǒ yào hē chá.",
+        english: "I want to drink tea.",
+        bangla: "আমি চা খেতে চাই।"
+      },
+      similar: [
+        {
+          hanzi: "想",
+          pinyin: "xiǎng",
+          english: "Want"
+        }
+      ]
+    },
+    {
+      hanzi: "小朋友",
+      pinyin: "xiǎopéngyǒu",
+      english: "Child; kid",
+      bangla: "বাচ্চা",
+      characters: [
+        {
+          hanzi: "小",
+          pinyin: "xiǎo",
+          meaning: "Small"
+        },
+        {
+          hanzi: "朋友",
+          pinyin: "péngyǒu",
+          meaning: "Friend"
+        }
+      ],
+      example: {
+        hanzi: "小朋友们在公园玩。",
+        pinyin: "Xiǎopéngyǒumen zài gōngyuán wán.",
+        english: "The children are playing in the park.",
+        bangla: "বাচ্চারা পার্কে খেলছে।"
+      },
+      similar: [
+        {
+          hanzi: "孩子",
+          pinyin: "háizi",
+          english: "Child"
+        }
+      ]
+    }
+  ]
+};
+
+
+
+
 // সব ডেটা একসাথে
 export const allLessons = {
   lesson1: {
@@ -3570,6 +5223,51 @@ export const allLessons = {
     text2: lesson6Text2Data,
     text3: lesson6Text3Data,
   },
+  lesson7: {
+    text1: lesson7Text1Data,
+    text2: lesson7Text2Data,
+    text3: lesson7Text3Data,
+  },
+  lesson8: {
+    text1: lesson8Text1Data,
+    text2: lesson8Text2Data,
+    text3: lesson8Text3Data,
+  },
+  lesson9: {
+    text1: lesson9Text1Data,
+    text2: lesson9Text2Data,
+    text3: lesson9Text3Data,
+  },
+  lesson10: {
+    text1: lesson10Text1Data,
+    text2: lesson10Text2Data,
+    text3: lesson10Text3Data,
+  },
+  lesson11: {
+    text1: lesson11Text1Data,
+    text2: lesson11Text2Data,
+    text3: lesson11Text3Data,
+  },
+  lesson12: {
+    text1: lesson12Text1Data,
+    text2: lesson12Text2Data,
+    text3: lesson12Text3Data,
+  },
+  lesson13: {
+    text1: lesson13Text1Data,
+    text2: lesson13Text2Data,
+    text3: lesson13Text3Data,
+  },
+  lesson14: {
+    text1: lesson14Text1Data,
+    text2: lesson14Text2Data,
+    text3: lesson14Text3Data,
+  },
+  lesson15: {
+    text1: lesson15Text1Data,
+    text2: lesson15Text2Data,
+    text3: lesson15Text3Data,
+  },
 };
 
 // অ্যারেতে রাখতে চাইলে
@@ -3590,5 +5288,33 @@ export const vocabularyDataArray: VocabularyData[] = [
   lesson5Text3Data,
   lesson6Text1Data,
   lesson6Text2Data,
-  lesson6Text3Data, 
+  lesson6Text3Data,
+  lesson7Text1Data,
+  lesson7Text2Data,
+  lesson7Text3Data,
+  lesson8Text1Data,
+  lesson8Text2Data,
+  lesson8Text3Data,
+  lesson9Text1Data,
+  lesson9Text2Data,
+  lesson9Text3Data,
+  lesson10Text1Data,
+  lesson10Text2Data,
+  lesson10Text3Data,
+  lesson11Text1Data,
+  lesson11Text2Data,
+  lesson11Text3Data,
+  lesson12Text1Data,
+  lesson12Text2Data,
+  lesson12Text3Data,
+  lesson13Text1Data,
+  lesson13Text2Data,
+  lesson13Text3Data,
+  lesson14Text1Data,
+  lesson14Text2Data,
+  lesson14Text3Data,  
+  lesson15Text1Data,
+  lesson15Text2Data,
+  lesson15Text3Data
+  
 ];
