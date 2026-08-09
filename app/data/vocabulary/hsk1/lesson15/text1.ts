@@ -4,6 +4,35 @@ import type { VocabularyData } from "@/app/types/vocabulary";
 export const lesson15Text1Data: VocabularyData = {
   lesson: 15,
   text: 1,
+dialogue: {
+    title: "Chinese Food",
+    lines: [
+      {
+        speaker: "Li Wen",
+        hanzi: "你们爱吃哪个菜？",
+        pinyin: "Nǐmen ài chī nǎge cài?",
+        english: "Which dish do you like to eat?",
+      },
+      {
+        speaker: "Bai Jiayue",
+        hanzi: "我喜欢这个，也喜欢那个。",
+        pinyin: "Wǒ xǐhuan zhège, yě xǐhuan nàge.",
+        english: "I like this one, and I also like that one.",
+      },
+      {
+        speaker: "Chen Tianzhong",
+        hanzi: "这些菜都好吃，还很好看。",
+        pinyin: "Zhèxiē cài dōu hǎochī, hái hěn hǎokàn.",
+        english: "All these dishes are delicious, and they also look very nice.",
+      },
+      {
+        speaker: "Li Wen",
+        hanzi: "我爱吃中国菜，也喜欢做。大家多吃点儿。",
+        pinyin: "Wǒ ài chī Zhōngguó cài, yě xǐhuan zuò. Dàjiā duō chī diǎnr.",
+        english: "I love eating Chinese food, and I also like cooking it. Everyone, eat a little more.",
+      },
+    ],
+  },
   vocabulary: [
     {
       hanzi: "爱",
