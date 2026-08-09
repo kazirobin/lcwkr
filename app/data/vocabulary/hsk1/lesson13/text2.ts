@@ -4,6 +4,35 @@ import type { VocabularyData } from "@/app/types/vocabulary";
 export const lesson13Text2Data: VocabularyData = {
   lesson: 13,
   text: 2,
+dialogue: {
+    title: "Ordering Breakfast",
+    lines: [
+      {
+        speaker: "服务员",
+        hanzi: "女士，请坐！您喝什么？",
+        pinyin: "Nǚshì, qǐng zuò! Nín hē shénme?",
+        english: "Ma'am, please have a seat! What would you like to drink?",
+      },
+      {
+        speaker: "王一雪",
+        hanzi: "我看一下。请给我一杯牛奶。",
+        pinyin: "Wǒ kàn yíxià. Qǐng gěi wǒ yì bēi niúnǎi.",
+        english: "Let me take a look. Please give me a glass of milk.",
+      },
+      {
+        speaker: "服务员",
+        hanzi: "好的。您还要什么？",
+        pinyin: "Hǎo de. Nín hái yào shénme?",
+        english: "Okay. What else would you like?",
+      },
+      {
+        speaker: "王一雪",
+        hanzi: "我还没吃早饭，再要这个面包和鸡蛋吧。",
+        pinyin: "Wǒ hái méi chī zǎofàn, zài yào zhège miànbāo hé jīdàn ba.",
+        english: "I haven't had breakfast yet. I'll also have this bread and an egg.",
+      },
+    ],
+  },
   vocabulary: [
     {
       hanzi: "服务员",
