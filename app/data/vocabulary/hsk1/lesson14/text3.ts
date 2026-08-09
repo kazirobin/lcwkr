@@ -4,6 +4,35 @@ import type { VocabularyData } from "@/app/types/vocabulary";
 export const lesson14Text3Data: VocabularyData = {
   lesson: 14,
   text: 3,
+dialogue: {
+    title: "On the Train",
+    lines: [
+      {
+        speaker: "Bái Jiāyuè",
+        hanzi: "你们上火车后看见王老师了吗？",
+        pinyin: "Nǐmen shàng huǒchē hòu kànjiàn Wáng lǎoshī le ma?",
+        english: "After you got on the train, did you see Teacher Wang?",
+      },
+      {
+        speaker: "Chén Tiānzhōng",
+        hanzi: "没看见。中午车开后，有些人在看书，有些人睡觉了。",
+        pinyin: "Méi kànjiàn. Zhōngwǔ chē kāi hòu, yǒuxiē rén zài kàn shū, yǒuxiē rén shuìjiào le.",
+        english: "No, I didn’t see him. After the train left at noon, some people were reading, and some people fell asleep.",
+      },
+      {
+        speaker: "Bái Jiāyuè",
+        hanzi: "你呢？",
+        pinyin: "Nǐ ne?",
+        english: "What about you?",
+      },
+      {
+        speaker: "Chén Tiānzhōng",
+        hanzi: "我看了一个电影。",
+        pinyin: "Wǒ kànle yí ge diànyǐng.",
+        english: "I watched a movie.",
+      },
+    ],
+  },
   vocabulary: [
     {
       hanzi: "明年",
