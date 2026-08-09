@@ -4,6 +4,47 @@ import type { VocabularyData } from "@/app/types/vocabulary";
 export const lesson14Text1Data: VocabularyData = {
   lesson: 14,
   text: 1,
+dialogue: {
+    title: "The Children Starting School",
+    lines: [
+      {
+        speaker: "Liú Míng",
+        hanzi: "明年女儿上中学。",
+        pinyin: "Míngnián nǚ'ér shàng zhōngxué.",
+        english: "Next year, my daughter will start middle school.",
+      },
+      {
+        speaker: "Wáng Yīxuě",
+        hanzi: "对。儿子也上小学了。",
+        pinyin: "Duì. Érzi yě shàng xiǎoxué le.",
+        english: "Right. Our son has also started elementary school.",
+      },
+      {
+        speaker: "Liú Míng",
+        hanzi: "我们家有了一个中学生。",
+        pinyin: "Wǒmen jiā yǒule yí ge zhōngxuéshēng.",
+        english: "We now have a middle school student in our family.",
+      },
+      {
+        speaker: "Wáng Yīxuě",
+        hanzi: "还有了一个小学生。",
+        pinyin: "Hái yǒule yí ge xiǎoxuéshēng.",
+        english: "And we also have an elementary school student.",
+      },
+      {
+        speaker: "Liú Míng",
+        hanzi: "上学后，他们都忙了。",
+        pinyin: "Shàngxué hòu, tāmen dōu máng le.",
+        english: "After they started school, they have all become busy.",
+      },
+      {
+        speaker: "Wáng Yīxuě",
+        hanzi: "是的。太晚了，睡觉吧。",
+        pinyin: "Shì de. Tài wǎn le, shuìjiào ba.",
+        english: "Yes. It’s too late. Let’s go to sleep.",
+      },
+    ],
+  },
   vocabulary: [
     {
       hanzi: "上",
