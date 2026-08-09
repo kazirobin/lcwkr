@@ -4,6 +4,35 @@ import type { VocabularyData } from "@/app/types/vocabulary";
 export const lesson15Text2Data: VocabularyData = {
   lesson: 15,
   text: 2,
+dialogue: {
+    title: "Travel Plans",
+    lines: [
+      {
+        speaker: "Li Wen",
+        hanzi: "你们都想去哪儿？",
+        pinyin: "Nǐmen dōu xiǎng qù nǎr?",
+        english: "Where do you all want to go?",
+      },
+      {
+        speaker: "Anni",
+        hanzi: "去年我和男朋友去了西安，今年我想去北京。",
+        pinyin: "Qùnián wǒ hé nánpéngyou qù le Xī’ān, jīnnián wǒ xiǎng qù Běijīng.",
+        english: "Last year, my boyfriend and I went to Xi’an. This year, I want to go to Beijing.",
+      },
+      {
+        speaker: "Bai Jiayue",
+        hanzi: "前几年我去了西安，非常好玩儿。今年我也想去北京。",
+        pinyin: "Qián jǐ nián wǒ qù le Xī’ān, fēicháng hǎowánr. Jīnnián wǒ yě xiǎng qù Běijīng.",
+        english: "A few years ago, I went to Xi’an. It was very fun. This year, I also want to go to Beijing.",
+      },
+      {
+        speaker: "Li Wen",
+        hanzi: "我和王老师都是北京人，北京非常漂亮。",
+        pinyin: "Wǒ hé Wáng lǎoshī dōu shì Běijīng rén, Běijīng fēicháng piàoliang.",
+        english: "Teacher Wang and I are both from Beijing. Beijing is very beautiful.",
+      },
+    ],
+  },
   vocabulary: [
     {
       hanzi: "去年",
