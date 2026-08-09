@@ -4,6 +4,35 @@ import type { VocabularyData } from "@/app/types/vocabulary";
 export const lesson3Text1Data: VocabularyData = {
   lesson: 3,
   text: 1,
+dialog: {
+    title: "Nationalities",
+    lines: [
+      {
+        speaker: "Li Wen",
+        hanzi: "我是中国人。",
+        pinyin: "Wǒ shì Zhōngguó rén.",
+        english: "I am Chinese."
+      },
+      {
+        speaker: "Bai Jiayue",
+        hanzi: "我是法国人。我",
+        pinyin: "Wǒ shì Fàguó rén. Wǒ",
+        english: "I am French. My"
+      },
+      {
+        speaker: "Bai Jiayue",
+        hanzi: "的中文老师也是",
+        pinyin: "de Zhōngwén lǎoshī yě shì",
+        english: "Chinese teacher is also"
+      },
+      {
+        speaker: "Bai Jiayue",
+        hanzi: "中国人。",
+        pinyin: "Zhōngguó rén.",
+        english: "Chinese."
+      }
+    ]
+  },
   vocabulary: [
     {
       hanzi: "人",
