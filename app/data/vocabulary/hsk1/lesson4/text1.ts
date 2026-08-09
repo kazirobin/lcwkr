@@ -4,6 +4,35 @@ import type { VocabularyData } from "@/app/types/vocabulary";
 export const lesson4Text1Data: VocabularyData = {
   lesson: 4,
   text: 1,
+dialogue: {
+    title: "Yifei's Students",
+    lines: [
+      {
+        speaker: "Liu Ming",
+        hanzi: "一飞忙吗？",
+        pinyin: "Yīfēi máng ma?",
+        english: "Is Yifei busy?",
+      },
+      {
+        speaker: "Wang Yixue",
+        hanzi: "她很忙。",
+        pinyin: "Tā hěn máng.",
+        english: "She is very busy.",
+      },
+      {
+        speaker: "Liu Ming",
+        hanzi: "她有多少个学生？",
+        pinyin: "Tā yǒu duōshao gè xuéshēng?",
+        english: "How many students does she have?",
+      },
+      {
+        speaker: "Wang Yixue",
+        hanzi: "她有二十个学生。",
+        pinyin: "Tā yǒu èrshí gè xuéshēng.",
+        english: "She has twenty students.",
+      },
+    ],
+  },
   vocabulary: [
     {
       hanzi: "有",
