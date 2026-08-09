@@ -4,6 +4,35 @@ import type { VocabularyData } from "@/app/types/vocabulary";
 export const lesson13Text3Data: VocabularyData = {
   lesson: 13,
   text: 3,
+dialogue: {
+    title: "Asking About a Phone Shop",
+    lines: [
+      {
+        speaker: "白家月",
+        hanzi: "王老师，我可以再问您一个问题吗？",
+        pinyin: "Wáng lǎoshī, wǒ kěyǐ zài wèn nín yí ge wèntí ma?",
+        english: "Teacher Wang, may I ask you one more question?",
+      },
+      {
+        speaker: "王一飞",
+        hanzi: "可以。你有什么问题？",
+        pinyin: "Kěyǐ. Nǐ yǒu shénme wèntí?",
+        english: "Sure. What question do you have?",
+      },
+      {
+        speaker: "白家月",
+        hanzi: "那个小店卖不卖手机？",
+        pinyin: "Nàge xiǎodiàn mài bu mài shǒujī?",
+        english: "Does that little shop sell mobile phones?",
+      },
+      {
+        speaker: "王一飞",
+        hanzi: "我不知道。你可以打电话问一下。",
+        pinyin: "Wǒ bù zhīdào. Nǐ kěyǐ dǎ diànhuà wèn yíxià.",
+        english: "I don't know. You can call and ask.",
+      },
+    ],
+  },
   vocabulary: [
     {
       hanzi: "先生",
