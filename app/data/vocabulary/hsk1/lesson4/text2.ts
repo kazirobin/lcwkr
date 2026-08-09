@@ -4,6 +4,35 @@ import type { VocabularyData } from "@/app/types/vocabulary";
 export const lesson4Text2Data: VocabularyData = {
   lesson: 4,
   text: 2,
+dialogue: {
+    title: "Family Members",
+    lines: [
+      {
+        speaker: "Wang Yixue",
+        hanzi: "我有两个哥哥，你呢？",
+        pinyin: "Wǒ yǒu liǎng gè gēge, nǐ ne?",
+        english: "I have two older brothers. What about you?",
+      },
+      {
+        speaker: "Yang Tongle",
+        hanzi: "我没有哥哥。",
+        pinyin: "Wǒ méiyǒu gēge.",
+        english: "I don't have any older brothers.",
+      },
+      {
+        speaker: "Wang Yixue",
+        hanzi: "你家有几口人？",
+        pinyin: "Nǐ jiā yǒu jǐ kǒu rén?",
+        english: "How many people are there in your family?",
+      },
+      {
+        speaker: "Yang Tongle",
+        hanzi: "我家有四口人，爸爸、妈妈、妹妹和我。",
+        pinyin: "Wǒ jiā yǒu sì kǒu rén, bàba, māma, mèimei hé wǒ.",
+        english: "There are four people in my family: dad, mom, younger sister, and me.",
+      },
+    ],
+  },
   vocabulary: [
     {
       hanzi: "哥哥",
