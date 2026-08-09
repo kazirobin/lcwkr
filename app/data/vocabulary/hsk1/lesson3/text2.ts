@@ -4,7 +4,7 @@ import type { VocabularyData } from "@/app/types/vocabulary";
 export const lesson3Text2Data: VocabularyData = {
   lesson: 3,
   text: 2,
-dialog: {
+dialogue: {
     title: "Introducing a Girlfriend",
     lines: [
       {
