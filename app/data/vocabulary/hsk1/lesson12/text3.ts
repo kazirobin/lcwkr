@@ -4,6 +4,35 @@ import type { VocabularyData } from "@/app/types/vocabulary";
 export const lesson12Text3Data: VocabularyData = {
   lesson: 12,
   text: 3,
+dialogue: {
+    title: "Today's Weather",
+    lines: [
+      {
+        speaker: "Wáng Yīxuě",
+        hanzi: "今天天气怎么样？",
+        pinyin: "Jīntiān tiānqì zěnmeyàng?",
+        english: "How is the weather today?",
+      },
+      {
+        speaker: "Wáng Yīfēi",
+        hanzi: "这里的天不太好，下雨了。",
+        pinyin: "Zhèlǐ de tiān bú tài hǎo, xià yǔ le.",
+        english: "The weather here isn’t very good; it’s raining.",
+      },
+      {
+        speaker: "Wáng Yīxuě",
+        hanzi: "雨大吗？",
+        pinyin: "Yǔ dà ma?",
+        english: "Is the rain heavy?",
+      },
+      {
+        speaker: "Wáng Yīfēi",
+        hanzi: "有点儿大，我觉得很冷。",
+        pinyin: "Yǒudiǎnr dà, wǒ juéde hěn lěng.",
+        english: "It’s a little heavy. I feel very cold.",
+      },
+    ],
+  },
   vocabulary: [
     {
       hanzi: "病",
