@@ -4,6 +4,47 @@ import type { VocabularyData } from "@/app/types/vocabulary";
 export const lesson13Text1Data: VocabularyData = {
   lesson: 13,
   text: 1,
+dialogue: {
+    title: "Ordering Dumplings",
+    lines: [
+      {
+        speaker: "服务员",
+        hanzi: "先生，请坐！您要什么？",
+        pinyin: "Xiānsheng, qǐng zuò! Nín yào shénme?",
+        english: "Sir, please have a seat! What would you like?",
+      },
+      {
+        speaker: "刘明",
+        hanzi: "我要一斤饺子。",
+        pinyin: "Wǒ yào yì jīn jiǎozi.",
+        english: "I want one jin of dumplings.",
+      },
+      {
+        speaker: "服务员",
+        hanzi: "好的。一斤饺子四十个。",
+        pinyin: "Hǎo de. Yì jīn jiǎozi sìshí ge.",
+        english: "Okay. One jin of dumplings is 40 pieces.",
+      },
+      {
+        speaker: "刘明",
+        hanzi: "四十个太多了，我要一半吧。",
+        pinyin: "Sìshí ge tài duō le, wǒ yào yíbàn ba.",
+        english: "Forty is too many. I'll have half, then.",
+      },
+      {
+        speaker: "服务员",
+        hanzi: "半斤20个。您想喝什么？",
+        pinyin: "Bàn jīn èrshí ge. Nín xiǎng hē shénme?",
+        english: "Half a jin is 20 pieces. What would you like to drink?",
+      },
+      {
+        speaker: "刘明",
+        hanzi: "请给我一杯茶吧。",
+        pinyin: "Qǐng gěi wǒ yì bēi chá ba.",
+        english: "Please give me a cup of tea.",
+      },
+    ],
+  },
   vocabulary: [
     {
       hanzi: "可以",
