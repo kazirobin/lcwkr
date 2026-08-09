@@ -818,6 +818,35 @@ dialogue: {
 export const lesson6Text1Data: VocabularyData = {
   lesson: 6,
   text: 1,
+dialogue: {
+    title: "Phone Numbers",
+    lines: [
+      {
+        speaker: "Bai Jiayue",
+        hanzi: "家月，你的手机号是多少？",
+        pinyin: "Jiāyuè, nǐ de shǒujīhào shì duōshǎo?",
+        english: "Jiayue, what is your phone number?",
+      },
+      {
+        speaker: "Chen Tianzhong",
+        hanzi: "我的手机号是 +33 601493190。",
+        pinyin: "Wǒ de shǒujīhào shì sān sān liù líng yāo sì jiǔ sān yāo jiǔ líng.",
+        english: "My phone number is +33 601493190.",
+      },
+      {
+        speaker: "Bai Jiayue",
+        hanzi: "我的手机号是 +86 13552721160。",
+        pinyin: "Wǒ de shǒujīhào shì bā liù yāo sān wǔ wǔ èr qī èr yāo yāo liù líng.",
+        english: "My phone number is +86 13552721160.",
+      },
+      {
+        speaker: "Chen Tianzhong",
+        hanzi: "好的。",
+        pinyin: "Hǎo de.",
+        english: "Okay.",
+      },
+    ],
+  },
   vocabulary: [
     {
       hanzi: "手机",
@@ -914,6 +943,35 @@ export const lesson6Text1Data: VocabularyData = {
 export const lesson6Text2Data: VocabularyData = {
   lesson: 6,
   text: 2,
+dialogue: {
+    title: "Going to the Supermarket",
+    lines: [
+      {
+        speaker: "Chen Tianzhong",
+        hanzi: "家月，明天你去哪儿？",
+        pinyin: "Jiāyuè, míngtiān nǐ qù nǎr?",
+        english: "Jiayue, where are you going tomorrow?",
+      },
+      {
+        speaker: "Bai Jiayue",
+        hanzi: "我想去超市买东西。",
+        pinyin: "Wǒ xiǎng qù chāoshì mǎi dōngxi.",
+        english: "I want to go to the supermarket to buy things.",
+      },
+      {
+        speaker: "Chen Tianzhong",
+        hanzi: "你去超市买什么？",
+        pinyin: "Nǐ qù chāoshì mǎi shénme?",
+        english: "What are you going to buy at the supermarket?",
+      },
+      {
+        speaker: "Bai Jiayue",
+        hanzi: "我想买些牛奶。",
+        pinyin: "Wǒ xiǎng mǎi xiē niúnǎi.",
+        english: "I want to buy some milk.",
+      },
+    ],
+  },
   vocabulary: [
     {
       hanzi: "明天",
@@ -1231,6 +1289,47 @@ export const lesson6Text2Data: VocabularyData = {
 export const lesson6Text3Data: VocabularyData = {
   lesson: 6,
   text: 3,
+dialogue: {
+    title: "Dinner on Sunday",
+    lines: [
+      {
+        speaker: "Wang Yixue",
+        hanzi: "星期天我们去哪儿吃晚饭？",
+        pinyin: "Xīngqītiān wǒmen qù nǎr chī wǎnfàn?",
+        english: "Where are we going to eat dinner on Sunday?",
+      },
+      {
+        speaker: "Liu Ming",
+        hanzi: "我还想去西安饭店。",
+        pinyin: "Wǒ hái xiǎng qù Xī'ān Fàndiàn.",
+        english: "I still want to go to Xi'an Restaurant.",
+      },
+      {
+        speaker: "Liu Xiaoxue",
+        hanzi: "那边的包子非常好吃，我想吃包子。",
+        pinyin: "Nàbiān de bāozi fēicháng hǎochī, wǒ xiǎng chī bāozi.",
+        english: "The steamed buns there are very delicious. I want to eat steamed buns.",
+      },
+      {
+        speaker: "Liu Xiaoming",
+        hanzi: "妈妈，我想吃米饭，不想吃包子。",
+        pinyin: "Māma, wǒ xiǎng chī mǐfàn, bù xiǎng chī bāozi.",
+        english: "Mom, I want to eat rice, I don't want to eat steamed buns.",
+      },
+      {
+        speaker: "Wang Yixue",
+        hanzi: "好的。我们怎么去？",
+        pinyin: "Hǎo de. Wǒmen zěnme qù?",
+        english: "Okay. How are we going to get there?",
+      },
+      {
+        speaker: "Liu Ming",
+        hanzi: "坐出租车去。",
+        pinyin: "Zuò chūzūchē qù.",
+        english: "Let's go by taxi.",
+      },
+    ],
+  },
   vocabulary: [
     {
       hanzi: "吃",
@@ -1585,6 +1684,35 @@ export const lesson6Text3Data: VocabularyData = {
 export const lesson7Text1Data: VocabularyData = {
   lesson: 7,
   text: 1,
+dialogue: {
+    title: "Time and Class",
+    lines: [
+      {
+        speaker: "Bai Jiayue",
+        hanzi: "现在几点？",
+        pinyin: "Xiànzài jǐ diǎn?",
+        english: "What time is it now?",
+      },
+      {
+        speaker: "Anni",
+        hanzi: "早上八点四十。",
+        pinyin: "Zǎoshang bā diǎn sìshí.",
+        english: "It’s 8:40 in the morning.",
+      },
+      {
+        speaker: "Bai Jiayue",
+        hanzi: "我上午十点十分有课。",
+        pinyin: "Wǒ shàngwǔ shí diǎn shí fēn yǒu kè.",
+        english: "I have a class at 10:10 in the morning.",
+      },
+      {
+        speaker: "Anni",
+        hanzi: "好的，我们下午两点见吧。",
+        pinyin: "Hǎo de, wǒmen xiàwǔ liǎng diǎn jiàn ba.",
+        english: "Okay, let’s meet at 2:00 p.m.",
+      },
+    ],
+  },
   vocabulary: [
     {
       hanzi: "现在",
@@ -1847,6 +1975,35 @@ export const lesson7Text1Data: VocabularyData = {
 export const lesson7Text2Data: VocabularyData = {
   lesson: 7,
   text: 2,
+dialogue: {
+    title: "Going to the Cinema",
+    lines: [
+      {
+        speaker: "Li Wen",
+        hanzi: "下午我想去电影院看电影，你去吗？",
+        pinyin: "Xiàwǔ wǒ xiǎng qù diànyǐngyuàn kàn diànyǐng, nǐ qù ma?",
+        english: "I want to go to the cinema to watch a movie this afternoon. Are you going?",
+      },
+      {
+        speaker: "Bai Jiayue",
+        hanzi: "我不想去，下午还有事。",
+        pinyin: "Wǒ bù xiǎng qù, xiàwǔ hái yǒu shì.",
+        english: "I don’t want to go. I still have something to do this afternoon.",
+      },
+      {
+        speaker: "Li Wen",
+        hanzi: "好的。明天呢？",
+        pinyin: "Hǎo de. Míngtiān ne?",
+        english: "Okay. How about tomorrow?",
+      },
+      {
+        speaker: "Bai Jiayue",
+        hanzi: "我明天下午两点还上课呢，四点半下课。",
+        pinyin: "Wǒ míngtiān xiàwǔ liǎng diǎn hái shàngkè ne, sì diǎn bàn xiàkè.",
+        english: "I have class tomorrow afternoon at 2:00, and it finishes at 4:30.",
+      },
+    ],
+  },
   vocabulary: [
     {
       hanzi: "电影院",
@@ -2098,6 +2255,47 @@ export const lesson7Text2Data: VocabularyData = {
 export const lesson7Text3Data: VocabularyData = {
   lesson: 7,
   text: 3,
+dialogue: {
+    title: "After Work",
+    lines: [
+      {
+        speaker: "Wang Yixue",
+        hanzi: "喂，你在哪儿呢？",
+        pinyin: "Wéi, nǐ zài nǎr ne?",
+        english: "Hello, where are you?",
+      },
+      {
+        speaker: "Liu Ming",
+        hanzi: "我在家里呢。",
+        pinyin: "Wǒ zài jiā lǐ ne.",
+        english: "I’m at home.",
+      },
+      {
+        speaker: "Wang Yixue",
+        hanzi: "我晚上六点半下班。",
+        pinyin: "Wǒ wǎnshang liù diǎn bàn xiàbān.",
+        english: "I finish work at 6:30 p.m.",
+      },
+      {
+        speaker: "Liu Ming",
+        hanzi: "我八点去医院上班。",
+        pinyin: "Wǒ bā diǎn qù yīyuàn shàngbān.",
+        english: "I go to the hospital to work at 8:00.",
+      },
+      {
+        speaker: "Wang Yixue",
+        hanzi: "好的，你去店里买些菜吧。",
+        pinyin: "Hǎo de, nǐ qù diàn lǐ mǎi xiē cài ba.",
+        english: "Okay, go to the store and buy some vegetables.",
+      },
+      {
+        speaker: "Liu Ming",
+        hanzi: "好，我十分钟后去。",
+        pinyin: "Hǎo, wǒ shí fēnzhōng hòu qù.",
+        english: "Okay, I’ll go in ten minutes.",
+      },
+    ],
+  },
   vocabulary: [
     {
       hanzi: "在",
@@ -2386,6 +2584,35 @@ export const lesson7Text3Data: VocabularyData = {
 export const lesson8Text1Data: VocabularyData = {
   lesson: 8,
   text: 1,
+dialogue: {
+    title: "The Little Cat",
+    lines: [
+      {
+        speaker: "Bái Jiāyuè",
+        hanzi: "房间外有一只小猫。",
+        pinyin: "Fángjiān wài yǒu yì zhī xiǎo māo.",
+        english: "There is a little cat outside the room.",
+      },
+      {
+        speaker: "Chén Tiānzhōng",
+        hanzi: "我没看见，它在哪儿呢？",
+        pinyin: "Wǒ méi kànjiàn, tā zài nǎr ne?",
+        english: "I didn’t see it. Where is it?",
+      },
+      {
+        speaker: "Bái Jiāyuè",
+        hanzi: "它在桌子下呢。",
+        pinyin: "Tā zài zhuōzi xià ne.",
+        english: "It’s under the table.",
+      },
+      {
+        speaker: "Chén Tiānzhōng",
+        hanzi: "这只小猫真漂亮！",
+        pinyin: "Zhè zhī xiǎo māo zhēn piàoliang!",
+        english: "This little cat is really beautiful!",
+      },
+    ],
+  },
   vocabulary: [
     {
       hanzi: "房间",
@@ -2679,6 +2906,35 @@ export const lesson8Text1Data: VocabularyData = {
 export const lesson8Text2Data: VocabularyData = {
   lesson: 8,
   text: 2,
+dialogue: {
+    title: "Meeting at the School Bookstore",
+    lines: [
+      {
+        speaker: "Bái Jiāyuè",
+        hanzi: "我们在哪儿见呢？",
+        pinyin: "Wǒmen zài nǎr jiàn ne?",
+        english: "Where shall we meet?",
+      },
+      {
+        speaker: "Lǐ Wén",
+        hanzi: "在学校书店前见吧。",
+        pinyin: "Zài xuéxiào shūdiàn qián jiàn ba.",
+        english: "Let’s meet in front of the school bookstore.",
+      },
+      {
+        speaker: "Bái Jiāyuè",
+        hanzi: "好的。下午两点你能到吗？",
+        pinyin: "Hǎo de. Xiàwǔ liǎng diǎn nǐ néng dào ma?",
+        english: "Okay. Can you arrive at 2 p.m.?",
+      },
+      {
+        speaker: "Lǐ Wén",
+        hanzi: "我能到。我在学校吃午饭。",
+        pinyin: "Wǒ néng dào. Wǒ zài xuéxiào chī wǔfàn.",
+        english: "I can make it. I’ll have lunch at school.",
+      },
+    ],
+  },
   vocabulary: [
     {
       hanzi: "在",
@@ -2866,6 +3122,47 @@ export const lesson8Text2Data: VocabularyData = {
 export const lesson8Text3Data: VocabularyData = {
   lesson: 8,
   text: 3,
+dialogue: {
+    title: "Doctors at the Hospital",
+    lines: [
+      {
+        speaker: "Liú Míng",
+        hanzi: "小胡，还没吃饭呢？",
+        pinyin: "Xiǎo Hú, hái méi chī fàn ne?",
+        english: "Xiao Hu, you haven’t eaten yet?",
+      },
+      {
+        speaker: "Hú yīshēng",
+        hanzi: "没吃呢。",
+        pinyin: "Méi chī ne.",
+        english: "No, I haven’t eaten yet.",
+      },
+      {
+        speaker: "Liú Míng",
+        hanzi: "大医院病人多，医生非常忙。",
+        pinyin: "Dà yīyuàn bìngrén duō, yīshēng fēicháng máng.",
+        english: "There are many patients in a big hospital, and the doctors are very busy.",
+      },
+      {
+        speaker: "Hú yīshēng",
+        hanzi: "是的。我爸爸也在医院工作，他也非常忙。",
+        pinyin: "Shì de. Wǒ bàba yě zài yīyuàn gōngzuò, tā yě fēicháng máng.",
+        english: "Yes. My father also works at the hospital, and he is also very busy.",
+      },
+      {
+        speaker: "Liú Míng",
+        hanzi: "你家有两个医生？",
+        pinyin: "Nǐ jiā yǒu liǎng ge yīshēng?",
+        english: "Are there two doctors in your family?",
+      },
+      {
+        speaker: "Hú yīshēng",
+        hanzi: "对。",
+        pinyin: "Duì.",
+        english: "Yes.",
+      },
+    ],
+  },
   vocabulary: [
     {
       hanzi: "饭",
@@ -3075,6 +3372,35 @@ export const lesson8Text3Data: VocabularyData = {
 export const lesson9Text1Data: VocabularyData = {
   lesson: 9,
   text: 1,
+dialogue: {
+    title: "Going to the Cinema",
+    lines: [
+      {
+        speaker: "Li Wen",
+        hanzi: "学校前边有一家电影院。",
+        pinyin: "Xuéxiào qiánbian yǒu yì jiā diànyǐngyuàn.",
+        english: "There is a cinema in front of the school.",
+      },
+      {
+        speaker: "Bai Jiayue",
+        hanzi: "对。我们晚上去那个电影院看电影吧。",
+        pinyin: "Duì. Wǒmen wǎnshang qù nàge diànyǐngyuàn kàn diànyǐng ba.",
+        english: "Right. Let’s go to that cinema to watch a movie tonight.",
+      },
+      {
+        speaker: "Li Wen",
+        hanzi: "好！我们七点在电影院外边见，好吗？",
+        pinyin: "Hǎo! Wǒmen qī diǎn zài diànyǐngyuàn wàibian jiàn, hǎo ma?",
+        english: "Okay! Let’s meet outside the cinema at seven o’clock, okay?",
+      },
+      {
+        speaker: "Bai Jiayue",
+        hanzi: "好的，晚上七点见！",
+        pinyin: "Hǎo de, wǎnshang qī diǎn jiàn!",
+        english: "Okay, see you at seven tonight.",
+      },
+    ],
+  },
   vocabulary: [
     {
       hanzi: "前边",
@@ -3228,6 +3554,35 @@ export const lesson9Text1Data: VocabularyData = {
 export const lesson9Text2Data: VocabularyData = {
   lesson: 9,
   text: 2,
+dialogue: {
+    title: "The Chinese Book",
+    lines: [
+      {
+        speaker: "Bai Jiayue",
+        hanzi: "椅子上有一本中文书，那是谁的书？",
+        pinyin: "Yǐzi shàng yǒu yì běn Zhōngwén shū, nà shì shéi de shū?",
+        english: "There is a Chinese book on the chair. Whose book is that?",
+      },
+      {
+        speaker: "Chen Tianzhong",
+        hanzi: "是我的书，谢谢。这是我的第二本中文书。",
+        pinyin: "Shì wǒ de shū, xièxie. Zhè shì wǒ de dì-èr běn Zhōngwén shū.",
+        english: "It’s my book, thank you. This is my second Chinese book.",
+      },
+      {
+        speaker: "Bai Jiayue",
+        hanzi: "不客气。你明天上午在哪儿？",
+        pinyin: "Bú kèqi. Nǐ míngtiān shàngwǔ zài nǎr?",
+        english: "You’re welcome. Where will you be tomorrow morning?",
+      },
+      {
+        speaker: "Chen Tianzhong",
+        hanzi: "我明天上午在学校学习。",
+        pinyin: "Wǒ míngtiān shàngwǔ zài xuéxiào xuéxí.",
+        english: "I will study at school tomorrow morning.",
+      },
+    ],
+  },
   vocabulary: [
     {
       hanzi: "椅子",
@@ -3422,6 +3777,47 @@ export const lesson9Text2Data: VocabularyData = {
 export const lesson9Text3Data: VocabularyData = {
   lesson: 9,
   text: 3,
+dialogue: {
+    title: "Saturday Plans",
+    lines: [
+      {
+        speaker: "Wang Yixue",
+        hanzi: "明天星期六，你做什么？",
+        pinyin: "Míngtiān Xīngqīliù, nǐ zuò shénme?",
+        english: "Tomorrow is Saturday. What are you going to do?",
+      },
+      {
+        speaker: "Yang Tongle",
+        hanzi: "我白天在家里读书，晚上和朋友们去外边唱歌。",
+        pinyin: "Wǒ báitiān zài jiā lǐ dúshū, wǎnshang hé péngyoumen qù wàibian chànggē.",
+        english: "I’ll read at home during the day, and in the evening I’ll go outside with my friends to sing.",
+      },
+      {
+        speaker: "Wang Yixue",
+        hanzi: "你唱歌很好听。",
+        pinyin: "Nǐ chànggē hěn hǎotīng.",
+        english: "You sing very well.",
+      },
+      {
+        speaker: "Yang Tongle",
+        hanzi: "谢谢！您星期六做什么？",
+        pinyin: "Xièxie! Nín Xīngqīliù zuò shénme?",
+        english: "Thank you! What will you do on Saturday?",
+      },
+      {
+        speaker: "Wang Yixue",
+        hanzi: "我在家里做饭、看电视，和孩子们、小狗玩。",
+        pinyin: "Wǒ zài jiā lǐ zuò fàn, kàn diànshì, hé háizimen, xiǎo gǒu wán.",
+        english: "I’ll cook and watch TV at home, and play with the children and the little dog.",
+      },
+      {
+        speaker: "Yang Tongle",
+        hanzi: "我也有一只小狗。",
+        pinyin: "Wǒ yě yǒu yì zhī xiǎo gǒu.",
+        english: "I also have a little dog.",
+      },
+    ],
+  },
   vocabulary: [
     {
       hanzi: "做",
@@ -3821,6 +4217,41 @@ export const lesson9Text3Data: VocabularyData = {
 export const lesson10Text1Data: VocabularyData = {
   lesson: 10,
   text: 1,
+dialogue: {
+    title: "Buying a Cup",
+    lines: [
+      {
+        speaker: "Wang Yixue",
+        hanzi: "请问，有杯子吗？",
+        pinyin: "Qǐngwèn, yǒu bēizi ma?",
+        english: "Excuse me, do you have cups?",
+      },
+      {
+        speaker: "Salesperson",
+        hanzi: "有，杯子在这边。",
+        pinyin: "Yǒu, bēizi zài zhèbiān.",
+        english: "Yes, the cups are over here.",
+      },
+      {
+        speaker: "Wang Yixue",
+        hanzi: "多少钱一个？",
+        pinyin: "Duōshao qián yí gè?",
+        english: "How much is one?",
+      },
+      {
+        speaker: "Salesperson",
+        hanzi: "这些五块钱一个，那些十块钱一个。",
+        pinyin: "Zhèxiē wǔ kuài qián yí gè, nàxiē shí kuài qián yí gè.",
+        english: "These are five yuan each, and those are ten yuan each.",
+      },
+      {
+        speaker: "Wang Yixue",
+        hanzi: "我买这个吧。",
+        pinyin: "Wǒ mǎi zhège ba.",
+        english: "I'll buy this one.",
+      },
+    ],
+  },
   vocabulary: [
     {
       hanzi: "杯子",
@@ -4046,6 +4477,41 @@ export const lesson10Text1Data: VocabularyData = {
 export const lesson10Text2Data: VocabularyData = {
   lesson: 10,
   text: 2,
+dialogue: {
+    title: "Buying Apples",
+    lines: [
+      {
+        speaker: "Wang Yixue",
+        hanzi: "这儿的水果真不少！",
+        pinyin: "Zhèr de shuǐguǒ zhēn bù shǎo!",
+        english: "There are really quite a lot of fruits here!",
+      },
+      {
+        speaker: "Salesperson",
+        hanzi: "您想买什么？",
+        pinyin: "Nín xiǎng mǎi shénme?",
+        english: "What would you like to buy?",
+      },
+      {
+        speaker: "Wang Yixue",
+        hanzi: "我想买两斤苹果。",
+        pinyin: "Wǒ xiǎng mǎi liǎng jīn píngguǒ.",
+        english: "I’d like to buy two jin of apples.",
+      },
+      {
+        speaker: "Salesperson",
+        hanzi: "苹果三块五一斤。这些七块二，七块钱吧。",
+        pinyin: "Píngguǒ sān kuài wǔ yì jīn. Zhèxiē qī kuài èr, qī kuài qián ba.",
+        english: "Apples are 3.5 yuan per jin. These come to 7.2 yuan; let’s make it 7 yuan.",
+      },
+      {
+        speaker: "Wang Yixue",
+        hanzi: "好的，这儿的苹果真便宜！",
+        pinyin: "Hǎo de, zhèr de píngguǒ zhēn piányi!",
+        english: "Okay, the apples here are really cheap!",
+      },
+    ],
+  },
   vocabulary: [
     {
       hanzi: "这儿",
@@ -4230,6 +4696,47 @@ export const lesson10Text2Data: VocabularyData = {
 export const lesson10Text3Data: VocabularyData = {
   lesson: 10,
   text: 3,
+dialogue: {
+    title: "Buying Clothes",
+    lines: [
+      {
+        speaker: "Wang Yixue",
+        hanzi: "这家商店衣服真多！这件一百元，怎么样？",
+        pinyin: "Zhè jiā shāngdiàn yīfu zhēn duō! Zhè jiàn yì bǎi yuán, zěnmeyàng?",
+        english: "This store has so many clothes! This one is 100 yuan. How about it?",
+      },
+      {
+        speaker: "Liu Ming",
+        hanzi: "好看，也不贵。",
+        pinyin: "Hǎokàn, yě bú guì.",
+        english: "It looks nice, and it’s not expensive either.",
+      },
+      {
+        speaker: "Wang Yixue",
+        hanzi: "小雪能穿，买一件吧。",
+        pinyin: "Xiǎoxuě néng chuān, mǎi yí jiàn ba.",
+        english: "Xiaoxue can wear it. Let’s buy one.",
+      },
+      {
+        speaker: "Liu Ming",
+        hanzi: "好的。小明能穿吗？",
+        pinyin: "Hǎo de. Xiǎomíng néng chuān ma?",
+        english: "Okay. Can Xiaoming wear it?",
+      },
+      {
+        speaker: "Wang Yixue",
+        hanzi: "不能。这些是女孩子穿的衣服，男孩子的衣服在那儿。",
+        pinyin: "Bù néng. Zhèxiē shì nǚháizi chuān de yīfu, nánháizi de yīfu zài nàr.",
+        english: "No, he can’t. These are clothes for girls. The boys’ clothes are over there.",
+      },
+      {
+        speaker: "Liu Ming",
+        hanzi: "好的。",
+        pinyin: "Hǎo de.",
+        english: "Okay.",
+      },
+    ],
+  },
   vocabulary: [
     {
       hanzi: "商店",
@@ -4523,6 +5030,35 @@ export const lesson10Text3Data: VocabularyData = {
 export const lesson11Text1Data: VocabularyData = {
   lesson: 11,
   text: 1,
+dialogue: {
+    title: "Finding the Restaurant",
+    lines: [
+      {
+        speaker: "Wáng Yīfēi",
+        hanzi: "喂，李文，你什么时候能到饭店？",
+        pinyin: "Wèi, Lǐ Wén, nǐ shénme shíhou néng dào fàndiàn?",
+        english: "Hello, Li Wen, when can you get to the restaurant?",
+      },
+      {
+        speaker: "Lǐ Wén",
+        hanzi: "还不知道，正在找呢。它是不是在超市后边？",
+        pinyin: "Hái bù zhīdào, zhèngzài zhǎo ne. Tā shì bú shì zài chāoshì hòubian?",
+        english: "I don't know yet. I'm looking for it now. Is it behind the supermarket?",
+      },
+      {
+        speaker: "Wáng Yīfēi",
+        hanzi: "是的。你开车没开车？",
+        pinyin: "Shì de. Nǐ kāichē méi kāichē?",
+        english: "Yes. Did you drive here or not?",
+      },
+      {
+        speaker: "Lǐ Wén",
+        hanzi: "我没开车，坐车呢。",
+        pinyin: "Wǒ méi kāichē, zuò chē ne.",
+        english: "I didn't drive. I'm taking a vehicle/taxi.",
+      },
+    ],
+  },
   vocabulary: [
     {
       hanzi: "时候",
@@ -4743,6 +5279,35 @@ export const lesson11Text1Data: VocabularyData = {
 export const lesson11Text2Data: VocabularyData = {
   lesson: 11,
   text: 2,
+dialogue: {
+    title: "University Studies",
+    lines: [
+      {
+        speaker: "Wáng Yīfēi",
+        hanzi: "你还在读大学吗？",
+        pinyin: "Nǐ hái zài dú dàxué ma?",
+        english: "Are you still studying at university?",
+      },
+      {
+        speaker: "Lǐ Wén",
+        hanzi: "对，我读大学呢，还是大学生。",
+        pinyin: "Duì, wǒ dú dàxué ne, hái shì dàxuéshēng.",
+        english: "Yes, I'm studying at university. I'm still a university student.",
+      },
+      {
+        speaker: "Wáng Yīfēi",
+        hanzi: "你们学习忙不忙？",
+        pinyin: "Nǐmen xuéxí máng bu máng?",
+        english: "Are you guys busy with your studies?",
+      },
+      {
+        speaker: "Lǐ Wén",
+        hanzi: "非常忙，我学医，我们的课很多。",
+        pinyin: "Fēicháng máng, wǒ xué yī, wǒmen de kè hěn duō.",
+        english: "Very busy. I study medicine, and we have a lot of classes.",
+      },
+    ],
+  },
   vocabulary: [
     {
       hanzi: "在",
@@ -4927,6 +5492,47 @@ export const lesson11Text2Data: VocabularyData = {
 export const lesson11Text3Data: VocabularyData = {
   lesson: 11,
   text: 3,
+dialogue: {
+    title: "Going to the Supermarket",
+    lines: [
+      {
+        speaker: "Liú Míng",
+        hanzi: "弟弟起床没起床呢？",
+        pinyin: "Dìdi qǐchuáng méi qǐchuáng ne?",
+        english: "Has your younger brother gotten up yet?",
+      },
+      {
+        speaker: "Liú Xiǎoxuě",
+        hanzi: "没起床呢，还在睡觉。",
+        pinyin: "Méi qǐchuáng ne, hái zài shuìjiào.",
+        english: "He hasn't gotten up yet. He's still sleeping.",
+      },
+      {
+        speaker: "Liú Míng",
+        hanzi: "还睡呢？他今天去不去那里？",
+        pinyin: "Hái shuì ne? Tā jīntiān qù bu qù nǎlǐ?",
+        english: "He's still sleeping? Is he going there today or not?",
+      },
+      {
+        speaker: "Liú Xiǎoxuě",
+        hanzi: "去哪里？",
+        pinyin: "Qù nǎlǐ?",
+        english: "Where is he going?",
+      },
+      {
+        speaker: "Liú Míng",
+        hanzi: "去超市。",
+        pinyin: "Qù chāoshì.",
+        english: "To the supermarket.",
+      },
+      {
+        speaker: "Liú Xiǎoxuě",
+        hanzi: "我昨天问他，他对我说，他不去，他今天要和小朋友玩。",
+        pinyin: "Wǒ zuótiān wèn tā, tā duì wǒ shuō, tā bú qù, tā jīntiān yào hé xiǎopéngyou wán.",
+        english: "I asked him yesterday. He told me that he isn't going. He's going to play with some children today.",
+      },
+    ],
+  },
   vocabulary: [
     {
       hanzi: "弟弟",
