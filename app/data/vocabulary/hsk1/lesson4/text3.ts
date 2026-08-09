@@ -4,6 +4,47 @@ import type { VocabularyData } from "@/app/types/vocabulary";
 export const lesson4Text3Data: VocabularyData = {
   lesson: 4,
   text: 3,
+dialogue: {
+    title: "Children and Their Ages",
+    lines: [
+      {
+        speaker: "Yang Tongle",
+        hanzi: "这是您儿子吗？",
+        pinyin: "Zhè shì nín érzi ma?",
+        english: "Is this your son?",
+      },
+      {
+        speaker: "Wang Yixue",
+        hanzi: "是的。我有两个孩子，一个儿子，一个女儿。",
+        pinyin: "Shì de. Wǒ yǒu liǎng gè háizi, yī gè érzi, yī gè nǚ'ér.",
+        english: "Yes. I have two children, one son and one daughter.",
+      },
+      {
+        speaker: "Yang Tongle",
+        hanzi: "您儿子几岁？",
+        pinyin: "Nín érzi jǐ suì?",
+        english: "How old is your son?",
+      },
+      {
+        speaker: "Wang Yixue",
+        hanzi: "他今年五岁。",
+        pinyin: "Tā jīnnián wǔ suì.",
+        english: "He is five years old this year.",
+      },
+      {
+        speaker: "Yang Tongle",
+        hanzi: "您女儿多大？",
+        pinyin: "Nín nǚ'ér duō dà?",
+        english: "How old is your daughter?",
+      },
+      {
+        speaker: "Wang Yixue",
+        hanzi: "她今年十二。",
+        pinyin: "Tā jīnnián shí'èr.",
+        english: "She is twelve this year.",
+      },
+    ],
+  },
   vocabulary: [
     {
       hanzi: "儿子",
