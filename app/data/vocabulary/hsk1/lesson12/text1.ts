@@ -4,6 +4,47 @@ import type { VocabularyData } from "@/app/types/vocabulary";
 export const lesson12Text1Data: VocabularyData = {
   lesson: 12,
   text: 1,
+dialogue: {
+    title: "Feeling Sick",
+    lines: [
+      {
+        speaker: "Yáng Tónglè",
+        hanzi: "医生，我病了。",
+        pinyin: "Yīshēng, wǒ bìng le.",
+        english: "Doctor, I’m sick.",
+      },
+      {
+        speaker: "Hú yīshēng",
+        hanzi: "我看看。你觉得怎么样？",
+        pinyin: "Wǒ kànkan. Nǐ juéde zěnmeyàng?",
+        english: "Let me have a look. How do you feel?",
+      },
+      {
+        speaker: "Yáng Tónglè",
+        hanzi: "我很冷。",
+        pinyin: "Wǒ hěn lěng.",
+        english: "I’m very cold.",
+      },
+      {
+        speaker: "Hú yīshēng",
+        hanzi: "好的，吃一点儿药，今天休息半天吧。",
+        pinyin: "Hǎo de, chī yìdiǎnr yào, jīntiān xiūxi bàn tiān ba.",
+        english: "Okay, take some medicine and rest for half a day today.",
+      },
+      {
+        speaker: "Yáng Tónglè",
+        hanzi: "好的。",
+        pinyin: "Hǎo de.",
+        english: "Okay.",
+      },
+      {
+        speaker: "Hú yīshēng",
+        hanzi: "回家后再喝些热水。",
+        pinyin: "Huí jiā hòu zài hē xiē rè shuǐ.",
+        english: "After you go home, drink some more hot water.",
+      },
+    ],
+  },
   vocabulary: [
     {
       hanzi: "天气",
