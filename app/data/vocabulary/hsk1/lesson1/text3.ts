@@ -1,9 +1,40 @@
-import type { VocabularyData } from "@/app/types/vocabulary";
-// Lesson 1 - Text 3
+// app/data/vocabularyData.ts
 
+import type { VocabularyData } from "@/app/types/vocabulary";
+
+// Lesson 1 - Text 3
 export const lesson1Text3Data: VocabularyData = {
   lesson: 1,
   text: 3,
+  dialogue: {
+    title: "Thank You & Goodbye",
+    lines: [
+      {
+        speaker: "Students",
+        hanzi: "谢谢！",
+        pinyin: "Xièxie!",
+        english: "Thank you!"
+      },
+      {
+        speaker: "Xiaoyu",
+        hanzi: "不客气！",
+        pinyin: "Bú kèqi!",
+        english: "You're welcome!"
+      },
+      {
+        speaker: "Wang Yifei",
+        hanzi: "同学们，再见！",
+        pinyin: "Tóngxuémen, zàijiàn!",
+        english: "Goodbye, students!"
+      },
+      {
+        speaker: "Students",
+        hanzi: "老师，再见！",
+        pinyin: "Lǎoshī, zàijiàn!",
+        english: "Goodbye, teacher!"
+      }
+    ]
+  },
   vocabulary: [
     {
       hanzi: "谢谢",

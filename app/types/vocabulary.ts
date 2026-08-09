@@ -1,3 +1,5 @@
+// app/types/vocabulary.ts
+
 export interface Character {
   hanzi: string;
   pinyin: string;
@@ -27,8 +29,23 @@ export interface VocabularyItem {
   similar: SimilarWord[];
 }
 
+// ✅ ডায়ালগের জন্য টাইপ
+export interface DialogueLine {
+  speaker: string;
+  hanzi: string;
+  pinyin: string;
+  english: string;
+}
+
+export interface Dialogue {
+  title: string;
+  lines: DialogueLine[];
+}
+
+// ✅ VocabularyData তে dialogue যোগ করুন
 export interface VocabularyData {
   lesson: number;
   text: number;
+  dialogue?: Dialogue;  // ✅ dialogue যোগ করা হলো (optional)
   vocabulary: VocabularyItem[];
 }

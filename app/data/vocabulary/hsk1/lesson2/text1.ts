@@ -5,6 +5,23 @@ import type { VocabularyData } from "@/app/types/vocabulary";
 export const lesson2Text1Data: VocabularyData = {
   lesson: 2,
   text: 1,
+    dialogue: {
+    title: "Meeting Someone New",
+    lines: [
+      {
+        speaker: "Wang Yifei",
+        hanzi: "请问，你叫什么名字？",
+        pinyin: "Qǐngwèn, nǐ jiào shénme míngzi?",
+        english: "May I ask, what is your name?"
+      },
+      {
+        speaker: "Chen Tianzhong",
+        hanzi: "我叫陈天中。",
+        pinyin: "Wǒ jiào Chén Tiānzhōng.",
+        english: "My name is Chen Tianzhong."
+      }
+    ]
+  },
   vocabulary: [
     {
       hanzi: "请问",

@@ -4,6 +4,35 @@ import type { VocabularyData } from "@/app/types/vocabulary";
 export const lesson2Text2Data: VocabularyData = {
   lesson: 2,
   text: 2,
+    dialogue: {
+    title: "Greeting in the Classroom",
+    lines: [
+      {
+        speaker: "Chen Tianzhong",
+        hanzi: "你好，安妮！",
+        pinyin: "Nǐ hǎo, Ānní!",
+        english: "Hello, Annie!"
+      },
+      {
+        speaker: "Bai Jiayue",
+        hanzi: "你好，陈天中！我不是安妮，我是白家月。",
+        pinyin: "Nǐ hǎo, Chén Tiānzhōng! Wǒ bú shì Ānní, wǒ shì Bái Jiāyuè.",
+        english: "Hello, Chen Tianzhong! I'm not Annie, I'm Bai Jiayue."
+      },
+      {
+        speaker: "Chen Tianzhong",
+        hanzi: "对不起！",
+        pinyin: "Duìbuqǐ!",
+        english: "Sorry!"
+      },
+      {
+        speaker: "Bai Jiayue",
+        hanzi: "没关系！",
+        pinyin: "Méi guānxi!",
+        english: "That's okay / No problem!"
+      }
+    ]
+  },
   vocabulary: [
     {
       hanzi: "不",

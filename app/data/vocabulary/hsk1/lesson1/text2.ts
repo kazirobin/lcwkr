@@ -1,8 +1,43 @@
-import type { VocabularyData } from "@/app/types/vocabulary";// Lesson 1 - Text 2
+import type { VocabularyData } from "@/app/types/vocabulary"; // Lesson 1 - Text 2
 
 export const lesson1Text2Data: VocabularyData = {
   lesson: 1,
   text: 2,
+  dialogue: {
+    title: "Greeting in the Classroom",
+    lines: [
+      {
+        speaker: "Teacher",
+        hanzi: "大家好！",
+        pinyin: "Dàjiā hǎo!",
+        english: "Hello everyone!",
+      },
+      {
+        speaker: "Students",
+        hanzi: "老师好！",
+        pinyin: "Lǎoshī hǎo!",
+        english: "Hello teacher!",
+      },
+      {
+        speaker: "Student 1",
+        hanzi: "你好！",
+        pinyin: "Nǐ hǎo!",
+        english: "Hello!",
+      },
+      {
+        speaker: "Student 2",
+        hanzi: "你好！",
+        pinyin: "Nǐ hǎo!",
+        english: "Hello!",
+      },
+      {
+        speaker: "Teacher",
+        hanzi: "你们好！",
+        pinyin: "Nǐmen hǎo!",
+        english: "Hello everyone (plural)!",
+      },
+    ],
+  },
   vocabulary: [
     {
       hanzi: "大家",
@@ -13,27 +48,27 @@ export const lesson1Text2Data: VocabularyData = {
         {
           hanzi: "大",
           pinyin: "dà",
-          meaning: "Big"
+          meaning: "Big",
         },
         {
           hanzi: "家",
           pinyin: "jiā",
-          meaning: "Family/Home"
-        }
+          meaning: "Family/Home",
+        },
       ],
       example: {
         hanzi: "大家好！",
         pinyin: "Dàjiā hǎo!",
         english: "Hello everyone!",
-        bangla: "সবাইকে হ্যালো!"
+        bangla: "সবাইকে হ্যালো!",
       },
       similar: [
         {
           hanzi: "每人",
           pinyin: "měi rén",
-          english: "Everyone/Each person"
-        }
-      ]
+          english: "Everyone/Each person",
+        },
+      ],
     },
     {
       hanzi: "好",
@@ -44,27 +79,27 @@ export const lesson1Text2Data: VocabularyData = {
         {
           hanzi: "女",
           pinyin: "nǚ",
-          meaning: "Woman"
+          meaning: "Woman",
         },
         {
           hanzi: "子",
           pinyin: "zǐ",
-          meaning: "Child"
-        }
+          meaning: "Child",
+        },
       ],
       example: {
         hanzi: "很好。",
         pinyin: "Hěn hǎo.",
         english: "Very good.",
-        bangla: "খুব ভালো।"
+        bangla: "খুব ভালো।",
       },
       similar: [
         {
           hanzi: "棒",
           pinyin: "bàng",
-          english: "Great/Awesome"
-        }
-      ]
+          english: "Great/Awesome",
+        },
+      ],
     },
     {
       hanzi: "学生",
@@ -75,27 +110,27 @@ export const lesson1Text2Data: VocabularyData = {
         {
           hanzi: "学",
           pinyin: "xué",
-          meaning: "Study/Learn"
+          meaning: "Study/Learn",
         },
         {
           hanzi: "生",
           pinyin: "shēng",
-          meaning: "Person/Born"
-        }
+          meaning: "Person/Born",
+        },
       ],
       example: {
         hanzi: "我是学生。",
         pinyin: "Wǒ shì xuéshēng.",
         english: "I am a student.",
-        bangla: "আমি একজন ছাত্র।"
+        bangla: "আমি একজন ছাত্র।",
       },
       similar: [
         {
           hanzi: "同学",
           pinyin: "tóngxué",
-          english: "Classmate"
-        }
-      ]
+          english: "Classmate",
+        },
+      ],
     },
     {
       hanzi: "们",
@@ -106,22 +141,22 @@ export const lesson1Text2Data: VocabularyData = {
         {
           hanzi: "们",
           pinyin: "men",
-          meaning: "Plural suffix"
-        }
+          meaning: "Plural suffix",
+        },
       ],
       example: {
         hanzi: "我们。",
         pinyin: "Wǒmen.",
         english: "We/Us.",
-        bangla: "আমরা।"
+        bangla: "আমরা।",
       },
       similar: [
         {
           hanzi: "大家",
           pinyin: "dàjiā",
-          english: "Everyone"
-        }
-      ]
+          english: "Everyone",
+        },
+      ],
     },
     {
       hanzi: "老师",
@@ -132,27 +167,27 @@ export const lesson1Text2Data: VocabularyData = {
         {
           hanzi: "老",
           pinyin: "lǎo",
-          meaning: "Old/Experienced"
+          meaning: "Old/Experienced",
         },
         {
           hanzi: "师",
           pinyin: "shī",
-          meaning: "Master/Expert"
-        }
+          meaning: "Master/Expert",
+        },
       ],
       example: {
         hanzi: "老师好。",
         pinyin: "Lǎoshī hǎo.",
         english: "Hello teacher.",
-        bangla: "শিক্ষককে হ্যালো।"
+        bangla: "শিক্ষককে হ্যালো।",
       },
       similar: [
         {
           hanzi: "教师",
           pinyin: "jiàoshī",
-          english: "Teacher (formal)"
-        }
-      ]
+          english: "Teacher (formal)",
+        },
+      ],
     },
     {
       hanzi: "您",
@@ -163,27 +198,27 @@ export const lesson1Text2Data: VocabularyData = {
         {
           hanzi: "你",
           pinyin: "nǐ",
-          meaning: "You"
+          meaning: "You",
         },
         {
           hanzi: "心",
           pinyin: "xīn",
-          meaning: "Heart (added respect)"
-        }
+          meaning: "Heart (added respect)",
+        },
       ],
       example: {
         hanzi: "您好！",
         pinyin: "Nín hǎo!",
         english: "Hello (polite)!",
-        bangla: "আপনাকে হ্যালো!"
+        bangla: "আপনাকে হ্যালো!",
       },
       similar: [
         {
           hanzi: "你",
           pinyin: "nǐ",
-          english: "You (informal)"
-        }
-      ]
+          english: "You (informal)",
+        },
+      ],
     },
     {
       hanzi: "你们",
@@ -194,27 +229,27 @@ export const lesson1Text2Data: VocabularyData = {
         {
           hanzi: "你",
           pinyin: "nǐ",
-          meaning: "You"
+          meaning: "You",
         },
         {
           hanzi: "们",
           pinyin: "men",
-          meaning: "Plural"
-        }
+          meaning: "Plural",
+        },
       ],
       example: {
         hanzi: "你们好！",
         pinyin: "Nǐmen hǎo!",
         english: "Hello everyone!",
-        bangla: "সবাইকে হ্যালো!"
+        bangla: "সবাইকে হ্যালো!",
       },
       similar: [
         {
           hanzi: "大家",
           pinyin: "dàjiā",
-          english: "Everyone"
-        }
-      ]
-    }
-  ]
+          english: "Everyone",
+        },
+      ],
+    },
+  ],
 };

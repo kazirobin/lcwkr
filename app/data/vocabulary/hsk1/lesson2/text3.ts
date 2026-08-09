@@ -7,6 +7,47 @@ export const lesson2Text3Data: VocabularyData =
 {
   lesson: 2,
   text: 3,
+   dialogue: {
+    title: "Nice to Meet You",
+    lines: [
+      {
+        speaker: "Li Wen",
+        hanzi: "你好！",
+        pinyin: "Nǐ hǎo!",
+        english: "Hello!"
+      },
+      {
+        speaker: "Li Wen",
+        hanzi: "我叫李文。",
+        pinyin: "Wǒ jiào Lǐ Wén.",
+        english: "My name is Li Wen."
+      },
+      {
+        speaker: "Bai Jiayue",
+        hanzi: "你好！",
+        pinyin: "Nǐ hǎo!",
+        english: "Hello!"
+      },
+      {
+        speaker: "Bai Jiayue",
+        hanzi: "我叫白家月。",
+        pinyin: "Wǒ jiào Bái Jiāyuè.",
+        english: "My name is Bai Jiayue."
+      },
+      {
+        speaker: "Bai Jiayue",
+        hanzi: "很高兴认识你。",
+        pinyin: "Hěn gāoxìng rènshi nǐ.",
+        english: "Nice to meet you."
+      },
+      {
+        speaker: "Li Wen",
+        hanzi: "认识你我也很高兴。",
+        pinyin: "Rènshi nǐ wǒ yě hěn gāoxìng.",
+        english: "Nice to meet you too."
+      }
+    ]
+  },
   vocabulary: [
     {
       hanzi: "很",
