@@ -4,6 +4,47 @@ import type { VocabularyData } from "@/app/types/vocabulary";
 export const lesson15Text3Data: VocabularyData = {
   lesson: 15,
   text: 3,
+dialogue: {
+    title: "Trip to Beijing",
+    lines: [
+      {
+        speaker: "Wang Yifei",
+        hanzi: "你们的飞机到北京要几个小时？",
+        pinyin: "Nǐmen de fēijī dào Běijīng yào jǐ ge xiǎoshí?",
+        english: "How many hours does your flight to Beijing take?",
+      },
+      {
+        speaker: "Bai Jiayue",
+        hanzi: "九个小时。",
+        pinyin: "Jiǔ ge xiǎoshí.",
+        english: "Nine hours.",
+      },
+      {
+        speaker: "Wang Yifei",
+        hanzi: "我家人都在北京，星期天我姐姐也有时间，她可以去机场接你们，你们也可以住我家。",
+        pinyin: "Wǒ jiārén dōu zài Běijīng, Xīngqītiān wǒ jiějie yě yǒu shíjiān, tā kěyǐ qù jīchǎng jiē nǐmen, nǐmen yě kěyǐ zhù wǒ jiā.",
+        english: "My family are all in Beijing. My older sister also has time on Sunday. She can go to the airport to pick you up, and you can also stay at my home.",
+      },
+      {
+        speaker: "Anni",
+        hanzi: "我们星期日早上八点到大兴机场，早不早？",
+        pinyin: "Wǒmen Xīngqīrì zǎoshang bā diǎn dào Dàxīng Jīchǎng, zǎo bu zǎo?",
+        english: "We’ll arrive at Daxing Airport at 8 a.m. on Sunday. Is that too early?",
+      },
+      {
+        speaker: "Wang Yifei",
+        hanzi: "不早。",
+        pinyin: "Bù zǎo.",
+        english: "Not early. / That’s not too early.",
+      },
+      {
+        speaker: "Bai Jiayue",
+        hanzi: "谢谢老师！那我们和您姐姐在大兴机场见！",
+        pinyin: "Xièxie lǎoshī! Nà wǒmen hé nín jiějie zài Dàxīng Jīchǎng jiàn!",
+        english: "Thank you, teacher! Then we’ll meet your older sister at Daxing Airport!",
+      },
+    ],
+  },
   vocabulary: [
     {
       hanzi: "飞机",
