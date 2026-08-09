@@ -4,6 +4,35 @@ import type { VocabularyData } from "@/app/types/vocabulary";
 export const lesson3Text2Data: VocabularyData = {
   lesson: 3,
   text: 2,
+dialog: {
+    title: "Introducing a Girlfriend",
+    lines: [
+      {
+        speaker: "Chen Tianzhong",
+        hanzi: "这是谁？",
+        pinyin: "Zhè shì shéi?",
+        english: "Who is this?"
+      },
+      {
+        speaker: "Annie",
+        hanzi: "这是我女朋友。",
+        pinyin: "Zhè shì wǒ nǚpéngyou.",
+        english: "This is my girlfriend."
+      },
+      {
+        speaker: "Chen Tianzhong",
+        hanzi: "你女朋友是哪国人？",
+        pinyin: "Nǐ nǚpéngyou shì nǎ guó rén?",
+        english: "What nationality is your girlfriend?"
+      },
+      {
+        speaker: "Annie",
+        hanzi: "她也是泰国人。",
+        pinyin: "Tā yě shì Tàiguó rén.",
+        english: "She is also Thai."
+      }
+    ]
+  },
   vocabulary: [
     {
       hanzi: "这",
