@@ -4,6 +4,41 @@ import type { VocabularyData } from "@/app/types/vocabulary";
 export const lesson14Text2Data: VocabularyData = {
   lesson: 14,
   text: 2,
+dialogue: {
+    title: "Learning Chinese Characters",
+    lines: [
+      {
+        speaker: "Wáng Yīfēi",
+        hanzi: "你们会说汉语了，也会写汉字了吗？",
+        pinyin: "Nǐmen huì shuō Hànyǔ le, yě huì xiě Hànzì le ma?",
+        english: "You can speak Chinese now; can you also write Chinese characters?",
+      },
+      {
+        speaker: "Bái Jiāyuè",
+        hanzi: "我们都会写了。",
+        pinyin: "Wǒmen dōu huì xiě le.",
+        english: "We can all write them now.",
+      },
+      {
+        speaker: "Chén Tiānzhōng",
+        hanzi: "老师，我听不见。",
+        pinyin: "Lǎoshī, wǒ tīng bú jiàn.",
+        english: "Teacher, I can’t hear you.",
+      },
+      {
+        speaker: "Wáng Yīfēi",
+        hanzi: "请大家不要说话！请听老师的问题：你们都会写哪些汉字了？",
+        pinyin: "Qǐng dàjiā bú yào shuōhuà! Qǐng tīng lǎoshī de wèntí: Nǐmen dōu huì xiě nǎxiē Hànzì le?",
+        english: "Please everyone, don’t talk! Please listen to the teacher’s question: Which Chinese characters can you all write now?",
+      },
+      {
+        speaker: "Chén Tiānzhōng",
+        hanzi: "我会写这些字了，您看！",
+        pinyin: "Wǒ huì xiě zhèxiē zì le, nín kàn!",
+        english: "I can write these characters now. Look!",
+      },
+    ],
+  },
   vocabulary: [
     {
       hanzi: "写",
