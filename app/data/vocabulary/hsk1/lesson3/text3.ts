@@ -4,6 +4,65 @@ import type { VocabularyData } from "@/app/types/vocabulary";
 export const lesson3Text3Data: VocabularyData = {
   lesson: 3,
   text: 3,
+dialog: {
+    title: "A Phone Call Between Sisters",
+    lines: [
+      {
+        speaker: "Wang Yifei",
+        hanzi: "喂，一飞！",
+        pinyin: "Wèi, Yīfēi!",
+        english: "Hey, Yifei!"
+      },
+      {
+        speaker: "Wang Yixue",
+        hanzi: "姐姐！",
+        pinyin: "Jiějie!",
+        english: "Big sister!"
+      },
+      {
+        speaker: "Wang Yifei",
+        hanzi: "王一雪",
+        pinyin: "Wáng Yīxuě",
+        english: "Wang Yixue"
+      },
+      {
+        speaker: "Wang Yixue",
+        hanzi: "你工作还忙吗？",
+        pinyin: "Nǐ gōngzuò hái máng ma?",
+        english: "Are you still busy with work?"
+      },
+      {
+        speaker: "Wang Yifei",
+        hanzi: "对，还很忙。你",
+        pinyin: "Duì, hái hěn máng. Nǐ",
+        english: "Yes, still very busy. You"
+      },
+      {
+        speaker: "Wang Yixue",
+        hanzi: "也很忙吗？",
+        pinyin: "Yě hěn máng ma?",
+        english: "Are you also very busy?"
+      },
+      {
+        speaker: "Wang Yifei",
+        hanzi: "我不太忙。我们",
+        pinyin: "Wǒ bù tài máng. Wǒmen",
+        english: "I'm not too busy. We"
+      },
+      {
+        speaker: "Wang Yixue",
+        hanzi: "很想你。",
+        pinyin: "Hěn xiǎng nǐ.",
+        english: "Miss you a lot."
+      },
+      {
+        speaker: "Wang Yifei",
+        hanzi: "我也想你们。",
+        pinyin: "Wǒ yě xiǎng nǐmen.",
+        english: "I miss you all too."
+      }
+    ]
+  },
   vocabulary: [
     {
       hanzi: "喂",
