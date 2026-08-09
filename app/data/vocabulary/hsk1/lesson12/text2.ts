@@ -4,6 +4,35 @@ import type { VocabularyData } from "@/app/types/vocabulary";
 export const lesson12Text2Data: VocabularyData = {
   lesson: 12,
   text: 2,
+dialogue: {
+    title: "Being Sick Yesterday",
+    lines: [
+      {
+        speaker: "Wáng Yīxuě",
+        hanzi: "昨天下雪了。",
+        pinyin: "Zuótiān xià xuě le.",
+        english: "It snowed yesterday.",
+      },
+      {
+        speaker: "Yáng Tónglè",
+        hanzi: "是的，太冷了。",
+        pinyin: "Shì de, tài lěng le.",
+        english: "Yes, it was very cold.",
+      },
+      {
+        speaker: "Wáng Yīxuě",
+        hanzi: "你昨天没来公司，生病了？",
+        pinyin: "Nǐ zuótiān méi lái gōngsī, shēngbìng le?",
+        english: "You didn’t come to the company yesterday. Were you sick?",
+      },
+      {
+        speaker: "Yáng Tónglè",
+        hanzi: "对，我昨天去医院看病了。",
+        pinyin: "Duì, wǒ zuótiān qù yīyuàn kànbìng le.",
+        english: "Yes, I went to the hospital to see a doctor yesterday.",
+      },
+    ],
+  },
   vocabulary: [
     {
       hanzi: "下",
