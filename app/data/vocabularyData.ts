@@ -53,6 +53,35 @@ import { lesson4Text3Data } from "./vocabulary/hsk1/lesson4/text3";
 export const lesson5Text1Data: VocabularyData = {
   lesson: 5,
   text: 1,
+dialogue: {
+    title: "Today's Date",
+    lines: [
+      {
+        speaker: "Wang Yixue",
+        hanzi: "今天几号？",
+        pinyin: "Jīntiān jǐ hào?",
+        english: "What's today's date?",
+      },
+      {
+        speaker: "Liu Ming",
+        hanzi: "今天9月8号。",
+        pinyin: "Jīntiān jiǔ yuè bā hào.",
+        english: "Today is September 8th.",
+      },
+      {
+        speaker: "Wang Yixue",
+        hanzi: "星期几？",
+        pinyin: "Xīngqī jǐ?",
+        english: "What day of the week?",
+      },
+      {
+        speaker: "Liu Ming",
+        hanzi: "星期日。今天我休息。",
+        pinyin: "Xīngqīrì. Jīntiān wǒ xiūxi.",
+        english: "Sunday. I'm resting today.",
+      },
+    ],
+  },
   vocabulary: [
     {
       hanzi: "今天",
@@ -294,6 +323,35 @@ export const lesson5Text1Data: VocabularyData = {
 export const lesson5Text2Data: VocabularyData = {
   lesson: 5,
   text: 2,
+dialogue: {
+    title: "Cooking",
+    lines: [
+      {
+        speaker: "Wang Yixue",
+        hanzi: "你会做饭吗？",
+        pinyin: "Nǐ huì zuò fàn ma?",
+        english: "Do you know how to cook?",
+      },
+      {
+        speaker: "Yang Tongle",
+        hanzi: "我会做。",
+        pinyin: "Wǒ huì zuò.",
+        english: "I know how to.",
+      },
+      {
+        speaker: "Wang Yixue",
+        hanzi: "你会做什么？",
+        pinyin: "Nǐ huì zuò shénme?",
+        english: "What can you make?",
+      },
+      {
+        speaker: "Yang Tongle",
+        hanzi: "我会做面条儿、饺子，也会做一些菜。星期天我也做饭。",
+        pinyin: "Wǒ huì zuò miàntiáor, jiǎozi, yě huì zuò yīxiē cài. Xīngqītiān wǒ yě zuò fàn.",
+        english: "I can make noodles, dumplings, and I can also make some dishes. On Sundays I cook too.",
+      },
+    ],
+  },
   vocabulary: [
     {
       hanzi: "会",
@@ -509,6 +567,47 @@ export const lesson5Text2Data: VocabularyData = {
 export const lesson5Text3Data: VocabularyData = {
   lesson: 5,
   text: 3,
+dialogue: {
+    title: "The New Computer",
+    lines: [
+      {
+        speaker: "Wang Yixue",
+        hanzi: "同乐，下班吗？",
+        pinyin: "Tónglè, xiàbān ma?",
+        english: "Tongle, are you getting off work?",
+      },
+      {
+        speaker: "Yang Tongle",
+        hanzi: "下班。",
+        pinyin: "Xiàbān.",
+        english: "Getting off work.",
+      },
+      {
+        speaker: "Wang Yixue",
+        hanzi: "这是你的新电脑吗？",
+        pinyin: "Zhè shì nǐ de xīn diànnǎo ma?",
+        english: "Is this your new computer?",
+      },
+      {
+        speaker: "Yang Tongle",
+        hanzi: "是的，是我的新电脑。",
+        pinyin: "Shì de, shì wǒ de xīn diànnǎo.",
+        english: "Yes, it's my new computer.",
+      },
+      {
+        speaker: "Wang Yixue",
+        hanzi: "真好看！",
+        pinyin: "Zhēn hǎokàn!",
+        english: "It looks really nice!",
+      },
+      {
+        speaker: "Yang Tongle",
+        hanzi: "我也很喜欢它。",
+        pinyin: "Wǒ yě hěn xǐhuān tā.",
+        english: "I like it very much too.",
+      },
+    ],
+  },
   vocabulary: [
     {
       hanzi: "下班",
