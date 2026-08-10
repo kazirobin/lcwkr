@@ -1,160 +1,89 @@
-// app/data/vocabularyData.ts
+// app/data/vocabulary/lesson2-text3.ts
+import { VocabularyData } from '@/app/types/vocabulary';
 
-import type { VocabularyData } from "@/app/types/vocabulary";
-
-// Lesson 1 - Text 3
 export const hsk2lesson2text3: VocabularyData = {
-    hskLevel: 2,
+  hskLevel: 2,
   lesson: 2,
   text: 3,
   dialogue: {
-    title: "Thank You & Goodbye",
+    title: "The Cinema at Peking University",
     lines: [
       {
-        speaker: "Students",
-        hanzi: "谢谢！",
-        pinyin: "Xièxie!",
-        english: "Thank you!"
+        speaker: "Anni",
+        hanzi: "家月，你看，学校里有家电影院！",
+        pinyin: "Jiāyuè, nǐ kàn, xuéxiào lǐ yǒu jiā diànyǐngyuàn!",
+        english: "Jiayue, look! There is a cinema in the school!",
       },
       {
-        speaker: "Xiaoyu",
-        hanzi: "不客气！",
-        pinyin: "Bú kèqi!",
-        english: "You're welcome!"
+        speaker: "Bai Jiayue",
+        hanzi: "是啊，电影院还不小。",
+        pinyin: "Shì a, diànyǐngyuàn hái bù xiǎo.",
+        english: "Yes, the cinema is quite big.",
       },
       {
-        speaker: "Wang Yifei",
-        hanzi: "同学们，再见！",
-        pinyin: "Tóngxuémen, zàijiàn!",
-        english: "Goodbye, students!"
+        speaker: "Anni",
+        hanzi: "他们卖的电影票也很便宜。",
+        pinyin: "Tāmen mài de diànyǐngpiào yě hěn piányi.",
+        english: "The movie tickets they sell are also very cheap.",
       },
       {
-        speaker: "Students",
-        hanzi: "老师，再见！",
-        pinyin: "Lǎoshī, zàijiàn!",
-        english: "Goodbye, teacher!"
-      }
-    ]
+        speaker: "Bai Jiayue",
+        hanzi: "天啊！有的还不到二十块钱。",
+        pinyin: "Tiān a! Yǒude hái bú dào èrshí kuài qián.",
+        english: "Oh my! Some of them are less than twenty yuan.",
+      },
+      {
+        speaker: "Anni",
+        hanzi: "那你想不想去看个电影？",
+        pinyin: "Nà nǐ xiǎng bu xiǎng qù kàn ge diànyǐng?",
+        english: "Then, do you want to go watch a movie?",
+      },
+      {
+        speaker: "Bai Jiayue",
+        hanzi: "还是别看电影了，北京大学就很好看！",
+        pinyin: "Háishi bié kàn diànyǐng le, Běijīng Dàxué jiù hěn hǎokàn!",
+        english: "Let's not watch a movie. Peking University itself is very beautiful!",
+      },
+    ],
   },
   vocabulary: [
     {
-      hanzi: "谢谢",
-      pinyin: "xièxie",
-      english: "Thank you",
-      bangla: "ধন্যবাদ",
+      hanzi: "票",
+      pinyin: "piào",
+      english: "Ticket",
+      bangla: "টিকিট",
       characters: [
-        {
-          hanzi: "谢",
-          pinyin: "xiè",
-          meaning: "Thank"
-        }
+        { hanzi: "覀", pinyin: "xī", meaning: "Cover" },
+        { hanzi: "示", pinyin: "shì", meaning: "Altar/Show" },
       ],
       example: {
-        hanzi: "谢谢你！",
-        pinyin: "Xièxie nǐ!",
-        english: "Thank you!",
-        bangla: "ধন্যবাদ!"
+        hanzi: "我买了两张电影票。",
+        pinyin: "Wǒ mǎile liǎng zhāng diànyǐng piào.",
+        english: "I bought two movie tickets.",
+        bangla: "আমি দুটি সিনেমার টিকিট কিনেছি।",
       },
       similar: [
-        {
-          hanzi: "多谢",
-          pinyin: "duōxiè",
-          english: "Many thanks"
-        }
-      ]
+        { hanzi: "券", pinyin: "quàn", english: "Ticket/Coupon" },
+      ],
     },
     {
-      hanzi: "不客气",
-      pinyin: "bú kèqi",
-      english: "You're welcome",
-      bangla: "স্বাগতম",
+      hanzi: "别",
+      pinyin: "bié",
+      english: "Don't",
+      bangla: "নিষেধ/না",
       characters: [
-        {
-          hanzi: "不",
-          pinyin: "bù",
-          meaning: "Not"
-        },
-        {
-          hanzi: "客气",
-          pinyin: "kèqi",
-          meaning: "Polite"
-        }
+        { hanzi: "另", pinyin: "lìng", meaning: "Other" },
+        { hanzi: "刂", pinyin: "dāo", meaning: "Knife" },
       ],
       example: {
-        hanzi: "不客气！",
-        pinyin: "Bú kèqi!",
-        english: "You're welcome!",
-        bangla: "স্বাগতম!"
+        hanzi: "别担心，一切都会好的。",
+        pinyin: "Bié dānxīn, yīqiè dūhuì hǎo de.",
+        english: "Don't worry, everything will be fine.",
+        bangla: "চিন্তা করো না, সব ঠিক হয়ে যাবে।",
       },
       similar: [
-        {
-          hanzi: "没关系",
-          pinyin: "méi guānxi",
-          english: "It doesn't matter"
-        }
-      ]
+        { hanzi: "不要", pinyin: "bùyào", english: "Don't" },
+      ],
     },
-    {
-      hanzi: "同学",
-      pinyin: "tóngxué",
-      english: "Classmate",
-      bangla: "সহপাঠী",
-      characters: [
-        {
-          hanzi: "同",
-          pinyin: "tóng",
-          meaning: "Same"
-        },
-        {
-          hanzi: "学",
-          pinyin: "xué",
-          meaning: "Study"
-        }
-      ],
-      example: {
-        hanzi: "他是我的同学。",
-        pinyin: "Tā shì wǒ de tóngxué.",
-        english: "He is my classmate.",
-        bangla: "সে আমার সহপাঠী।"
-      },
-      similar: [
-        {
-          hanzi: "朋友",
-          pinyin: "péngyou",
-          english: "Friend"
-        }
-      ]
-    },
-    {
-      hanzi: "再见",
-      pinyin: "zàijiàn",
-      english: "Goodbye",
-      bangla: "বিদায়",
-      characters: [
-        {
-          hanzi: "再",
-          pinyin: "zài",
-          meaning: "Again"
-        },
-        {
-          hanzi: "见",
-          pinyin: "jiàn",
-          meaning: "See"
-        }
-      ],
-      example: {
-        hanzi: "再见！",
-        pinyin: "Zàijiàn!",
-        english: "Goodbye!",
-        bangla: "বিদায়!"
-      },
-      similar: [
-        {
-          hanzi: "拜拜",
-          pinyin: "bàibài",
-          english: "Bye-bye"
-        }
-      ]
-    }
-  ]
+  ],
 };
