@@ -1,160 +1,89 @@
-// app/data/vocabularyData.ts
+// app/data/vocabulary/lesson6-text4.ts
+import { VocabularyData } from '@/app/types/vocabulary';
 
-import type { VocabularyData } from "@/app/types/vocabulary";
-
-// Lesson 1 - Text 3
-export const hsk2lesson1text3: VocabularyData = {
-    hskLevel: 2,
-  lesson: 1,
-  text: 3,
+export const hsk2lesson6text4: VocabularyData = {
+  hskLevel: 2,
+  lesson: 6,
+  text: 4,
   dialogue: {
-    title: "Thank You & Goodbye",
+    title: "A Happy Birthday",
     lines: [
       {
-        speaker: "Students",
-        hanzi: "谢谢！",
-        pinyin: "Xièxie!",
-        english: "Thank you!"
+        speaker: "Narrator",
+        hanzi: "今天是女儿的生日。",
+        pinyin: "Jīntiān shì nǚ'ér de shēngrì.",
+        english: "Today is our daughter's birthday.",
       },
       {
-        speaker: "Xiaoyu",
-        hanzi: "不客气！",
-        pinyin: "Bú kèqi!",
-        english: "You're welcome!"
+        speaker: "Narrator",
+        hanzi: "我们买了蛋糕，做了面条儿，还做了鱼啊肉啊什么的。",
+        pinyin: "Wǒmen mǎi le dàngāo, zuò le miàntiáor, hái zuò le yú a ròu a shénmede.",
+        english: "We bought a cake, made noodles, and also made fish, meat, and other dishes.",
       },
       {
-        speaker: "Wang Yifei",
-        hanzi: "同学们，再见！",
-        pinyin: "Tóngxuémen, zàijiàn!",
-        english: "Goodbye, students!"
+        speaker: "Narrator",
+        hanzi: "吃完晚饭，一家人去看了个电影。",
+        pinyin: "Chīwán wǎnfàn, yì jiā rén qù kàn le ge diànyǐng.",
+        english: "After dinner, the whole family went to see a movie.",
       },
       {
-        speaker: "Students",
-        hanzi: "老师，再见！",
-        pinyin: "Lǎoshī, zàijiàn!",
-        english: "Goodbye, teacher!"
-      }
-    ]
+        speaker: "Narrator",
+        hanzi: "回家后，孩子们早早地就上床了。",
+        pinyin: "Huí jiā hòu, háizimen zǎozǎo de jiù shàngchuáng le.",
+        english: "After returning home, the children went to bed early.",
+      },
+      {
+        speaker: "Narrator",
+        hanzi: "明天不上学，他们说要舒舒服服地睡一觉，让我们晚点儿叫他们起床。",
+        pinyin: "Míngtiān bù shàngxué, tāmen shuō yào shūshushūfu de shuì yí jiào, ràng wǒmen wǎn diǎnr jiào tāmen qǐchuáng.",
+        english: "There is no school tomorrow. They said they wanted to have a nice, comfortable sleep and asked us to wake them up a little later.",
+      },
+      {
+        speaker: "Narrator",
+        hanzi: "这是很忙、很累，但很快乐的一天。",
+        pinyin: "Zhè shì hěn máng, hěn lèi, dàn hěn kuàilè de yì tiān.",
+        english: "It was a very busy and tiring, but very happy day.",
+      },
+    ],
   },
   vocabulary: [
     {
-      hanzi: "谢谢",
-      pinyin: "xièxie",
-      english: "Thank you",
-      bangla: "ধন্যবাদ",
+      hanzi: "床",
+      pinyin: "chuáng",
+      english: "Bed",
+      bangla: "বিছানা",
       characters: [
-        {
-          hanzi: "谢",
-          pinyin: "xiè",
-          meaning: "Thank"
-        }
+        { hanzi: "广", pinyin: "guǎng", meaning: "Shelter" },
+        { hanzi: "木", pinyin: "mù", meaning: "Wood" },
       ],
       example: {
-        hanzi: "谢谢你！",
-        pinyin: "Xièxie nǐ!",
-        english: "Thank you!",
-        bangla: "ধন্যবাদ!"
+        hanzi: "我想躺在床上。",
+        pinyin: "Wǒ xiǎng tǎng zài chuángshang.",
+        english: "I want to lie on the bed.",
+        bangla: "আমি বিছানায় শুতে চাই।",
       },
       similar: [
-        {
-          hanzi: "多谢",
-          pinyin: "duōxiè",
-          english: "Many thanks"
-        }
-      ]
+        { hanzi: "床铺", pinyin: "chuángpù", english: "Bed" },
+      ],
     },
     {
-      hanzi: "不客气",
-      pinyin: "bú kèqi",
-      english: "You're welcome",
-      bangla: "স্বাগতম",
+      hanzi: "舒服",
+      pinyin: "shūfu",
+      english: "Comfortable",
+      bangla: "আরামদায়ক",
       characters: [
-        {
-          hanzi: "不",
-          pinyin: "bù",
-          meaning: "Not"
-        },
-        {
-          hanzi: "客气",
-          pinyin: "kèqi",
-          meaning: "Polite"
-        }
+        { hanzi: "舒", pinyin: "shū", meaning: "Stretch/Comfort" },
+        { hanzi: "服", pinyin: "fú", meaning: "Clothing/Accustomed" },
       ],
       example: {
-        hanzi: "不客气！",
-        pinyin: "Bú kèqi!",
-        english: "You're welcome!",
-        bangla: "স্বাগতম!"
+        hanzi: "躺在这张床上很舒服。",
+        pinyin: "Tǎng zài zhè zhāng chuángshàng hěn shūfu.",
+        english: "Lying on this bed is very comfortable.",
+        bangla: "এই বিছানায় শুতে খুব আরাম।",
       },
       similar: [
-        {
-          hanzi: "没关系",
-          pinyin: "méi guānxi",
-          english: "It doesn't matter"
-        }
-      ]
+        { hanzi: "舒适", pinyin: "shūshì", english: "Cozy/Comfortable" },
+      ],
     },
-    {
-      hanzi: "同学",
-      pinyin: "tóngxué",
-      english: "Classmate",
-      bangla: "সহপাঠী",
-      characters: [
-        {
-          hanzi: "同",
-          pinyin: "tóng",
-          meaning: "Same"
-        },
-        {
-          hanzi: "学",
-          pinyin: "xué",
-          meaning: "Study"
-        }
-      ],
-      example: {
-        hanzi: "他是我的同学。",
-        pinyin: "Tā shì wǒ de tóngxué.",
-        english: "He is my classmate.",
-        bangla: "সে আমার সহপাঠী।"
-      },
-      similar: [
-        {
-          hanzi: "朋友",
-          pinyin: "péngyou",
-          english: "Friend"
-        }
-      ]
-    },
-    {
-      hanzi: "再见",
-      pinyin: "zàijiàn",
-      english: "Goodbye",
-      bangla: "বিদায়",
-      characters: [
-        {
-          hanzi: "再",
-          pinyin: "zài",
-          meaning: "Again"
-        },
-        {
-          hanzi: "见",
-          pinyin: "jiàn",
-          meaning: "See"
-        }
-      ],
-      example: {
-        hanzi: "再见！",
-        pinyin: "Zàijiàn!",
-        english: "Goodbye!",
-        bangla: "বিদায়!"
-      },
-      similar: [
-        {
-          hanzi: "拜拜",
-          pinyin: "bàibài",
-          english: "Bye-bye"
-        }
-      ]
-    }
-  ]
+  ],
 };
