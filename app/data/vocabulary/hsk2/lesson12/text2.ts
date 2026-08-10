@@ -1,255 +1,93 @@
-import type { VocabularyData } from "@/app/types/vocabulary"; // Lesson 1 - Text 2
+// app/data/vocabulary/lesson12-text2.ts
+import { VocabularyData } from '@/app/types/vocabulary';
 
-export const hsk2lesson1text2: VocabularyData = {
+export const hsk2lesson12text2: VocabularyData = {
   hskLevel: 2,
-  lesson: 1,
+  lesson: 12,
   text: 2,
   dialogue: {
-    title: "Greeting in the Classroom",
+    title: "Snowy Weather",
     lines: [
       {
-        speaker: "Teacher",
-        hanzi: "大家好！",
-        pinyin: "Dàjiā hǎo!",
-        english: "Hello everyone!",
+        speaker: "Wang Yixue",
+        hanzi: "喂，一飞，听家月说你那边下雪了，下得大不大？",
+        pinyin: "Wéi, Yīfēi, tīng Jiāyuè shuō nǐ nàbian xià xuě le, xià de dà bu dà?",
+        english: "Hello, Yifei. I heard Jiayue say that it is snowing there. Is it snowing heavily?",
       },
       {
-        speaker: "Students",
-        hanzi: "老师好！",
-        pinyin: "Lǎoshī hǎo!",
-        english: "Hello teacher!",
+        speaker: "Wang Yifei",
+        hanzi: "今天不大，昨天比今天下得大。",
+        pinyin: "Jīntiān bú dà, zuótiān bǐ jīntiān xià de dà.",
+        english: "Not heavily today. It snowed more heavily yesterday than today.",
       },
       {
-        speaker: "Student 1",
-        hanzi: "你好！",
-        pinyin: "Nǐ hǎo!",
-        english: "Hello!",
+        speaker: "Wang Yixue",
+        hanzi: "天气不好，你去外面的时候多穿点儿衣服。",
+        pinyin: "Tiānqì bù hǎo, nǐ qù wàimiàn de shíhou duō chuān diǎnr yīfu.",
+        english: "The weather is bad. Wear more clothes when you go outside.",
       },
       {
-        speaker: "Student 2",
-        hanzi: "你好！",
-        pinyin: "Nǐ hǎo!",
-        english: "Hello!",
+        speaker: "Wang Yifei",
+        hanzi: "这几天我在网上上课，没出去过。",
+        pinyin: "Zhè jǐ tiān wǒ zài wǎngshàng shàngkè, méi chūqù guo.",
+        english: "These days I've been taking classes online, so I haven't gone outside.",
       },
       {
-        speaker: "Teacher",
-        hanzi: "你们好！",
-        pinyin: "Nǐmen hǎo!",
-        english: "Hello everyone (plural)!",
+        speaker: "Wang Yixue",
+        hanzi: "那就好，有事记得给我打电话。",
+        pinyin: "Nà jiù hǎo, yǒu shì jìde gěi wǒ dǎ diànhuà.",
+        english: "That's good. If anything happens, remember to call me.",
+      },
+      {
+        speaker: "Wang Yifei",
+        hanzi: "好的。现在不下雪了，我出去买点儿吃的。",
+        pinyin: "Hǎo de. Xiànzài bú xià xuě le, wǒ chūqù mǎi diǎnr chī de.",
+        english: "Okay. It's not snowing now, so I'm going out to buy something to eat.",
+      },
+      {
+        speaker: "Wang Yixue",
+        hanzi: "一次多买点儿，明天下雪什么的就少出去吧。",
+        pinyin: "Yí cì duō mǎi diǎnr, míngtiān xià xuě shénmede jiù shǎo chūqù ba.",
+        english: "Buy a little more at once. If it snows tomorrow or something, try to go outside less.",
       },
     ],
   },
   vocabulary: [
     {
-      hanzi: "大家",
-      pinyin: "dàjiā",
-      english: "Everyone",
-      bangla: "সবাই",
+      hanzi: "外面",
+      pinyin: "wàimiàn",
+      english: "Outside",
+      bangla: "বাইরে",
       characters: [
-        {
-          hanzi: "大",
-          pinyin: "dà",
-          meaning: "Big",
-        },
-        {
-          hanzi: "家",
-          pinyin: "jiā",
-          meaning: "Family/Home",
-        },
+        { hanzi: "外", pinyin: "wài", meaning: "Outside" },
+        { hanzi: "面", pinyin: "miàn", meaning: "Side" },
       ],
       example: {
-        hanzi: "大家好！",
-        pinyin: "Dàjiā hǎo!",
-        english: "Hello everyone!",
-        bangla: "সবাইকে হ্যালো!",
+        hanzi: "外面在下雪。",
+        pinyin: "Wàimiàn zài xiàxuě.",
+        english: "It is snowing outside.",
+        bangla: "বাইরে তুষার পড়ছে।",
       },
       similar: [
-        {
-          hanzi: "每人",
-          pinyin: "měi rén",
-          english: "Everyone/Each person",
-        },
+        { hanzi: "外头", pinyin: "wàitou", english: "Outside" },
       ],
     },
     {
-      hanzi: "好",
-      pinyin: "hǎo",
-      english: "Good",
-      bangla: "ভালো",
+      hanzi: "阴",
+      pinyin: "yīn",
+      english: "Cloudy/Overcast",
+      bangla: "মেঘলা",
       characters: [
-        {
-          hanzi: "女",
-          pinyin: "nǚ",
-          meaning: "Woman",
-        },
-        {
-          hanzi: "子",
-          pinyin: "zǐ",
-          meaning: "Child",
-        },
+        { hanzi: "阴", pinyin: "yīn", meaning: "Cloudy" },
       ],
       example: {
-        hanzi: "很好。",
-        pinyin: "Hěn hǎo.",
-        english: "Very good.",
-        bangla: "খুব ভালো।",
+        hanzi: "今天是阴天。",
+        pinyin: "Jīntiān shì yīntiān.",
+        english: "Today is a cloudy day.",
+        bangla: "আজ মেঘলা দিন।",
       },
       similar: [
-        {
-          hanzi: "棒",
-          pinyin: "bàng",
-          english: "Great/Awesome",
-        },
-      ],
-    },
-    {
-      hanzi: "学生",
-      pinyin: "xuéshēng",
-      english: "Student",
-      bangla: "ছাত্র",
-      characters: [
-        {
-          hanzi: "学",
-          pinyin: "xué",
-          meaning: "Study/Learn",
-        },
-        {
-          hanzi: "生",
-          pinyin: "shēng",
-          meaning: "Person/Born",
-        },
-      ],
-      example: {
-        hanzi: "我是学生。",
-        pinyin: "Wǒ shì xuéshēng.",
-        english: "I am a student.",
-        bangla: "আমি একজন ছাত্র।",
-      },
-      similar: [
-        {
-          hanzi: "同学",
-          pinyin: "tóngxué",
-          english: "Classmate",
-        },
-      ],
-    },
-    {
-      hanzi: "们",
-      pinyin: "men",
-      english: "(plural suffix)",
-      bangla: "বহুবচন প্রত্যয়",
-      characters: [
-        {
-          hanzi: "们",
-          pinyin: "men",
-          meaning: "Plural suffix",
-        },
-      ],
-      example: {
-        hanzi: "我们。",
-        pinyin: "Wǒmen.",
-        english: "We/Us.",
-        bangla: "আমরা।",
-      },
-      similar: [
-        {
-          hanzi: "大家",
-          pinyin: "dàjiā",
-          english: "Everyone",
-        },
-      ],
-    },
-    {
-      hanzi: "老师",
-      pinyin: "lǎoshī",
-      english: "Teacher",
-      bangla: "শিক্ষক",
-      characters: [
-        {
-          hanzi: "老",
-          pinyin: "lǎo",
-          meaning: "Old/Experienced",
-        },
-        {
-          hanzi: "师",
-          pinyin: "shī",
-          meaning: "Master/Expert",
-        },
-      ],
-      example: {
-        hanzi: "老师好。",
-        pinyin: "Lǎoshī hǎo.",
-        english: "Hello teacher.",
-        bangla: "শিক্ষককে হ্যালো।",
-      },
-      similar: [
-        {
-          hanzi: "教师",
-          pinyin: "jiàoshī",
-          english: "Teacher (formal)",
-        },
-      ],
-    },
-    {
-      hanzi: "您",
-      pinyin: "nín",
-      english: "You (polite)",
-      bangla: "আপনি (সম্মানসূচক)",
-      characters: [
-        {
-          hanzi: "你",
-          pinyin: "nǐ",
-          meaning: "You",
-        },
-        {
-          hanzi: "心",
-          pinyin: "xīn",
-          meaning: "Heart (added respect)",
-        },
-      ],
-      example: {
-        hanzi: "您好！",
-        pinyin: "Nín hǎo!",
-        english: "Hello (polite)!",
-        bangla: "আপনাকে হ্যালো!",
-      },
-      similar: [
-        {
-          hanzi: "你",
-          pinyin: "nǐ",
-          english: "You (informal)",
-        },
-      ],
-    },
-    {
-      hanzi: "你们",
-      pinyin: "nǐmen",
-      english: "You (plural)",
-      bangla: "তোমরা",
-      characters: [
-        {
-          hanzi: "你",
-          pinyin: "nǐ",
-          meaning: "You",
-        },
-        {
-          hanzi: "们",
-          pinyin: "men",
-          meaning: "Plural",
-        },
-      ],
-      example: {
-        hanzi: "你们好！",
-        pinyin: "Nǐmen hǎo!",
-        english: "Hello everyone!",
-        bangla: "সবাইকে হ্যালো!",
-      },
-      similar: [
-        {
-          hanzi: "大家",
-          pinyin: "dàjiā",
-          english: "Everyone",
-        },
+        { hanzi: "多云", pinyin: "duōyún", english: "Cloudy" },
       ],
     },
   ],
