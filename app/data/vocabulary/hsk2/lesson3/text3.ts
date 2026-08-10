@@ -1,160 +1,164 @@
-// app/data/vocabularyData.ts
+// app/data/vocabulary/lesson3-text3.ts
+import { VocabularyData } from '@/app/types/vocabulary';
 
-import type { VocabularyData } from "@/app/types/vocabulary";
-
-// Lesson 1 - Text 3
-export const hsk2lesson1text3: VocabularyData = {
-    hskLevel: 2,
-  lesson: 1,
+export const hsk2lesson3text3: VocabularyData = {
+  hskLevel: 2,
+  lesson: 3,
   text: 3,
   dialogue: {
-    title: "Thank You & Goodbye",
+    title: "Going to Xi'an",
     lines: [
       {
-        speaker: "Students",
-        hanzi: "谢谢！",
-        pinyin: "Xièxie!",
-        english: "Thank you!"
+        speaker: "Liu Ming",
+        hanzi: "吃个苹果吧，我都洗好了。",
+        pinyin: "Chī ge píngguǒ ba, wǒ dōu xǐhǎo le.",
+        english: "Have an apple. I've already washed them.",
       },
       {
-        speaker: "Xiaoyu",
-        hanzi: "不客气！",
-        pinyin: "Bú kèqi!",
-        english: "You're welcome!"
+        speaker: "Wang Yixue",
+        hanzi: "好的。",
+        pinyin: "Hǎo de.",
+        english: "Okay.",
       },
       {
-        speaker: "Wang Yifei",
-        hanzi: "同学们，再见！",
-        pinyin: "Tóngxuémen, zàijiàn!",
-        english: "Goodbye, students!"
+        speaker: "Liu Ming",
+        hanzi: "就在桌子上，你自己拿。",
+        pinyin: "Jiù zài zhuōzi shàng, nǐ zìjǐ ná.",
+        english: "They're right on the table. Take one yourself.",
       },
       {
-        speaker: "Students",
-        hanzi: "老师，再见！",
-        pinyin: "Lǎoshī, zàijiàn!",
-        english: "Goodbye, teacher!"
-      }
-    ]
+        speaker: "Wang Yixue",
+        hanzi: "我去洗洗手。对了，我们去西安旅游，怎么样？",
+        pinyin: "Wǒ qù xǐxi shǒu. Duì le, wǒmen qù Xī'ān lǚyóu, zěnmeyàng?",
+        english: "I'll go wash my hands. By the way, how about we travel to Xi'an?",
+      },
+      {
+        speaker: "Liu Ming",
+        hanzi: "为什么想去西安？",
+        pinyin: "Wèi shénme xiǎng qù Xī'ān?",
+        english: "Why do you want to go to Xi'an?",
+      },
+      {
+        speaker: "Wang Yixue",
+        hanzi: "我看了看网上的介绍，这个时候去西安很好！",
+        pinyin: "Wǒ kàn le kàn wǎngshàng de jièshào, zhège shíhou qù Xī'ān hěn bùcuò!",
+        english: "I looked at some information online. It's really nice to go to Xi'an at this time!",
+      },
+    ],
   },
   vocabulary: [
     {
-      hanzi: "谢谢",
-      pinyin: "xièxie",
-      english: "Thank you",
-      bangla: "ধন্যবাদ",
+      hanzi: "洗",
+      pinyin: "xǐ",
+      english: "Wash",
+      bangla: "ধোয়া",
       characters: [
-        {
-          hanzi: "谢",
-          pinyin: "xiè",
-          meaning: "Thank"
-        }
+        { hanzi: "氵", pinyin: "shuǐ", meaning: "Water" },
+        { hanzi: "先", pinyin: "xiān", meaning: "Before/First" },
       ],
       example: {
-        hanzi: "谢谢你！",
-        pinyin: "Xièxie nǐ!",
-        english: "Thank you!",
-        bangla: "ধন্যবাদ!"
+        hanzi: "我去洗手。",
+        pinyin: "Wǒ qù xǐshǒu.",
+        english: "I am going to wash my hands.",
+        bangla: "আমি হাত ধুতে যাচ্ছি।",
       },
       similar: [
-        {
-          hanzi: "多谢",
-          pinyin: "duōxiè",
-          english: "Many thanks"
-        }
-      ]
+        { hanzi: "刷", pinyin: "shuā", english: "Brush/Clean" },
+      ],
     },
     {
-      hanzi: "不客气",
-      pinyin: "bú kèqi",
-      english: "You're welcome",
-      bangla: "স্বাগতম",
+      hanzi: "自己",
+      pinyin: "zìjǐ",
+      english: "Oneself",
+      bangla: "নিজে/আত্ম",
       characters: [
-        {
-          hanzi: "不",
-          pinyin: "bù",
-          meaning: "Not"
-        },
-        {
-          hanzi: "客气",
-          pinyin: "kèqi",
-          meaning: "Polite"
-        }
+        { hanzi: "自", pinyin: "zì", meaning: "Self" },
+        { hanzi: "己", pinyin: "jǐ", meaning: "Personal" },
       ],
       example: {
-        hanzi: "不客气！",
-        pinyin: "Bú kèqi!",
-        english: "You're welcome!",
-        bangla: "স্বাগতম!"
+        hanzi: "我自己去学校。",
+        pinyin: "Wǒ zìjǐ qù xuéxiào.",
+        english: "I go to school by myself.",
+        bangla: "আমি নিজে স্কুলে যাই।",
       },
       similar: [
-        {
-          hanzi: "没关系",
-          pinyin: "méi guānxi",
-          english: "It doesn't matter"
-        }
-      ]
+        { hanzi: "自身", pinyin: "zìshēn", english: "Oneself" },
+      ],
     },
     {
-      hanzi: "同学",
-      pinyin: "tóngxué",
-      english: "Classmate",
-      bangla: "সহপাঠী",
+      hanzi: "拿",
+      pinyin: "ná",
+      english: "Take/Hold",
+      bangla: "নেওয়া/ধরা",
       characters: [
-        {
-          hanzi: "同",
-          pinyin: "tóng",
-          meaning: "Same"
-        },
-        {
-          hanzi: "学",
-          pinyin: "xué",
-          meaning: "Study"
-        }
+        { hanzi: "合", pinyin: "hé", meaning: "Combine" },
+        { hanzi: "手", pinyin: "shǒu", meaning: "Hand" },
       ],
       example: {
-        hanzi: "他是我的同学。",
-        pinyin: "Tā shì wǒ de tóngxué.",
-        english: "He is my classmate.",
-        bangla: "সে আমার সহপাঠী।"
+        hanzi: "请拿这一本书。",
+        pinyin: "Qǐng ná zhè yī běn shū.",
+        english: "Please take this book.",
+        bangla: "অনুগ্রহ করে এই বইটি নিন।",
       },
       similar: [
-        {
-          hanzi: "朋友",
-          pinyin: "péngyou",
-          english: "Friend"
-        }
-      ]
+        { hanzi: "带", pinyin: "dài", english: "Bring/Take along" },
+      ],
     },
     {
-      hanzi: "再见",
-      pinyin: "zàijiàn",
-      english: "Goodbye",
-      bangla: "বিদায়",
+      hanzi: "手",
+      pinyin: "shǒu",
+      english: "Hand",
+      bangla: "হাত",
       characters: [
-        {
-          hanzi: "再",
-          pinyin: "zài",
-          meaning: "Again"
-        },
-        {
-          hanzi: "见",
-          pinyin: "jiàn",
-          meaning: "See"
-        }
+        { hanzi: "手", pinyin: "shǒu", meaning: "Hand" },
       ],
       example: {
-        hanzi: "再见！",
-        pinyin: "Zàijiàn!",
-        english: "Goodbye!",
-        bangla: "বিদায়!"
+        hanzi: "你的手很冷。",
+        pinyin: "Nǐ de shǒu hěn lěng.",
+        english: "Your hands are very cold.",
+        bangla: "তোমার হাত খুব ঠান্ডা।",
       },
       similar: [
-        {
-          hanzi: "拜拜",
-          pinyin: "bàibài",
-          english: "Bye-bye"
-        }
-      ]
-    }
-  ]
+        { hanzi: "掌", pinyin: "zhǎng", english: "Palm" },
+      ],
+    },
+    {
+      hanzi: "为什么",
+      pinyin: "wèishénme",
+      english: "Why",
+      bangla: "কেন",
+      characters: [
+        { hanzi: "为", pinyin: "wèi", meaning: "For" },
+        { hanzi: "什么", pinyin: "shénme", meaning: "What" },
+      ],
+      example: {
+        hanzi: "你为什么没来？",
+        pinyin: "Nǐ wèishénme méi lái?",
+        english: "Why didn't you come?",
+        bangla: "তুমি কেন আসোনি?",
+      },
+      similar: [
+        { hanzi: "怎么", pinyin: "zěnme", english: "Why/How" },
+      ],
+    },
+    {
+      hanzi: "不错",
+      pinyin: "búcuò",
+      english: "Not bad/Pretty good",
+      bangla: "বেশ ভালো/খারাপ না",
+      characters: [
+        { hanzi: "不", pinyin: "bù", meaning: "Not" },
+        { hanzi: "错", pinyin: "cuò", meaning: "Wrong/Mistake" },
+      ],
+      example: {
+        hanzi: "这儿的菜不错。",
+        pinyin: "Zhèr de cài búcuò.",
+        english: "The food here is not bad.",
+        bangla: "এখানকার খাবার বেশ ভালো।",
+      },
+      similar: [
+        { hanzi: "挺好", pinyin: "tǐnghǎo", english: "Pretty good" },
+      ],
+    },
+  ],
 };
