@@ -1,255 +1,93 @@
-import type { VocabularyData } from "@/app/types/vocabulary"; // Lesson 1 - Text 2
+// app/data/vocabulary/lesson11-text2.ts
+import { VocabularyData } from '@/app/types/vocabulary';
 
-export const hsk2lesson1text2: VocabularyData = {
+export const hsk2lesson11text2: VocabularyData = {
   hskLevel: 2,
-  lesson: 1,
+  lesson: 11,
   text: 2,
   dialogue: {
-    title: "Greeting in the Classroom",
+    title: "On the Way to the Hospital",
     lines: [
       {
-        speaker: "Teacher",
-        hanzi: "大家好！",
-        pinyin: "Dàjiā hǎo!",
-        english: "Hello everyone!",
+        speaker: "Wang Yifei",
+        hanzi: "现在路上车多，还有下着雪，我开慢一点儿。",
+        pinyin: "Xiànzài lùshang chē duō, hái xiàzhe xuě, wǒ kāi màn yìdiǎnr.",
+        english: "There are a lot of cars on the road now, and it's also snowing, so I'll drive a little slower.",
       },
       {
-        speaker: "Students",
-        hanzi: "老师好！",
-        pinyin: "Lǎoshī hǎo!",
-        english: "Hello teacher!",
+        speaker: "Bai Jiayue",
+        hanzi: "没问题，现在头没那么疼了。",
+        pinyin: "Méi wèntí, xiànzài tóu méi nàme téng le.",
+        english: "No problem. My head doesn't hurt as much now.",
       },
       {
-        speaker: "Student 1",
-        hanzi: "你好！",
-        pinyin: "Nǐ hǎo!",
-        english: "Hello!",
+        speaker: "Wang Yifei",
+        hanzi: "好。李文来电话了，你帮我接一下。",
+        pinyin: "Hǎo. Lǐ Wén lái diànhuà le, nǐ bāng wǒ jiē yíxià.",
+        english: "Okay. Li Wen is calling. Please answer the phone for me.",
       },
       {
-        speaker: "Student 2",
-        hanzi: "你好！",
-        pinyin: "Nǐ hǎo!",
-        english: "Hello!",
+        speaker: "Bai Jiayue",
+        hanzi: "喂，李文，王老师开着车呢，你找她有事吗？",
+        pinyin: "Wéi, Lǐ Wén, Wáng lǎoshī kāizhe chē ne, nǐ zhǎo tā yǒu shì ma?",
+        english: "Hello, Li Wen. Teacher Wang is driving. Do you need to talk to her about something?",
       },
       {
-        speaker: "Teacher",
-        hanzi: "你们好！",
-        pinyin: "Nǐmen hǎo!",
-        english: "Hello everyone (plural)!",
+        speaker: "Li Wen",
+        hanzi: "没什么事。今天雪这么大，你们开车去哪儿啊？",
+        pinyin: "Méi shénme shì. Jīntiān xuě zhème dà, nǐmen kāichē qù nǎr a?",
+        english: "Nothing much. It's snowing so heavily today. Where are you driving to?",
+      },
+      {
+        speaker: "Bai Jiayue",
+        hanzi: "去医院，我头有点儿疼。",
+        pinyin: "Qù yīyuàn, wǒ tóu yǒudiǎnr téng.",
+        english: "We're going to the hospital. I have a bit of a headache.",
+      },
+      {
+        speaker: "Li Wen",
+        hanzi: "那我一会儿去看看你。",
+        pinyin: "Nà wǒ yíhuìr qù kànkan nǐ.",
+        english: "Then I'll come see you in a little while.",
       },
     ],
   },
   vocabulary: [
     {
-      hanzi: "大家",
-      pinyin: "dàjiā",
-      english: "Everyone",
-      bangla: "সবাই",
+      hanzi: "路上",
+      pinyin: "lùshang",
+      english: "On the way/On the road",
+      bangla: "রাস্তায়/পথে",
       characters: [
-        {
-          hanzi: "大",
-          pinyin: "dà",
-          meaning: "Big",
-        },
-        {
-          hanzi: "家",
-          pinyin: "jiā",
-          meaning: "Family/Home",
-        },
+        { hanzi: "路", pinyin: "lù", meaning: "Road" },
+        { hanzi: "上", pinyin: "shàng", meaning: "On/Above" },
       ],
       example: {
-        hanzi: "大家好！",
-        pinyin: "Dàjiā hǎo!",
-        english: "Hello everyone!",
-        bangla: "সবাইকে হ্যালো!",
+        hanzi: "我在路上。",
+        pinyin: "Wǒ zài lùshang.",
+        english: "I am on the way.",
+        bangla: "আমি পথে আছি।",
       },
       similar: [
-        {
-          hanzi: "每人",
-          pinyin: "měi rén",
-          english: "Everyone/Each person",
-        },
+        { hanzi: "途中", pinyin: "túzhōng", english: "En route" },
       ],
     },
     {
-      hanzi: "好",
-      pinyin: "hǎo",
-      english: "Good",
-      bangla: "ভালো",
+      hanzi: "慢",
+      pinyin: "màn",
+      english: "Slow",
+      bangla: "ধীর",
       characters: [
-        {
-          hanzi: "女",
-          pinyin: "nǚ",
-          meaning: "Woman",
-        },
-        {
-          hanzi: "子",
-          pinyin: "zǐ",
-          meaning: "Child",
-        },
+        { hanzi: "慢", pinyin: "màn", meaning: "Slow" },
       ],
       example: {
-        hanzi: "很好。",
-        pinyin: "Hěn hǎo.",
-        english: "Very good.",
-        bangla: "খুব ভালো।",
+        hanzi: "请慢一点儿。",
+        pinyin: "Qǐng màn yīdiǎnr.",
+        english: "Please be a bit slower.",
+        bangla: "অনুগ্রহ করে একটু ধীরে করুন।",
       },
       similar: [
-        {
-          hanzi: "棒",
-          pinyin: "bàng",
-          english: "Great/Awesome",
-        },
-      ],
-    },
-    {
-      hanzi: "学生",
-      pinyin: "xuéshēng",
-      english: "Student",
-      bangla: "ছাত্র",
-      characters: [
-        {
-          hanzi: "学",
-          pinyin: "xué",
-          meaning: "Study/Learn",
-        },
-        {
-          hanzi: "生",
-          pinyin: "shēng",
-          meaning: "Person/Born",
-        },
-      ],
-      example: {
-        hanzi: "我是学生。",
-        pinyin: "Wǒ shì xuéshēng.",
-        english: "I am a student.",
-        bangla: "আমি একজন ছাত্র।",
-      },
-      similar: [
-        {
-          hanzi: "同学",
-          pinyin: "tóngxué",
-          english: "Classmate",
-        },
-      ],
-    },
-    {
-      hanzi: "们",
-      pinyin: "men",
-      english: "(plural suffix)",
-      bangla: "বহুবচন প্রত্যয়",
-      characters: [
-        {
-          hanzi: "们",
-          pinyin: "men",
-          meaning: "Plural suffix",
-        },
-      ],
-      example: {
-        hanzi: "我们。",
-        pinyin: "Wǒmen.",
-        english: "We/Us.",
-        bangla: "আমরা।",
-      },
-      similar: [
-        {
-          hanzi: "大家",
-          pinyin: "dàjiā",
-          english: "Everyone",
-        },
-      ],
-    },
-    {
-      hanzi: "老师",
-      pinyin: "lǎoshī",
-      english: "Teacher",
-      bangla: "শিক্ষক",
-      characters: [
-        {
-          hanzi: "老",
-          pinyin: "lǎo",
-          meaning: "Old/Experienced",
-        },
-        {
-          hanzi: "师",
-          pinyin: "shī",
-          meaning: "Master/Expert",
-        },
-      ],
-      example: {
-        hanzi: "老师好。",
-        pinyin: "Lǎoshī hǎo.",
-        english: "Hello teacher.",
-        bangla: "শিক্ষককে হ্যালো।",
-      },
-      similar: [
-        {
-          hanzi: "教师",
-          pinyin: "jiàoshī",
-          english: "Teacher (formal)",
-        },
-      ],
-    },
-    {
-      hanzi: "您",
-      pinyin: "nín",
-      english: "You (polite)",
-      bangla: "আপনি (সম্মানসূচক)",
-      characters: [
-        {
-          hanzi: "你",
-          pinyin: "nǐ",
-          meaning: "You",
-        },
-        {
-          hanzi: "心",
-          pinyin: "xīn",
-          meaning: "Heart (added respect)",
-        },
-      ],
-      example: {
-        hanzi: "您好！",
-        pinyin: "Nín hǎo!",
-        english: "Hello (polite)!",
-        bangla: "আপনাকে হ্যালো!",
-      },
-      similar: [
-        {
-          hanzi: "你",
-          pinyin: "nǐ",
-          english: "You (informal)",
-        },
-      ],
-    },
-    {
-      hanzi: "你们",
-      pinyin: "nǐmen",
-      english: "You (plural)",
-      bangla: "তোমরা",
-      characters: [
-        {
-          hanzi: "你",
-          pinyin: "nǐ",
-          meaning: "You",
-        },
-        {
-          hanzi: "们",
-          pinyin: "men",
-          meaning: "Plural",
-        },
-      ],
-      example: {
-        hanzi: "你们好！",
-        pinyin: "Nǐmen hǎo!",
-        english: "Hello everyone!",
-        bangla: "সবাইকে হ্যালো!",
-      },
-      similar: [
-        {
-          hanzi: "大家",
-          pinyin: "dàjiā",
-          english: "Everyone",
-        },
+        { hanzi: "迟缓", pinyin: "chíhuǎn", english: "Sluggish" },
       ],
     },
   ],
