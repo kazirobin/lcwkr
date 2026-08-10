@@ -1,160 +1,96 @@
-// app/data/vocabularyData.ts
+// app/data/vocabulary/lesson12-text4.ts
+import { VocabularyData } from '@/app/types/vocabulary';
 
-import type { VocabularyData } from "@/app/types/vocabulary";
-
-// Lesson 1 - Text 3
-export const hsk2lesson1text3: VocabularyData = {
-    hskLevel: 2,
-  lesson: 1,
-  text: 3,
+export const hsk2lesson12text4: VocabularyData = {
+  hskLevel: 2,
+  lesson: 12,
+  text: 4,
   dialogue: {
-    title: "Thank You & Goodbye",
+    title: "Running with Li Wen",
     lines: [
       {
-        speaker: "Students",
-        hanzi: "谢谢！",
-        pinyin: "Xièxie!",
-        english: "Thank you!"
+        speaker: "Narrator",
+        hanzi: "前几天天气不好，我没走路，每天坐两站地铁去学校。",
+        pinyin: "Qián jǐ tiān tiānqì bù hǎo, wǒ méi zǒulù, měitiān zuò liǎng zhàn dìtiě qù xuéxiào.",
+        english: "The weather was bad a few days ago, so I didn't walk. I took the subway two stops to school every day.",
       },
       {
-        speaker: "Xiaoyu",
-        hanzi: "不客气！",
-        pinyin: "Bú kèqi!",
-        english: "You're welcome!"
+        speaker: "Narrator",
+        hanzi: "今天是个大晴天，李文让我跟他去外面跑步。",
+        pinyin: "Jīntiān shì ge dà qíngtiān, Lǐ Wén ràng wǒ gēn tā qù wàimiàn pǎobù.",
+        english: "Today is a very sunny day, and Li Wen asked me to go running outside with him.",
       },
       {
-        speaker: "Wang Yifei",
-        hanzi: "同学们，再见！",
-        pinyin: "Tóngxuémen, zàijiàn!",
-        english: "Goodbye, students!"
+        speaker: "Narrator",
+        hanzi: "他小时候经常跑步，跑得比我快，但是他会等我。",
+        pinyin: "Tā xiǎoshíhou jīngcháng pǎobù, pǎo de bǐ wǒ kuài, dànshì tā huì děng wǒ.",
+        english: "He often ran when he was young. He runs faster than me, but he will wait for me.",
       },
       {
-        speaker: "Students",
-        hanzi: "老师，再见！",
-        pinyin: "Lǎoshī, zàijiàn!",
-        english: "Goodbye, teacher!"
-      }
-    ]
+        speaker: "Narrator",
+        hanzi: "跟李文一起跑步，我好高兴啊！",
+        pinyin: "Gēn Lǐ Wén yìqǐ pǎobù, wǒ hǎo gāoxìng a!",
+        english: "I'm so happy to run with Li Wen!",
+      },
+    ],
   },
   vocabulary: [
     {
-      hanzi: "谢谢",
-      pinyin: "xièxie",
-      english: "Thank you",
-      bangla: "ধন্যবাদ",
+      hanzi: "站",
+      pinyin: "zhàn",
+      english: "Station/To stand",
+      bangla: "স্টেশন/দাঁড়ানো",
       characters: [
-        {
-          hanzi: "谢",
-          pinyin: "xiè",
-          meaning: "Thank"
-        }
+        { hanzi: "站", pinyin: "zhàn", meaning: "Stand/Station" },
       ],
       example: {
-        hanzi: "谢谢你！",
-        pinyin: "Xièxie nǐ!",
-        english: "Thank you!",
-        bangla: "ধন্যবাদ!"
+        hanzi: "我在火车站等你。",
+        pinyin: "Wǒ zài huǒchēzhàn děng nǐ.",
+        english: "I am waiting for you at the railway station.",
+        bangla: "আমি রেল স্টেশনে তোমার জন্য অপেক্ষা করছি।",
       },
       similar: [
-        {
-          hanzi: "多谢",
-          pinyin: "duōxiè",
-          english: "Many thanks"
-        }
-      ]
+        { hanzi: "车站", pinyin: "chēzhàn", english: "Station" },
+      ],
     },
     {
-      hanzi: "不客气",
-      pinyin: "bú kèqi",
-      english: "You're welcome",
-      bangla: "স্বাগতম",
+      hanzi: "小时候",
+      pinyin: "xiǎoshíhou",
+      english: "In one's childhood",
+      bangla: "ছোটবেলায়",
       characters: [
-        {
-          hanzi: "不",
-          pinyin: "bù",
-          meaning: "Not"
-        },
-        {
-          hanzi: "客气",
-          pinyin: "kèqi",
-          meaning: "Polite"
-        }
+        { hanzi: "小", pinyin: "xiǎo", meaning: "Small/Young" },
+        { hanzi: "时", pinyin: "shí", meaning: "Time" },
+        { hanzi: "候", pinyin: "hòu", meaning: "Time" },
       ],
       example: {
-        hanzi: "不客气！",
-        pinyin: "Bú kèqi!",
-        english: "You're welcome!",
-        bangla: "স্বাগতম!"
+        hanzi: "我小时候喜欢画画。",
+        pinyin: "Wǒ xiǎoshíhou xǐhuan huàhuà.",
+        english: "I liked drawing when I was a child.",
+        bangla: "আমি ছোটবেলায় ছবি আঁকতে পছন্দ করতাম।",
       },
       similar: [
-        {
-          hanzi: "没关系",
-          pinyin: "méi guānxi",
-          english: "It doesn't matter"
-        }
-      ]
+        { hanzi: "童年", pinyin: "tóngnián", english: "Childhood" },
+      ],
     },
     {
-      hanzi: "同学",
-      pinyin: "tóngxué",
-      english: "Classmate",
-      bangla: "সহপাঠী",
+      hanzi: "好",
+      pinyin: "hǎo",
+      english: "Good/Very",
+      bangla: "ভালো/খুব",
       characters: [
-        {
-          hanzi: "同",
-          pinyin: "tóng",
-          meaning: "Same"
-        },
-        {
-          hanzi: "学",
-          pinyin: "xué",
-          meaning: "Study"
-        }
+        { hanzi: "女", pinyin: "nǚ", meaning: "Woman" },
+        { hanzi: "子", pinyin: "zǐ", meaning: "Child" },
       ],
       example: {
-        hanzi: "他是我的同学。",
-        pinyin: "Tā shì wǒ de tóngxué.",
-        english: "He is my classmate.",
-        bangla: "সে আমার সহপাঠী।"
+        hanzi: "今天天气很好。",
+        pinyin: "Jīntiān tiānqì hěn hǎo.",
+        english: "The weather is very good today.",
+        bangla: "আজ আবহাওয়া খুব ভালো।",
       },
       similar: [
-        {
-          hanzi: "朋友",
-          pinyin: "péngyou",
-          english: "Friend"
-        }
-      ]
+        { hanzi: "棒", pinyin: "bàng", english: "Great" },
+      ],
     },
-    {
-      hanzi: "再见",
-      pinyin: "zàijiàn",
-      english: "Goodbye",
-      bangla: "বিদায়",
-      characters: [
-        {
-          hanzi: "再",
-          pinyin: "zài",
-          meaning: "Again"
-        },
-        {
-          hanzi: "见",
-          pinyin: "jiàn",
-          meaning: "See"
-        }
-      ],
-      example: {
-        hanzi: "再见！",
-        pinyin: "Zàijiàn!",
-        english: "Goodbye!",
-        bangla: "বিদায়!"
-      },
-      similar: [
-        {
-          hanzi: "拜拜",
-          pinyin: "bàibài",
-          english: "Bye-bye"
-        }
-      ]
-    }
-  ]
+  ],
 };
