@@ -1,160 +1,76 @@
-// app/data/vocabularyData.ts
+// app/data/vocabulary/lesson5-text4.ts
+import { VocabularyData } from '@/app/types/vocabulary';
 
-import type { VocabularyData } from "@/app/types/vocabulary";
-
-// Lesson 1 - Text 3
-export const hsk2lesson1text3: VocabularyData = {
-    hskLevel: 2,
-  lesson: 1,
-  text: 3,
+export const hsk2lesson5text4: VocabularyData = {
+  hskLevel: 2,
+  lesson: 5,
+  text: 4,
   dialogue: {
-    title: "Thank You & Goodbye",
+    title: "Going Back to the Hotel",
     lines: [
       {
-        speaker: "Students",
-        hanzi: "谢谢！",
-        pinyin: "Xièxie!",
-        english: "Thank you!"
+        speaker: "Narrator",
+        hanzi: "回国前一天，我们去一雪姐家了。",
+        pinyin: "Huí guó qián yì tiān, wǒmen qù Yìxuě jiě jiā le.",
+        english: "The day before returning to our country, we went to Sister Yixue's home.",
       },
       {
-        speaker: "Xiaoyu",
-        hanzi: "不客气！",
-        pinyin: "Bú kèqi!",
-        english: "You're welcome!"
+        speaker: "Narrator",
+        hanzi: "到她家的时候，饭菜都做好了。",
+        pinyin: "Dào tā jiā de shíhou, fàncài dōu zuòhǎo le.",
+        english: "When we arrived at her home, all the food had already been prepared.",
       },
       {
-        speaker: "Wang Yifei",
-        hanzi: "同学们，再见！",
-        pinyin: "Tóngxuémen, zàijiàn!",
-        english: "Goodbye, students!"
+        speaker: "Narrator",
+        hanzi: "刘爷爷还准备了奶茶。",
+        pinyin: "Liú yéye hái zhǔnbèile nǎichá.",
+        english: "Grandpa Liu had also prepared bubble tea.",
       },
       {
-        speaker: "Students",
-        hanzi: "老师，再见！",
-        pinyin: "Lǎoshī, zàijiàn!",
-        english: "Goodbye, teacher!"
-      }
-    ]
+        speaker: "Narrator",
+        hanzi: "因为吃了太多东西，我们吃完饭是走回酒店的。",
+        pinyin: "Yīnwèi chī le tài duō dōngxi, wǒmen chī wán fàn shì zǒu huí jiǔdiàn de.",
+        english: "Because we ate too much, we walked back to the hotel after the meal.",
+      },
+    ],
   },
   vocabulary: [
     {
-      hanzi: "谢谢",
-      pinyin: "xièxie",
-      english: "Thank you",
-      bangla: "ধন্যবাদ",
+      hanzi: "走",
+      pinyin: "zǒu",
+      english: "Walk/Go",
+      bangla: "হাঁটা/যাওয়া",
       characters: [
-        {
-          hanzi: "谢",
-          pinyin: "xiè",
-          meaning: "Thank"
-        }
+        { hanzi: "走", pinyin: "zǒu", meaning: "Walk" },
       ],
       example: {
-        hanzi: "谢谢你！",
-        pinyin: "Xièxie nǐ!",
-        english: "Thank you!",
-        bangla: "ধন্যবাদ!"
+        hanzi: "我们走吧。",
+        pinyin: "Wǒmen zǒu ba.",
+        english: "Let's go.",
+        bangla: "চলো যাই।",
       },
       similar: [
-        {
-          hanzi: "多谢",
-          pinyin: "duōxiè",
-          english: "Many thanks"
-        }
-      ]
+        { hanzi: "去", pinyin: "qù", english: "Go" },
+      ],
     },
     {
-      hanzi: "不客气",
-      pinyin: "bú kèqi",
-      english: "You're welcome",
-      bangla: "স্বাগতম",
+      hanzi: "酒店",
+      pinyin: "jiǔdiàn",
+      english: "Hotel",
+      bangla: "হোটেল",
       characters: [
-        {
-          hanzi: "不",
-          pinyin: "bù",
-          meaning: "Not"
-        },
-        {
-          hanzi: "客气",
-          pinyin: "kèqi",
-          meaning: "Polite"
-        }
+        { hanzi: "酒", pinyin: "jiǔ", meaning: "Alcohol/Drink" },
+        { hanzi: "店", pinyin: "diàn", meaning: "Shop" },
       ],
       example: {
-        hanzi: "不客气！",
-        pinyin: "Bú kèqi!",
-        english: "You're welcome!",
-        bangla: "স্বাগতম!"
+        hanzi: "我住在这家酒店。",
+        pinyin: "Wǒ zhù zài zhè jiā jiǔdiàn.",
+        english: "I live in this hotel.",
+        bangla: "আমি এই হোটেলে থাকি।",
       },
       similar: [
-        {
-          hanzi: "没关系",
-          pinyin: "méi guānxi",
-          english: "It doesn't matter"
-        }
-      ]
+        { hanzi: "饭店", pinyin: "fàndiàn", english: "Hotel/Restaurant" },
+      ],
     },
-    {
-      hanzi: "同学",
-      pinyin: "tóngxué",
-      english: "Classmate",
-      bangla: "সহপাঠী",
-      characters: [
-        {
-          hanzi: "同",
-          pinyin: "tóng",
-          meaning: "Same"
-        },
-        {
-          hanzi: "学",
-          pinyin: "xué",
-          meaning: "Study"
-        }
-      ],
-      example: {
-        hanzi: "他是我的同学。",
-        pinyin: "Tā shì wǒ de tóngxué.",
-        english: "He is my classmate.",
-        bangla: "সে আমার সহপাঠী।"
-      },
-      similar: [
-        {
-          hanzi: "朋友",
-          pinyin: "péngyou",
-          english: "Friend"
-        }
-      ]
-    },
-    {
-      hanzi: "再见",
-      pinyin: "zàijiàn",
-      english: "Goodbye",
-      bangla: "বিদায়",
-      characters: [
-        {
-          hanzi: "再",
-          pinyin: "zài",
-          meaning: "Again"
-        },
-        {
-          hanzi: "见",
-          pinyin: "jiàn",
-          meaning: "See"
-        }
-      ],
-      example: {
-        hanzi: "再见！",
-        pinyin: "Zàijiàn!",
-        english: "Goodbye!",
-        bangla: "বিদায়!"
-      },
-      similar: [
-        {
-          hanzi: "拜拜",
-          pinyin: "bàibài",
-          english: "Bye-bye"
-        }
-      ]
-    }
-  ]
+  ],
 };
