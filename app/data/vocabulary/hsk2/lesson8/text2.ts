@@ -1,255 +1,109 @@
-import type { VocabularyData } from "@/app/types/vocabulary"; // Lesson 1 - Text 2
+// app/data/vocabulary/lesson8-text2.ts
+import { VocabularyData } from '@/app/types/vocabulary';
 
-export const hsk2lesson1text2: VocabularyData = {
+export const hsk2lesson8text2: VocabularyData = {
   hskLevel: 2,
-  lesson: 1,
+  lesson: 8,
   text: 2,
   dialogue: {
-    title: "Greeting in the Classroom",
+    title: "Going to the Movies",
     lines: [
       {
-        speaker: "Teacher",
-        hanzi: "大家好！",
-        pinyin: "Dàjiā hǎo!",
-        english: "Hello everyone!",
+        speaker: "Liu Ming",
+        hanzi: "今天有不少电影，我们看个电影吧。",
+        pinyin: "Jīntiān yǒu bù shǎo diànyǐng, wǒmen kàn ge diànyǐng ba.",
+        english: "There are quite a few movies today. Let's watch a movie.",
       },
       {
-        speaker: "Students",
-        hanzi: "老师好！",
-        pinyin: "Lǎoshī hǎo!",
-        english: "Hello teacher!",
+        speaker: "Wang Yifei",
+        hanzi: "好啊！我们看哪个？",
+        pinyin: "Hǎo a! Wǒmen kàn nǎge?",
+        english: "Sure! Which one should we watch?",
       },
       {
-        speaker: "Student 1",
-        hanzi: "你好！",
-        pinyin: "Nǐ hǎo!",
-        english: "Hello!",
+        speaker: "Liu Ming",
+        hanzi: "我记得你喜欢看爱情片，我们看那个爱情片，怎么样？",
+        pinyin: "Wǒ jìde nǐ xǐhuan kàn àiqíngpiàn, wǒmen kàn nàge àiqíngpiàn, zěnmeyàng?",
+        english: "I remember you like romantic movies. How about we watch that romantic movie?",
       },
       {
-        speaker: "Student 2",
-        hanzi: "你好！",
-        pinyin: "Nǐ hǎo!",
-        english: "Hello!",
+        speaker: "Wang Yifei",
+        hanzi: "还是看这个吧，我看网上说这个电影比那个爱情片更有意思。",
+        pinyin: "Háishi kàn zhège ba, wǒ kàn wǎngshàng shuō zhège diànyǐng bǐ nàge àiqíngpiàn gèng yǒu yìsi.",
+        english: "Let's watch this one instead. I saw online that this movie is more interesting than that romantic movie.",
       },
       {
-        speaker: "Teacher",
-        hanzi: "你们好！",
-        pinyin: "Nǐmen hǎo!",
-        english: "Hello everyone (plural)!",
+        speaker: "Liu Ming",
+        hanzi: "好。我去买票。",
+        pinyin: "Hǎo. Wǒ qù mǎi piào.",
+        english: "Okay. I'll go buy the tickets.",
+      },
+      {
+        speaker: "Wang Yifei",
+        hanzi: "到网上买吧，网上买比在这里买便宜。",
+        pinyin: "Dào wǎngshàng mǎi ba, wǎngshàng mǎi bǐ zài zhèlǐ mǎi piányi.",
+        english: "Let's buy them online. Buying online is cheaper than buying them here.",
       },
     ],
   },
   vocabulary: [
     {
-      hanzi: "大家",
-      pinyin: "dàjiā",
-      english: "Everyone",
-      bangla: "সবাই",
+      hanzi: "记得",
+      pinyin: "jìde",
+      english: "Remember",
+      bangla: "মনে রাখা",
       characters: [
-        {
-          hanzi: "大",
-          pinyin: "dà",
-          meaning: "Big",
-        },
-        {
-          hanzi: "家",
-          pinyin: "jiā",
-          meaning: "Family/Home",
-        },
+        { hanzi: "记", pinyin: "jì", meaning: "To record" },
+        { hanzi: "得", pinyin: "de", meaning: "To get" },
       ],
       example: {
-        hanzi: "大家好！",
-        pinyin: "Dàjiā hǎo!",
-        english: "Hello everyone!",
-        bangla: "সবাইকে হ্যালো!",
+        hanzi: "我记得你的名字。",
+        pinyin: "Wǒ jìde nǐ de míngzi.",
+        english: "I remember your name.",
+        bangla: "আমি তোমার নাম মনে রাখি।",
       },
       similar: [
-        {
-          hanzi: "每人",
-          pinyin: "měi rén",
-          english: "Everyone/Each person",
-        },
+        { hanzi: "记住", pinyin: "jìzhù", english: "Remember" },
       ],
     },
     {
-      hanzi: "好",
-      pinyin: "hǎo",
-      english: "Good",
-      bangla: "ভালো",
+      hanzi: "爱情片",
+      pinyin: "àiqíngpiàn",
+      english: "Romance movie",
+      bangla: "রোমান্স সিনেমা",
       characters: [
-        {
-          hanzi: "女",
-          pinyin: "nǚ",
-          meaning: "Woman",
-        },
-        {
-          hanzi: "子",
-          pinyin: "zǐ",
-          meaning: "Child",
-        },
+        { hanzi: "爱", pinyin: "ài", meaning: "Love" },
+        { hanzi: "情", pinyin: "qíng", meaning: "Affection" },
+        { hanzi: "片", pinyin: "piàn", meaning: "Film" },
       ],
       example: {
-        hanzi: "很好。",
-        pinyin: "Hěn hǎo.",
-        english: "Very good.",
-        bangla: "খুব ভালো।",
+        hanzi: "她喜欢看爱情片。",
+        pinyin: "Tā xǐhuan kàn àiqíngpiàn.",
+        english: "She likes watching romance movies.",
+        bangla: "সে রোমান্স সিনেমা দেখতে পছন্দ করে।",
       },
       similar: [
-        {
-          hanzi: "棒",
-          pinyin: "bàng",
-          english: "Great/Awesome",
-        },
+        { hanzi: "浪漫片", pinyin: "làngmànpiàn", english: "Romance movie" },
       ],
     },
     {
-      hanzi: "学生",
-      pinyin: "xuéshēng",
-      english: "Student",
-      bangla: "ছাত্র",
+      hanzi: "有意思",
+      pinyin: "yǒu yìsi",
+      english: "Interesting",
+      bangla: "আকর্ষণীয়/মজাদার",
       characters: [
-        {
-          hanzi: "学",
-          pinyin: "xué",
-          meaning: "Study/Learn",
-        },
-        {
-          hanzi: "生",
-          pinyin: "shēng",
-          meaning: "Person/Born",
-        },
+        { hanzi: "有", pinyin: "yǒu", meaning: "To have" },
+        { hanzi: "意", pinyin: "yì", meaning: "Meaning" },
+        { hanzi: "思", pinyin: "sī", meaning: "Thought" },
       ],
       example: {
-        hanzi: "我是学生。",
-        pinyin: "Wǒ shì xuéshēng.",
-        english: "I am a student.",
-        bangla: "আমি একজন ছাত্র।",
+        hanzi: "这个汉语课很有意思。",
+        pinyin: "Zhège hànyǔ kè hěn yǒu yìsi.",
+        english: "This Chinese class is very interesting.",
+        bangla: "এই চীনা ক্লাসটি খুব মজাদার।",
       },
       similar: [
-        {
-          hanzi: "同学",
-          pinyin: "tóngxué",
-          english: "Classmate",
-        },
-      ],
-    },
-    {
-      hanzi: "们",
-      pinyin: "men",
-      english: "(plural suffix)",
-      bangla: "বহুবচন প্রত্যয়",
-      characters: [
-        {
-          hanzi: "们",
-          pinyin: "men",
-          meaning: "Plural suffix",
-        },
-      ],
-      example: {
-        hanzi: "我们。",
-        pinyin: "Wǒmen.",
-        english: "We/Us.",
-        bangla: "আমরা।",
-      },
-      similar: [
-        {
-          hanzi: "大家",
-          pinyin: "dàjiā",
-          english: "Everyone",
-        },
-      ],
-    },
-    {
-      hanzi: "老师",
-      pinyin: "lǎoshī",
-      english: "Teacher",
-      bangla: "শিক্ষক",
-      characters: [
-        {
-          hanzi: "老",
-          pinyin: "lǎo",
-          meaning: "Old/Experienced",
-        },
-        {
-          hanzi: "师",
-          pinyin: "shī",
-          meaning: "Master/Expert",
-        },
-      ],
-      example: {
-        hanzi: "老师好。",
-        pinyin: "Lǎoshī hǎo.",
-        english: "Hello teacher.",
-        bangla: "শিক্ষককে হ্যালো।",
-      },
-      similar: [
-        {
-          hanzi: "教师",
-          pinyin: "jiàoshī",
-          english: "Teacher (formal)",
-        },
-      ],
-    },
-    {
-      hanzi: "您",
-      pinyin: "nín",
-      english: "You (polite)",
-      bangla: "আপনি (সম্মানসূচক)",
-      characters: [
-        {
-          hanzi: "你",
-          pinyin: "nǐ",
-          meaning: "You",
-        },
-        {
-          hanzi: "心",
-          pinyin: "xīn",
-          meaning: "Heart (added respect)",
-        },
-      ],
-      example: {
-        hanzi: "您好！",
-        pinyin: "Nín hǎo!",
-        english: "Hello (polite)!",
-        bangla: "আপনাকে হ্যালো!",
-      },
-      similar: [
-        {
-          hanzi: "你",
-          pinyin: "nǐ",
-          english: "You (informal)",
-        },
-      ],
-    },
-    {
-      hanzi: "你们",
-      pinyin: "nǐmen",
-      english: "You (plural)",
-      bangla: "তোমরা",
-      characters: [
-        {
-          hanzi: "你",
-          pinyin: "nǐ",
-          meaning: "You",
-        },
-        {
-          hanzi: "们",
-          pinyin: "men",
-          meaning: "Plural",
-        },
-      ],
-      example: {
-        hanzi: "你们好！",
-        pinyin: "Nǐmen hǎo!",
-        english: "Hello everyone!",
-        bangla: "সবাইকে হ্যালো!",
-      },
-      similar: [
-        {
-          hanzi: "大家",
-          pinyin: "dàjiā",
-          english: "Everyone",
-        },
+        { hanzi: "有趣", pinyin: "yǒuqù", english: "Interesting" },
       ],
     },
   ],
