@@ -17,8 +17,8 @@ import {
   FolderOpen,
   Layers,
 } from "lucide-react";
-import { snippets } from "../data/msgs";
-import { team } from "../data/team";
+import { snippets } from "@/data/msgs";
+import { team } from "@/data/team";
 
 // ============================================
 // DATA

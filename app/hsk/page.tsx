@@ -1,6 +1,6 @@
 // app/hsk/page.tsx
 import Link from 'next/link';
-import { getAllLevels } from '@/app/data/vocabulary';
+import { getAllLevels } from '@/data/vocabulary';
 
 export default function HskPage() {
   const levels = getAllLevels();

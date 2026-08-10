@@ -1,7 +1,7 @@
 // app/hsk/[level]/page.tsx
 import Link from 'next/link';
 import { notFound } from 'next/navigation';
-import { getLevelLessonData } from '@/app/data/vocabulary';
+import { getLevelLessonData } from '@/data/vocabulary';
 
 interface LevelPageProps {
   params: Promise<{

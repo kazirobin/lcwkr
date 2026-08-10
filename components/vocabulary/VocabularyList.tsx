@@ -1,10 +1,10 @@
-'use client';
+"use client";
 
-import { VocabularyData } from '@/app/types/vocabulary';
-import DialogueComponent from './Dialogue';
-import VocabularyCard from './VocabularyCard';
-import { getTextsForLesson } from '@/app/data/vocabulary';
-import Link from 'next/link';
+import { VocabularyData } from "@/types/vocabulary";
+import DialogueComponent from "./Dialogue";
+import VocabularyCard from "./VocabularyCard";
+import { getTextsForLesson } from "@/data/vocabulary";
+import Link from "next/link";
 
 interface VocabularyListProps {
   data: VocabularyData;
@@ -12,26 +12,33 @@ interface VocabularyListProps {
   text: string;
 }
 
-export default function VocabularyList({ data, level, text }: VocabularyListProps) {
+export default function VocabularyList({
+  data,
+  level,
+  text,
+}: VocabularyListProps) {
   const levelNum = parseInt(level);
   const textNum = parseInt(text);
   const lessonNum = data.lesson;
-  
+
   // Get all texts for this lesson
   const textsInLesson = getTextsForLesson(levelNum, lessonNum);
   const currentIndex = textsInLesson.indexOf(textNum);
-  
+
   // Get prev and next within the same lesson
   const prevText = currentIndex > 0 ? textsInLesson[currentIndex - 1] : null;
-  const nextText = currentIndex < textsInLesson.length - 1 ? textsInLesson[currentIndex + 1] : null;
-  
+  const nextText =
+    currentIndex < textsInLesson.length - 1
+      ? textsInLesson[currentIndex + 1]
+      : null;
+
   return (
     <div className="space-y-8">
       {/* Navigation */}
       <div className="flex flex-wrap justify-between items-center gap-4">
         <div className="flex gap-4">
           {prevText && (
-            <Link 
+            <Link
               href={`/hsk/${level}/lesson/${lessonNum}/text/${prevText}`}
               className="px-4 py-2 bg-gray-100 hover:bg-gray-200 text-gray-700 rounded-lg transition-colors"
             >
@@ -39,19 +46,19 @@ export default function VocabularyList({ data, level, text }: VocabularyListProp
             </Link>
           )}
         </div>
-        
+
         <div className="flex gap-2">
-          <Link 
-            href={`/hsk/${level}`} 
+          <Link
+            href={`/hsk/${level}`}
             className="px-4 py-2 bg-blue-500 hover:bg-blue-600 text-white rounded-lg transition-colors"
           >
             Back to Level {level} Less
           </Link>
         </div>
-        
+
         <div className="flex gap-4">
           {nextText && (
-            <Link 
+            <Link
               href={`/hsk/${level}/lesson/${lessonNum}/text/${nextText}`}
               className="px-4 py-2 bg-gray-100 hover:bg-gray-200 text-gray-700 rounded-lg transition-colors"
             >
@@ -71,8 +78,8 @@ export default function VocabularyList({ data, level, text }: VocabularyListProp
               href={`/hsk/${level}/lesson/${lessonNum}/text/${t}`}
               className={`px-3 py-1 rounded-lg transition-colors ${
                 t === textNum
-                  ? 'bg-blue-500 text-white'
-                  : 'bg-gray-100 hover:bg-gray-200 text-gray-700'
+                  ? "bg-blue-500 text-white"
+                  : "bg-gray-100 hover:bg-gray-200 text-gray-700"
               }`}
             >
               Text {t}

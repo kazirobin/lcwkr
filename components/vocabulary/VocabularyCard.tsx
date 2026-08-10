@@ -1,7 +1,7 @@
-'use client';
+"use client";
 
-import { VocabularyItem } from '@/app/types/vocabulary';
-import { useState } from 'react';
+import { VocabularyItem } from "@/types/vocabulary";
+import { useState } from "react";
 
 interface VocabularyCardProps {
   vocabulary: VocabularyItem;
@@ -16,7 +16,7 @@ export default function VocabularyCard({ vocabulary }: VocabularyCardProps) {
   };
 
   return (
-    <div 
+    <div
       className="bg-white rounded-xl shadow-md hover:shadow-lg transition-all duration-300 overflow-hidden border border-gray-200 cursor-pointer"
       onClick={toggleExpand}
     >
@@ -27,9 +27,7 @@ export default function VocabularyCard({ vocabulary }: VocabularyCardProps) {
             <h3 className="text-2xl font-bold text-gray-800">
               {vocabulary.hanzi}
             </h3>
-            <p className="text-sm text-gray-600 mt-1">
-              {vocabulary.pinyin}
-            </p>
+            <p className="text-sm text-gray-600 mt-1">{vocabulary.pinyin}</p>
           </div>
           <span className="px-3 py-1 bg-blue-500/10 text-blue-600 rounded-full text-xs font-medium whitespace-nowrap ml-2">
             {vocabulary.english}
@@ -37,9 +35,7 @@ export default function VocabularyCard({ vocabulary }: VocabularyCardProps) {
         </div>
 
         {/* Bengali */}
-        <p className="text-gray-700 mt-2 text-sm">
-          {vocabulary.bangla}
-        </p>
+        <p className="text-gray-700 mt-2 text-sm">{vocabulary.bangla}</p>
 
         {/* Expanded Content */}
         {isExpanded && (
@@ -52,8 +48,13 @@ export default function VocabularyCard({ vocabulary }: VocabularyCardProps) {
                 </h4>
                 <div className="flex flex-wrap gap-2">
                   {vocabulary.characters.map((char, idx) => (
-                    <div key={idx} className="bg-gray-100 px-3 py-1.5 rounded-lg">
-                      <span className="font-medium text-gray-800">{char.hanzi}</span>
+                    <div
+                      key={idx}
+                      className="bg-gray-100 px-3 py-1.5 rounded-lg"
+                    >
+                      <span className="font-medium text-gray-800">
+                        {char.hanzi}
+                      </span>
                       <span className="text-xs text-gray-600 ml-2">
                         {char.pinyin}
                       </span>
@@ -97,10 +98,11 @@ export default function VocabularyCard({ vocabulary }: VocabularyCardProps) {
                 </h4>
                 <div className="flex flex-wrap gap-2">
                   {vocabulary.similar.map((sim, idx) => (
-                    <div key={idx} className="px-3 py-1 bg-purple-50 rounded-full">
-                      <span className="text-sm text-gray-800">
-                        {sim.hanzi} 
-                      </span>
+                    <div
+                      key={idx}
+                      className="px-3 py-1 bg-purple-50 rounded-full"
+                    >
+                      <span className="text-sm text-gray-800">{sim.hanzi}</span>
                       <span className="text-xs text-gray-600 ml-1">
                         ({sim.pinyin})
                       </span>
@@ -113,11 +115,11 @@ export default function VocabularyCard({ vocabulary }: VocabularyCardProps) {
         )}
 
         {/* Toggle Button */}
-        <button 
+        <button
           className="mt-3 text-sm text-blue-600 hover:text-blue-800 transition-colors font-medium"
           onClick={toggleExpand}
         >
-          {isExpanded ? 'Show less ▲' : 'Show more ▼'}
+          {isExpanded ? "Show less ▲" : "Show more ▼"}
         </button>
       </div>
     </div>

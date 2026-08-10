@@ -1,14 +1,9 @@
 "use client";
 
-import {
-  createContext,
-  useContext,
-  useEffect,
-  useState,
-} from "react";
+import { createContext, useContext, useEffect, useState } from "react";
 
-import { translations } from "./../data/index";
-import type { Language } from "../types/language";
+import type { Language } from "../../types/language";
+import { translations } from "@/data/index";
 
 type ContextType = {
   language: Language;
@@ -18,11 +13,7 @@ type ContextType = {
 
 const LanguageContext = createContext<ContextType | null>(null);
 
-export function LanguageProvider({
-  children,
-}: {
-  children: React.ReactNode;
-}) {
+export function LanguageProvider({ children }: { children: React.ReactNode }) {
   const [language, setLanguage] = useState<Language>(() => {
     if (typeof window !== "undefined") {
       const saved = localStorage.getItem("language") as Language;
@@ -36,7 +27,7 @@ export function LanguageProvider({
 
     document.documentElement.classList.remove("font-en", "font-bn");
     document.documentElement.classList.add(
-      language === "bn" ? "font-bn" : "font-en"
+      language === "bn" ? "font-bn" : "font-en",
     );
   }, [language]);
 
@@ -56,8 +47,7 @@ export function LanguageProvider({
 export const useLanguage = () => {
   const context = useContext(LanguageContext);
 
-  if (!context)
-    throw new Error("useLanguage must be inside LanguageProvider");
+  if (!context) throw new Error("useLanguage must be inside LanguageProvider");
 
   return context;
 };

@@ -1,7 +1,7 @@
 // app/hsk/[level]/lesson/[lessonNumber]/text/[textNumber]/page.tsx
 import Link from 'next/link';
 import { notFound } from 'next/navigation';
-import { getLessonTextData } from '@/app/data/vocabulary';
+import { getLessonTextData } from '@/data/vocabulary';
 import VocabularyList from './../../../../../../../components/vocabulary/VocabularyList';
 
 interface TextPageProps {

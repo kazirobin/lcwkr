@@ -16,8 +16,8 @@ import {
   Layers,
   ExternalLink,
 } from "lucide-react";
-import { communityData } from "../data/communityData";
 import { useLanguage } from "../context/LanguageContext";
+import { communityData } from "@/data/communityData";
 
 // ============================================
 // COMMUNITY DATA
