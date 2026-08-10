@@ -1,255 +1,88 @@
-import type { VocabularyData } from "@/app/types/vocabulary"; // Lesson 1 - Text 2
+// app/data/vocabulary/lesson3-text2.ts
+import { VocabularyData } from '@/app/types/vocabulary';
 
-export const hsk2lesson1text2: VocabularyData = {
+export const hsk2lesson3text2: VocabularyData = {
   hskLevel: 2,
-  lesson: 1,
+  lesson: 3,
   text: 2,
   dialogue: {
-    title: "Greeting in the Classroom",
+    title: "Planning a Trip",
     lines: [
       {
-        speaker: "Teacher",
-        hanzi: "大家好！",
-        pinyin: "Dàjiā hǎo!",
-        english: "Hello everyone!",
+        speaker: "Liu Ming",
+        hanzi: "吃个苹果吧，我都洗好了。",
+        pinyin: "Chī ge píngguǒ ba, wǒ dōu xǐhǎo le.",
+        english: "Have an apple. I've already washed them.",
       },
       {
-        speaker: "Students",
-        hanzi: "老师好！",
-        pinyin: "Lǎoshī hǎo!",
-        english: "Hello teacher!",
+        speaker: "Wang Yixue",
+        hanzi: "好的。",
+        pinyin: "Hǎo de.",
+        english: "Okay.",
       },
       {
-        speaker: "Student 1",
-        hanzi: "你好！",
-        pinyin: "Nǐ hǎo!",
-        english: "Hello!",
+        speaker: "Liu Ming",
+        hanzi: "就在桌子上，你自己拿。",
+        pinyin: "Jiù zài zhuōzi shàng, nǐ zìjǐ ná.",
+        english: "They're right on the table. Take one yourself.",
       },
       {
-        speaker: "Student 2",
-        hanzi: "你好！",
-        pinyin: "Nǐ hǎo!",
-        english: "Hello!",
+        speaker: "Wang Yixue",
+        hanzi: "我去洗洗手。对了，我们去西安旅游，怎么样？",
+        pinyin: "Wǒ qù xǐxi shǒu. Duì le, wǒmen qù Xī'ān lǚyóu, zěnmeyàng?",
+        english: "I'll go wash my hands. By the way, how about we travel to Xi'an?",
       },
       {
-        speaker: "Teacher",
-        hanzi: "你们好！",
-        pinyin: "Nǐmen hǎo!",
-        english: "Hello everyone (plural)!",
+        speaker: "Liu Ming",
+        hanzi: "为什么想去西安？",
+        pinyin: "Wèi shénme xiǎng qù Xī'ān?",
+        english: "Why do you want to go to Xi'an?",
+      },
+      {
+        speaker: "Wang Yixue",
+        hanzi: "我看了看网上的介绍，这个时候去西安很好！",
+        pinyin: "Wǒ kàn le kàn wǎngshàng de jièshào, zhège shíhou qù Xī'ān hěn bùcuò!",
+        english: "I looked at some information online. It's really nice to go to Xi'an at this time!",
       },
     ],
   },
   vocabulary: [
     {
-      hanzi: "大家",
-      pinyin: "dàjiā",
-      english: "Everyone",
-      bangla: "সবাই",
+      hanzi: "一起",
+      pinyin: "yìqǐ",
+      english: "Together",
+      bangla: "একসাথে",
       characters: [
-        {
-          hanzi: "大",
-          pinyin: "dà",
-          meaning: "Big",
-        },
-        {
-          hanzi: "家",
-          pinyin: "jiā",
-          meaning: "Family/Home",
-        },
+        { hanzi: "一", pinyin: "yī", meaning: "One" },
+        { hanzi: "起", pinyin: "qǐ", meaning: "Rise/Start" },
       ],
       example: {
-        hanzi: "大家好！",
-        pinyin: "Dàjiā hǎo!",
-        english: "Hello everyone!",
-        bangla: "সবাইকে হ্যালো!",
+        hanzi: "我们一起去吃饭吧。",
+        pinyin: "Wǒmen yìqǐ qù chīfàn ba.",
+        english: "Let's go eat together.",
+        bangla: "চলো আমরা একসাথে খেতে যাই।",
       },
       similar: [
-        {
-          hanzi: "每人",
-          pinyin: "měi rén",
-          english: "Everyone/Each person",
-        },
+        { hanzi: "一同", pinyin: "yìtóng", english: "Together" },
       ],
     },
     {
-      hanzi: "好",
-      pinyin: "hǎo",
-      english: "Good",
-      bangla: "ভালো",
+      hanzi: "出去",
+      pinyin: "chūqù",
+      english: "Go out",
+      bangla: "বাইরে যাওয়া",
       characters: [
-        {
-          hanzi: "女",
-          pinyin: "nǚ",
-          meaning: "Woman",
-        },
-        {
-          hanzi: "子",
-          pinyin: "zǐ",
-          meaning: "Child",
-        },
+        { hanzi: "出", pinyin: "chū", meaning: "Go out" },
+        { hanzi: "去", pinyin: "qù", meaning: "Go" },
       ],
       example: {
-        hanzi: "很好。",
-        pinyin: "Hěn hǎo.",
-        english: "Very good.",
-        bangla: "খুব ভালো।",
+        hanzi: "他已经出去了。",
+        pinyin: "Tā yǐjīng chūqù le.",
+        english: "He has already gone out.",
+        bangla: "সে ইতিমধ্যেই বাইরে চলে গেছে।",
       },
       similar: [
-        {
-          hanzi: "棒",
-          pinyin: "bàng",
-          english: "Great/Awesome",
-        },
-      ],
-    },
-    {
-      hanzi: "学生",
-      pinyin: "xuéshēng",
-      english: "Student",
-      bangla: "ছাত্র",
-      characters: [
-        {
-          hanzi: "学",
-          pinyin: "xué",
-          meaning: "Study/Learn",
-        },
-        {
-          hanzi: "生",
-          pinyin: "shēng",
-          meaning: "Person/Born",
-        },
-      ],
-      example: {
-        hanzi: "我是学生。",
-        pinyin: "Wǒ shì xuéshēng.",
-        english: "I am a student.",
-        bangla: "আমি একজন ছাত্র।",
-      },
-      similar: [
-        {
-          hanzi: "同学",
-          pinyin: "tóngxué",
-          english: "Classmate",
-        },
-      ],
-    },
-    {
-      hanzi: "们",
-      pinyin: "men",
-      english: "(plural suffix)",
-      bangla: "বহুবচন প্রত্যয়",
-      characters: [
-        {
-          hanzi: "们",
-          pinyin: "men",
-          meaning: "Plural suffix",
-        },
-      ],
-      example: {
-        hanzi: "我们。",
-        pinyin: "Wǒmen.",
-        english: "We/Us.",
-        bangla: "আমরা।",
-      },
-      similar: [
-        {
-          hanzi: "大家",
-          pinyin: "dàjiā",
-          english: "Everyone",
-        },
-      ],
-    },
-    {
-      hanzi: "老师",
-      pinyin: "lǎoshī",
-      english: "Teacher",
-      bangla: "শিক্ষক",
-      characters: [
-        {
-          hanzi: "老",
-          pinyin: "lǎo",
-          meaning: "Old/Experienced",
-        },
-        {
-          hanzi: "师",
-          pinyin: "shī",
-          meaning: "Master/Expert",
-        },
-      ],
-      example: {
-        hanzi: "老师好。",
-        pinyin: "Lǎoshī hǎo.",
-        english: "Hello teacher.",
-        bangla: "শিক্ষককে হ্যালো।",
-      },
-      similar: [
-        {
-          hanzi: "教师",
-          pinyin: "jiàoshī",
-          english: "Teacher (formal)",
-        },
-      ],
-    },
-    {
-      hanzi: "您",
-      pinyin: "nín",
-      english: "You (polite)",
-      bangla: "আপনি (সম্মানসূচক)",
-      characters: [
-        {
-          hanzi: "你",
-          pinyin: "nǐ",
-          meaning: "You",
-        },
-        {
-          hanzi: "心",
-          pinyin: "xīn",
-          meaning: "Heart (added respect)",
-        },
-      ],
-      example: {
-        hanzi: "您好！",
-        pinyin: "Nín hǎo!",
-        english: "Hello (polite)!",
-        bangla: "আপনাকে হ্যালো!",
-      },
-      similar: [
-        {
-          hanzi: "你",
-          pinyin: "nǐ",
-          english: "You (informal)",
-        },
-      ],
-    },
-    {
-      hanzi: "你们",
-      pinyin: "nǐmen",
-      english: "You (plural)",
-      bangla: "তোমরা",
-      characters: [
-        {
-          hanzi: "你",
-          pinyin: "nǐ",
-          meaning: "You",
-        },
-        {
-          hanzi: "们",
-          pinyin: "men",
-          meaning: "Plural",
-        },
-      ],
-      example: {
-        hanzi: "你们好！",
-        pinyin: "Nǐmen hǎo!",
-        english: "Hello everyone!",
-        bangla: "সবাইকে হ্যালো!",
-      },
-      similar: [
-        {
-          hanzi: "大家",
-          pinyin: "dàjiā",
-          english: "Everyone",
-        },
+        { hanzi: "外出", pinyin: "wàichū", english: "Go out" },
       ],
     },
   ],
