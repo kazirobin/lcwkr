@@ -24,7 +24,7 @@ const navLinks: {
   },
   {
     key: "vocabulary",
-    href: "/vocabulary",
+    href: "/hsk",
   },
   {
     key: "apps",

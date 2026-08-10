@@ -2,6 +2,9 @@
 import type { VocabularyData } from "@/app/types/vocabulary";
 
 export const lesson13Text3Data: VocabularyData = {
+  
+    hskLevel: 1,
+
   lesson: 13,
   text: 3,
 dialogue: {
