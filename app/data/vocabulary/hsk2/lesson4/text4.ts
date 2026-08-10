@@ -1,160 +1,46 @@
-// app/data/vocabularyData.ts
+// app/data/vocabulary/lesson4-text4.ts
+import { VocabularyData } from '@/app/types/vocabulary';
 
-import type { VocabularyData } from "@/app/types/vocabulary";
-
-// Lesson 1 - Text 3
-export const hsk2lesson1text3: VocabularyData = {
-    hskLevel: 2,
-  lesson: 1,
-  text: 3,
+export const hsk2lesson4text4: VocabularyData = {
+  hskLevel: 2,
+  lesson: 4,
+  text: 4,
   dialogue: {
-    title: "Thank You & Goodbye",
+    title: "Colors",
     lines: [
       {
-        speaker: "Students",
-        hanzi: "谢谢！",
-        pinyin: "Xièxie!",
-        english: "Thank you!"
+        speaker: "Narrator",
+        hanzi: "颜色在我们的生活中非常重要。每个人都有自己的颜色，红色代表幸福，白色代表纯洁，绿色代表自然。",
+        pinyin: "Yánsè zài wǒmen de shēnghuó zhōng fēicháng zhòngyào. Měi gè rén dōu yǒu zìjǐ de yánsè, hóngsè dàibiǎo xìngfú, báisè dàibiǎo chúnjié, lǜsè dàibiǎo zìrán.",
+        english: "Colors are very important in our lives. Everyone has their own color. Red represents happiness, white represents purity, and green represents nature.",
       },
       {
-        speaker: "Xiaoyu",
-        hanzi: "不客气！",
-        pinyin: "Bú kèqi!",
-        english: "You're welcome!"
+        speaker: "Narrator",
+        hanzi: "买衣服的时候，你会选择什么颜色的衣服？",
+        pinyin: "Mǎi yīfú de shíhou, nǐ huì xuǎnzé shénme yánsè de yīfú?",
+        english: "When buying clothes, what color of clothes would you choose?",
       },
-      {
-        speaker: "Wang Yifei",
-        hanzi: "同学们，再见！",
-        pinyin: "Tóngxuémen, zàijiàn!",
-        english: "Goodbye, students!"
-      },
-      {
-        speaker: "Students",
-        hanzi: "老师，再见！",
-        pinyin: "Lǎoshī, zàijiàn!",
-        english: "Goodbye, teacher!"
-      }
-    ]
+    ],
   },
   vocabulary: [
     {
-      hanzi: "谢谢",
-      pinyin: "xièxie",
-      english: "Thank you",
-      bangla: "ধন্যবাদ",
+      hanzi: "颜色",
+      pinyin: "yánsè",
+      english: "Color",
+      bangla: "রঙ",
       characters: [
-        {
-          hanzi: "谢",
-          pinyin: "xiè",
-          meaning: "Thank"
-        }
+        { hanzi: "颜", pinyin: "yán", meaning: "Face/Expression" },
+        { hanzi: "色", pinyin: "sè", meaning: "Color/Look" },
       ],
       example: {
-        hanzi: "谢谢你！",
-        pinyin: "Xièxie nǐ!",
-        english: "Thank you!",
-        bangla: "ধন্যবাদ!"
+        hanzi: "你喜欢什么颜色？",
+        pinyin: "Nǐ xǐhuan shénme yánsè?",
+        english: "What color do you like?",
+        bangla: "তুমি কোন রঙ পছন্দ করো?",
       },
       similar: [
-        {
-          hanzi: "多谢",
-          pinyin: "duōxiè",
-          english: "Many thanks"
-        }
-      ]
+        { hanzi: "色彩", pinyin: "sècǎi", english: "Color/Hue" },
+      ],
     },
-    {
-      hanzi: "不客气",
-      pinyin: "bú kèqi",
-      english: "You're welcome",
-      bangla: "স্বাগতম",
-      characters: [
-        {
-          hanzi: "不",
-          pinyin: "bù",
-          meaning: "Not"
-        },
-        {
-          hanzi: "客气",
-          pinyin: "kèqi",
-          meaning: "Polite"
-        }
-      ],
-      example: {
-        hanzi: "不客气！",
-        pinyin: "Bú kèqi!",
-        english: "You're welcome!",
-        bangla: "স্বাগতম!"
-      },
-      similar: [
-        {
-          hanzi: "没关系",
-          pinyin: "méi guānxi",
-          english: "It doesn't matter"
-        }
-      ]
-    },
-    {
-      hanzi: "同学",
-      pinyin: "tóngxué",
-      english: "Classmate",
-      bangla: "সহপাঠী",
-      characters: [
-        {
-          hanzi: "同",
-          pinyin: "tóng",
-          meaning: "Same"
-        },
-        {
-          hanzi: "学",
-          pinyin: "xué",
-          meaning: "Study"
-        }
-      ],
-      example: {
-        hanzi: "他是我的同学。",
-        pinyin: "Tā shì wǒ de tóngxué.",
-        english: "He is my classmate.",
-        bangla: "সে আমার সহপাঠী।"
-      },
-      similar: [
-        {
-          hanzi: "朋友",
-          pinyin: "péngyou",
-          english: "Friend"
-        }
-      ]
-    },
-    {
-      hanzi: "再见",
-      pinyin: "zàijiàn",
-      english: "Goodbye",
-      bangla: "বিদায়",
-      characters: [
-        {
-          hanzi: "再",
-          pinyin: "zài",
-          meaning: "Again"
-        },
-        {
-          hanzi: "见",
-          pinyin: "jiàn",
-          meaning: "See"
-        }
-      ],
-      example: {
-        hanzi: "再见！",
-        pinyin: "Zàijiàn!",
-        english: "Goodbye!",
-        bangla: "বিদায়!"
-      },
-      similar: [
-        {
-          hanzi: "拜拜",
-          pinyin: "bàibài",
-          english: "Bye-bye"
-        }
-      ]
-    }
-  ]
+  ],
 };
