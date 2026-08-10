@@ -1,255 +1,112 @@
-import type { VocabularyData } from "@/app/types/vocabulary"; // Lesson 1 - Text 2
+// app/data/vocabulary/lesson9-text2.ts
+import { VocabularyData } from '@/app/types/vocabulary';
 
-export const hsk2lesson1text2: VocabularyData = {
+export const hsk2lesson9text2: VocabularyData = {
   hskLevel: 2,
-  lesson: 1,
+  lesson: 9,
   text: 2,
   dialogue: {
-    title: "Greeting in the Classroom",
+    title: "Milk Tea or Coffee",
     lines: [
       {
-        speaker: "Teacher",
-        hanzi: "大家好！",
-        pinyin: "Dàjiā hǎo!",
-        english: "Hello everyone!",
+        speaker: "Wang Yixue",
+        hanzi: "门口有家奶茶店。你想喝杯奶茶吗？",
+        pinyin: "Ménkǒu yǒu jiā nǎichádiàn. Nǐ xiǎng hē bēi nǎichá ma?",
+        english: "There is a milk tea shop at the entrance. Do you want to have a cup of milk tea?",
       },
       {
-        speaker: "Students",
-        hanzi: "老师好！",
-        pinyin: "Lǎoshī hǎo!",
-        english: "Hello teacher!",
+        speaker: "Liu Ming",
+        hanzi: "我想喝咖啡，还是去咖啡店吧。",
+        pinyin: "Wǒ xiǎng hē kāfēi, háishi qù kāfēidiàn ba.",
+        english: "I want to drink coffee. Let's go to the coffee shop instead.",
       },
       {
-        speaker: "Student 1",
-        hanzi: "你好！",
-        pinyin: "Nǐ hǎo!",
-        english: "Hello!",
+        speaker: "Wang Yixue",
+        hanzi: "咖啡店离这儿有点儿远。",
+        pinyin: "Kāfēidiàn lí zhèr yǒudiǎnr yuǎn.",
+        english: "The coffee shop is a little far from here.",
       },
       {
-        speaker: "Student 2",
-        hanzi: "你好！",
-        pinyin: "Nǐ hǎo!",
-        english: "Hello!",
+        speaker: "Liu Ming",
+        hanzi: "没关系，那家店的咖啡很好喝。",
+        pinyin: "Méi guānxi, nà jiā diàn de kāfēi hěn hǎo hē.",
+        english: "That's okay. The coffee at that shop is very good.",
       },
       {
-        speaker: "Teacher",
-        hanzi: "你们好！",
-        pinyin: "Nǐmen hǎo!",
-        english: "Hello everyone (plural)!",
+        speaker: "Wang Yixue",
+        hanzi: "那你等一下，我去买杯奶茶。",
+        pinyin: "Nà nǐ děng yíxià, wǒ qù mǎi bēi nǎichá.",
+        english: "Then wait a moment. I'll go buy a cup of milk tea.",
+      },
+      {
+        speaker: "Liu Ming",
+        hanzi: "你不想喝咖啡吗？",
+        pinyin: "Nǐ bù xiǎng hē kāfēi ma?",
+        english: "Don't you want to drink coffee?",
+      },
+      {
+        speaker: "Wang Yixue",
+        hanzi: "喝了咖啡，晚上就别想睡觉了。",
+        pinyin: "Hē le kāfēi, wǎnshang jiù bié xiǎng shuìjiào le.",
+        english: "If I drink coffee, I won't be able to sleep at night.",
       },
     ],
   },
   vocabulary: [
     {
-      hanzi: "大家",
-      pinyin: "dàjiā",
-      english: "Everyone",
-      bangla: "সবাই",
+      hanzi: "门口",
+      pinyin: "ménkǒu",
+      english: "Entrance",
+      bangla: "দরজা/প্রবেশদ্বার",
       characters: [
-        {
-          hanzi: "大",
-          pinyin: "dà",
-          meaning: "Big",
-        },
-        {
-          hanzi: "家",
-          pinyin: "jiā",
-          meaning: "Family/Home",
-        },
+        { hanzi: "门", pinyin: "mén", meaning: "Door" },
+        { hanzi: "口", pinyin: "kǒu", meaning: "Mouth/Opening" },
       ],
       example: {
-        hanzi: "大家好！",
-        pinyin: "Dàjiā hǎo!",
-        english: "Hello everyone!",
-        bangla: "সবাইকে হ্যালো!",
+        hanzi: "我们在门口见面吧。",
+        pinyin: "Wǒmen zài ménkǒu jiànmiàn ba.",
+        english: "Let's meet at the entrance.",
+        bangla: "আমরা দরজার সামনে দেখা করি।",
       },
       similar: [
-        {
-          hanzi: "每人",
-          pinyin: "měi rén",
-          english: "Everyone/Each person",
-        },
+        { hanzi: "入口", pinyin: "rùkǒu", english: "Entrance" },
       ],
     },
     {
-      hanzi: "好",
-      pinyin: "hǎo",
-      english: "Good",
-      bangla: "ভালো",
+      hanzi: "咖啡",
+      pinyin: "kāfēi",
+      english: "Coffee",
+      bangla: "কফি",
       characters: [
-        {
-          hanzi: "女",
-          pinyin: "nǚ",
-          meaning: "Woman",
-        },
-        {
-          hanzi: "子",
-          pinyin: "zǐ",
-          meaning: "Child",
-        },
+        { hanzi: "咖", pinyin: "kā", meaning: "Coffee (phonetic)" },
+        { hanzi: "啡", pinyin: "fēi", meaning: "Coffee (phonetic)" },
       ],
       example: {
-        hanzi: "很好。",
-        pinyin: "Hěn hǎo.",
-        english: "Very good.",
-        bangla: "খুব ভালো।",
+        hanzi: "我喜欢喝咖啡。",
+        pinyin: "Wǒ xǐhuān hē kāfēi.",
+        english: "I like to drink coffee.",
+        bangla: "আমি কফি খেতে পছন্দ করি।",
       },
       similar: [
-        {
-          hanzi: "棒",
-          pinyin: "bàng",
-          english: "Great/Awesome",
-        },
+        { hanzi: "茶", pinyin: "chá", english: "Tea" },
       ],
     },
     {
-      hanzi: "学生",
-      pinyin: "xuéshēng",
-      english: "Student",
-      bangla: "ছাত্র",
+      hanzi: "离",
+      pinyin: "lí",
+      english: "Away from",
+      bangla: "থেকে দূরে",
       characters: [
-        {
-          hanzi: "学",
-          pinyin: "xué",
-          meaning: "Study/Learn",
-        },
-        {
-          hanzi: "生",
-          pinyin: "shēng",
-          meaning: "Person/Born",
-        },
+        { hanzi: "离", pinyin: "lí", meaning: "Leave/Distance" },
       ],
       example: {
-        hanzi: "我是学生。",
-        pinyin: "Wǒ shì xuéshēng.",
-        english: "I am a student.",
-        bangla: "আমি একজন ছাত্র।",
+        hanzi: "我家离学校很近。",
+        pinyin: "Wǒ jiā lí xuéxiào hěn jìn.",
+        english: "My home is very close to the school.",
+        bangla: "আমার বাড়ি স্কুলের খুব কাছে।",
       },
       similar: [
-        {
-          hanzi: "同学",
-          pinyin: "tóngxué",
-          english: "Classmate",
-        },
-      ],
-    },
-    {
-      hanzi: "们",
-      pinyin: "men",
-      english: "(plural suffix)",
-      bangla: "বহুবচন প্রত্যয়",
-      characters: [
-        {
-          hanzi: "们",
-          pinyin: "men",
-          meaning: "Plural suffix",
-        },
-      ],
-      example: {
-        hanzi: "我们。",
-        pinyin: "Wǒmen.",
-        english: "We/Us.",
-        bangla: "আমরা।",
-      },
-      similar: [
-        {
-          hanzi: "大家",
-          pinyin: "dàjiā",
-          english: "Everyone",
-        },
-      ],
-    },
-    {
-      hanzi: "老师",
-      pinyin: "lǎoshī",
-      english: "Teacher",
-      bangla: "শিক্ষক",
-      characters: [
-        {
-          hanzi: "老",
-          pinyin: "lǎo",
-          meaning: "Old/Experienced",
-        },
-        {
-          hanzi: "师",
-          pinyin: "shī",
-          meaning: "Master/Expert",
-        },
-      ],
-      example: {
-        hanzi: "老师好。",
-        pinyin: "Lǎoshī hǎo.",
-        english: "Hello teacher.",
-        bangla: "শিক্ষককে হ্যালো।",
-      },
-      similar: [
-        {
-          hanzi: "教师",
-          pinyin: "jiàoshī",
-          english: "Teacher (formal)",
-        },
-      ],
-    },
-    {
-      hanzi: "您",
-      pinyin: "nín",
-      english: "You (polite)",
-      bangla: "আপনি (সম্মানসূচক)",
-      characters: [
-        {
-          hanzi: "你",
-          pinyin: "nǐ",
-          meaning: "You",
-        },
-        {
-          hanzi: "心",
-          pinyin: "xīn",
-          meaning: "Heart (added respect)",
-        },
-      ],
-      example: {
-        hanzi: "您好！",
-        pinyin: "Nín hǎo!",
-        english: "Hello (polite)!",
-        bangla: "আপনাকে হ্যালো!",
-      },
-      similar: [
-        {
-          hanzi: "你",
-          pinyin: "nǐ",
-          english: "You (informal)",
-        },
-      ],
-    },
-    {
-      hanzi: "你们",
-      pinyin: "nǐmen",
-      english: "You (plural)",
-      bangla: "তোমরা",
-      characters: [
-        {
-          hanzi: "你",
-          pinyin: "nǐ",
-          meaning: "You",
-        },
-        {
-          hanzi: "们",
-          pinyin: "men",
-          meaning: "Plural",
-        },
-      ],
-      example: {
-        hanzi: "你们好！",
-        pinyin: "Nǐmen hǎo!",
-        english: "Hello everyone!",
-        bangla: "সবাইকে হ্যালো!",
-      },
-      similar: [
-        {
-          hanzi: "大家",
-          pinyin: "dàjiā",
-          english: "Everyone",
-        },
+        { hanzi: "距", pinyin: "jù", english: "From/Distance" },
       ],
     },
   ],
