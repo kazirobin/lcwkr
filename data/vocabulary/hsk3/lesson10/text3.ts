@@ -1,98 +1,158 @@
 // app/data/vocabulary/lesson10-text3.ts
 import { VocabularyData } from "@/types/vocabulary";
 
-export const hsk2lesson10text3: VocabularyData = {
-  hskLevel: 2,
+export const hsk3lesson10text3: VocabularyData = {
+  hskLevel: 3,
   lesson: 10,
   text: 3,
   dialogue: {
-    title: "After the Exam",
+    title: "Asking the Teacher",
     lines: [
       {
+        speaker: "Classmate",
+        hanzi: "李老师，书上有几个问题，想问问您。",
+        pinyin: "Lǐ lǎoshī, shū shang yǒu jǐ gè wèntí, wǒmen xiǎng wènwen nín.",
+        english: "Teacher Li, there are a few questions in the book that we'd like to ask you.",
+      },
+      {
+        speaker: "Teacher Li",
+        hanzi: "好，坐下说吧，哪个题不会？",
+        pinyin: "Hǎo, zuò xià shuō ba, nǎ gè tí bú huì?",
+        english: "Sure, sit down and tell me. Which question don't you understand?",
+      },
+      {
+        speaker: "Classmate",
+        hanzi: "书上第五页的这个对话我看不懂，小雪也不明白。",
+        pinyin: "Shū shang dì-wǔ yè de zhège duìhuà wǒ kàn bù dǒng, Xiǎoxuě yě bù míngbai.",
+        english: "I don't understand this dialogue on page 5 of the book, and Xiaoxue doesn't get it either.",
+      },
+      {
+        speaker: "Teacher Li",
+        hanzi: "我课上讲过这几句话，再给你们讲一遍。",
+        pinyin: "Wǒ kè shang jiǎngguò zhè jǐ jù huà, zài gěi nǐmen jiǎng yí biàn.",
+        english: "I explained these sentences in class, let me explain them to you once more.",
+      },
+      {
+        speaker: "Classmate",
+        hanzi: "我终于懂了。这些句子一点儿也不难。",
+        pinyin: "Wǒ zhōngyú dǒng le. Zhèxiē jùzi yìdiǎnr yě bù nán.",
+        english: "I finally understand. These sentences aren't difficult at all.",
+      },
+      {
         speaker: "Liu Xiaoxue",
-        hanzi: "妈妈，我回来了！",
-        pinyin: "Māma, wǒ huílái le!",
-        english: "Mom, I'm back!",
+        hanzi: "我也明白了，谢谢您，李老师。",
+        pinyin: "Wǒ yě míngbai le, xièxie nín, Lǐ lǎoshī.",
+        english: "I understand now too. Thank you, Teacher Li.",
       },
       {
-        speaker: "Wang Yixue",
-        hanzi: "我买了奶茶，就在桌子上，自己去拿吧。",
-        pinyin: "Wǒ mǎi le nǎichá, jiù zài zhuōzi shàng, zìjǐ qù ná ba.",
-        english:
-          "I bought some milk tea. It's on the table. Go get it yourself.",
-      },
-      {
-        speaker: "Liu Xiaoxue",
-        hanzi: "谢谢妈妈！",
-        pinyin: "Xièxie māma!",
-        english: "Thank you, Mom!",
-      },
-      {
-        speaker: "Wang Yixue",
-        hanzi: "今天考试考得怎么样？",
-        pinyin: "Jīntiān kǎoshì kǎo de zěnmeyàng?",
-        english: "How did you do on today's exam?",
-      },
-      {
-        speaker: "Liu Xiaoxue",
-        hanzi: "我觉得比上次好。",
-        pinyin: "Wǒ juéde bǐ shàng cì hǎo.",
-        english: "I think I did better than last time.",
-      },
-      {
-        speaker: "Wang Yixue",
-        hanzi: "真不错！饭菜快要做好了，你叫弟弟一起去洗手吧。",
-        pinyin:
-          "Zhēn búcuò! Fàncài kuài yào zuò hǎo le, nǐ jiào dìdi yìqǐ qù xǐshǒu ba.",
-        english:
-          "That's great! The food will be ready soon. Tell your younger brother to go wash his hands with you.",
-      },
-      {
-        speaker: "Liu Xiaoming",
-        hanzi: "妈妈，我是第一名，姐姐还没洗完呢。",
-        pinyin: "Māma, wǒ shì dì-yī míng, jiějie hái méi xǐ wán ne.",
-        english:
-          "Mom, I came in first place. My older sister hasn't finished washing yet.",
-      },
-      {
-        speaker: "Wang Yixue",
-        hanzi: "你洗得真快啊！",
-        pinyin: "Nǐ xǐ de zhēn kuài a!",
-        english: "You wash really quickly!",
+        speaker: "Teacher Li",
+        hanzi: "我这本书上还有几个练习，你们回家也做一做，明天再把书还给我。",
+        pinyin: "Wǒ zhè běn shū shang hái yǒu jǐ gè liànxí, nǐmen huí jiā yě zuò yi zuò, míngtiān zài bǎ shū huán gěi wǒ.",
+        english: "There are a few more exercises in my book. Do them at home as well, and return the book to me tomorrow.",
       },
     ],
   },
   vocabulary: [
     {
-      hanzi: "考",
-      pinyin: "kǎo",
-      english: "To test/examine",
-      bangla: "পরীক্ষা করা",
-      characters: [{ hanzi: "考", pinyin: "kǎo", meaning: "To test" }],
-      example: {
-        hanzi: "明天我们要考汉语。",
-        pinyin: "Míngtiān wǒmen yào kǎo Hànyǔ.",
-        english: "Tomorrow we will have a Chinese test.",
-        bangla: "আগামীকাল আমরা চীনা ভাষার পরীক্ষা দেব।",
-      },
-      similar: [{ hanzi: "考试", pinyin: "kǎoshì", english: "Exam" }],
-    },
-    {
-      hanzi: "快要",
-      pinyin: "kuàiyào",
-      english: "About to/Soon",
-      bangla: "শীঘ্রই/প্রায়",
+      hanzi: "页",
+      pinyin: "yè",
+      english: "Page",
+      bangla: "পৃষ্ঠা",
       characters: [
-        { hanzi: "快", pinyin: "kuài", meaning: "Fast" },
-        { hanzi: "要", pinyin: "yào", meaning: "Will" },
+        { hanzi: "页", pinyin: "yè", meaning: "Page" },
       ],
       example: {
-        hanzi: "火车快要开了。",
-        pinyin: "Huǒchē kuàiyào kāi le.",
-        english: "The train is about to leave.",
-        bangla: "ট্রেনটি চলে যেতে প্রায় ready।",
+        hanzi: "第十页。",
+        pinyin: "Dì-shí yè.",
+        english: "Page 10.",
+        bangla: "পৃষ্ঠা ১০।",
       },
-      similar: [{ hanzi: "就要", pinyin: "jiùyào", english: "About to" }],
+      similar: [{ hanzi: "页码", pinyin: "yèmǎ", english: "Page number" }],
+    },
+    {
+      hanzi: "对话",
+      pinyin: "duìhuà",
+      english: "Dialogue",
+      bangla: "সংলাপ",
+      characters: [
+        { hanzi: "对", pinyin: "duì", meaning: "Pair" },
+        { hanzi: "话", pinyin: "huà", meaning: "Speech" },
+      ],
+      example: {
+        hanzi: "这个对话很有意思。",
+        pinyin: "Zhège duìhuà hěn yǒu yìsi.",
+        english: "This dialogue is very interesting.",
+        bangla: "এই সংলাপটি খুব মজার।",
+      },
+      similar: [{ hanzi: "会话", pinyin: "huìhuà", english: "Conversation" }],
+    },
+    {
+      hanzi: "明白",
+      pinyin: "míngbai",
+      english: "Understand",
+      bangla: "বোঝা",
+      characters: [
+        { hanzi: "明", pinyin: "míng", meaning: "Bright" },
+        { hanzi: "白", pinyin: "bái", meaning: "White" },
+      ],
+      example: {
+        hanzi: "我明白了。",
+        pinyin: "Wǒ míngbai le.",
+        english: "I understand.",
+        bangla: "আমি বুঝতে পেরেছি।",
+      },
+      similar: [{ hanzi: "理解", pinyin: "lǐjiě", english: "Understand" }],
+    },
+    {
+      hanzi: "讲",
+      pinyin: "jiǎng",
+      english: "Explain/Speak",
+      bangla: "ব্যাখ্যা করা",
+      characters: [
+        { hanzi: "讠", pinyin: "yán", meaning: "Speech" },
+        { hanzi: "井", pinyin: "jǐng", meaning: "Well" },
+      ],
+      example: {
+        hanzi: "老师讲课。",
+        pinyin: "Lǎoshī jiǎngkè.",
+        english: "The teacher gives a lecture.",
+        bangla: "শিক্ষক ক্লাস নিচ্ছেন।",
+      },
+      similar: [{ hanzi: "讲解", pinyin: "jiǎngjiě", english: "Explain" }],
+    },
+    {
+      hanzi: "句",
+      pinyin: "jù",
+      english: "Measure word for sentences",
+      bangla: "বাক্যের একক",
+      characters: [
+        { hanzi: "口", pinyin: "kǒu", meaning: "Mouth" },
+        { hanzi: "句", pinyin: "jù", meaning: "Sentence" },
+      ],
+      example: {
+        hanzi: "一句话。",
+        pinyin: "Yí jù huà.",
+        english: "One sentence.",
+        bangla: "একটি বাক্য।",
+      },
+      similar: [{ hanzi: "句", pinyin: "jù", english: "Sentence" }],
+    },
+    {
+      hanzi: "句子",
+      pinyin: "jùzi",
+      english: "Sentence",
+      bangla: "বাক্য",
+      characters: [
+        { hanzi: "句", pinyin: "jù", meaning: "Sentence" },
+        { hanzi: "子", pinyin: "zi", meaning: "Noun suffix" },
+      ],
+      example: {
+        hanzi: "这个句子很简单。",
+        pinyin: "Zhège jùzi hěn jiǎndān.",
+        english: "This sentence is very simple.",
+        bangla: "এই বাক্যটি খুব সহজ।",
+      },
+      similar: [{ hanzi: "造句", pinyin: "zàojù", english: "Make a sentence" }],
     },
   ],
 };
