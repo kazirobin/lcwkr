@@ -1,160 +1,114 @@
-// app/data/vocabularyData.ts
+// app/data/vocabulary/lesson1-text4.ts
+import { VocabularyData } from '@/app/types/vocabulary';
 
-import type { VocabularyData } from "@/app/types/vocabulary";
-
-// Lesson 1 - Text 3
-export const hsk2lesson1text3: VocabularyData = {
-    hskLevel: 2,
+export const hsk2lesson1text4: VocabularyData = {
+  hskLevel: 2,
   lesson: 1,
-  text: 3,
+  text: 4,
   dialogue: {
-    title: "Thank You & Goodbye",
+    title: "Arriving in Beijing",
     lines: [
       {
-        speaker: "Students",
-        hanzi: "谢谢！",
-        pinyin: "Xièxie!",
-        english: "Thank you!"
+        speaker: "Bai Jiayue",
+        hanzi: "王老师，我们已经到北京了，是您姐姐来接的我们。她请我们吃了北京烤鸭，还给我们介绍了很多东西。我们的中文不太好，有时不太懂她的意思。",
+        pinyin: "Wáng lǎoshī, wǒmen yǐjīng dào Běijīng le, shì nín jiějie lái jiē de wǒmen. Tā qǐng wǒmen chī le Běijīng kǎoyā, hái gěi wǒmen jièshào le hěn duō dōngxi. Wǒmen de Zhōngwén bú tài hǎo, yǒushí bú tài dǒng tā de yìsi.",
+        english: "Teacher Wang, we have already arrived in Beijing. Your older sister came to pick us up. She treated us to Beijing roast duck and also introduced us to many things. Our Chinese is not very good, so sometimes we don't quite understand what she means.",
       },
-      {
-        speaker: "Xiaoyu",
-        hanzi: "不客气！",
-        pinyin: "Bú kèqi!",
-        english: "You're welcome!"
-      },
-      {
-        speaker: "Wang Yifei",
-        hanzi: "同学们，再见！",
-        pinyin: "Tóngxuémen, zàijiàn!",
-        english: "Goodbye, students!"
-      },
-      {
-        speaker: "Students",
-        hanzi: "老师，再见！",
-        pinyin: "Lǎoshī, zàijiàn!",
-        english: "Goodbye, teacher!"
-      }
-    ]
+    ],
   },
   vocabulary: [
     {
-      hanzi: "谢谢",
-      pinyin: "xièxie",
-      english: "Thank you",
-      bangla: "ধন্যবাদ",
+      hanzi: "介绍",
+      pinyin: "jièshào",
+      english: "Introduce",
+      bangla: "পরিচয় করিয়ে দেওয়া",
       characters: [
-        {
-          hanzi: "谢",
-          pinyin: "xiè",
-          meaning: "Thank"
-        }
+        { hanzi: "介", pinyin: "jiè", meaning: "Between" },
+        { hanzi: "绍", pinyin: "shào", meaning: "Connect" },
       ],
       example: {
-        hanzi: "谢谢你！",
-        pinyin: "Xièxie nǐ!",
-        english: "Thank you!",
-        bangla: "ধন্যবাদ!"
+        hanzi: "我来介绍一下。",
+        pinyin: "Wǒ lái jièshào yíxià.",
+        english: "Let me introduce.",
+        bangla: "আমি পরিচয় করিয়ে দিই।",
       },
       similar: [
-        {
-          hanzi: "多谢",
-          pinyin: "duōxiè",
-          english: "Many thanks"
-        }
-      ]
+        { hanzi: "推荐", pinyin: "tuījiàn", english: "Recommend" },
+      ],
     },
     {
-      hanzi: "不客气",
-      pinyin: "bú kèqi",
-      english: "You're welcome",
-      bangla: "স্বাগতম",
+      hanzi: "有时",
+      pinyin: "yǒushí",
+      english: "Sometimes",
+      bangla: "মাঝে মাঝে",
       characters: [
-        {
-          hanzi: "不",
-          pinyin: "bù",
-          meaning: "Not"
-        },
-        {
-          hanzi: "客气",
-          pinyin: "kèqi",
-          meaning: "Polite"
-        }
+        { hanzi: "有", pinyin: "yǒu", meaning: "Have" },
+        { hanzi: "时", pinyin: "shí", meaning: "Time" },
       ],
       example: {
-        hanzi: "不客气！",
-        pinyin: "Bú kèqi!",
-        english: "You're welcome!",
-        bangla: "স্বাগতম!"
+        hanzi: "我有时去公园。",
+        pinyin: "Wǒ yǒushí qù gōngyuán.",
+        english: "I sometimes go to the park.",
+        bangla: "আমি মাঝে মাঝে পার্কে যাই।",
       },
       similar: [
-        {
-          hanzi: "没关系",
-          pinyin: "méi guānxi",
-          english: "It doesn't matter"
-        }
-      ]
+        { hanzi: "偶尔", pinyin: "ǒu'ěr", english: "Occasionally" },
+      ],
     },
     {
-      hanzi: "同学",
-      pinyin: "tóngxué",
-      english: "Classmate",
-      bangla: "সহপাঠী",
+      hanzi: "懂",
+      pinyin: "dǒng",
+      english: "Understand",
+      bangla: "বুঝতে পারা",
       characters: [
-        {
-          hanzi: "同",
-          pinyin: "tóng",
-          meaning: "Same"
-        },
-        {
-          hanzi: "学",
-          pinyin: "xué",
-          meaning: "Study"
-        }
+        { hanzi: "懂", pinyin: "dǒng", meaning: "Understand" },
       ],
       example: {
-        hanzi: "他是我的同学。",
-        pinyin: "Tā shì wǒ de tóngxué.",
-        english: "He is my classmate.",
-        bangla: "সে আমার সহপাঠী।"
+        hanzi: "你懂了吗？",
+        pinyin: "Nǐ dǒng le ma?",
+        english: "Do you understand?",
+        bangla: "তুমি কি বুঝতে পেরেছ?",
       },
       similar: [
-        {
-          hanzi: "朋友",
-          pinyin: "péngyou",
-          english: "Friend"
-        }
-      ]
+        { hanzi: "明白", pinyin: "míngbai", english: "Understand" },
+      ],
     },
     {
-      hanzi: "再见",
-      pinyin: "zàijiàn",
-      english: "Goodbye",
-      bangla: "বিদায়",
+      hanzi: "意思",
+      pinyin: "yìsi",
+      english: "Meaning",
+      bangla: "অর্থ",
       characters: [
-        {
-          hanzi: "再",
-          pinyin: "zài",
-          meaning: "Again"
-        },
-        {
-          hanzi: "见",
-          pinyin: "jiàn",
-          meaning: "See"
-        }
+        { hanzi: "意", pinyin: "yì", meaning: "Idea" },
+        { hanzi: "思", pinyin: "sī", meaning: "Thought" },
       ],
       example: {
-        hanzi: "再见！",
-        pinyin: "Zàijiàn!",
-        english: "Goodbye!",
-        bangla: "বিদায়!"
+        hanzi: "这是什么意思？",
+        pinyin: "Zhè shì shénme yìsi?",
+        english: "What does this mean?",
+        bangla: "এর মানে কি?",
       },
       similar: [
-        {
-          hanzi: "拜拜",
-          pinyin: "bàibài",
-          english: "Bye-bye"
-        }
-      ]
-    }
-  ]
+        { hanzi: "含义", pinyin: "hányì", english: "Meaning" },
+      ],
+    },
+    {
+      hanzi: "北京烤鸭",
+      pinyin: "Běijīng Kǎoyā",
+      english: "Peking Duck",
+      bangla: "বেইজিং রোস্ট ডাক",
+      characters: [
+        { hanzi: "北京", pinyin: "Běijīng", meaning: "Beijing" },
+        { hanzi: "烤", pinyin: "kǎo", meaning: "Roast" },
+        { hanzi: "鸭", pinyin: "yā", meaning: "Duck" },
+      ],
+      example: {
+        hanzi: "北京烤鸭很好吃。",
+        pinyin: "Běijīng Kǎoyā hěn hǎochī.",
+        english: "Peking duck is very delicious.",
+        bangla: "বেইজিং রোস্ট ডাক খুব সুস্বাদু।",
+      },
+      similar: [],
+    },
+  ],
 };
