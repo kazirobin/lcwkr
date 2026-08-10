@@ -1,160 +1,94 @@
-// app/data/vocabularyData.ts
+// app/data/vocabulary/lesson5-text3.ts
+import { VocabularyData } from '@/app/types/vocabulary';
 
-import type { VocabularyData } from "@/app/types/vocabulary";
-
-// Lesson 1 - Text 3
-export const hsk2lesson1text3: VocabularyData = {
-    hskLevel: 2,
-  lesson: 1,
+export const hsk2lesson5text3: VocabularyData = {
+  hskLevel: 2,
+  lesson: 5,
   text: 3,
   dialogue: {
-    title: "Thank You & Goodbye",
+    title: "Having a Meal",
     lines: [
       {
-        speaker: "Students",
-        hanzi: "谢谢！",
-        pinyin: "Xièxie!",
-        english: "Thank you!"
+        speaker: "Wang Yixue",
+        hanzi: "都12点了，我们吃饭吧。",
+        pinyin: "Dōu shí'èr diǎn le, wǒmen chī fàn ba.",
+        english: "It's already 12 o'clock. Let's eat.",
       },
       {
-        speaker: "Xiaoyu",
-        hanzi: "不客气！",
-        pinyin: "Bú kèqi!",
-        english: "You're welcome!"
+        speaker: "Bai Jiayue",
+        hanzi: "这么多好吃的，您太客气了！",
+        pinyin: "Zhème duō hǎochī de, nín tài kèqi le!",
+        english: "There are so many delicious dishes. You're really too kind!",
       },
       {
-        speaker: "Wang Yifei",
-        hanzi: "同学们，再见！",
-        pinyin: "Tóngxuémen, zàijiàn!",
-        english: "Goodbye, students!"
+        speaker: "Wang Yixue",
+        hanzi: "都是我自己做的，你们多吃点儿。",
+        pinyin: "Dōu shì wǒ zìjǐ zuò de, nǐmen duō chī diǎnr.",
+        english: "I made all of them myself. Please eat more.",
       },
       {
-        speaker: "Students",
-        hanzi: "老师，再见！",
-        pinyin: "Lǎoshī, zàijiàn!",
-        english: "Goodbye, teacher!"
-      }
-    ]
+        speaker: "Bai Jiayue",
+        hanzi: "奶茶也很好喝，是您自己做的吗？",
+        pinyin: "Nǎichá yě hěn hǎohē, shì nín zìjǐ zuò de ma?",
+        english: "The bubble tea is also very delicious. Did you make it yourself?",
+      },
+      {
+        speaker: "Wang Yixue",
+        hanzi: "不是，奶茶是爷爷买的。",
+        pinyin: "Bú shì, nǎichá shì yéye mǎi de.",
+        english: "No, Grandpa bought the bubble tea.",
+      },
+      {
+        speaker: "Bai Jiayue",
+        hanzi: "在哪儿买的？我还没喝过这么好喝的奶茶。",
+        pinyin: "Zài nǎr mǎi de? Wǒ hái méi hēguo zhème hǎohē de nǎichá.",
+        english: "Where did he buy it? I've never had bubble tea this delicious before.",
+      },
+      {
+        speaker: "Wang Yixue",
+        hanzi: "就在前边的商场，吃完饭你们可以跟我去看看。",
+        pinyin: "Jiù zài qiánbiān de shāngchǎng, chī wán fàn nǐmen kěyǐ gēn wǒ qù kànkan.",
+        english: "He bought it at the mall up ahead. After we finish eating, you can come with me to have a look.",
+      },
+    ],
   },
   vocabulary: [
     {
-      hanzi: "谢谢",
-      pinyin: "xièxie",
-      english: "Thank you",
-      bangla: "ধন্যবাদ",
+      hanzi: "奶茶",
+      pinyin: "nǎichá",
+      english: "Milk tea",
+      bangla: "দুধ চা",
       characters: [
-        {
-          hanzi: "谢",
-          pinyin: "xiè",
-          meaning: "Thank"
-        }
+        { hanzi: "奶", pinyin: "nǎi", meaning: "Milk" },
+        { hanzi: "茶", pinyin: "chá", meaning: "Tea" },
       ],
       example: {
-        hanzi: "谢谢你！",
-        pinyin: "Xièxie nǐ!",
-        english: "Thank you!",
-        bangla: "ধন্যবাদ!"
+        hanzi: "我想喝一杯奶茶。",
+        pinyin: "Wǒ xiǎng hē yī bēi nǎichá.",
+        english: "I want to drink a cup of milk tea.",
+        bangla: "আমি এক কাপ দুধ চা খেতে চাই।",
       },
       similar: [
-        {
-          hanzi: "多谢",
-          pinyin: "duōxiè",
-          english: "Many thanks"
-        }
-      ]
+        { hanzi: "珍珠奶茶", pinyin: "zhēnzhū nǎichá", english: "Bubble milk tea" },
+      ],
     },
     {
-      hanzi: "不客气",
-      pinyin: "bú kèqi",
-      english: "You're welcome",
-      bangla: "স্বাগতম",
+      hanzi: "跟",
+      pinyin: "gēn",
+      english: "With",
+      bangla: "সাথে",
       characters: [
-        {
-          hanzi: "不",
-          pinyin: "bù",
-          meaning: "Not"
-        },
-        {
-          hanzi: "客气",
-          pinyin: "kèqi",
-          meaning: "Polite"
-        }
+        { hanzi: "跟", pinyin: "gēn", meaning: "Heel/Follow" },
       ],
       example: {
-        hanzi: "不客气！",
-        pinyin: "Bú kèqi!",
-        english: "You're welcome!",
-        bangla: "স্বাগতম!"
+        hanzi: "我跟你一起去。",
+        pinyin: "Wǒ gēn nǐ yīqǐ qù.",
+        english: "I will go together with you.",
+        bangla: "আমি তোমার সাথে যাব।",
       },
       similar: [
-        {
-          hanzi: "没关系",
-          pinyin: "méi guānxi",
-          english: "It doesn't matter"
-        }
-      ]
+        { hanzi: "和", pinyin: "hé", english: "With/And" },
+      ],
     },
-    {
-      hanzi: "同学",
-      pinyin: "tóngxué",
-      english: "Classmate",
-      bangla: "সহপাঠী",
-      characters: [
-        {
-          hanzi: "同",
-          pinyin: "tóng",
-          meaning: "Same"
-        },
-        {
-          hanzi: "学",
-          pinyin: "xué",
-          meaning: "Study"
-        }
-      ],
-      example: {
-        hanzi: "他是我的同学。",
-        pinyin: "Tā shì wǒ de tóngxué.",
-        english: "He is my classmate.",
-        bangla: "সে আমার সহপাঠী।"
-      },
-      similar: [
-        {
-          hanzi: "朋友",
-          pinyin: "péngyou",
-          english: "Friend"
-        }
-      ]
-    },
-    {
-      hanzi: "再见",
-      pinyin: "zàijiàn",
-      english: "Goodbye",
-      bangla: "বিদায়",
-      characters: [
-        {
-          hanzi: "再",
-          pinyin: "zài",
-          meaning: "Again"
-        },
-        {
-          hanzi: "见",
-          pinyin: "jiàn",
-          meaning: "See"
-        }
-      ],
-      example: {
-        hanzi: "再见！",
-        pinyin: "Zàijiàn!",
-        english: "Goodbye!",
-        bangla: "বিদায়!"
-      },
-      similar: [
-        {
-          hanzi: "拜拜",
-          pinyin: "bàibài",
-          english: "Bye-bye"
-        }
-      ]
-    }
-  ]
+  ],
 };
