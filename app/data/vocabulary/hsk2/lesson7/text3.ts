@@ -1,160 +1,108 @@
-// app/data/vocabularyData.ts
+// app/data/vocabulary/lesson7-text3.ts
+import { VocabularyData } from '@/app/types/vocabulary';
 
-import type { VocabularyData } from "@/app/types/vocabulary";
-
-// Lesson 1 - Text 3
-export const hsk2lesson1text3: VocabularyData = {
-    hskLevel: 2,
-  lesson: 1,
+export const hsk2lesson7text3: VocabularyData = {
+  hskLevel: 2,
+  lesson: 7,
   text: 3,
   dialogue: {
-    title: "Thank You & Goodbye",
+    title: "How Well Do You Play Sports?",
     lines: [
       {
-        speaker: "Students",
-        hanzi: "谢谢！",
-        pinyin: "Xièxie!",
-        english: "Thank you!"
+        speaker: "Chen Tianzhong",
+        hanzi: "你篮球打得怎么样？",
+        pinyin: "Nǐ lánqiú dǎ de zěnmeyàng?",
+        english: "How well do you play basketball?",
       },
       {
-        speaker: "Xiaoyu",
-        hanzi: "不客气！",
-        pinyin: "Bú kèqi!",
-        english: "You're welcome!"
+        speaker: "Anni",
+        hanzi: "打得还可以。",
+        pinyin: "Dǎ de hái kěyǐ.",
+        english: "I'm pretty good at it.",
       },
       {
-        speaker: "Wang Yifei",
-        hanzi: "同学们，再见！",
-        pinyin: "Tóngxuémen, zàijiàn!",
-        english: "Goodbye, students!"
+        speaker: "Chen Tianzhong",
+        hanzi: "跑步呢？你跑得快不快？",
+        pinyin: "Pǎobù ne? Nǐ pǎo de kuài bu kuài?",
+        english: "What about running? Do you run fast?",
       },
       {
-        speaker: "Students",
-        hanzi: "老师，再见！",
-        pinyin: "Lǎoshī, zàijiàn!",
-        english: "Goodbye, teacher!"
-      }
-    ]
+        speaker: "Anni",
+        hanzi: "我跑得不快，也不太喜欢跑步。",
+        pinyin: "Wǒ pǎo de bú kuài, yě bú tài xǐhuan pǎobù.",
+        english: "I don't run fast, and I don't really like running either.",
+      },
+      {
+        speaker: "Chen Tianzhong",
+        hanzi: "那你喜欢游泳吗？",
+        pinyin: "Nà nǐ xǐhuan yóuyǒng ma?",
+        english: "Then do you like swimming?",
+      },
+      {
+        speaker: "Anni",
+        hanzi: "喜欢，但我游泳游得不快。",
+        pinyin: "Xǐhuan, dàn wǒ yóuyǒng yóu de bú kuài.",
+        english: "Yes, but I don't swim fast.",
+      },
+    ],
   },
   vocabulary: [
     {
-      hanzi: "谢谢",
-      pinyin: "xièxie",
-      english: "Thank you",
-      bangla: "ধন্যবাদ",
+      hanzi: "跑步",
+      pinyin: "pǎobù",
+      english: "Running/Jogging",
+      bangla: "দৌড়ানো/জগিং",
       characters: [
-        {
-          hanzi: "谢",
-          pinyin: "xiè",
-          meaning: "Thank"
-        }
+        { hanzi: "跑", pinyin: "pǎo", meaning: "Run" },
+        { hanzi: "步", pinyin: "bù", meaning: "Step" },
       ],
       example: {
-        hanzi: "谢谢你！",
-        pinyin: "Xièxie nǐ!",
-        english: "Thank you!",
-        bangla: "ধন্যবাদ!"
+        hanzi: "我每天早上跑步。",
+        pinyin: "Wǒ měitiān zǎoshang pǎobù.",
+        english: "I run every morning.",
+        bangla: "আমি প্রতিদিন সকালে দৌড়াই।",
       },
       similar: [
-        {
-          hanzi: "多谢",
-          pinyin: "duōxiè",
-          english: "Many thanks"
-        }
-      ]
+        { hanzi: "奔跑", pinyin: "bēnpǎo", english: "Run" },
+      ],
     },
     {
-      hanzi: "不客气",
-      pinyin: "bú kèqi",
-      english: "You're welcome",
-      bangla: "স্বাগতম",
+      hanzi: "游泳",
+      pinyin: "yóuyǒng",
+      english: "Swimming",
+      bangla: "সাঁতার কাটা",
       characters: [
-        {
-          hanzi: "不",
-          pinyin: "bù",
-          meaning: "Not"
-        },
-        {
-          hanzi: "客气",
-          pinyin: "kèqi",
-          meaning: "Polite"
-        }
+        { hanzi: "游", pinyin: "yóu", meaning: "Swim/Roam" },
+        { hanzi: "泳", pinyin: "yǒng", meaning: "Swim" },
       ],
       example: {
-        hanzi: "不客气！",
-        pinyin: "Bú kèqi!",
-        english: "You're welcome!",
-        bangla: "স্বাগতম!"
+        hanzi: "他很喜欢游泳。",
+        pinyin: "Tā hěn xǐhuān yóuyǒng.",
+        english: "He likes swimming very much.",
+        bangla: "সে সাঁতার কাটতে খুব পছন্দ করে।",
       },
       similar: [
-        {
-          hanzi: "没关系",
-          pinyin: "méi guānxi",
-          english: "It doesn't matter"
-        }
-      ]
+        { hanzi: "游水", pinyin: "yóushuǐ", english: "Swim" },
+      ],
     },
     {
-      hanzi: "同学",
-      pinyin: "tóngxué",
-      english: "Classmate",
-      bangla: "সহপাঠী",
+      hanzi: "游",
+      pinyin: "yóu",
+      english: "To swim/roam",
+      bangla: "সাঁতার কাটা/ঘুরে বেড়ানো",
       characters: [
-        {
-          hanzi: "同",
-          pinyin: "tóng",
-          meaning: "Same"
-        },
-        {
-          hanzi: "学",
-          pinyin: "xué",
-          meaning: "Study"
-        }
+        { hanzi: "氵", pinyin: "shuǐ", meaning: "Water" },
+        { hanzi: "方", pinyin: "fāng", meaning: "Direction" },
       ],
       example: {
-        hanzi: "他是我的同学。",
-        pinyin: "Tā shì wǒ de tóngxué.",
-        english: "He is my classmate.",
-        bangla: "সে আমার সহপাঠী।"
+        hanzi: "鱼在水里游。",
+        pinyin: "Yú zài shuǐ lǐ yóu.",
+        english: "Fish swim in the water.",
+        bangla: "মাছ পানিতে সাঁতার কাটে।",
       },
       similar: [
-        {
-          hanzi: "朋友",
-          pinyin: "péngyou",
-          english: "Friend"
-        }
-      ]
+        { hanzi: "泳", pinyin: "yǒng", english: "Swim" },
+      ],
     },
-    {
-      hanzi: "再见",
-      pinyin: "zàijiàn",
-      english: "Goodbye",
-      bangla: "বিদায়",
-      characters: [
-        {
-          hanzi: "再",
-          pinyin: "zài",
-          meaning: "Again"
-        },
-        {
-          hanzi: "见",
-          pinyin: "jiàn",
-          meaning: "See"
-        }
-      ],
-      example: {
-        hanzi: "再见！",
-        pinyin: "Zàijiàn!",
-        english: "Goodbye!",
-        bangla: "বিদায়!"
-      },
-      similar: [
-        {
-          hanzi: "拜拜",
-          pinyin: "bàibài",
-          english: "Bye-bye"
-        }
-      ]
-    }
-  ]
+  ],
 };
