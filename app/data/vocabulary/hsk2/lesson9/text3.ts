@@ -1,160 +1,83 @@
-// app/data/vocabularyData.ts
+// app/data/vocabulary/lesson9-text3.ts
+import { VocabularyData } from '@/app/types/vocabulary';
 
-import type { VocabularyData } from "@/app/types/vocabulary";
-
-// Lesson 1 - Text 3
-export const hsk2lesson1text3: VocabularyData = {
-    hskLevel: 2,
-  lesson: 1,
+export const hsk2lesson9text3: VocabularyData = {
+  hskLevel: 2,
+  lesson: 9,
   text: 3,
   dialogue: {
-    title: "Thank You & Goodbye",
+    title: "Walking Home",
     lines: [
       {
-        speaker: "Students",
-        hanzi: "谢谢！",
-        pinyin: "Xièxie!",
-        english: "Thank you!"
+        speaker: "Liu Ming",
+        hanzi: "我们打车回去吧。",
+        pinyin: "Wǒmen dǎchē huíqù ba.",
+        english: "Let's take a taxi back.",
       },
       {
-        speaker: "Xiaoyu",
-        hanzi: "不客气！",
-        pinyin: "Bú kèqi!",
-        english: "You're welcome!"
+        speaker: "Wang Yixue",
+        hanzi: "这里离家很近，还是走路吧。",
+        pinyin: "Zhèlǐ lí jiā hěn jìn, háishi zǒulù ba.",
+        english: "It's very close to home from here. Let's walk instead.",
       },
       {
-        speaker: "Wang Yifei",
-        hanzi: "同学们，再见！",
-        pinyin: "Tóngxuémen, zàijiàn!",
-        english: "Goodbye, students!"
+        speaker: "Liu Ming",
+        hanzi: "要走多长时间？",
+        pinyin: "Yào zǒu duō cháng shíjiān?",
+        english: "How long will it take to walk?",
       },
       {
-        speaker: "Students",
-        hanzi: "老师，再见！",
-        pinyin: "Lǎoshī, zàijiàn!",
-        english: "Goodbye, teacher!"
-      }
-    ]
+        speaker: "Wang Yixue",
+        hanzi: "走半个多小时就到了。",
+        pinyin: "Zǒu bàn ge duō xiǎoshí jiù dào le.",
+        english: "It will take a little more than half an hour to get there.",
+      },
+      {
+        speaker: "Liu Ming",
+        hanzi: "好的。每天上下班都坐车，今天运动运动吧。",
+        pinyin: "Hǎo de. Měitiān shàngxiàbān dōu zuò chē, jīntiān yùndòng yùndòng ba.",
+        english: "Okay. We take a vehicle to and from work every day, so let's get some exercise today.",
+      },
+    ],
   },
   vocabulary: [
     {
-      hanzi: "谢谢",
-      pinyin: "xièxie",
-      english: "Thank you",
-      bangla: "ধন্যবাদ",
+      hanzi: "近",
+      pinyin: "jìn",
+      english: "Near",
+      bangla: "কাছে",
       characters: [
-        {
-          hanzi: "谢",
-          pinyin: "xiè",
-          meaning: "Thank"
-        }
+        { hanzi: "斤", pinyin: "jīn", meaning: "Axe/Phonetic" },
+        { hanzi: "辶", pinyin: "chuò", meaning: "Movement" },
       ],
       example: {
-        hanzi: "谢谢你！",
-        pinyin: "Xièxie nǐ!",
-        english: "Thank you!",
-        bangla: "ধন্যবাদ!"
+        hanzi: "我的家很近。",
+        pinyin: "Wǒ de jiā hěn jìn.",
+        english: "My house is very near.",
+        bangla: "আমার বাড়ি খুব কাছে।",
       },
       similar: [
-        {
-          hanzi: "多谢",
-          pinyin: "duōxiè",
-          english: "Many thanks"
-        }
-      ]
+        { hanzi: "靠近", pinyin: "kàojìn", english: "Near" },
+      ],
     },
     {
-      hanzi: "不客气",
-      pinyin: "bú kèqi",
-      english: "You're welcome",
-      bangla: "স্বাগতম",
+      hanzi: "走路",
+      pinyin: "zǒulù",
+      english: "To walk",
+      bangla: "হাঁটা",
       characters: [
-        {
-          hanzi: "不",
-          pinyin: "bù",
-          meaning: "Not"
-        },
-        {
-          hanzi: "客气",
-          pinyin: "kèqi",
-          meaning: "Polite"
-        }
+        { hanzi: "走", pinyin: "zǒu", meaning: "Walk" },
+        { hanzi: "路", pinyin: "lù", meaning: "Road" },
       ],
       example: {
-        hanzi: "不客气！",
-        pinyin: "Bú kèqi!",
-        english: "You're welcome!",
-        bangla: "স্বাগতম!"
+        hanzi: "我们走路去学校。",
+        pinyin: "Wǒmen zǒulù qù xuéxiào.",
+        english: "We walk to school.",
+        bangla: "আমরা হেঁটে স্কুলে যাই।",
       },
       similar: [
-        {
-          hanzi: "没关系",
-          pinyin: "méi guānxi",
-          english: "It doesn't matter"
-        }
-      ]
+        { hanzi: "步行", pinyin: "bùxíng", english: "To walk on foot" },
+      ],
     },
-    {
-      hanzi: "同学",
-      pinyin: "tóngxué",
-      english: "Classmate",
-      bangla: "সহপাঠী",
-      characters: [
-        {
-          hanzi: "同",
-          pinyin: "tóng",
-          meaning: "Same"
-        },
-        {
-          hanzi: "学",
-          pinyin: "xué",
-          meaning: "Study"
-        }
-      ],
-      example: {
-        hanzi: "他是我的同学。",
-        pinyin: "Tā shì wǒ de tóngxué.",
-        english: "He is my classmate.",
-        bangla: "সে আমার সহপাঠী।"
-      },
-      similar: [
-        {
-          hanzi: "朋友",
-          pinyin: "péngyou",
-          english: "Friend"
-        }
-      ]
-    },
-    {
-      hanzi: "再见",
-      pinyin: "zàijiàn",
-      english: "Goodbye",
-      bangla: "বিদায়",
-      characters: [
-        {
-          hanzi: "再",
-          pinyin: "zài",
-          meaning: "Again"
-        },
-        {
-          hanzi: "见",
-          pinyin: "jiàn",
-          meaning: "See"
-        }
-      ],
-      example: {
-        hanzi: "再见！",
-        pinyin: "Zàijiàn!",
-        english: "Goodbye!",
-        bangla: "বিদায়!"
-      },
-      similar: [
-        {
-          hanzi: "拜拜",
-          pinyin: "bàibài",
-          english: "Bye-bye"
-        }
-      ]
-    }
-  ]
+  ],
 };
