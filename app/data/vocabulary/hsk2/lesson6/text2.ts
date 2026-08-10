@@ -1,255 +1,100 @@
-import type { VocabularyData } from "@/app/types/vocabulary"; // Lesson 1 - Text 2
+// app/data/vocabulary/lesson6-text2.ts
+import { VocabularyData } from '@/app/types/vocabulary';
 
-export const hsk2lesson1text2: VocabularyData = {
+export const hsk2lesson6text2: VocabularyData = {
   hskLevel: 2,
-  lesson: 1,
+  lesson: 6,
   text: 2,
   dialogue: {
-    title: "Greeting in the Classroom",
+    title: "Birthday Gifts",
     lines: [
       {
-        speaker: "Teacher",
-        hanzi: "大家好！",
-        pinyin: "Dàjiā hǎo!",
-        english: "Hello everyone!",
+        speaker: "Liu Ming",
+        hanzi: "小雪，生日快乐！",
+        pinyin: "Xiǎoxuě, shēngrì kuàilè!",
+        english: "Xiaoxue, happy birthday!",
       },
       {
-        speaker: "Students",
-        hanzi: "老师好！",
-        pinyin: "Lǎoshī hǎo!",
-        english: "Hello teacher!",
+        speaker: "Liu Xiaoming",
+        hanzi: "姐姐，生日快乐！",
+        pinyin: "Jiějie, shēngrì kuàilè!",
+        english: "Sister, happy birthday!",
       },
       {
-        speaker: "Student 1",
-        hanzi: "你好！",
-        pinyin: "Nǐ hǎo!",
-        english: "Hello!",
+        speaker: "Wang Yixue",
+        hanzi: "小雪，这是爸爸、妈妈送你的礼物。",
+        pinyin: "Xiǎoxuě, zhè shì bàba, māma sòng nǐ de lǐwù.",
+        english: "Xiaoxue, this is the gift from Dad and Mom for you.",
       },
       {
-        speaker: "Student 2",
-        hanzi: "你好！",
-        pinyin: "Nǐ hǎo!",
-        english: "Hello!",
+        speaker: "Liu Ming",
+        hanzi: "你打开看看喜不喜欢。",
+        pinyin: "Nǐ dǎkāi kànkan xǐhuan bu xǐhuan.",
+        english: "Open it and see if you like it.",
       },
       {
-        speaker: "Teacher",
-        hanzi: "你们好！",
-        pinyin: "Nǐmen hǎo!",
-        english: "Hello everyone (plural)!",
+        speaker: "Liu Xiaoming",
+        hanzi: "画笔！我很喜欢！",
+        pinyin: "Huàbǐ! Wǒ hěn xǐhuan!",
+        english: "Drawing brushes! I really like them!",
+      },
+      {
+        speaker: "Wang Yixue",
+        hanzi: "那你想画点儿什么？",
+        pinyin: "Nà nǐ xiǎng huà diǎnr shénme?",
+        english: "Then what would you like to draw?",
+      },
+      {
+        speaker: "Liu Xiaoming",
+        hanzi: "画我们的家！有爸爸、妈妈、弟弟，还有黑色的狗、白色的猫什么的。",
+        pinyin: "Huà wǒmen de jiā! Yǒu bàba, māma, dìdi, hái yǒu hēisè de gǒu, báisè de māo shénmede.",
+        english: "I'll draw our family! There will be Dad, Mom, my little brother, a black dog, a white cat, and so on.",
+      },
+      {
+        speaker: "Liu Xiaoming",
+        hanzi: "那我要画一个穿白色衣服的姐姐。",
+        pinyin: "Nà wǒ yào huà yí ge chuān báisè yīfu de jiějie.",
+        english: "Then I'll draw an older sister wearing white clothes.",
       },
     ],
   },
   vocabulary: [
     {
-      hanzi: "大家",
-      pinyin: "dàjiā",
-      english: "Everyone",
-      bangla: "সবাই",
+      hanzi: "快乐",
+      pinyin: "kuàilè",
+      english: "Happy",
+      bangla: "খুশি/আনন্দিত",
       characters: [
-        {
-          hanzi: "大",
-          pinyin: "dà",
-          meaning: "Big",
-        },
-        {
-          hanzi: "家",
-          pinyin: "jiā",
-          meaning: "Family/Home",
-        },
+        { hanzi: "快", pinyin: "kuài", meaning: "Happy/Fast" },
+        { hanzi: "乐", pinyin: "lè", meaning: "Happy/Music" },
       ],
       example: {
-        hanzi: "大家好！",
-        pinyin: "Dàjiā hǎo!",
-        english: "Hello everyone!",
-        bangla: "সবাইকে হ্যালো!",
+        hanzi: "祝你生日快乐！",
+        pinyin: "Zhù nǐ shēngrì kuàilè!",
+        english: "Happy birthday to you!",
+        bangla: "তোমার জন্মদিনের শুভেচ্ছা!",
       },
       similar: [
-        {
-          hanzi: "每人",
-          pinyin: "měi rén",
-          english: "Everyone/Each person",
-        },
+        { hanzi: "高兴", pinyin: "gāoxìng", english: "Happy" },
       ],
     },
     {
-      hanzi: "好",
-      pinyin: "hǎo",
-      english: "Good",
-      bangla: "ভালো",
+      hanzi: "打开",
+      pinyin: "dǎkāi",
+      english: "Open",
+      bangla: "খোলা",
       characters: [
-        {
-          hanzi: "女",
-          pinyin: "nǚ",
-          meaning: "Woman",
-        },
-        {
-          hanzi: "子",
-          pinyin: "zǐ",
-          meaning: "Child",
-        },
+        { hanzi: "打", pinyin: "dǎ", meaning: "Hit/Do" },
+        { hanzi: "开", pinyin: "kāi", meaning: "Open" },
       ],
       example: {
-        hanzi: "很好。",
-        pinyin: "Hěn hǎo.",
-        english: "Very good.",
-        bangla: "খুব ভালো।",
+        hanzi: "请打开书。",
+        pinyin: "Qǐng dǎkāi shū.",
+        english: "Please open the book.",
+        bangla: "অনুগ্রহ করে বইটি খুলুন।",
       },
       similar: [
-        {
-          hanzi: "棒",
-          pinyin: "bàng",
-          english: "Great/Awesome",
-        },
-      ],
-    },
-    {
-      hanzi: "学生",
-      pinyin: "xuéshēng",
-      english: "Student",
-      bangla: "ছাত্র",
-      characters: [
-        {
-          hanzi: "学",
-          pinyin: "xué",
-          meaning: "Study/Learn",
-        },
-        {
-          hanzi: "生",
-          pinyin: "shēng",
-          meaning: "Person/Born",
-        },
-      ],
-      example: {
-        hanzi: "我是学生。",
-        pinyin: "Wǒ shì xuéshēng.",
-        english: "I am a student.",
-        bangla: "আমি একজন ছাত্র।",
-      },
-      similar: [
-        {
-          hanzi: "同学",
-          pinyin: "tóngxué",
-          english: "Classmate",
-        },
-      ],
-    },
-    {
-      hanzi: "们",
-      pinyin: "men",
-      english: "(plural suffix)",
-      bangla: "বহুবচন প্রত্যয়",
-      characters: [
-        {
-          hanzi: "们",
-          pinyin: "men",
-          meaning: "Plural suffix",
-        },
-      ],
-      example: {
-        hanzi: "我们。",
-        pinyin: "Wǒmen.",
-        english: "We/Us.",
-        bangla: "আমরা।",
-      },
-      similar: [
-        {
-          hanzi: "大家",
-          pinyin: "dàjiā",
-          english: "Everyone",
-        },
-      ],
-    },
-    {
-      hanzi: "老师",
-      pinyin: "lǎoshī",
-      english: "Teacher",
-      bangla: "শিক্ষক",
-      characters: [
-        {
-          hanzi: "老",
-          pinyin: "lǎo",
-          meaning: "Old/Experienced",
-        },
-        {
-          hanzi: "师",
-          pinyin: "shī",
-          meaning: "Master/Expert",
-        },
-      ],
-      example: {
-        hanzi: "老师好。",
-        pinyin: "Lǎoshī hǎo.",
-        english: "Hello teacher.",
-        bangla: "শিক্ষককে হ্যালো।",
-      },
-      similar: [
-        {
-          hanzi: "教师",
-          pinyin: "jiàoshī",
-          english: "Teacher (formal)",
-        },
-      ],
-    },
-    {
-      hanzi: "您",
-      pinyin: "nín",
-      english: "You (polite)",
-      bangla: "আপনি (সম্মানসূচক)",
-      characters: [
-        {
-          hanzi: "你",
-          pinyin: "nǐ",
-          meaning: "You",
-        },
-        {
-          hanzi: "心",
-          pinyin: "xīn",
-          meaning: "Heart (added respect)",
-        },
-      ],
-      example: {
-        hanzi: "您好！",
-        pinyin: "Nín hǎo!",
-        english: "Hello (polite)!",
-        bangla: "আপনাকে হ্যালো!",
-      },
-      similar: [
-        {
-          hanzi: "你",
-          pinyin: "nǐ",
-          english: "You (informal)",
-        },
-      ],
-    },
-    {
-      hanzi: "你们",
-      pinyin: "nǐmen",
-      english: "You (plural)",
-      bangla: "তোমরা",
-      characters: [
-        {
-          hanzi: "你",
-          pinyin: "nǐ",
-          meaning: "You",
-        },
-        {
-          hanzi: "们",
-          pinyin: "men",
-          meaning: "Plural",
-        },
-      ],
-      example: {
-        hanzi: "你们好！",
-        pinyin: "Nǐmen hǎo!",
-        english: "Hello everyone!",
-        bangla: "সবাইকে হ্যালো!",
-      },
-      similar: [
-        {
-          hanzi: "大家",
-          pinyin: "dàjiā",
-          english: "Everyone",
-        },
+        { hanzi: "开启", pinyin: "kāiqǐ", english: "Open" },
       ],
     },
   ],
