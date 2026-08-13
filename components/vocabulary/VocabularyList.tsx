@@ -40,9 +40,9 @@ export default function VocabularyList({
           {prevText && (
             <Link
               href={`/hsk/${level}/lesson/${lessonNum}/text/${prevText}`}
-              className="px-4 py-2 bg-gray-100 hover:bg-gray-200 text-gray-700 rounded-lg transition-colors"
+              className="px-4 py-2 bg-secondary/20 hover:bg-secondary/30 text-text rounded-lg transition-colors font-medium border border-secondary/20"
             >
-              ← Previous
+              ← Previous Text
             </Link>
           )}
         </div>
@@ -50,9 +50,9 @@ export default function VocabularyList({
         <div className="flex gap-2">
           <Link
             href={`/hsk/${level}`}
-            className="px-4 py-2 bg-blue-500 hover:bg-blue-600 text-white rounded-lg transition-colors"
+            className="px-4 py-2 bg-primary hover:bg-primary/90 text-background rounded-lg transition-colors font-medium shadow-sm hover:shadow-md"
           >
-            Back to Level {level} Less
+            Back to HSK Level {level}
           </Link>
         </div>
 
@@ -60,9 +60,9 @@ export default function VocabularyList({
           {nextText && (
             <Link
               href={`/hsk/${level}/lesson/${lessonNum}/text/${nextText}`}
-              className="px-4 py-2 bg-gray-100 hover:bg-gray-200 text-gray-700 rounded-lg transition-colors"
+              className="px-4 py-2 bg-secondary/20 hover:bg-secondary/30 text-text rounded-lg transition-colors font-medium border border-secondary/20"
             >
-              Next →
+              Next Text →
             </Link>
           )}
         </div>
@@ -71,15 +71,15 @@ export default function VocabularyList({
       {/* Quick navigation to all texts in this lesson */}
       {textsInLesson.length > 1 && (
         <div className="flex flex-wrap items-center justify-center gap-2 text-sm">
-          <span className="text-gray-500">Jump to:</span>
+          <span className="text-text/60 font-medium">Jump to:</span>
           {textsInLesson.map((t) => (
             <Link
               key={t}
               href={`/hsk/${level}/lesson/${lessonNum}/text/${t}`}
-              className={`px-3 py-1 rounded-lg transition-colors ${
+              className={`px-3 py-1.5 rounded-lg transition-all duration-200 font-medium ${
                 t === textNum
-                  ? "bg-blue-500 text-white"
-                  : "bg-gray-100 hover:bg-gray-200 text-gray-700"
+                  ? "bg-primary text-background shadow-sm ring-2 ring-primary/20"
+                  : "bg-secondary/20 hover:bg-secondary/30 text-text border border-secondary/10"
               }`}
             >
               Text {t}
@@ -96,16 +96,16 @@ export default function VocabularyList({
       )}
 
       {/* Lesson Header */}
-      <div className="flex flex-wrap items-center justify-between border-b border-gray-200 pb-4">
+      <div className="flex flex-wrap items-center justify-between border-b border-secondary/20 pb-4">
         <div>
-          <h2 className="text-2xl md:text-3xl font-bold text-gray-800">
+          <h2 className="text-2xl md:text-3xl font-bold text-text">
             HSK {level} - Lesson {lessonNum} - Text {text}
           </h2>
-          <p className="text-gray-600 mt-1">
+          <p className="text-text/60 mt-1">
             {data.vocabulary.length} vocabulary words
           </p>
         </div>
-        <div className="px-4 py-2 bg-blue-500/10 text-blue-600 rounded-full text-sm font-medium">
+        <div className="px-4 py-2 bg-primary/10 text-primary rounded-full text-sm font-medium border border-primary/20">
           Total: {data.vocabulary.length}
         </div>
       </div>

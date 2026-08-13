@@ -54,9 +54,9 @@ export default async function TextPage({ params }: TextPageProps) {
         <div className="mb-6">
           <Link 
             href={`/hsk/${level}`} 
-            className="text-primary hover:underline font-medium transition-colors"
+            className="text-primary hover:underline font-medium transition-colors inline-flex items-center"
           >
-            ← Back to Level {level} Lessons List
+            ← Back to HSK Level {level} All Lessons List
           </Link>
         </div>
         

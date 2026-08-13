@@ -25,19 +25,19 @@ export default async function LevelPage({ params }: LevelPageProps) {
   const totalTexts = lessons.reduce((sum, lesson) => sum + lesson.texts.length, 0);
   
   return (
-    <div className="min-h-screen bg-gray-50 py-12">
+    <div className="min-h-screen bg-background py-12">
       <div className="container mx-auto px-4">
         {/* Navigation */}
         <div className="mb-6">
-          <Link href="/hsk" className="text-blue-500 hover:underline inline-flex items-center">
-            ← Back to HSK Levels
+          <Link href="/hsk" className="text-primary hover:underline inline-flex items-center font-medium">
+            ← Back to All HSK Levels
           </Link>
         </div>
         
         {/* Header */}
         <div className="mb-10">
-          <h1 className="text-4xl font-bold mb-2 text-gray-800">HSK Level {level}</h1>
-          <div className="flex flex-wrap gap-4 text-gray-600">
+          <h1 className="text-4xl font-bold mb-2 text-text">HSK Level {level}</h1>
+          <div className="flex flex-wrap gap-4 text-text/70">
             <span>📚 {lessons.length} Lessons</span>
             <span>📝 {totalTexts} Texts</span>
             <span>📖 {totalVocabulary} Vocabulary Words</span>
@@ -49,45 +49,50 @@ export default async function LevelPage({ params }: LevelPageProps) {
           {lessons.map((lesson) => (
             <div
               key={lesson.lesson}
-              className="bg-white shadow-lg hover:shadow-xl transition-shadow rounded-xl overflow-hidden"
+              className="bg-background shadow-lg hover:shadow-xl transition-shadow rounded-xl overflow-hidden border border-secondary/20"
             >
               {/* Lesson Header */}
-              <div className="bg-gradient-to-r from-blue-500 to-blue-600 px-6 py-4">
-                <h2 className="text-2xl font-bold text-white">
+              <div className="bg-primary px-6 py-4">
+                <Link     key={lesson.lesson}
+                    href={`/hsk/${level}/lesson/${lesson.lesson}`}>
+
+                <h2 className="text-2xl font-bold text-background">
                   Lesson {lesson.lesson}
                 </h2>
-                <p className="text-blue-100 text-sm mt-1">
+                <p className="text-background/80 text-sm mt-1">
                   {lesson.texts.length} texts • {lesson.totalVocabulary} vocabulary
                 </p>
+                    </Link>
               </div>
               
               {/* Texts List */}
-              <div className="p-6 space-y-3">
+              {/* <div className="p-6 space-y-3">
                 {lesson.texts.map((text) => (
                   <Link
                     key={text}
                     href={`/hsk/${level}/lesson/${lesson.lesson}/text/${text}`}
                     className="block group"
                   >
-                    <div className="flex items-center justify-between p-3 bg-gray-50 hover:bg-blue-50 rounded-lg transition-colors border border-transparent hover:border-blue-200">
+                    <div className="flex items-center justify-between p-3 bg-secondary/30 hover:bg-secondary rounded-lg transition-colors border border-transparent hover:border-primary/30">
                       <div>
-                        <span className="font-medium text-gray-700 group-hover:text-blue-600">
+                        <span className="font-medium text-text group-hover:text-primary">
                           Text {text}
                         </span>
-                        <span className="text-xs text-gray-400 ml-2">
+                        <span className="text-xs text-text/40 ml-2">
                           Vocabulary
                         </span>
                       </div>
-                      <span className="text-blue-500 group-hover:translate-x-1 transition-transform">
+                      <span className="text-primary group-hover:translate-x-1 transition-transform">
                         →
                       </span>
                     </div>
                   </Link>
                 ))}
-              </div>
+              </div> */}
             </div>
           ))}
         </div>
+
       </div>
     </div>
   );
