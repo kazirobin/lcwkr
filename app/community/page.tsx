@@ -1,104 +1,57 @@
-// src/components/community/CommunityPage.tsx
 "use client";
 
 import {
   Users,
   Award,
-  Shield,
   Crown,
-  Phone,
   MessageCircle,
-  UsersRound,
-  Briefcase,
   Clock,
-  BadgeCheck,
   Sparkles,
-  Layers,
-  ExternalLink,
 } from "lucide-react";
 import { useLanguage } from "../context/LanguageContext";
-import { communityData } from "@/data/communityData";
+import { communityMembers, getCommunityStats } from "@/data/communityData";
+import { CommunityMember } from "@/data/communityData";
 
 // ============================================
-// COMMUNITY DATA
+// TRANSLATIONS
 // ============================================
 
-export const community = {
+const translations = {
   en: {
-    header: {
-      badge: "Community Leaders",
-      title: "Community Admins",
-      subtitle: "Leading our community with passion and dedication.",
+    badge: "Community Leaders",
+    title: "Our Community",
+    subtitle: "Leading our community with passion and dedication.",
+    stats: {
+      founder: "Founder",
+      coAdmins: "Co-Admins",
+      managers: "Managers",
+      teachers: "Teachers",
     },
-    founder: {
-      role: "Founder & Lead Admin",
-      manages: "All Community Groups",
-    },
-    coAdmins: [
-      {
-        role: "Co-Admin",
-        manages: "Chinese Learning Groups",
-      },
-    ],
-    management: {
-      title: "Management Team",
-      subtitle: "Working behind the scenes to keep everything organized.",
+    roles: {
+      founder: "Founder & Lead Admin",
+      'co-admin': "Co-Admin",
       manager: "Manager",
-      items: [
-        {
-          manages: "General Support & Queries",
-        },
-      ],
+      teacher: "Teacher",
     },
-    teachers: {
-      title: "Our Teachers",
-      subtitle: "Experienced mentors who guide your learning journey.",
-      items: [
-        {
-          subject: "Chinese Language",
-          group: "5pm Class Group",
-          schedule: "Mon, Wed • 7:00 PM",
-        },
-      ],
-    },
+    manages: "Manages",
   },
   bn: {
-    header: {
-      badge: "কমিউনিটি নেতৃত্ব",
-      title: "কমিউনিটি অ্যাডমিন",
-      subtitle: "ভালোবাসা ও আন্তরিকতার সাথে কমিউনিটি পরিচালনা করছি।",
+    badge: "কমিউনিটি নেতৃত্ব",
+    title: "আমাদের কমিউনিটি",
+    subtitle: "ভালোবাসা ও আন্তরিকতার সাথে কমিউনিটি পরিচালনা করছি।",
+    stats: {
+      founder: "প্রতিষ্ঠাতা",
+      coAdmins: "সহ-অ্যাডমিন",
+      managers: "ম্যানেজার",
+      teachers: "শিক্ষক",
     },
-    founder: {
-      role: "প্রতিষ্ঠাতা ও প্রধান অ্যাডমিন",
-      manages: "সকল কমিউনিটি গ্রুপ",
-    },
-    coAdmins: [
-      {
-        role: "সহকারী অ্যাডমিন",
-        manages: "ওয়েব ডেভেলপমেন্ট ও প্রোগ্রামিং গ্রুপ",
-      },
-    ],
-    management: {
-      title: "ম্যানেজমেন্ট টিম",
-      subtitle: "কমিউনিটির সার্বিক কার্যক্রম পরিচালনা করেন।",
+    roles: {
+      founder: "প্রতিষ্ঠাতা ও প্রধান অ্যাডমিন",
+      'co-admin': "সহকারী অ্যাডমিন",
       manager: "ম্যানেজার",
-      items: [
-        {
-          manages: "সাধারণ সহায়তা ও প্রশ্ন",
-        },
-      ],
+      teacher: "শিক্ষক",
     },
-    teachers: {
-      title: "আমাদের শিক্ষকবৃন্দ",
-      subtitle: "অভিজ্ঞ শিক্ষকরা আপনাকে শেখাবেন।",
-      items: [
-        {
-          subject: "চীনা ভাষা",
-          group: "৫টার ক্লাস গ্রুপ",
-          schedule: "সোম, বুধ • রাত ৮টা",
-        },
-      ],
-    },
+    manages: "ম্যানেজ করে",
   },
 };
 
@@ -111,28 +64,12 @@ const formatWhatsApp = (number: string) => {
 };
 
 // ============================================
-// HOOKS
+// MEMBER CARD COMPONENT
 // ============================================
 
-const useTranslation = () => {
-  const { language } = useLanguage();
-  return (bn: string, en: string) => language === "bn" ? bn : en;
-};
-
-// ============================================
-// COMPONENTS
-// ============================================
-
-interface MemberCardProps {
-  name: string;
-  role: string;
-  image: string;
-  whatsapp: string;
-  manages?: string;
-  subject?: string;
-  group?: string;
-  schedule?: string;
-  icon: any;
+interface MemberCardProps extends CommunityMember {
+  roleLabel: string;
+  manageLabel: string;
 }
 
 const MemberCard: React.FC<MemberCardProps> = ({
@@ -140,32 +77,24 @@ const MemberCard: React.FC<MemberCardProps> = ({
   role,
   image,
   whatsapp,
-  manages,
+  job,
+  schedule,
   subject,
   group,
-  schedule,
   icon: Icon,
+  roleLabel,
+  manageLabel,
 }) => {
-  const t = useTranslation();
-
-  // All colors now use primary (red) theme
-  const colors = {
-    bg: "bg-primary/10 dark:bg-primary/20",
-    border: "border-primary/20 dark:border-primary/30",
-    text: "text-primary dark:text-primary",
-    badge: "bg-primary/10 text-primary dark:bg-primary/20 dark:text-primary",
-  };
-
   return (
     <div className="group rounded-xl border border-secondary bg-background p-5 transition-all hover:border-primary hover:shadow-lg hover:-translate-y-1">
       {/* Header with Icon & Role */}
       <div className="flex items-center gap-3 mb-4">
-        <div className={`rounded-lg p-2.5 ${colors.bg}`}>
-          <Icon className={`h-5 w-5 ${colors.text}`} />
+        <div className="rounded-lg p-2.5 bg-primary/10 dark:bg-primary/20">
+          <Icon className="h-5 w-5 text-primary" />
         </div>
         <div>
           <h4 className="font-semibold text-text">{name}</h4>
-          <span className={`text-xs font-medium ${colors.text}`}>{role}</span>
+          <span className="text-xs font-medium text-primary">{roleLabel}</span>
         </div>
       </div>
 
@@ -178,7 +107,7 @@ const MemberCard: React.FC<MemberCardProps> = ({
         />
       </div>
 
-      {/* Info Section - SAME for everyone */}
+      {/* Info Section */}
       <div className="text-center mb-3 min-h-[40px]">
         {subject && (
           <>
@@ -186,15 +115,14 @@ const MemberCard: React.FC<MemberCardProps> = ({
             {group && <p className="text-xs text-text/50">{group}</p>}
           </>
         )}
-        {manages && (
-          <p className="text-sm text-text/70">{t("ম্যানেজ করে", "Manages")}: {manages}</p>
-        )}
-        {!subject && !manages && (
-          <p className="text-sm text-text/50">{role}</p>
+        {!subject && (
+          <p className="text-sm text-text/70">
+            {manageLabel}: {job}
+          </p>
         )}
       </div>
 
-      {/* Schedule - SAME position for everyone */}
+      {/* Schedule */}
       {schedule && (
         <div className="flex items-center justify-center gap-2 text-xs text-text/50 mb-3">
           <Clock className="h-3 w-3" />
@@ -202,25 +130,25 @@ const MemberCard: React.FC<MemberCardProps> = ({
         </div>
       )}
 
-      {/* WhatsApp Card - SAME for everyone */}
+      {/* WhatsApp Card */}
       <a
         href={`https://wa.me/${whatsapp}`}
         target="_blank"
         rel="noopener noreferrer"
-        className={`block rounded-lg border p-3 transition-all hover:shadow-md ${colors.border} hover:border-primary`}
+        className="block rounded-lg border border-primary/20 p-3 transition-all hover:border-primary hover:shadow-md"
       >
         <div className="flex items-center justify-between">
           <div className="flex items-center gap-2">
-            <div className={`rounded-lg p-1.5 ${colors.bg}`}>
-              <MessageCircle className={`h-3.5 w-3.5 ${colors.text}`} />
+            <div className="rounded-lg p-1.5 bg-primary/10">
+              <MessageCircle className="h-3.5 w-3.5 text-primary" />
             </div>
             <div>
               <p className="text-xs font-medium text-text">WhatsApp</p>
               <p className="text-[10px] text-text/50">{formatWhatsApp(whatsapp)}</p>
             </div>
           </div>
-          <span className={`rounded-full px-2 py-0.5 text-[10px] font-medium ${colors.badge}`}>
-            {t("অ্যাকটিভ", "Active")}
+          <span className="rounded-full bg-primary/10 px-2 py-0.5 text-[10px] font-medium text-primary">
+            Active
           </span>
         </div>
       </a>
@@ -229,94 +157,50 @@ const MemberCard: React.FC<MemberCardProps> = ({
 };
 
 // ============================================
-// SECTION HEADER COMPONENT
+// MEMBERS GRID COMPONENT
 // ============================================
 
-interface SectionHeaderProps {
-  icon: any;
-  title: string;
-  subtitle: string;
-}
-
-const SectionHeader: React.FC<SectionHeaderProps> = ({ icon: Icon, title, subtitle }) => {
-  return (
-    <div className="mb-6 flex items-center gap-3">
-      <div className={`rounded-lg p-2 bg-primary/10 text-primary dark:bg-primary/20`}>
-        <Icon className="h-5 w-5" />
-      </div>
-      <div>
-        <h2 className="text-2xl font-bold text-text">{title}</h2>
-        <p className="text-sm text-text/50">{subtitle}</p>
-      </div>
-    </div>
-  );
-};
-
-// ============================================
-// MEMBER SECTION COMPONENT
-// ============================================
-
-interface MemberSectionProps {
-  members: any[];
+interface MembersGridProps {
+  members: CommunityMember[];
   title: string;
   subtitle: string;
   icon: any;
-  type: "management" | "teachers";
-  lang: any;
+  roleType: CommunityMember['role'];
+  translate: any;
 }
 
-const MemberSection: React.FC<MemberSectionProps> = ({
+const MembersGrid: React.FC<MembersGridProps> = ({
   members,
   title,
   subtitle,
-  icon,
-  type,
-  lang,
+  icon: Icon,
+  roleType,
+  translate,
 }) => {
-  const t = useTranslation();
+  if (members.length === 0) return null;
 
   return (
     <section className="border-t border-secondary bg-secondary/5 py-8 sm:py-12">
       <div className="mx-auto max-w-7xl px-4">
-        <SectionHeader
-          icon={icon}
-          title={title}
-          subtitle={subtitle}
-        />
+        <div className="mb-6 flex items-center gap-3">
+          <div className="rounded-lg p-2 bg-primary/10 text-primary">
+            <Icon className="h-5 w-5" />
+          </div>
+          <div>
+            <h2 className="text-2xl font-bold text-text">{title}</h2>
+            <p className="text-sm text-text/50">{subtitle}</p>
+          </div>
+        </div>
 
         <div className="grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-3">
-          {members.map((member, idx) => {
-            const Icon = member.icon;
-
-            if (type === "teachers") {
-              return (
-                <MemberCard
-                  key={idx}
-                  name={member.name}
-                  role={t("শিক্ষক", "Teacher")}
-                  image={member.image}
-                  whatsapp={member.whatsapp}
-                  icon={Icon}
-                  subject={lang.teachers.items[idx]?.subject}
-                  group={lang.teachers.items[idx]?.group}
-                  schedule={lang.teachers.items[idx]?.schedule}
-                />
-              );
-            } else {
-              // Management
-              return (
-                <MemberCard
-                  key={idx}
-                  name={member.name}
-                  role={lang.management.manager}
-                  image={member.image}
-                  whatsapp={member.whatsapp}
-                  manages={lang.management.items[0]?.manages}
-                  icon={Briefcase}
-                />
-              );
-            }
-          })}
+          {members.map((member) => (
+            <MemberCard
+              key={member.id}
+              {...member}
+              roleLabel={translate.roles[roleType] || roleType}
+              manageLabel={translate.manages}
+            />
+          ))}
         </div>
       </div>
     </section>
@@ -324,13 +208,33 @@ const MemberSection: React.FC<MemberSectionProps> = ({
 };
 
 // ============================================
+// STATS CARD COMPONENT
+// ============================================
+
+const StatsCard = ({ value, label }: { value: number; label: string }) => (
+  <div className="rounded-xl border border-secondary bg-background p-4 text-center shadow-sm">
+    <div className="text-2xl font-bold text-primary">{value}</div>
+    <div className="text-xs text-text/50">{label}</div>
+  </div>
+);
+
+// ============================================
 // MAIN COMPONENT
 // ============================================
 
 export default function CommunityPage() {
   const { language } = useLanguage();
-  const t = useTranslation();
-  const lang = community[language as "en" | "bn"];
+  const lang = translations[language as 'en' | 'bn'] || translations.en;
+  const stats = getCommunityStats();
+
+  // Filter members by role
+  const founders = communityMembers.filter(m => m.role === 'founder');
+  const coAdmins = communityMembers.filter(m => m.role === 'co-admin');
+  const managers = communityMembers.filter(m => m.role === 'manager');
+  const teachers = communityMembers.filter(m => m.role === 'teacher');
+
+  // Combine founders and co-admins for the top section
+  const topMembers = [...founders, ...coAdmins];
 
   return (
     <div className="min-h-screen bg-background text-text">
@@ -345,16 +249,16 @@ export default function CommunityPage() {
           <div className="mb-4 inline-flex items-center gap-2 rounded-full bg-background/20 px-4 py-1.5 backdrop-blur-sm">
             <Sparkles className="h-4 w-4" />
             <span className="text-sm font-medium text-background">
-              {lang.header.badge}
+              {lang.badge}
             </span>
           </div>
 
           <h1 className="text-3xl font-extrabold tracking-tight text-background sm:text-4xl md:text-5xl">
-            👥 {lang.header.title}
+            👥 {lang.title}
           </h1>
 
           <p className="mx-auto mt-3 max-w-2xl text-base text-background/80 sm:text-lg">
-            {lang.header.subtitle}
+            {lang.subtitle}
           </p>
         </div>
       </section>
@@ -362,69 +266,47 @@ export default function CommunityPage() {
       {/* Stats */}
       <div className="relative z-10 mx-auto max-w-7xl -mt-6 px-4">
         <div className="grid grid-cols-2 gap-3 sm:grid-cols-4">
-          {[
-            { value: "1", label: t("প্রতিষ্ঠাতা", "Founder") },
-            { value: "2", label: t("সহ-অ্যাডমিন", "Co-Admins") },
-            { value: "3", label: t("ম্যানেজার", "Managers") },
-            { value: "5", label: t("শিক্ষক", "Teachers") },
-          ].map((stat) => (
-            <div
-              key={stat.label}
-              className="rounded-xl border border-secondary bg-background p-4 text-center shadow-sm"
-            >
-              <div className="text-2xl font-bold text-primary">{stat.value}</div>
-              <div className="text-xs text-text/50">{stat.label}</div>
-            </div>
-          ))}
+          <StatsCard value={stats.founder} label={lang.stats.founder} />
+          <StatsCard value={stats.coAdmins} label={lang.stats.coAdmins} />
+          <StatsCard value={stats.managers} label={lang.stats.managers} />
+          <StatsCard value={stats.teachers} label={lang.stats.teachers} />
         </div>
       </div>
 
-      {/* Founder & Co-Admins Section */}
-      <section className="mx-auto max-w-7xl px-4 py-8 sm:py-12">
-        <div className="grid grid-cols-1 gap-6 md:grid-cols-3">
-          {/* Founder */}
-          <MemberCard
-            name={communityData.founder.name}
-            role={lang.founder.role}
-            image={communityData.founder.image}
-            whatsapp={communityData.founder.whatsapp}
-            manages={lang.founder.manages}
-            icon={Crown}
-          />
+      {/* Founders & Co-Admins */}
+      {topMembers.length > 0 && (
+        <section className="mx-auto max-w-7xl px-4 py-8 sm:py-12">
+          <div className="grid grid-cols-1 gap-6 md:grid-cols-3">
+            {topMembers.map((member) => (
+              <MemberCard
+                key={member.id}
+                {...member}
+                roleLabel={lang.roles[member.role] || member.role}
+                manageLabel={lang.manages}
+              />
+            ))}
+          </div>
+        </section>
+      )}
 
-          {/* Co-Admins */}
-          {communityData.coAdmins.map((admin, idx) => (
-            <MemberCard
-              key={idx}
-              name={admin.name}
-              role={lang.coAdmins[idx].role}
-              image={admin.image}
-              whatsapp={admin.whatsapp}
-              manages={lang.coAdmins[idx].manages}
-              icon={Shield}
-            />
-          ))}
-        </div>
-      </section>
-
-      {/* Management Team */}
-      <MemberSection
-        members={communityData.managers}
-        title={lang.management.title}
-        subtitle={lang.management.subtitle}
+      {/* Managers */}
+      <MembersGrid
+        members={managers}
+        title="Management Team"
+        subtitle="Working behind the scenes to keep everything organized."
         icon={Users}
-        type="management"
-        lang={lang}
+        roleType="manager"
+        translate={lang}
       />
 
-      {/* Teachers Section */}
-      <MemberSection
-        members={communityData.teachers}
-        title={lang.teachers.title}
-        subtitle={lang.teachers.subtitle}
+      {/* Teachers */}
+      <MembersGrid
+        members={teachers}
+        title="Our Teachers"
+        subtitle="Experienced mentors who guide your learning journey."
         icon={Award}
-        type="teachers"
-        lang={lang}
+        roleType="teacher"
+        translate={lang}
       />
     </div>
   );
