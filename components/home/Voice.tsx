@@ -33,7 +33,7 @@ export default function Voice() {
           </div>
 
           <audio controls className="w-full rounded-lg">
-            <source src="/assets/audio/voice.mp3" type="audio/mpeg" />
+            <source src="/assets/audio/voice.m4a" type="audio/mpeg" />
             {t(
               "আপনার ব্রাউজার অডিও সমর্থন করে না।",
               "Your browser does not support audio."

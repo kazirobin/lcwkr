@@ -5,31 +5,48 @@
 }
 
 .font-bn {
-  font-family: var(--font-hind-siliguri), sans-serif; /* <- hind ব্যবহার করুন */
+  font-family: var(--font-hind-siliguri), sans-serif;
 }
 
 @layer base {
   :root {
-    --text: 16.22% 0.026 0.02;
-    --background: 97.55% 0.007 0.01;
-    --primary: 61.99% 0.162 0.11;
-    --secondary: 90.91% -0.023 0.11;
-    --accent: 89.25% -0.076 0.15;
+    /* #071614 - Dark Teal */
+    --text: 165 70% 5%;
+    /* #f7fcfc - Light Teal White */
+    --background: 180 50% 98%;
+    /* #fa7d4e - Orange (HSL: 18, 95%, 64%) */
+    --primary: 18 95% 64%;
+    /* #ff3726 - Red (HSL: 5, 100%, 57%) */
+    --secondary: 5 100% 57%;
+    /* Using orange as accent */
+    --accent: 18 95% 64%;
   }
 
   .dark {
-    --text: 94.78% 0.018 0.01;
-    --background: 12.73% 0.013 0.02;
-    --primary: 59.10% 0.163 0.11;
-    --secondary: 51.66% -0.020 0.10;
-    --accent: 70.46% -0.074 0.14;
+    /* #e8f8f6 - Light Teal */
+    --text: 170 40% 94%;
+    /* #030707 - Near Black */
+    --background: 180 40% 2%;
+    /* Same orange in dark mode */
+    --primary: 18 95% 64%;
+    /* Same red in dark mode */
+    --secondary: 5 100% 57%;
+    /* Same orange as accent in dark mode */
+    --accent: 18 95% 64%;
   }
 }
 
 @theme inline {
-  --color-text: oklab(var(--text));
-  --color-background: oklab(var(--background));
-  --color-primary: oklab(var(--primary));
-  --color-secondary: oklab(var(--secondary));
-  --color-accent: oklab(var(--accent));
+  --color-text: hsl(var(--text));
+  --color-background: hsl(var(--background));
+  --color-primary: hsl(var(--primary));
+  --color-secondary: hsl(var(--secondary));
+  --color-accent: hsl(var(--accent));
+  
+  /* Support for opacity like text-primary/50 */
+  --color-text-rgb: var(--text);
+  --color-background-rgb: var(--background);
+  --color-primary-rgb: var(--primary);
+  --color-secondary-rgb: var(--secondary);
+  --color-accent-rgb: var(--accent);
 }

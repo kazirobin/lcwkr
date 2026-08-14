@@ -200,7 +200,7 @@ export default function RoadmapBooks() {
                 href="https://chat.whatsapp.com/EBP79wEaAfAEvMtMee6HTY"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="group inline-flex items-center justify-center gap-2 rounded-2xl border border-primary bg-background px-6 py-4 font-semibold text-primary transition hover:bg-secondary"
+                className="group inline-flex items-center justify-center gap-2 rounded-2xl border border-primary bg-background px-6 py-4 font-semibold text-primary transition hover:bg-secondary hover:text-background"
               >
 
                 <MessageCircle className="h-5 w-5" />
