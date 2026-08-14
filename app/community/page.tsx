@@ -1,13 +1,6 @@
 "use client";
 
-import {
-  Users,
-  Award,
-  Crown,
-  MessageCircle,
-  Clock,
-  Sparkles,
-} from "lucide-react";
+import { Users, Award, MessageCircle, Clock, Sparkles } from "lucide-react";
 import { useLanguage } from "../context/LanguageContext";
 import { communityMembers, getCommunityStats } from "@/data/communityData";
 import { CommunityMember } from "@/data/communityData";
@@ -29,7 +22,7 @@ const translations = {
     },
     roles: {
       founder: "Founder & Lead Admin",
-      'co-admin': "Co-Admin",
+      "co-admin": "Co-Admin",
       manager: "Manager",
       teacher: "Teacher",
     },
@@ -47,7 +40,7 @@ const translations = {
     },
     roles: {
       founder: "প্রতিষ্ঠাতা ও প্রধান অ্যাডমিন",
-      'co-admin': "সহকারী অ্যাডমিন",
+      "co-admin": "সহকারী অ্যাডমিন",
       manager: "ম্যানেজার",
       teacher: "শিক্ষক",
     },
@@ -64,7 +57,7 @@ const formatWhatsApp = (number: string) => {
 };
 
 // ============================================
-// MEMBER CARD COMPONENT
+// MEMBER CARD COMPONENT - MODIFIED
 // ============================================
 
 interface MemberCardProps extends CommunityMember {
@@ -87,35 +80,37 @@ const MemberCard: React.FC<MemberCardProps> = ({
 }) => {
   return (
     <div className="group rounded-xl border border-secondary bg-background p-5 transition-all hover:border-primary hover:shadow-lg hover:-translate-y-1">
-      {/* Header with Icon & Role */}
-      <div className="flex items-center gap-3 mb-4">
-        <div className="rounded-lg p-2.5 bg-primary/10 dark:bg-primary/20">
-          <Icon className="h-5 w-5 text-primary" />
-        </div>
-        <div>
-          <h4 className="font-semibold text-text">{name}</h4>
-          <span className="text-xs font-medium text-primary">{roleLabel}</span>
-        </div>
-      </div>
-
-      {/* Profile Image */}
-      <div className="flex justify-center mb-4">
+      {/* Profile Image - TOP */}
+      <div className="flex justify-center mb-3">
         <img
           src={image}
           alt={name}
-          className="h-20 w-20 rounded-full border-2 border-secondary object-cover transition-all group-hover:border-primary"
+          className="h-24 w-24 rounded-full border-2 border-secondary object-cover transition-all group-hover:border-primary"
         />
       </div>
 
+      {/* Name - BELOW IMAGE */}
+      <div className="text-center mb-1">
+        <h4 className="text-lg font-semibold text-text">{name}</h4>
+      </div>
+
+      {/* Role Badge - BELOW NAME */}
+      <div className="flex justify-center mb-4">
+        <span className="inline-flex items-center gap-1.5 rounded-full bg-primary/10 px-3 py-1 text-xs font-medium text-primary">
+          <Icon className="h-3.5 w-3.5" />
+          {roleLabel}
+        </span>
+      </div>
+
       {/* Info Section */}
-      <div className="text-center mb-3 min-h-[40px]">
+      <div className="text-center mb-3 min-h-10">
         {subject && (
           <>
             <p className="text-sm font-medium text-text">{subject}</p>
             {group && <p className="text-xs text-text/50">{group}</p>}
           </>
         )}
-        {!subject && (
+        {!subject && job && (
           <p className="text-sm text-text/70">
             {manageLabel}: {job}
           </p>
@@ -144,7 +139,9 @@ const MemberCard: React.FC<MemberCardProps> = ({
             </div>
             <div>
               <p className="text-xs font-medium text-text">WhatsApp</p>
-              <p className="text-[10px] text-text/50">{formatWhatsApp(whatsapp)}</p>
+              <p className="text-[10px] text-text/50">
+                {formatWhatsApp(whatsapp)}
+              </p>
             </div>
           </div>
           <span className="rounded-full bg-primary/10 px-2 py-0.5 text-[10px] font-medium text-primary">
@@ -165,7 +162,7 @@ interface MembersGridProps {
   title: string;
   subtitle: string;
   icon: any;
-  roleType: CommunityMember['role'];
+  roleType: CommunityMember["role"];
   translate: any;
 }
 
@@ -224,14 +221,14 @@ const StatsCard = ({ value, label }: { value: number; label: string }) => (
 
 export default function CommunityPage() {
   const { language } = useLanguage();
-  const lang = translations[language as 'en' | 'bn'] || translations.en;
+  const lang = translations[language as "en" | "bn"] || translations.en;
   const stats = getCommunityStats();
 
   // Filter members by role
-  const founders = communityMembers.filter(m => m.role === 'founder');
-  const coAdmins = communityMembers.filter(m => m.role === 'co-admin');
-  const managers = communityMembers.filter(m => m.role === 'manager');
-  const teachers = communityMembers.filter(m => m.role === 'teacher');
+  const founders = communityMembers.filter((m) => m.role === "founder");
+  const coAdmins = communityMembers.filter((m) => m.role === "co-admin");
+  const managers = communityMembers.filter((m) => m.role === "manager");
+  const teachers = communityMembers.filter((m) => m.role === "teacher");
 
   // Combine founders and co-admins for the top section
   const topMembers = [...founders, ...coAdmins];
@@ -253,8 +250,9 @@ export default function CommunityPage() {
             </span>
           </div>
 
-          <h1 className="text-3xl font-extrabold tracking-tight text-background sm:text-4xl md:text-5xl">
-            👥 {lang.title}
+          <h1 className="flex items-center justify-center gap-3 text-3xl font-extrabold tracking-tight text-background md:text-5xl">
+            <Users className="h-10 w-10 sm:h-12 sm:w-12 md:h-14 md:w-14" />
+            {lang.title}
           </h1>
 
           <p className="mx-auto mt-3 max-w-2xl text-base text-background/80 sm:text-lg">

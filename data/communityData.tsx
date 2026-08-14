@@ -52,7 +52,7 @@ export const communityMembers: CommunityMember[] = [
     image: "/assets/community/ss.png",
     whatsapp: "8801681879654",
     role: 'manager',
-    job: "5pm Class Group",
+    job: "7pm Class Group",
     icon: Briefcase,
   },
   {
@@ -75,8 +75,20 @@ export const communityMembers: CommunityMember[] = [
     job: "Chinese Language Teacher",
     icon: Award,
     subject: "Chinese Language",
-    group: "5pm Class Group",
+    group: "7pm Class Group",
     schedule: "Mon, Wed • 7:00 PM",
+  },
+  {
+    id: 'teacher-2',
+    name: "Ismail Hossain",
+    image: "/assets/community/user1.png",
+    whatsapp: "8801633700770",
+    role: 'teacher',
+    job: "Chinese Language Teacher",
+    icon: Award,
+    subject: "Chinese Language",
+    group: "9pm Class Group",
+    schedule: "Sat, Sun, Mon, Tue, Wed • 9:00 PM",
   },
 ];
 
