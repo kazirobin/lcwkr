@@ -3,7 +3,7 @@
 import { useState } from "react";
 import Link from "next/link";
 import { ChevronDown, ChevronUp } from "lucide-react";
-import { useLanguage } from "@/app/context/LanguageContext";
+import { useLanguage } from "@/context/LanguageContext";
 
 type FAQItem = {
   question: string;
@@ -28,8 +28,8 @@ export const faq = {
         answer: (
           <>
             Click the <strong>Join Community</strong> button on the website.
-            You'll be redirected to our WhatsApp community where you can join
-            as a member.
+            You'll be redirected to our WhatsApp community where you can join as
+            a member.
           </>
         ),
       },
@@ -78,7 +78,8 @@ export const faq = {
       },
       {
         question: "Is the learning community free?",
-        answer: "Yes. Joining our Chinese learning community is completely free.",
+        answer:
+          "Yes. Joining our Chinese learning community is completely free.",
       },
       {
         question: "How can I improve faster?",
@@ -113,9 +114,9 @@ export const faq = {
         question: "আমি কীভাবে চীনা ভাষা শেখার কমিউনিটিতে যোগ দিতে পারি?",
         answer: (
           <>
-            ওয়েবসাইটের <strong>Join Community</strong> বাটনে ক্লিক করুন।
-            এরপর আপনাকে আমাদের WhatsApp কমিউনিটিতে নিয়ে যাওয়া হবে, যেখানে
-            আপনি সদস্য হতে পারবেন।
+            ওয়েবসাইটের <strong>Join Community</strong> বাটনে ক্লিক করুন। এরপর
+            আপনাকে আমাদের WhatsApp কমিউনিটিতে নিয়ে যাওয়া হবে, যেখানে আপনি
+            সদস্য হতে পারবেন।
           </>
         ),
       },
@@ -164,8 +165,7 @@ export const faq = {
       },
       {
         question: "কমিউনিটিতে যোগ দিতে কি কোনো ফি দিতে হবে?",
-        answer:
-          "না। আমাদের শেখার কমিউনিটিতে যোগদান সম্পূর্ণ বিনামূল্যে।",
+        answer: "না। আমাদের শেখার কমিউনিটিতে যোগদান সম্পূর্ণ বিনামূল্যে।",
       },
       {
         question: "কমিউনিটিতে কীভাবে দ্রুত উন্নতি করব?",
@@ -194,7 +194,6 @@ export default function FAQ() {
   return (
     <section className="bg-background">
       <div className="mx-auto max-w-4xl px-4">
-
         {/* Header */}
         <div className="mb-4 text-center">
           <span className="inline-flex rounded-full border border-primary/20 bg-primary/10 px-4 py-1 text-sm font-semibold text-primary">
@@ -225,9 +224,7 @@ export default function FAQ() {
                   onClick={() => setOpen(isOpen ? null : index)}
                   className="flex w-full items-center justify-between gap-4 px-5 py-5 text-left transition-colors hover:bg-primary/5"
                 >
-                  <h3 className="font-semibold text-text">
-                    {item.question}
-                  </h3>
+                  <h3 className="font-semibold text-text">{item.question}</h3>
 
                   <div className="flex h-9 w-9 shrink-0 items-center justify-center rounded-full bg-primary/10 text-primary">
                     {isOpen ? (
@@ -252,9 +249,7 @@ export default function FAQ() {
         <div className="mt-4 rounded-3xl border border-border bg-card p-8 text-center shadow-sm">
           <h3 className="text-2xl font-bold text-text">
             {data.support.title}{" "}
-            <span className="text-primary">
-              {data.support.highlight}
-            </span>
+            <span className="text-primary">{data.support.highlight}</span>
           </h3>
 
           <p className="mx-auto mt-3 max-w-xl text-muted-foreground">

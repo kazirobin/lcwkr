@@ -17,7 +17,7 @@ import {
   PenTool,
   Award,
 } from "lucide-react";
-import { useLanguage } from "../context/LanguageContext";
+import { useLanguage } from "../../context/LanguageContext";
 
 const apps = [
   {
@@ -44,7 +44,8 @@ const apps = [
     name: "Chinese Pinyin Learning Machine",
     category: "Pinyin",
     url: "https://play.google.com/store/apps/details?id=uni.UNI40BB307",
-  },{
+  },
+  {
     name: "Chinese Pinyin Keyboard",
     category: "Pinyin",
     url: "https://play.google.com/store/apps/details?id=uni.UNI40BB307",
@@ -155,13 +156,18 @@ const categoryIcons: Record<string, React.ReactNode> = {
 
 // Category colors - deeper colors for light mode
 const categoryColors: Record<string, string> = {
-  Dictionary: "bg-blue-100 text-blue-700 dark:bg-blue-500/20 dark:text-blue-400",
-  "Language Exchange": "bg-green-100 text-green-700 dark:bg-green-500/20 dark:text-green-400",
+  Dictionary:
+    "bg-blue-100 text-blue-700 dark:bg-blue-500/20 dark:text-blue-400",
+  "Language Exchange":
+    "bg-green-100 text-green-700 dark:bg-green-500/20 dark:text-green-400",
   Social: "bg-pink-100 text-pink-700 dark:bg-pink-500/20 dark:text-pink-400",
-  Communication: "bg-cyan-100 text-cyan-700 dark:bg-cyan-500/20 dark:text-cyan-400",
-  Pinyin: "bg-purple-100 text-purple-700 dark:bg-purple-500/20 dark:text-purple-400",
+  Communication:
+    "bg-cyan-100 text-cyan-700 dark:bg-cyan-500/20 dark:text-cyan-400",
+  Pinyin:
+    "bg-purple-100 text-purple-700 dark:bg-purple-500/20 dark:text-purple-400",
   HSK: "bg-orange-100 text-orange-700 dark:bg-orange-500/20 dark:text-orange-400",
-  Vocabulary: "bg-emerald-100 text-emerald-700 dark:bg-emerald-500/20 dark:text-emerald-400",
+  Vocabulary:
+    "bg-emerald-100 text-emerald-700 dark:bg-emerald-500/20 dark:text-emerald-400",
   Writing: "bg-rose-100 text-rose-700 dark:bg-rose-500/20 dark:text-rose-400",
 };
 
@@ -183,7 +189,7 @@ const categoryLabels: Record<string, { bn: string; en: string }> = {
 
 const useTranslation = () => {
   const { language } = useLanguage();
-  return (bn: string, en: string) => language === "bn" ? bn : en;
+  return (bn: string, en: string) => (language === "bn" ? bn : en);
 };
 
 // ============================================
@@ -198,22 +204,31 @@ interface AppCardProps {
 
 const AppCard: React.FC<AppCardProps> = ({ name, category, url }) => {
   const t = useTranslation();
-  
+
   const icon = categoryIcons[category] || <Smartphone className="w-5 h-5" />;
-  const colorClass = categoryColors[category] || "bg-gray-100 text-gray-700 dark:bg-gray-500/20 dark:text-gray-400";
-  const categoryLabel = categoryLabels[category] || { bn: category, en: category };
+  const colorClass =
+    categoryColors[category] ||
+    "bg-gray-100 text-gray-700 dark:bg-gray-500/20 dark:text-gray-400";
+  const categoryLabel = categoryLabels[category] || {
+    bn: category,
+    en: category,
+  };
 
   return (
     <div className="group rounded-xl border border-secondary bg-background p-5 transition-all hover:border-primary hover:shadow-lg hover:-translate-y-1">
       <div className="flex items-start gap-3 mb-4">
-        <div className={`flex h-11 w-11 shrink-0 items-center justify-center rounded-lg ${colorClass}`}>
+        <div
+          className={`flex h-11 w-11 shrink-0 items-center justify-center rounded-lg ${colorClass}`}
+        >
           {icon}
         </div>
         <div className="min-w-0 flex-1">
           <h3 className="font-semibold text-text text-sm leading-tight line-clamp-2">
             {name}
           </h3>
-          <span className={`inline-block mt-1.5 rounded-full px-2.5 py-0.5 text-xs font-medium ${colorClass}`}>
+          <span
+            className={`inline-block mt-1.5 rounded-full px-2.5 py-0.5 text-xs font-medium ${colorClass}`}
+          >
             {t(categoryLabel.bn, categoryLabel.en)}
           </span>
         </div>
@@ -241,13 +256,16 @@ export default function SuggestedAppsPage() {
   const t = useTranslation();
 
   // Group apps by category
-  const categories = [...new Set(apps.map(app => app.category))];
-  
+  const categories = [...new Set(apps.map((app) => app.category))];
+
   // Count apps per category
-  const categoryCount = categories.reduce((acc, cat) => {
-    acc[cat] = apps.filter(app => app.category === cat).length;
-    return acc;
-  }, {} as Record<string, number>);
+  const categoryCount = categories.reduce(
+    (acc, cat) => {
+      acc[cat] = apps.filter((app) => app.category === cat).length;
+      return acc;
+    },
+    {} as Record<string, number>,
+  );
 
   return (
     <div className="min-h-screen bg-background text-text">
@@ -265,15 +283,15 @@ export default function SuggestedAppsPage() {
               {t("সাজেস্টেড অ্যাপস", "Suggested Apps")}
             </span>
           </div>
-          
+
           <h1 className="text-3xl sm:text-4xl md:text-5xl font-extrabold text-background tracking-tight">
             📱 {t("চাইনিজ শেখার অ্যাপস", "Chinese Learning Apps")}
           </h1>
-          
+
           <p className="mt-3 text-background/80 text-base sm:text-lg max-w-2xl mx-auto">
             {t(
               "এই অ্যাপগুলো ব্যবহার করে আপনার চাইনিজ শোনা, বলা, পড়া, লেখা ও এইচএসকে প্রস্তুতি উন্নত করুন",
-              "Improve your Chinese listening, speaking, reading, writing & HSK preparation"
+              "Improve your Chinese listening, speaking, reading, writing & HSK preparation",
             )}
           </p>
         </div>
@@ -288,8 +306,13 @@ export default function SuggestedAppsPage() {
             { value: "4.5+", label: t("গড় রেটিং", "Avg Rating") },
             { value: "100%", label: t("ফ্রি", "Free") },
           ].map((stat) => (
-            <div key={stat.label} className="rounded-xl border border-secondary bg-background p-4 text-center shadow-sm">
-              <div className="text-2xl font-bold text-primary">{stat.value}</div>
+            <div
+              key={stat.label}
+              className="rounded-xl border border-secondary bg-background p-4 text-center shadow-sm"
+            >
+              <div className="text-2xl font-bold text-primary">
+                {stat.value}
+              </div>
               <div className="text-xs text-text/50">{stat.label}</div>
             </div>
           ))}
@@ -304,8 +327,13 @@ export default function SuggestedAppsPage() {
             <span>{t("ক্যাটেগরি", "Categories")}:</span>
           </div>
           {categories.map((category) => {
-            const colorClass = categoryColors[category] || "bg-gray-100 text-gray-700 dark:bg-gray-500/20 dark:text-gray-400";
-            const label = categoryLabels[category] || { bn: category, en: category };
+            const colorClass =
+              categoryColors[category] ||
+              "bg-gray-100 text-gray-700 dark:bg-gray-500/20 dark:text-gray-400";
+            const label = categoryLabels[category] || {
+              bn: category,
+              en: category,
+            };
             return (
               <span
                 key={category}

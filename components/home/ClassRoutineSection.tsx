@@ -1,7 +1,12 @@
 "use client";
 
-import { useLanguage } from "@/app/context/LanguageContext";
-import { BookOpen, CalendarDays, CheckCircle2, GraduationCap } from "lucide-react";
+import { useLanguage } from "@/context/LanguageContext";
+import {
+  BookOpen,
+  CalendarDays,
+  CheckCircle2,
+  GraduationCap,
+} from "lucide-react";
 
 export default function ClassRoutineSection() {
   const { language } = useLanguage();
@@ -76,7 +81,7 @@ export default function ClassRoutineSection() {
                 <p className="mt-1 text-sm text-muted">
                   {t(
                     "সপ্তাহে ৫ দিন লাইভ ক্লাস",
-                    "Live classes 5 days every week"
+                    "Live classes 5 days every week",
                   )}
                 </p>
               </div>
@@ -137,7 +142,7 @@ export default function ClassRoutineSection() {
               <p className="text-sm text-muted">
                 {t(
                   "✔ প্রতিটি ক্লাসে উপস্থিতি নেওয়া হয়।",
-                  "✔ Attendance is taken in every class."
+                  "✔ Attendance is taken in every class.",
                 )}
               </p>
             </div>
@@ -158,7 +163,7 @@ export default function ClassRoutineSection() {
                 <p className="mt-1 text-sm text-muted">
                   {t(
                     "এক ধাপ শেষ করে পরবর্তী ধাপে যান",
-                    "Complete one step before moving to the next"
+                    "Complete one step before moving to the next",
                   )}
                 </p>
               </div>
@@ -185,7 +190,7 @@ export default function ClassRoutineSection() {
               <p className="text-sm leading-7 text-text">
                 {t(
                   "প্রতিটি লেভেল সফলভাবে শেষ করার পরে আপনি পরবর্তী লেভেলে অগ্রসর হবেন। সবগুলো লেভেল শেষ হলে HSK পরীক্ষার জন্য প্রস্তুতি শুরু হবে।",
-                  "After successfully completing each level, you'll move to the next one. Once all levels are completed, you'll begin HSK preparation."
+                  "After successfully completing each level, you'll move to the next one. Once all levels are completed, you'll begin HSK preparation.",
                 )}
               </p>
             </div>

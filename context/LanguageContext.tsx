@@ -2,7 +2,7 @@
 
 import { createContext, useContext, useEffect, useState } from "react";
 
-import type { Language } from "../../types/language";
+import type { Language } from "../types/language";
 import { translations } from "@/data/index";
 
 type ContextType = {

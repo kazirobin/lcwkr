@@ -2,7 +2,7 @@
 "use client";
 
 import { useState } from "react";
-import { useLanguage } from "../context/LanguageContext";
+import { useLanguage } from "../../context/LanguageContext";
 import {
   Sparkles,
   Copy,
@@ -90,7 +90,8 @@ const translations = {
     page: {
       badge: "বার্তা স্টোর",
       title: "প্রয়োজনীয় বার্তাটি কপি করুন",
-      subtitle: "এখান থেকে আপনার প্রয়োজনীয় বার্তাটি সহজেই কপি করে ব্যবহার করুন",
+      subtitle:
+        "এখান থেকে আপনার প্রয়োজনীয় বার্তাটি সহজেই কপি করে ব্যবহার করুন",
       available: "টি বার্তা উপলব্ধ",
     },
     team: {
@@ -109,7 +110,7 @@ const translations = {
 
 const useTranslation = () => {
   const { language } = useLanguage();
-  return (bn: string, en: string) => language === "bn" ? bn : en;
+  return (bn: string, en: string) => (language === "bn" ? bn : en);
 };
 
 // ============================================
@@ -197,12 +198,7 @@ interface TeamCardProps {
   tasks: string[];
 }
 
-const TeamCard: React.FC<TeamCardProps> = ({
-  name,
-  role,
-  group,
-  tasks,
-}) => {
+const TeamCard: React.FC<TeamCardProps> = ({ name, role, group, tasks }) => {
   const t = useTranslation();
 
   return (
@@ -218,7 +214,9 @@ const TeamCard: React.FC<TeamCardProps> = ({
       </div>
 
       <div className="mb-4">
-        <p className="text-xs font-medium text-text/50">{t("গ্রুপ", "Group")}</p>
+        <p className="text-xs font-medium text-text/50">
+          {t("গ্রুপ", "Group")}
+        </p>
         <p className="text-sm text-text/80">{group}</p>
       </div>
 
@@ -228,7 +226,10 @@ const TeamCard: React.FC<TeamCardProps> = ({
         </p>
         <ul className="space-y-1.5">
           {tasks.map((task, index) => (
-            <li key={index} className="flex items-start gap-2 text-sm text-text/70">
+            <li
+              key={index}
+              className="flex items-start gap-2 text-sm text-text/70"
+            >
               <CheckCircle className="mt-0.5 h-3.5 w-3.5 text-primary shrink-0" />
               <span>{task}</span>
             </li>
@@ -290,7 +291,9 @@ export default function LibraryPage() {
               <Users className="h-5 w-5" />
             </div>
             <div>
-              <h2 className="text-2xl font-bold text-text">{lang.team.title}</h2>
+              <h2 className="text-2xl font-bold text-text">
+                {lang.team.title}
+              </h2>
               <p className="text-sm text-text/50">{lang.team.subtitle}</p>
             </div>
           </div>

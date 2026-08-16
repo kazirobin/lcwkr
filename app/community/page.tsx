@@ -1,9 +1,10 @@
 "use client";
 
 import { Users, Award, MessageCircle, Clock, Sparkles } from "lucide-react";
-import { useLanguage } from "../context/LanguageContext";
+import { useLanguage } from "../../context/LanguageContext";
 import { communityMembers, getCommunityStats } from "@/data/communityData";
 import { CommunityMember } from "@/data/communityData";
+import CommunityRules from "@/components/CommunityRules";
 
 // ============================================
 // TRANSLATIONS
@@ -306,6 +307,7 @@ export default function CommunityPage() {
         roleType="teacher"
         translate={lang}
       />
+      <CommunityRules/>
     </div>
   );
 }

@@ -3,7 +3,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import { ArrowRight, BookOpen, Globe, Users } from "lucide-react";
-import { useLanguage } from "@/app/context/LanguageContext";
+import { useLanguage } from "@/context/LanguageContext";
 
 export default function Hero() {
   const { t } = useLanguage();
@@ -13,27 +13,26 @@ export default function Hero() {
     <section className="bg-background text-text">
       <div className="mx-auto max-w-7xl px-6 py-6">
         <div className="grid items-center gap-12 lg:grid-cols-2">
-
           <div className="relative lg:order-2">
-  <div className="relative mx-auto w-full max-w-md xl:max-w-lg">
-    <div className="absolute -inset-4 rounded-[30px] bg-primary/10 blur-3xl" />
+            <div className="relative mx-auto w-full max-w-md xl:max-w-lg">
+              <div className="absolute -inset-4 rounded-[30px] bg-primary/10 blur-3xl" />
 
-    <div className="relative overflow-hidden rounded-3xl border border-secondary/50 bg-background p-4 shadow-2xl">
-      <Image
-        src="/assets/hero1.png"
-        alt="Chinese Teacher"
-        width={700}
-        height={850}
-        priority
-        className="h-auto w-full rounded-2xl object-cover"
-      />
+              <div className="relative overflow-hidden rounded-3xl border border-secondary/50 bg-background p-4 shadow-2xl">
+                <Image
+                  src="/assets/hero1.png"
+                  alt="Chinese Teacher"
+                  width={700}
+                  height={850}
+                  priority
+                  className="h-auto w-full rounded-2xl object-cover"
+                />
 
-      <h1 className="mt-4 text-center text-3xl font-extrabold text-primary">
-         {hero.title.edu}
-      </h1>
-    </div>
-  </div>
-</div>
+                <h1 className="mt-4 text-center text-3xl font-extrabold text-primary">
+                  {hero.title.edu}
+                </h1>
+              </div>
+            </div>
+          </div>
           {/* ================= LEFT ================= */}
 
           <div>
@@ -89,7 +88,6 @@ export default function Hero() {
 
                 {hero.buttons.whatsapp}
               </Link>
-
             </div>
           </div>
         </div>

@@ -1,7 +1,7 @@
 // src/components/intro/IntroPage.tsx
 "use client";
 
-import { useLanguage } from "../context/LanguageContext";
+import { useLanguage } from "../../context/LanguageContext";
 import {
   Sparkles,
   BookOpen,
@@ -24,33 +24,51 @@ const translations = {
     hero: {
       badge: "Introduction to Chinese",
       title: "Discover the World of Chinese Language",
-      subtitle: "Explore the rich history, culture, and global significance of the Chinese language",
+      subtitle:
+        "Explore the rich history, culture, and global significance of the Chinese language",
       cta: "Start Learning",
     },
     whatIsChinese: {
       title: "What is Chinese?",
-      description: "Chinese is a group of related languages spoken by over 1.3 billion people worldwide. It's one of the oldest continuously used writing systems in the world.",
+      description:
+        "Chinese is a group of related languages spoken by over 1.3 billion people worldwide. It's one of the oldest continuously used writing systems in the world.",
       features: ["Tonal Language", "Logographic Script", "Rich History"],
     },
     history: {
       title: "History & Evolution",
-      description: "Chinese has evolved over thousands of years, from oracle bone script to modern simplified characters, reflecting the rich cultural heritage of China.",
-      features: ["5000+ Years Old", "Oracle Bone Script", "Simplified & Traditional"],
+      description:
+        "Chinese has evolved over thousands of years, from oracle bone script to modern simplified characters, reflecting the rich cultural heritage of China.",
+      features: [
+        "5000+ Years Old",
+        "Oracle Bone Script",
+        "Simplified & Traditional",
+      ],
     },
     speakers: {
       title: "Global Speakers",
-      description: "With over 1.3 billion native speakers, Chinese is the most spoken language in the world and an official UN language.",
+      description:
+        "With over 1.3 billion native speakers, Chinese is the most spoken language in the world and an official UN language.",
       features: ["1.3B+ Speakers", "UN Official Language", "Global Influence"],
     },
     varieties: {
       title: "Varieties of Chinese",
-      description: "Chinese has many dialects including Mandarin, Cantonese, Shanghainese, and more, each with unique characteristics and cultural significance.",
-      features: ["8 Major Dialects", "Mutual Intelligibility", "Cultural Diversity"],
+      description:
+        "Chinese has many dialects including Mandarin, Cantonese, Shanghainese, and more, each with unique characteristics and cultural significance.",
+      features: [
+        "8 Major Dialects",
+        "Mutual Intelligibility",
+        "Cultural Diversity",
+      ],
     },
     whyLearn: {
       title: "Why Learn Chinese?",
-      description: "Learning Chinese opens doors to career opportunities, cultural understanding, and personal growth in our interconnected world.",
-      benefits: ["Career Opportunities", "Cultural Exchange", "Personal Growth"],
+      description:
+        "Learning Chinese opens doors to career opportunities, cultural understanding, and personal growth in our interconnected world.",
+      benefits: [
+        "Career Opportunities",
+        "Cultural Exchange",
+        "Personal Growth",
+      ],
     },
     quote: {
       text: "Learning Chinese is not just about memorizing characters, it's about understanding a rich culture and a unique way of thinking.",
@@ -58,7 +76,8 @@ const translations = {
     },
     chineseWorld: {
       title: "Chinese Around the World",
-      description: "Chinese communities thrive globally, making it one of the most influential languages in international business, culture, and diplomacy.",
+      description:
+        "Chinese communities thrive globally, making it one of the most influential languages in international business, culture, and diplomacy.",
     },
     didYouKnow: {
       title: "Did You Know?",
@@ -74,32 +93,42 @@ const translations = {
     hero: {
       badge: "চাইনিজ ভাষার পরিচয়",
       title: "চাইনিজ ভাষার বিশ্ব আবিষ্কার করুন",
-      subtitle: "চাইনিজ ভাষার সমৃদ্ধ ইতিহাস, সংস্কৃতি এবং বিশ্বব্যাপী গুরুত্ব অন্বেষণ করুন",
+      subtitle:
+        "চাইনিজ ভাষার সমৃদ্ধ ইতিহাস, সংস্কৃতি এবং বিশ্বব্যাপী গুরুত্ব অন্বেষণ করুন",
       cta: "শেখা শুরু করুন",
     },
     whatIsChinese: {
       title: "চাইনিজ কী?",
-      description: "চাইনিজ হল সম্পর্কিত ভাষার একটি গোষ্ঠী যা বিশ্বব্যাপী ১.৩ বিলিয়নেরও বেশি মানুষ কথা বলে। এটি বিশ্বের সবচেয়ে পুরনো অবিচ্ছিন্নভাবে ব্যবহৃত লিখন পদ্ধতিগুলির মধ্যে একটি।",
+      description:
+        "চাইনিজ হল সম্পর্কিত ভাষার একটি গোষ্ঠী যা বিশ্বব্যাপী ১.৩ বিলিয়নেরও বেশি মানুষ কথা বলে। এটি বিশ্বের সবচেয়ে পুরনো অবিচ্ছিন্নভাবে ব্যবহৃত লিখন পদ্ধতিগুলির মধ্যে একটি।",
       features: ["স্বরধ্বনি ভাষা", "চিত্রলিপি লিপি", "সমৃদ্ধ ইতিহাস"],
     },
     history: {
       title: "ইতিহাস ও বিবর্তন",
-      description: "চাইনিজ ভাষা হাজার হাজার বছর ধরে বিবর্তিত হয়েছে, অরাকল হাড়ের লিপি থেকে আধুনিক সরলীকৃত অক্ষর পর্যন্ত, যা চীনের সমৃদ্ধ সাংস্কৃতিক ঐতিহ্যকে প্রতিফলিত করে।",
+      description:
+        "চাইনিজ ভাষা হাজার হাজার বছর ধরে বিবর্তিত হয়েছে, অরাকল হাড়ের লিপি থেকে আধুনিক সরলীকৃত অক্ষর পর্যন্ত, যা চীনের সমৃদ্ধ সাংস্কৃতিক ঐতিহ্যকে প্রতিফলিত করে।",
       features: ["৫০০০+ বছর পুরনো", "অরাকল হাড়ের লিপি", "সরলীকৃত ও প্রথাগত"],
     },
     speakers: {
       title: "বিশ্বব্যাপী ভাষাভাষী",
-      description: "১.৩ বিলিয়নের বেশি স্থানীয় ভাষাভাষী সহ, চাইনিজ বিশ্বের সবচেয়ে বেশি কথ্য ভাষা এবং জাতিসংঘের একটি সরকারি ভাষা।",
+      description:
+        "১.৩ বিলিয়নের বেশি স্থানীয় ভাষাভাষী সহ, চাইনিজ বিশ্বের সবচেয়ে বেশি কথ্য ভাষা এবং জাতিসংঘের একটি সরকারি ভাষা।",
       features: ["১.৩বি+ ভাষাভাষী", "জাতিসংঘের ভাষা", "বিশ্বব্যাপী প্রভাব"],
     },
     varieties: {
       title: "চাইনিজের বিভিন্নতা",
-      description: "চাইনিজের অনেক উপভাষা রয়েছে যেমন ম্যান্ডারিন, ক্যান্টোনিজ, সাংহাইনিজ এবং আরও অনেক, প্রতিটির নিজস্ব বৈশিষ্ট্য এবং সাংস্কৃতিক গুরুত্ব রয়েছে।",
-      features: ["৮টি প্রধান উপভাষা", "পারস্পরিক বোধগম্যতা", "সাংস্কৃতিক বৈচিত্র্য"],
+      description:
+        "চাইনিজের অনেক উপভাষা রয়েছে যেমন ম্যান্ডারিন, ক্যান্টোনিজ, সাংহাইনিজ এবং আরও অনেক, প্রতিটির নিজস্ব বৈশিষ্ট্য এবং সাংস্কৃতিক গুরুত্ব রয়েছে।",
+      features: [
+        "৮টি প্রধান উপভাষা",
+        "পারস্পরিক বোধগম্যতা",
+        "সাংস্কৃতিক বৈচিত্র্য",
+      ],
     },
     whyLearn: {
       title: "কেন চাইনিজ শিখবেন?",
-      description: "চাইনিজ শেখা আমাদের আন্তঃসংযুক্ত বিশ্বে কর্মজীবনের সুযোগ, সাংস্কৃতিক বোধগম্যতা এবং ব্যক্তিগত বৃদ্ধির দরজা খুলে দেয়।",
+      description:
+        "চাইনিজ শেখা আমাদের আন্তঃসংযুক্ত বিশ্বে কর্মজীবনের সুযোগ, সাংস্কৃতিক বোধগম্যতা এবং ব্যক্তিগত বৃদ্ধির দরজা খুলে দেয়।",
       benefits: ["কর্মজীবনের সুযোগ", "সাংস্কৃতিক বিনিময়", "ব্যক্তিগত বৃদ্ধি"],
     },
     quote: {
@@ -108,7 +137,8 @@ const translations = {
     },
     chineseWorld: {
       title: "বিশ্বজুড়ে চাইনিজ",
-      description: "চাইনিজ সম্প্রদায় বিশ্বব্যাপী সমৃদ্ধ, যা আন্তর্জাতিক ব্যবসা, সংস্কৃতি এবং কূটনীতিতে সবচেয়ে প্রভাবশালী ভাষাগুলির মধ্যে একটি করে তুলেছে।",
+      description:
+        "চাইনিজ সম্প্রদায় বিশ্বব্যাপী সমৃদ্ধ, যা আন্তর্জাতিক ব্যবসা, সংস্কৃতি এবং কূটনীতিতে সবচেয়ে প্রভাবশালী ভাষাগুলির মধ্যে একটি করে তুলেছে।",
     },
     didYouKnow: {
       title: "আপনি কি জানেন?",
@@ -128,7 +158,7 @@ const translations = {
 
 const useTranslation = () => {
   const { language } = useLanguage();
-  return (bn: string, en: string) => language === "bn" ? bn : en;
+  return (bn: string, en: string) => (language === "bn" ? bn : en);
 };
 
 // ============================================
@@ -186,7 +216,9 @@ const QuoteCard: React.FC<QuoteCardProps> = ({ text, author }) => {
         </div>
         <h3 className="text-lg font-bold text-text">Quote</h3>
       </div>
-      <blockquote className="mb-3 text-base italic text-text/80">"{text}"</blockquote>
+      <blockquote className="mb-3 text-base italic text-text/80">
+        "{text}"
+      </blockquote>
       <p className="text-sm font-medium text-text/60">— {author}</p>
     </div>
   );
@@ -198,7 +230,11 @@ interface InfoCardProps {
   description: string;
 }
 
-const InfoCard: React.FC<InfoCardProps> = ({ icon: Icon, title, description }) => {
+const InfoCard: React.FC<InfoCardProps> = ({
+  icon: Icon,
+  title,
+  description,
+}) => {
   return (
     <div className="group rounded-xl border border-secondary bg-background p-6 transition-all hover:border-primary hover:shadow-lg hover:-translate-y-1">
       <div className="mb-4 flex items-center gap-3">
@@ -309,7 +345,9 @@ export default function IntroPage() {
               <div className="rounded-lg bg-primary/10 p-2.5 text-primary dark:bg-primary/20">
                 <Lightbulb className="h-5 w-5" />
               </div>
-              <h3 className="text-lg font-bold text-text">{lang.didYouKnow.title}</h3>
+              <h3 className="text-lg font-bold text-text">
+                {lang.didYouKnow.title}
+              </h3>
             </div>
             <div className="grid grid-cols-1 gap-3 sm:grid-cols-2">
               {lang.didYouKnow.facts.map((fact, idx) => (

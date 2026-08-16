@@ -3,9 +3,9 @@ import { Geist, Geist_Mono } from "next/font/google";
 import { Hind } from "next/font/google"; // <- সঠিকভাবে ইমপোর্ট করুন
 import "./globals.css";
 import Nav from "@/components/Nav";
-import { LanguageProvider } from "./context/LanguageContext";
+import { LanguageProvider } from "../context/LanguageContext";
 import ThemeProvider from "./providers/ThemeProvider";
-import {  Hind_Siliguri } from "next/font/google";
+import { Hind_Siliguri } from "next/font/google";
 
 // ... অন্যান্য ফন্ট
 

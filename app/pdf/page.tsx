@@ -15,7 +15,7 @@ import {
   FolderOpen,
   ChevronRight,
 } from "lucide-react";
-import { useLanguage } from "../context/LanguageContext";
+import { useLanguage } from "../../context/LanguageContext";
 
 // ============================================
 // TYPES & DATA
@@ -67,10 +67,14 @@ export const hskLevels: HSKLevel[] = [
     },
     driveLinks: {
       all: "https://drive.google.com/drive/folders/1cuhnbILUvxFKlMCmkgRaDP0SiLpiCbgM?usp=drive_link",
-      books: "https://drive.google.com/drive/folders/1GFvFiWDtFa5blOe26a-kKOwCACGY_eCK?usp=drive_link",
-      audio: "https://drive.google.com/drive/folders/1X8bv142wtkENNHZWd30c5t1Dvrl6NeQU?usp=drive_link",
-      mockTest: "https://drive.google.com/drive/folders/1s7SXAqakvPpEKHnZP3-TC9F4NTjR10vu?usp=drive_link",
-      vocabulary: "https://drive.google.com/file/d/1k6gwM5t4PwwW7Cc-mlHfC6oCt0oXqlQt/view?usp=drive_link",
+      books:
+        "https://drive.google.com/drive/folders/1GFvFiWDtFa5blOe26a-kKOwCACGY_eCK?usp=drive_link",
+      audio:
+        "https://drive.google.com/drive/folders/1X8bv142wtkENNHZWd30c5t1Dvrl6NeQU?usp=drive_link",
+      mockTest:
+        "https://drive.google.com/drive/folders/1s7SXAqakvPpEKHnZP3-TC9F4NTjR10vu?usp=drive_link",
+      vocabulary:
+        "https://drive.google.com/file/d/1k6gwM5t4PwwW7Cc-mlHfC6oCt0oXqlQt/view?usp=drive_link",
     },
   },
   {
@@ -88,10 +92,14 @@ export const hskLevels: HSKLevel[] = [
     },
     driveLinks: {
       all: "https://drive.google.com/drive/folders/1kvKuD1100jX2Wgbljuwr443v3LrXOvs_?usp=drive_link",
-      books: "https://drive.google.com/drive/folders/1uyTpWA-cpmc0oMv7mmdDd-Xy1yjoHBOa?usp=drive_link",
-      audio: "https://drive.google.com/drive/folders/1F-hJc2XVYcp6diXP7tuQnf4uFfPBNMH9?usp=drive_link",
-      mockTest: "https://drive.google.com/drive/folders/1W78AO00XWiwslWvOZHHK-fu_dtqMGA26?usp=drive_link",
-      vocabulary: "https://drive.google.com/file/d/1GVndWJG1bY9M_mqh1XhkQqGXijnxO2YO/view?usp=drive_link",
+      books:
+        "https://drive.google.com/drive/folders/1uyTpWA-cpmc0oMv7mmdDd-Xy1yjoHBOa?usp=drive_link",
+      audio:
+        "https://drive.google.com/drive/folders/1F-hJc2XVYcp6diXP7tuQnf4uFfPBNMH9?usp=drive_link",
+      mockTest:
+        "https://drive.google.com/drive/folders/1W78AO00XWiwslWvOZHHK-fu_dtqMGA26?usp=drive_link",
+      vocabulary:
+        "https://drive.google.com/file/d/1GVndWJG1bY9M_mqh1XhkQqGXijnxO2YO/view?usp=drive_link",
     },
   },
   {
@@ -109,10 +117,14 @@ export const hskLevels: HSKLevel[] = [
     },
     driveLinks: {
       all: "https://drive.google.com/drive/folders/1WoJPqChhwMwVJ1C3KAyp3CyVzGKVmbws?usp=drive_link",
-      books: "https://drive.google.com/drive/folders/1_OXK_Iuee5iuryPMDR76Ea8hiOHVux25?usp=drive_link",
-      audio: "https://drive.google.com/drive/folders/1Sp9QQtlfdEc37uSgVTQYyhS8cQ7dBoGu?usp=drive_link",
-      mockTest: "https://drive.google.com/drive/folders/1sUz0twM8nkmP3z6ENb0K8Pt_l2-85KlJ?usp=drive_link",
-      vocabulary: "https://drive.google.com/file/d/1TCFTv128jQMbGI9NZUNUD1sJXWUX9ibv/view?usp=drive_link",
+      books:
+        "https://drive.google.com/drive/folders/1_OXK_Iuee5iuryPMDR76Ea8hiOHVux25?usp=drive_link",
+      audio:
+        "https://drive.google.com/drive/folders/1Sp9QQtlfdEc37uSgVTQYyhS8cQ7dBoGu?usp=drive_link",
+      mockTest:
+        "https://drive.google.com/drive/folders/1sUz0twM8nkmP3z6ENb0K8Pt_l2-85KlJ?usp=drive_link",
+      vocabulary:
+        "https://drive.google.com/file/d/1TCFTv128jQMbGI9NZUNUD1sJXWUX9ibv/view?usp=drive_link",
     },
   },
   {
@@ -130,10 +142,14 @@ export const hskLevels: HSKLevel[] = [
     },
     driveLinks: {
       all: "https://drive.google.com/drive/folders/1R80teEvyvy3upZ9hJtHMro5S1BfOVQsG?usp=drive_link",
-      books: "https://drive.google.com/drive/folders/1J3Dr7JFql5IKQxcBMeSu2YmizQ8HVihg?usp=drive_link",
-      audio: "https://drive.google.com/drive/folders/17thaoXjYhT-SCuuaLN-WUqLWVgrO2jjV?usp=drive_link",
-      mockTest: "https://drive.google.com/drive/folders/1uqPrzOaGjo0jeJghSD1BOH0ZGNENB9mv?usp=drive_link",
-      vocabulary: "https://drive.google.com/file/d/1Q8uDOg2i88CQoQWq-wcvPB-Eyor2gjb9/view?usp=drive_link",
+      books:
+        "https://drive.google.com/drive/folders/1J3Dr7JFql5IKQxcBMeSu2YmizQ8HVihg?usp=drive_link",
+      audio:
+        "https://drive.google.com/drive/folders/17thaoXjYhT-SCuuaLN-WUqLWVgrO2jjV?usp=drive_link",
+      mockTest:
+        "https://drive.google.com/drive/folders/1uqPrzOaGjo0jeJghSD1BOH0ZGNENB9mv?usp=drive_link",
+      vocabulary:
+        "https://drive.google.com/file/d/1Q8uDOg2i88CQoQWq-wcvPB-Eyor2gjb9/view?usp=drive_link",
     },
   },
   {
@@ -151,10 +167,14 @@ export const hskLevels: HSKLevel[] = [
     },
     driveLinks: {
       all: "https://drive.google.com/drive/folders/1_kgn35rulKQkLoTqshyK4f1fa2t0ydM4?usp=drive_link",
-      books: "https://drive.google.com/drive/folders/16FImlIM8fd_Cx76xxQGVqyCMhEGpUAEk?usp=drive_link",
-      audio: "https://drive.google.com/drive/folders/1qKG7mGdM-CKdSMxKGwWpS3GEiAFvhb_p?usp=drive_link",
-      mockTest: "https://drive.google.com/drive/folders/1uoLtBYNROdAcmJzSIfho-0B2a7EV7Nm1?usp=drive_link",
-      vocabulary: "https://drive.google.com/file/d/1M3VYLjf7sEolzoIaNjbhXOotl3Dmb2bC/view?usp=drive_link",
+      books:
+        "https://drive.google.com/drive/folders/16FImlIM8fd_Cx76xxQGVqyCMhEGpUAEk?usp=drive_link",
+      audio:
+        "https://drive.google.com/drive/folders/1qKG7mGdM-CKdSMxKGwWpS3GEiAFvhb_p?usp=drive_link",
+      mockTest:
+        "https://drive.google.com/drive/folders/1uoLtBYNROdAcmJzSIfho-0B2a7EV7Nm1?usp=drive_link",
+      vocabulary:
+        "https://drive.google.com/file/d/1M3VYLjf7sEolzoIaNjbhXOotl3Dmb2bC/view?usp=drive_link",
     },
   },
   {
@@ -172,10 +192,14 @@ export const hskLevels: HSKLevel[] = [
     },
     driveLinks: {
       all: "https://drive.google.com/drive/folders/13pW9pOFAFkSe-NXbvP611RjW8F16tbYo?usp=drive_link",
-      books: "https://drive.google.com/drive/folders/18sx8UmwzK93fZea7l28wI_PJFRFaNaEr?usp=drive_link",
-      audio: "https://drive.google.com/drive/folders/1zUQ45S_XeUHWUVglTrzR5B9rxksAeiaQ?usp=drive_link",
-      mockTest: "https://drive.google.com/drive/folders/1hWlp_SAcMyNPr2zDT5KVbg9YFxay_fHE?usp=drive_link",
-      vocabulary: "https://drive.google.com/file/d/1LziYNVQzFa7YQMUqEP_7-XW2j9gZ8HZl/view?usp=drive_link",
+      books:
+        "https://drive.google.com/drive/folders/18sx8UmwzK93fZea7l28wI_PJFRFaNaEr?usp=drive_link",
+      audio:
+        "https://drive.google.com/drive/folders/1zUQ45S_XeUHWUVglTrzR5B9rxksAeiaQ?usp=drive_link",
+      mockTest:
+        "https://drive.google.com/drive/folders/1hWlp_SAcMyNPr2zDT5KVbg9YFxay_fHE?usp=drive_link",
+      vocabulary:
+        "https://drive.google.com/file/d/1LziYNVQzFa7YQMUqEP_7-XW2j9gZ8HZl/view?usp=drive_link",
     },
   },
 ];
@@ -196,7 +220,7 @@ export const allResources: ResourceItem[] = [
 
 const useTranslation = () => {
   const { language } = useLanguage();
-  return (bn: string, en: string) => language === "bn" ? bn : en;
+  return (bn: string, en: string) => (language === "bn" ? bn : en);
 };
 
 // ============================================
@@ -255,7 +279,7 @@ interface HSKLevelCardProps {
 
 const HSKLevelCard: React.FC<HSKLevelCardProps> = ({ level }) => {
   const t = useTranslation();
-  
+
   const resourceDescriptions: Record<string, string> = {
     books: t("পিডিএফ টেক্সটবুক ও ওয়ার্কবুক", "PDF textbooks & workbooks"),
     audio: t("এমপি৩ অডিও ফাইল", "MP3 listening files"),
@@ -278,31 +302,31 @@ const HSKLevelCard: React.FC<HSKLevelCardProps> = ({ level }) => {
 
       {/* Resources */}
       <div className="space-y-2 mb-4">
-        <ResourceLink 
+        <ResourceLink
           label={t("PDF বই", "PDF Books")}
-          icon={BookOpen} 
-          link={level.driveLinks?.books} 
+          icon={BookOpen}
+          link={level.driveLinks?.books}
           available={level.resources.books}
           description={resourceDescriptions.books}
         />
-        <ResourceLink 
+        <ResourceLink
           label={t("অডিও", "Audio")}
-          icon={Headphones} 
-          link={level.driveLinks?.audio} 
+          icon={Headphones}
+          link={level.driveLinks?.audio}
           available={level.resources.audio}
           description={resourceDescriptions.audio}
         />
-        <ResourceLink 
+        <ResourceLink
           label={t("মক টেস্ট", "Mock Tests")}
-          icon={ClipboardList} 
-          link={level.driveLinks?.mockTest} 
+          icon={ClipboardList}
+          link={level.driveLinks?.mockTest}
           available={level.resources.mockTest}
           description={resourceDescriptions.mockTest}
         />
-        <ResourceLink 
+        <ResourceLink
           label={t("ভোকাবুলারি", "Vocabulary")}
-          icon={FileText} 
-          link={level.driveLinks?.vocabulary} 
+          icon={FileText}
+          link={level.driveLinks?.vocabulary}
           available={level.resources.vocabulary}
           description={resourceDescriptions.vocabulary}
         />
@@ -329,7 +353,7 @@ interface AllResourcesCardProps {
 
 const AllResourcesCard: React.FC<AllResourcesCardProps> = ({ resource }) => {
   const t = useTranslation();
-  
+
   return (
     <a
       href={resource.link}
@@ -356,10 +380,11 @@ export default function PDF() {
   const t = useTranslation();
 
   const filteredLevels = useMemo(
-    () => selectedLevel
-      ? hskLevels.filter((level) => level.id === selectedLevel)
-      : hskLevels,
-    [selectedLevel]
+    () =>
+      selectedLevel
+        ? hskLevels.filter((level) => level.id === selectedLevel)
+        : hskLevels,
+    [selectedLevel],
   );
 
   return (
@@ -378,13 +403,16 @@ export default function PDF() {
               HSK {t("রিসোর্স হাব", "Resource Hub")}
             </span>
           </div>
-          
+
           <h1 className="text-3xl sm:text-4xl md:text-5xl font-extrabold text-background tracking-tight">
             {t("HSK বই ও স্টাডি ম্যাটেরিয়াল", "HSK Books & Materials")}
           </h1>
-          
+
           <p className="mt-3 text-background/80 text-base sm:text-lg max-w-2xl mx-auto">
-            {t("সকল লেভেলের PDF, অডিও, টেস্ট ও ভোকাবুলারি", "All levels PDF, Audio, Tests & Vocabulary")}
+            {t(
+              "সকল লেভেলের PDF, অডিও, টেস্ট ও ভোকাবুলারি",
+              "All levels PDF, Audio, Tests & Vocabulary",
+            )}
           </p>
 
           {/* Level Filter */}
@@ -393,8 +421,8 @@ export default function PDF() {
               onClick={() => setSelectedLevel(null)}
               className={`px-3.5 py-1.5 rounded-full text-sm font-medium transition-all ${
                 !selectedLevel
-                  ? 'bg-background text-primary shadow-lg'
-                  : 'bg-background/20 text-background hover:bg-background/30'
+                  ? "bg-background text-primary shadow-lg"
+                  : "bg-background/20 text-background hover:bg-background/30"
               }`}
             >
               {t("সব", "All")}
@@ -405,11 +433,11 @@ export default function PDF() {
                 onClick={() => setSelectedLevel(level.id)}
                 className={`px-3.5 py-1.5 rounded-full text-sm font-medium transition-all ${
                   selectedLevel === level.id
-                    ? 'bg-background text-primary shadow-lg'
-                    : 'bg-background/20 text-background hover:bg-background/30'
+                    ? "bg-background text-primary shadow-lg"
+                    : "bg-background/20 text-background hover:bg-background/30"
                 }`}
               >
-                {level.icon} HSK {level.id.split('-')[1]}
+                {level.icon} HSK {level.id.split("-")[1]}
               </button>
             ))}
           </div>
@@ -425,8 +453,13 @@ export default function PDF() {
             { value: "5000+", label: t("শব্দ", "Words") },
             { value: "100%", label: t("ফ্রি", "Free") },
           ].map((stat) => (
-            <div key={stat.label} className="rounded-xl border border-secondary bg-background/80 backdrop-blur-sm p-4 text-center shadow-sm">
-              <div className="text-2xl font-bold text-primary">{stat.value}</div>
+            <div
+              key={stat.label}
+              className="rounded-xl border border-secondary bg-background/80 backdrop-blur-sm p-4 text-center shadow-sm"
+            >
+              <div className="text-2xl font-bold text-primary">
+                {stat.value}
+              </div>
               <div className="text-xs text-text/50">{stat.label}</div>
             </div>
           ))}
@@ -444,7 +477,7 @@ export default function PDF() {
             {filteredLevels.length} {t("টি", "")}
           </span>
         </div>
-        
+
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
           {filteredLevels.map((level) => (
             <HSKLevelCard key={level.id} level={level} />
@@ -461,7 +494,7 @@ export default function PDF() {
               {t("সব রিসোর্স একসাথে", "All Resources Together")}
             </h2>
           </div>
-          
+
           <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-4">
             {allResources.map((resource) => (
               <AllResourcesCard key={resource.id} resource={resource} />

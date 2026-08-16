@@ -1,13 +1,12 @@
 "use client";
 
 import { Volume2 } from "lucide-react";
-import { useLanguage } from "@/app/context/LanguageContext";
+import { useLanguage } from "@/context/LanguageContext";
 
 export default function Voice() {
   const { language } = useLanguage();
 
-  const t = (bn: string, en: string) =>
-    language === "bn" ? bn : en;
+  const t = (bn: string, en: string) => (language === "bn" ? bn : en);
 
   return (
     <section className="bg-background">
@@ -26,7 +25,7 @@ export default function Voice() {
               <p className="text-sm text-muted-foreground">
                 {t(
                   "শুরু করার আগে মনোযোগ দিয়ে শুনুন।",
-                  "Listen carefully before starting."
+                  "Listen carefully before starting.",
                 )}
               </p>
             </div>
@@ -36,7 +35,7 @@ export default function Voice() {
             <source src="/assets/audio/voice.m4a" type="audio/mpeg" />
             {t(
               "আপনার ব্রাউজার অডিও সমর্থন করে না।",
-              "Your browser does not support audio."
+              "Your browser does not support audio.",
             )}
           </audio>
         </div>
