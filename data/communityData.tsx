@@ -69,7 +69,7 @@ export const communityMembers: CommunityMember[] = [
   {
     id: 'teacher-1',
     name: "Abdullah al Faruk",
-    image: "/assets/community/user1.png",
+    image: "/assets/community/faruk.png",
     whatsapp: "8801613765886",
     role: 'teacher',
     job: "Chinese Language Teacher",
