@@ -3,9 +3,11 @@ import { Geist, Geist_Mono } from "next/font/google";
 import { Hind } from "next/font/google"; // <- সঠিকভাবে ইমপোর্ট করুন
 import "./globals.css";
 import Nav from "@/components/Nav";
+import NavTwo from "@/components/NavTwo";
 import { LanguageProvider } from "../context/LanguageContext";
 import ThemeProvider from "./providers/ThemeProvider";
 import { Hind_Siliguri } from "next/font/google";
+import AuthProvider from "@/components/AuthProvider";
 
 // ... অন্যান্য ফন্ট
 
@@ -47,12 +49,16 @@ export default function RootLayout({
       suppressHydrationWarning
     >
       <body className="min-h-full flex flex-col" suppressHydrationWarning>
+          <AuthProvider>
         <ThemeProvider>
           <LanguageProvider>
             <Nav />
+
             {children}
+ 
           </LanguageProvider>
         </ThemeProvider>
+        </AuthProvider>
       </body>
     </html>
   );

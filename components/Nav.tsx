@@ -1,26 +1,35 @@
-// app/components/Nav.tsx
+// components/Nav.tsx
 "use client";
 
 import Image from "next/image";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { useState, useEffect, useRef, useCallback } from "react";
+import { useSession, signOut } from "next-auth/react";
+import { 
+  LogOut, 
+  LayoutDashboard, 
+  CalendarCheck, 
+  Award, 
+  BookOpen, 
+  Bell, 
+  PlusCircle,
+  FileText
+} from "lucide-react";
 
 import { useLanguage } from "@/context/LanguageContext";
 import ThemeButton from "./ThemeButton";
 
 // ============================================
-// CONFIGURATION - Edit this section to modify your navbar
+// CONFIGURATION (Public Navbar)
 // ============================================
 
-// 1. Define your main navigation links (non-dropdown)
 const MAIN_LINKS = [
   { id: "home", href: "/", en: "Home", bn: "হোম" },
   { id: "intro", href: "/intro", en: "Intro", bn: "ইন্ট্রো" },
   { id: "community", href: "/community", en: "Community", bn: "কমিউনিটি" },
 ] as const;
 
-// 2. Define your dropdown menus
 const DROPDOWNS = {
   vocabulary: {
     id: "vocabulary",
@@ -42,11 +51,10 @@ const DROPDOWNS = {
       { href: "/apps", en: "Suggested Apps", bn: "প্রস্তাবিত অ্যাপস" },
       { href: "/pdf", en: "PDF", bn: "পিডিএফ" },
     ],
-    activePrefixes: ["/apps"],
+    activePrefixes: ["/apps", "/pdf"],
   },
 } as const;
 
-// Type for dropdown IDs
 type DropdownId = keyof typeof DROPDOWNS;
 
 // ============================================
@@ -56,6 +64,10 @@ type DropdownId = keyof typeof DROPDOWNS;
 export default function Nav() {
   const pathname = usePathname();
   const { language, setLanguage } = useLanguage();
+  const { data: session, status } = useSession();
+
+  const isLoggedIn = status === "authenticated";
+  const user = session?.user;
 
   // State
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
@@ -66,35 +78,30 @@ export default function Nav() {
   const navRef = useRef<HTMLElement>(null);
   const mobileMenuRef = useRef<HTMLDivElement>(null);
 
-  // Helper: Get translated text
+  // Translation Helper
   const t = useCallback(
-    (en: string, bn: string) => {
-      return language === "en" ? en : bn;
-    },
-    [language],
+    (en: string, bn: string) => (language === "en" ? en : bn),
+    [language]
   );
 
-  // Helper: Check if route is active
+  // Route Active Helpers
   const isActive = useCallback(
     (href: string) => {
-      if (href === "/") return pathname === href;
+      if (href === "/" || href === "/dashboard") return pathname === href;
       return pathname.startsWith(href);
     },
-    [pathname],
+    [pathname]
   );
 
-  // Helper: Check if dropdown should be active
   const isDropdownActive = useCallback(
     (dropdownId: DropdownId) => {
       const dropdown = DROPDOWNS[dropdownId];
-      return dropdown.activePrefixes.some((prefix) =>
-        pathname.startsWith(prefix),
-      );
+      return dropdown.activePrefixes.some((prefix) => pathname.startsWith(prefix));
     },
-    [pathname],
+    [pathname]
   );
 
-  // Effects
+  // Responsive & Resize Handling
   useEffect(() => {
     const checkMobile = () => setIsMobile(window.innerWidth < 768);
     checkMobile();
@@ -102,13 +109,13 @@ export default function Nav() {
     return () => window.removeEventListener("resize", checkMobile);
   }, []);
 
-  // Close everything on route change
+  // Close menus on route change
   useEffect(() => {
     setIsMobileMenuOpen(false);
     setOpenDropdown(null);
   }, [pathname]);
 
-  // Escape key handler
+  // Escape Key Handler
   useEffect(() => {
     const handleEscape = (e: KeyboardEvent) => {
       if (e.key === "Escape") {
@@ -120,38 +127,31 @@ export default function Nav() {
     return () => document.removeEventListener("keydown", handleEscape);
   }, []);
 
-  // Desktop outside click
+  // Click Outside Handlers
   useEffect(() => {
     const handleClickOutside = (event: MouseEvent) => {
-      if (isMobile) return;
-      if (
-        openDropdown &&
-        navRef.current &&
-        !navRef.current.contains(event.target as Node)
-      ) {
-        setOpenDropdown(null);
+      if (isMobile) {
+        if (
+          isMobileMenuOpen &&
+          mobileMenuRef.current &&
+          !mobileMenuRef.current.contains(event.target as Node)
+        ) {
+          setIsMobileMenuOpen(false);
+          setOpenDropdown(null);
+        }
+      } else {
+        if (
+          openDropdown &&
+          navRef.current &&
+          !navRef.current.contains(event.target as Node)
+        ) {
+          setOpenDropdown(null);
+        }
       }
     };
     document.addEventListener("mousedown", handleClickOutside);
     return () => document.removeEventListener("mousedown", handleClickOutside);
-  }, [openDropdown, isMobile]);
-
-  // Mobile outside click
-  useEffect(() => {
-    const handleClickOutside = (event: MouseEvent) => {
-      if (!isMobile) return;
-      if (
-        isMobileMenuOpen &&
-        mobileMenuRef.current &&
-        !mobileMenuRef.current.contains(event.target as Node)
-      ) {
-        setIsMobileMenuOpen(false);
-        setOpenDropdown(null);
-      }
-    };
-    document.addEventListener("mousedown", handleClickOutside);
-    return () => document.removeEventListener("mousedown", handleClickOutside);
-  }, [isMobileMenuOpen, isMobile]);
+  }, [openDropdown, isMobileMenuOpen, isMobile]);
 
   // Handlers
   const toggleDropdown = (dropdownId: DropdownId) => {
@@ -173,20 +173,24 @@ export default function Nav() {
     if (isMobileMenuOpen) setOpenDropdown(null);
   };
 
+  const handleSignOut = () => {
+    closeAll();
+    signOut({ callbackUrl: "/login" });
+  };
+
   // ============================================
   // RENDER HELPERS
   // ============================================
 
-  // Render a single link
   const renderLink = (href: string, label: string, onClick?: () => void) => {
     const active = isActive(href);
     return (
       <Link
         href={href}
         onClick={onClick || closeAll}
-        className={`block px-4 py-3 text-base font-medium transition-colors rounded-lg ${
+        className={`block px-3 py-2 text-sm font-medium transition-colors rounded-md ${
           active
-            ? "text-primary bg-primary/10"
+            ? "text-primary bg-primary/10 font-semibold"
             : "text-text hover:text-primary hover:bg-primary/5"
         }`}
       >
@@ -195,7 +199,6 @@ export default function Nav() {
     );
   };
 
-  // Render a dropdown button (desktop)
   const renderDesktopDropdown = (dropdownId: DropdownId) => {
     const dropdown = DROPDOWNS[dropdownId];
     const isOpen = openDropdown === dropdownId;
@@ -217,17 +220,12 @@ export default function Nav() {
         >
           {label}
           <svg
-            className={`w-4 h-4 transition-transform ${isOpen ? "rotate-180" : ""}`}
+            className={`w-4 h-4 transition-transform duration-150 ${isOpen ? "rotate-180" : ""}`}
             fill="none"
             stroke="currentColor"
             viewBox="0 0 24 24"
           >
-            <path
-              strokeLinecap="round"
-              strokeLinejoin="round"
-              strokeWidth={2}
-              d="M19 9l-7 7-7-7"
-            />
+            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
           </svg>
         </button>
 
@@ -240,7 +238,7 @@ export default function Nav() {
                 onClick={closeAll}
                 className={`block px-4 py-2 text-sm transition-colors ${
                   isActive(item.href)
-                    ? "text-primary bg-primary/10"
+                    ? "text-primary bg-primary/10 font-medium"
                     : "text-text hover:bg-primary/5 hover:text-primary"
                 }`}
               >
@@ -253,7 +251,6 @@ export default function Nav() {
     );
   };
 
-  // Render mobile dropdown (accordion)
   const renderMobileDropdown = (dropdownId: DropdownId) => {
     const dropdown = DROPDOWNS[dropdownId];
     const isOpen = openDropdown === dropdownId;
@@ -280,12 +277,7 @@ export default function Nav() {
             stroke="currentColor"
             viewBox="0 0 24 24"
           >
-            <path
-              strokeLinecap="round"
-              strokeLinejoin="round"
-              strokeWidth={2}
-              d="M19 9l-7 7-7-7"
-            />
+            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
           </svg>
         </button>
 
@@ -316,17 +308,14 @@ export default function Nav() {
   // ============================================
 
   return (
-    <nav
-      ref={navRef}
-      className="sticky top-0 z-50 bg-background border-b border-border"
-    >
-      <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+    <nav ref={navRef} className="sticky top-0 z-50 bg-background border-b border-border">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-16">
           {/* Logo */}
           <Link
-            href="/"
+            href={isLoggedIn ? "/dashboard" : "/"}
             onClick={closeAll}
-            className="shrink-0 flex items-center"
+            className="shrink-0 flex items-center gap-2"
           >
             <Image
               src="/assets/logo.png"
@@ -338,21 +327,138 @@ export default function Nav() {
             />
           </Link>
 
-          {/* Desktop Navigation */}
+          {/* Desktop Navigation Links */}
           <div className="hidden md:flex md:items-center md:space-x-1">
-            {/* Main links */}
-            {MAIN_LINKS.map((link) => (
-              <div key={link.id}>
-                {renderLink(link.href, t(link.en, link.bn))}
-              </div>
-            ))}
+            {isLoggedIn ? (
+              /* --- LOGGED IN DESKTOP NAVIGATION --- */
+              <>
+                <Link
+                  href="/dashboard"
+                  onClick={closeAll}
+                  className={`flex items-center gap-1.5 px-3 py-2 text-sm font-medium transition-colors rounded-md ${
+                    isActive("/dashboard")
+                      ? "text-primary bg-primary/10 font-semibold"
+                      : "text-text hover:text-primary hover:bg-primary/5"
+                  }`}
+                >
+                  <LayoutDashboard className="h-4 w-4" />
+                  {t("Dashboard", "ড্যাশবোর্ড")}
+                </Link>
 
-            {/* Dropdowns */}
-            {Object.keys(DROPDOWNS).map((id) => (
-              <div key={id}>{renderDesktopDropdown(id as DropdownId)}</div>
-            ))}
+                {(user?.role === "teacher" || user?.role === "admin") && (
+                  <>
+                    <Link
+                      href="/attendance/mark"
+                      onClick={closeAll}
+                      className={`flex items-center gap-1.5 px-3 py-2 text-sm font-medium transition-colors rounded-md ${
+                        isActive("/attendance/mark")
+                          ? "text-primary bg-primary/10 font-semibold"
+                          : "text-text hover:text-primary hover:bg-primary/5"
+                      }`}
+                    >
+                      <CalendarCheck className="h-4 w-4" />
+                      {t("Attendance", "উপস্থিতি")}
+                    </Link>
 
-            {/* Controls */}
+                    <Link
+                      href="/quizzes/create"
+                      onClick={closeAll}
+                      className={`flex items-center gap-1.5 px-3 py-2 text-sm font-medium transition-colors rounded-md ${
+                        isActive("/quizzes/create")
+                          ? "text-primary bg-primary/10 font-semibold"
+                          : "text-text hover:text-primary hover:bg-primary/5"
+                      }`}
+                    >
+                      <PlusCircle className="h-4 w-4" />
+                      {t("Create Exam", "পরীক্ষা তৈরি")}
+                    </Link>
+
+                    <Link
+                      href="/results/publish"
+                      onClick={closeAll}
+                      className={`flex items-center gap-1.5 px-3 py-2 text-sm font-medium transition-colors rounded-md ${
+                        isActive("/results/publish")
+                          ? "text-primary bg-primary/10 font-semibold"
+                          : "text-text hover:text-primary hover:bg-primary/5"
+                      }`}
+                    >
+                      <Award className="h-4 w-4" />
+                      {t("Results", "ফলাফল")}
+                    </Link>
+                  </>
+                )}
+
+                {user?.role === "student" && (
+                  <>
+                    <Link
+                      href="/attendance/my-report"
+                      onClick={closeAll}
+                      className={`flex items-center gap-1.5 px-3 py-2 text-sm font-medium transition-colors rounded-md ${
+                        isActive("/attendance/my-report")
+                          ? "text-primary bg-primary/10 font-semibold"
+                          : "text-text hover:text-primary hover:bg-primary/5"
+                      }`}
+                    >
+                      <CalendarCheck className="h-4 w-4" />
+                      {t("My Attendance", "আমার উপস্থিতি")}
+                    </Link>
+
+                    <Link
+                      href="/results/marksheet"
+                      onClick={closeAll}
+                      className={`flex items-center gap-1.5 px-3 py-2 text-sm font-medium transition-colors rounded-md ${
+                        isActive("/results/marksheet")
+                          ? "text-primary bg-primary/10 font-semibold"
+                          : "text-text hover:text-primary hover:bg-primary/5"
+                      }`}
+                    >
+                      <FileText className="h-4 w-4" />
+                      {t("Marksheet", "মার্কশিট")}
+                    </Link>
+                  </>
+                )}
+
+                <Link
+                  href="/quizzes/list"
+                  onClick={closeAll}
+                  className={`flex items-center gap-1.5 px-3 py-2 text-sm font-medium transition-colors rounded-md ${
+                    isActive("/quizzes/list")
+                      ? "text-primary bg-primary/10 font-semibold"
+                      : "text-text hover:text-primary hover:bg-primary/5"
+                  }`}
+                >
+                  <BookOpen className="h-4 w-4" />
+                  {t("Quizzes", "কুইজ")}
+                </Link>
+
+                <Link
+                  href="/notices"
+                  onClick={closeAll}
+                  className={`flex items-center gap-1.5 px-3 py-2 text-sm font-medium transition-colors rounded-md ${
+                    isActive("/notices")
+                      ? "text-primary bg-primary/10 font-semibold"
+                      : "text-text hover:text-primary hover:bg-primary/5"
+                  }`}
+                >
+                  <Bell className="h-4 w-4" />
+                  {t("Notices", "নোটিশ")}
+                </Link>
+              </>
+            ) : (
+              /* --- PUBLIC LOGGED OUT NAVIGATION --- */
+              <>
+                {MAIN_LINKS.map((link) => (
+                  <div key={link.id}>
+                    {renderLink(link.href, t(link.en, link.bn))}
+                  </div>
+                ))}
+                {Object.keys(DROPDOWNS).map((id) => (
+                  <div key={id}>{renderDesktopDropdown(id as DropdownId)}</div>
+                ))}
+              </>
+            )}
+
+            {/* Language & Theme Controls */}
             <div className="flex items-center space-x-2 ml-4">
               <button
                 type="button"
@@ -364,14 +470,49 @@ export default function Nav() {
               </button>
               <ThemeButton />
             </div>
+
+            {/* Authentication Action Buttons (Desktop) */}
+            <div className="flex items-center pl-2">
+              {isLoggedIn ? (
+                <div className="flex items-center gap-2">
+                  <div className="hidden lg:flex flex-col text-right pr-1">
+                    <span className="text-xs font-semibold text-text">{user?.name}</span>
+                    <span className="text-[10px] text-primary uppercase font-bold">{user?.role}</span>
+                  </div>
+                  <button
+                    onClick={handleSignOut}
+                    className="flex items-center gap-1.5 px-3 py-2 text-xs font-semibold text-text hover:text-red-400 hover:bg-red-500/10 border border-border rounded-md transition-colors"
+                    title={t("Sign Out", "লগআউট")}
+                  >
+                    <LogOut className="h-3.5 w-3.5" />
+                    <span>{t("Sign Out", "লগআউট")}</span>
+                  </button>
+                </div>
+              ) : (
+                <div className="flex items-center gap-2">
+                  <Link
+                    href="/login"
+                    className="px-3 py-1.5 text-xs font-semibold text-text hover:text-primary border border-border rounded-md transition-colors"
+                  >
+                    {t("Login", "লগইন")}
+                  </Link>
+                  <Link
+                    href="/register"
+                    className="px-3 py-1.5 text-xs font-semibold text-white bg-primary hover:opacity-90 rounded-md transition-opacity"
+                  >
+                    {t("Register", "নিবন্ধন")}
+                  </Link>
+                </div>
+              )}
+            </div>
           </div>
 
-          {/* Mobile Controls */}
+          {/* Mobile Right Controls */}
           <div className="md:hidden flex items-center space-x-2">
             <button
               type="button"
               onClick={toggleLanguage}
-              className="px-3 py-2 text-sm font-medium text-text hover:text-primary hover:bg-primary/5 rounded-md transition-colors"
+              className="px-2.5 py-1.5 text-sm font-medium text-text hover:text-primary hover:bg-primary/5 rounded-md transition-colors"
               aria-label="Toggle language"
             >
               {language === "en" ? "বাংলা" : "English"}
@@ -410,24 +551,147 @@ export default function Nav() {
           </div>
         </div>
 
-        {/* Mobile Menu - Improved Design */}
+        {/* Mobile Dropdown Drawer */}
         {isMobile && isMobileMenuOpen && (
           <div
             ref={mobileMenuRef}
             className="md:hidden bg-background border-t border-border/50 py-4 px-2"
           >
             <div className="flex flex-col space-y-1 max-w-sm mx-auto">
-              {/* Main links */}
-              {MAIN_LINKS.map((link) => (
-                <div key={link.id}>
-                  {renderLink(link.href, t(link.en, link.bn))}
-                </div>
-              ))}
+              {isLoggedIn ? (
+                /* --- LOGGED IN MOBILE MENU --- */
+                <>
+                  <div className="px-4 py-2 mb-2 bg-primary/5 border border-border rounded-lg">
+                    <p className="text-sm font-bold text-text">{user?.name}</p>
+                    <p className="text-xs uppercase font-semibold text-primary">{user?.role}</p>
+                  </div>
 
-              {/* Dropdowns */}
-              {Object.keys(DROPDOWNS).map((id) => (
-                <div key={id}>{renderMobileDropdown(id as DropdownId)}</div>
-              ))}
+                  <Link
+                    href="/dashboard"
+                    onClick={closeAll}
+                    className={`flex items-center gap-2 px-4 py-3 text-base font-medium rounded-lg ${
+                      isActive("/dashboard") ? "text-primary bg-primary/10" : "text-text hover:bg-primary/5"
+                    }`}
+                  >
+                    <LayoutDashboard className="h-4 w-4" /> {t("Dashboard", "ড্যাশবোর্ড")}
+                  </Link>
+
+                  {(user?.role === "teacher" || user?.role === "admin") && (
+                    <>
+                      <Link
+                        href="/attendance/mark"
+                        onClick={closeAll}
+                        className={`flex items-center gap-2 px-4 py-3 text-base font-medium rounded-lg ${
+                          isActive("/attendance/mark") ? "text-primary bg-primary/10" : "text-text hover:bg-primary/5"
+                        }`}
+                      >
+                        <CalendarCheck className="h-4 w-4" /> {t("Mark Attendance", "উপস্থিতি গ্রহণ")}
+                      </Link>
+
+                      <Link
+                        href="/quizzes/create"
+                        onClick={closeAll}
+                        className={`flex items-center gap-2 px-4 py-3 text-base font-medium rounded-lg ${
+                          isActive("/quizzes/create") ? "text-primary bg-primary/10" : "text-text hover:bg-primary/5"
+                        }`}
+                      >
+                        <PlusCircle className="h-4 w-4" /> {t("Create Exam", "পরীক্ষা তৈরি")}
+                      </Link>
+                    </>
+                  )}
+
+                  {user?.role === "student" && (
+                    <>
+                      <Link
+                        href="/attendance/my-report"
+                        onClick={closeAll}
+                        className={`flex items-center gap-2 px-4 py-3 text-base font-medium rounded-lg ${
+                          isActive("/attendance/my-report") ? "text-primary bg-primary/10" : "text-text hover:bg-primary/5"
+                        }`}
+                      >
+                        <CalendarCheck className="h-4 w-4" /> {t("My Attendance", "আমার উপস্থিতি")}
+                      </Link>
+
+                      <Link
+                        href="/results/marksheet"
+                        onClick={closeAll}
+                        className={`flex items-center gap-2 px-4 py-3 text-base font-medium rounded-lg ${
+                          isActive("/results/marksheet") ? "text-primary bg-primary/10" : "text-text hover:bg-primary/5"
+                        }`}
+                      >
+                        <FileText className="h-4 w-4" /> {t("Marksheet", "মার্কশিট")}
+                      </Link>
+                    </>
+                  )}
+
+                  <Link
+                    href="/quizzes/list"
+                    onClick={closeAll}
+                    className={`flex items-center gap-2 px-4 py-3 text-base font-medium rounded-lg ${
+                      isActive("/quizzes/list") ? "text-primary bg-primary/10" : "text-text hover:bg-primary/5"
+                    }`}
+                  >
+                    <BookOpen className="h-4 w-4" /> {t("Quizzes", "কুইজ")}
+                  </Link>
+
+                  <Link
+                    href="/notices"
+                    onClick={closeAll}
+                    className={`flex items-center gap-2 px-4 py-3 text-base font-medium rounded-lg ${
+                      isActive("/notices") ? "text-primary bg-primary/10" : "text-text hover:bg-primary/5"
+                    }`}
+                  >
+                    <Bell className="h-4 w-4" /> {t("Notices", "নোটিশ")}
+                  </Link>
+
+                  <button
+                    onClick={handleSignOut}
+                    className="flex items-center gap-2 w-full px-4 py-3 text-base font-medium text-red-500 bg-red-500/10 hover:bg-red-500/20 rounded-lg transition-colors mt-2"
+                  >
+                    <LogOut className="h-4 w-4" /> {t("Sign Out", "লগআউট")}
+                  </button>
+                </>
+              ) : (
+                /* --- PUBLIC LOGGED OUT MOBILE MENU --- */
+                <>
+                  {MAIN_LINKS.map((link) => (
+                    <div key={link.id}>
+                      <Link
+                        href={link.href}
+                        onClick={closeAll}
+                        className={`block px-4 py-3 text-base font-medium transition-colors rounded-lg ${
+                          isActive(link.href)
+                            ? "text-primary bg-primary/10"
+                            : "text-text hover:text-primary hover:bg-primary/5"
+                        }`}
+                      >
+                        {t(link.en, link.bn)}
+                      </Link>
+                    </div>
+                  ))}
+
+                  {Object.keys(DROPDOWNS).map((id) => (
+                    <div key={id}>{renderMobileDropdown(id as DropdownId)}</div>
+                  ))}
+
+                  <div className="pt-4 mt-2 border-t border-border flex flex-col gap-2">
+                    <Link
+                      href="/login"
+                      onClick={closeAll}
+                      className="w-full py-2.5 text-center text-sm font-semibold text-text hover:text-primary border border-border rounded-lg"
+                    >
+                      {t("Login", "লগইন")}
+                    </Link>
+                    <Link
+                      href="/register"
+                      onClick={closeAll}
+                      className="w-full py-2.5 text-center text-sm font-semibold text-white bg-primary rounded-lg"
+                    >
+                      {t("Register", "নিবন্ধন")}
+                    </Link>
+                  </div>
+                </>
+              )}
             </div>
           </div>
         )}
